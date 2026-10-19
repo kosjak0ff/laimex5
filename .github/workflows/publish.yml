@@ -1,0 +1,23 @@
+# Публикует сайт, когда рутина Claude (или человек) меняет папку docs/ в ветке main.
+# Изменения самого робота публикуются в laimex-daily.
+name: laimex-publish
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: laimex-pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Опубликовать сайт
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: tools/publish_pages.sh

@@ -5,6 +5,7 @@
 #  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
 #  - когда рутина Claude добавила новые ссылки на правила (изменился data/sources.json);
 #  - вручную: вкладка Actions → laimex-daily → Run workflow.
+# Готовый сайт публикуется в ветку gh-pages: https://kosjak0ff.github.io/laimex5/
 #
 # Режим API (без рутины Claude): создайте переменную LAIMEX_MODE=api
 # и секрет ANTHROPIC_API_KEY в Settings → Secrets and variables → Actions.
@@ -43,9 +44,13 @@ jobs:
             git fetch origin main && git reset --hard origin/main
             python -m laimex daily --mode "$MODE"
             git add data docs
-            if git diff --cached --quiet; then echo "Изменений нет"; exit 0; fi
+            if git diff --cached --quiet; then echo "Изменений нет"; break; fi
             git commit -m "Робот: обновление $(date +%F)"
-            if git push origin HEAD:main; then exit 0; fi
+            if git push origin HEAD:main; then break; fi
+            if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 20
           done
-          exit 1
+      - name: Опубликовать сайт
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: tools/publish_pages.sh
