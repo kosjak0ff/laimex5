@@ -1,0 +1,77 @@
+{
+ "title": "THE PINK STUFF rozā tīrīšanas spēks",
+ "organizer": "SIA «Multum»",
+ "sponsor": null,
+ "permit": "9164",
+ "what_to_buy": "2 продукта THE PINK STUFF в одном чеке",
+ "min_purchase_eur": null,
+ "where": "Сеть магазинов RIMI по всей Латвии (включая новые магазины, открытые во время лотереи)",
+ "how_to_enter": "Заполнить анкету на сайте multum.lv/loterijas (бесплатно): имя, фамилия, телефон, номер чека, город и e-mail; имя, фамилию и город писать без диакритических знаков",
+ "registration_url": "multum.lv/loterijas",
+ "keep": "Чек с зарегистрированным номером, где видны 2 продукта THE PINK STUFF, купленные в RIMI",
+ "lottery_start": "2026-10-06",
+ "lottery_end": "2026-10-21",
+ "registration_start": "2026-10-06",
+ "registration_end": "2026-10-20",
+ "draws": [
+  {
+   "date": "2026-10-21",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-20",
+   "prizes": [
+    {
+     "name": "Viedtālrunis iPhone 17 PRO MAX",
+     "qty": 1
+    },
+    {
+     "name": "Tīrāmo līdzekļu THE PINK STUFF dāvanu komplekti",
+     "qty": 10
+    },
+    {
+     "name": "THE PINK STUFF multifunkcionāla tīrīšanas pasta 850g un divpusējs sūkli",
+     "qty": 20
+    },
+    {
+     "name": "THE PINK STUFF elektriskā tīrīšanas birste ar 4 maināmiem uzgaļiem",
+     "qty": 10
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Смартфон iPhone 17 PRO MAX",
+   "qty": 1,
+   "unit_value_eur": 1180.99,
+   "total_value_eur": 1180.99
+  },
+  {
+   "name": "Подарочный набор чистящих средств THE PINK STUFF",
+   "qty": 10,
+   "unit_value_eur": 23.99,
+   "total_value_eur": 239.9
+  },
+  {
+   "name": "Многофункциональная чистящая паста THE PINK STUFF 850g и двусторонняя губка",
+   "qty": 20,
+   "unit_value_eur": 6.56,
+   "total_value_eur": 131.2
+  },
+  {
+   "name": "Электрическая чистящая щётка THE PINK STUFF с 4 сменными насадками",
+   "qty": 10,
+   "unit_value_eur": 14.99,
+   "total_value_eur": 149.9
+  }
+ ],
+ "prize_fund_eur": 1701.99,
+ "odds": "41 из 20 000 (примерно 1 из 488)",
+ "winners_published": "21 октября 2026 года до 23:59 в Facebook, Instagram и TikTok THE PINK STUFF и на multum.lv/loterijas; победителям приходит SMS",
+ "claim_deadline": "2026-10-31",
+ "age_min": null,
+ "limits": "Один чек можно зарегистрировать только один раз; выигравший чек в дальнейших розыгрышах не участвует. Число чеков на человека не ограничено. Сотрудники Multum не участвуют",
+ "notes": "Призы выдаются в офисе SIA «Multum» (Gustava Zemgala gatve 77, Rīga) до 31 октября 2026 года при предъявлении документа, удостоверяющего личность, и чека.",
+ "_rules_sha": "7dc38b31d09bc6f7",
+ "_extracted": "2026-10-19T21:17:50+03:00"
+}

@@ -1,0 +1,153 @@
+{
+ "title": "Izbaudi mirkli ar bueno!",
+ "organizer": "SIA «SOMESE Baltic»",
+ "sponsor": "Kinder Bueno; SIA «EUGESTA» (дистрибьютор товаров)",
+ "permit": null,
+ "what_to_buy": "Минимум 1 любой продукт бренда “Kinder Bueno”, кроме мороженого",
+ "min_purchase_eur": null,
+ "where": "Магазины и интернет-магазины по всей Латвии",
+ "how_to_enter": "Бесплатно зарегистрироваться на сайте www.kinder.com: имя, фамилия, номер чека (или накладной), контактный телефон; по желанию можно загрузить фото чека",
+ "registration_url": "www.kinder.com",
+ "keep": "Оригинал чека или накладной (видны товар, дата и номер документа) — до 2026-11-27",
+ "lottery_start": "2026-09-21",
+ "lottery_end": "2026-11-05",
+ "registration_start": "2026-09-21",
+ "registration_end": "2026-11-01",
+ "draws": [
+  {
+   "date": "2026-09-28",
+   "time": "11:30",
+   "period_from": "2026-09-21",
+   "period_to": "2026-09-27",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "time": "11:30",
+   "period_from": "2026-09-28",
+   "period_to": "2026-10-04",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "time": "11:30",
+   "period_from": "2026-09-21",
+   "period_to": "2026-10-04",
+   "prizes": [
+    {
+     "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "time": "11:30",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "11:30",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "11:30",
+   "period_from": "2026-09-21",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "time": "11:30",
+   "period_from": "2026-10-19",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "11:30",
+   "period_from": "2026-10-26",
+   "period_to": "2026-11-01",
+   "prizes": [
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 7
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "11:30",
+   "period_from": "2026-09-21",
+   "period_to": "2026-11-01",
+   "prizes": [
+    {
+     "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+     "qty": 1
+    },
+    {
+     "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+     "qty": 8
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Электронная подарочная карта на путешествие в турагентстве “Vanilla Travel” на 2000 EUR (действует до 2027-11-30)",
+   "qty": 3,
+   "unit_value_eur": 2000.0,
+   "total_value_eur": 6000.0
+  },
+  {
+   "name": "Электронная подарочная карта магазинов “DOUGLAS” на 100 EUR",
+   "qty": 50,
+   "unit_value_eur": 100.0,
+   "total_value_eur": 5000.0
+  }
+ ],
+ "prize_fund_eur": 11000.0,
+ "odds": "53/2000",
+ "winners_published": "На www.kinder.com в течение 3 рабочих дней после каждого розыгрыша; полный список — 2026-11-05",
+ "claim_deadline": "2026-11-20",
+ "age_min": 18,
+ "limits": "Один участник может выиграть 1 приз второго уровня в одном розыгрыше и 1 главный приз за всю лотерею; каждая регистрация — новый уникальный чек. Нельзя участвовать сотрудникам SIA «EUGESTA», SIA «SOMESE Baltic» и Latvijas filiāle FERRERO POLSKA COMMERCIAL",
+ "notes": "Карты DOUGLAS нужно запросить онлайн на www.kinder.com (раздел «Laimētāji») до 2026-11-15 с фото чека — их пришлют на e-mail; главный приз получают в офисе SOMESE Baltic в Риге (Ernestīnes iela 12) до 2026-11-20 с чеком и паспортом/ID",
+ "_rules_sha": "969e91c208a2882b",
+ "_extracted": "2026-10-19T21:18:06+03:00"
+}

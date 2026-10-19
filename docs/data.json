@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T21:15:16+03:00",
+ "updated": "2026-10-19T21:23:53+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-19T21:14:17+03:00",
  "lotteries": [
@@ -607,9 +607,564 @@
     "rules": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Svini Fazer jubileju un laimē ceļojumu uz Lapzemi!",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "Fazer Latvija SIA",
+    "permit": null,
+    "what_to_buy": "Минимум 1 хлеб/продукт Fazer из списка в Приложении № 1 правил (линейки Fazer GARDĀ, Fazer IERAUGA, Fazer Svaigi Cepta Tev!, Fazer STREET FOOD, Dzīvā, Apaļītis, Dream и др.)",
+    "min_purchase_eur": null,
+    "where": "Любой магазин MAXIMA по всей Латвии или интернет-магазин www.barbora.lv",
+    "how_to_enter": "SMS на номер 1838 (LMT, Tele2, Bite) в формате «FAZERJUBILEJA Номер_чека Имя Фамилия Возраст Город» (пример: FAZERJUBILEJA 123456 Janis Eglitis 23 Riga), бесплатно (некоторые операторы могут взять до 0.07 EUR); или анкета на www.fazer.lv: обязательно имя, фамилия, номер чека, телефон (также возраст, город)",
+    "registration_url": "https://www.fazer.lv",
+    "keep": "Чек (номер совпадает с зарегистрированным, видно название Fazer) до конца лотереи и получения приза",
+    "lottery_start": "2026-08-25",
+    "lottery_end": "2026-10-20",
+    "registration_start": "2026-08-25",
+    "registration_end": "2026-10-19",
+    "draws": [
+     {
+      "date": "2026-08-26",
+      "time": "11:00",
+      "period_from": "2026-08-25",
+      "period_to": "2026-08-25",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-08-27",
+      "time": "11:00",
+      "period_from": "2026-08-26",
+      "period_to": "2026-08-26",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-08-28",
+      "time": "11:00",
+      "period_from": "2026-08-27",
+      "period_to": "2026-08-27",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-08-31",
+      "time": "11:00",
+      "period_from": "2026-08-28",
+      "period_to": "2026-08-30",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-09-01",
+      "time": "11:00",
+      "period_from": "2026-08-31",
+      "period_to": "2026-08-31",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-02",
+      "time": "11:00",
+      "period_from": "2026-09-01",
+      "period_to": "2026-09-01",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-03",
+      "time": "11:00",
+      "period_from": "2026-09-02",
+      "period_to": "2026-09-02",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-04",
+      "time": "11:00",
+      "period_from": "2026-09-03",
+      "period_to": "2026-09-03",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-07",
+      "time": "11:00",
+      "period_from": "2026-09-04",
+      "period_to": "2026-09-06",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-09-08",
+      "time": "11:00",
+      "period_from": "2026-09-07",
+      "period_to": "2026-09-07",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-09",
+      "time": "11:00",
+      "period_from": "2026-09-08",
+      "period_to": "2026-09-08",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-10",
+      "time": "11:00",
+      "period_from": "2026-09-09",
+      "period_to": "2026-09-09",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-11",
+      "time": "11:00",
+      "period_from": "2026-09-10",
+      "period_to": "2026-09-10",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-14",
+      "time": "11:00",
+      "period_from": "2026-09-11",
+      "period_to": "2026-09-13",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-09-15",
+      "time": "11:00",
+      "period_from": "2026-09-14",
+      "period_to": "2026-09-14",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-16",
+      "time": "11:00",
+      "period_from": "2026-09-15",
+      "period_to": "2026-09-15",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-17",
+      "time": "11:00",
+      "period_from": "2026-08-25",
+      "period_to": "2026-09-16",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 25
+       }
+      ]
+     },
+     {
+      "date": "2026-09-18",
+      "time": "11:00",
+      "period_from": "2026-09-17",
+      "period_to": "2026-09-17",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-21",
+      "time": "11:00",
+      "period_from": "2026-09-18",
+      "period_to": "2026-09-20",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-09-22",
+      "time": "11:00",
+      "period_from": "2026-09-21",
+      "period_to": "2026-09-21",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-23",
+      "time": "11:00",
+      "period_from": "2026-09-22",
+      "period_to": "2026-09-22",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-24",
+      "time": "11:00",
+      "period_from": "2026-09-23",
+      "period_to": "2026-09-23",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-25",
+      "time": "11:00",
+      "period_from": "2026-09-24",
+      "period_to": "2026-09-24",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-28",
+      "time": "11:00",
+      "period_from": "2026-09-25",
+      "period_to": "2026-09-27",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-09-29",
+      "time": "11:00",
+      "period_from": "2026-09-28",
+      "period_to": "2026-09-28",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-30",
+      "time": "11:00",
+      "period_from": "2026-09-29",
+      "period_to": "2026-09-29",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-01",
+      "time": "11:00",
+      "period_from": "2026-09-30",
+      "period_to": "2026-09-30",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-02",
+      "time": "11:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-01",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-05",
+      "time": "11:00",
+      "period_from": "2026-10-02",
+      "period_to": "2026-10-04",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-10-06",
+      "time": "11:00",
+      "period_from": "2026-10-05",
+      "period_to": "2026-10-05",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-07",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-06",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-08",
+      "time": "11:00",
+      "period_from": "2026-10-07",
+      "period_to": "2026-10-07",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-09",
+      "time": "11:00",
+      "period_from": "2026-10-08",
+      "period_to": "2026-10-08",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-12",
+      "time": "11:00",
+      "period_from": "2026-10-09",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-14",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-13",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-15",
+      "time": "11:00",
+      "period_from": "2026-10-14",
+      "period_to": "2026-10-14",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-16",
+      "time": "11:00",
+      "period_from": "2026-10-15",
+      "period_to": "2026-10-15",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "11:00",
+      "period_from": "2026-10-16",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 6
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-08-25",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Dāvanu karte no WEEKEND TRAVEL LATVIA 2000.00 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта WEEKEND TRAVEL LATVIA на 2000 EUR (Dāvanu karte no WEEKEND TRAVEL LATVIA)",
+      "qty": 1,
+      "unit_value_eur": 2000.0,
+      "total_value_eur": 2000.0
+     },
+     {
+      "name": "Шоколад Karl Fazer ar veseliem lazdu riekstiem, 200g",
+      "qty": 135,
+      "unit_value_eur": 5.99,
+      "total_value_eur": 808.65
+     }
+    ],
+    "prize_fund_eur": 2808.65,
+    "odds": "136 к 10000",
+    "winners_published": "Полный список победителей — на www.fazer.lv до 23:59 20 октября 2026; победителям сообщают звонком или SMS",
+    "claim_deadline": "2026-11-03",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники Fazer Latvija SIA, маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+    "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза (сертификат на поездку) в правилах не указана; в правилах шанс записан как «136 (simt trīsdesmit astoņi)» — цифры и слова расходятся."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (25.08.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (20.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 2808.65 € = призовой фонд 2808.65 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 136, в фонде 136"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9094",
@@ -626,9 +1181,186 @@
     "rules": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "KAIJA loterija veikalos Rimi",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Sanitex» (дистрибьютор товаров), бренд KAIJA",
+    "permit": null,
+    "what_to_buy": "Любые 2 продукта линии тунца KAIJA за одну покупку (список товаров — в приложении № 1 к правилам)",
+    "min_purchase_eur": null,
+    "where": "Любой магазин RIMI по всей Латвии и интернет-магазин www.rimi.lv/e-veikals",
+    "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек о покупке (его номер должен совпадать с зарегистрированным); при получении приза нужен также паспорт/ID-карта",
+    "lottery_start": "2026-09-08",
+    "lottery_end": "2026-10-20",
+    "registration_start": "2026-09-08",
+    "registration_end": "2026-10-19",
+    "draws": [
+     {
+      "date": "2026-09-15",
+      "time": "11:00",
+      "period_from": "2026-09-08",
+      "period_to": "2026-09-14",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-22",
+      "time": "11:00",
+      "period_from": "2026-09-15",
+      "period_to": "2026-09-21",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-09-29",
+      "time": "11:00",
+      "period_from": "2026-09-22",
+      "period_to": "2026-09-28",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-06",
+      "time": "11:00",
+      "period_from": "2026-09-29",
+      "period_to": "2026-10-05",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Rimi dāvanu karte 50 EUR",
+        "qty": 3
+       },
+       {
+        "name": "KAIJA produktu grozs",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-09-08",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "NOVATOURS dāvanu karte 2000 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта NOVATOURS на 2000 EUR",
+      "qty": 1,
+      "unit_value_eur": 2000.0,
+      "total_value_eur": 2000.0
+     },
+     {
+      "name": "Подарочная карта Rimi на 50 EUR",
+      "qty": 18,
+      "unit_value_eur": 50.0,
+      "total_value_eur": 900.0
+     },
+     {
+      "name": "Корзина продуктов KAIJA (KAIJA produktu grozs, 7 консервов/паштетов из тунца)",
+      "qty": 12,
+      "unit_value_eur": 12.5,
+      "total_value_eur": 150.0
+     }
+    ],
+    "prize_fund_eur": 3050.0,
+    "odds": "31 к 5000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-20; победителям звонят или присылают SMS",
+    "claim_deadline": "2026-11-03",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «Sanitex», SIA «RIMI LATVIA» и SIA «Visas Loterijas»",
+    "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (08.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (20.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 3050.00 € = призовой фонд 3050.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 31, в фонде 31"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9103",
@@ -645,9 +1377,180 @@
     "rules": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "“Kūkas, tortes, ruletes!” loterija Maxima veikalos",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "AS «Latvijas Maiznieks» (производитель)",
+    "permit": null,
+    "what_to_buy": "Минимум 1 продукт Latvijas Maiznieks из списка (торты, рулеты, пирожные — приложение № 1 к правилам)",
+    "min_purchase_eur": null,
+    "where": "Любой магазин MAXIMA по всей Латвии и интернет-магазин www.barbora.lv",
+    "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек о покупке (номер должен совпадать с зарегистрированным, в чеке должен быть виден товар Latvijas Maiznieks); при получении приза нужен также паспорт/ID-карта",
+    "lottery_start": "2026-08-25",
+    "lottery_end": "2026-10-20",
+    "registration_start": "2026-08-25",
+    "registration_end": "2026-10-19",
+    "draws": [
+     {
+      "date": "2026-09-01",
+      "time": "11:00",
+      "period_from": "2026-08-25",
+      "period_to": "2026-08-31",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-08",
+      "time": "11:00",
+      "period_from": "2026-09-01",
+      "period_to": "2026-09-07",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-15",
+      "time": "11:00",
+      "period_from": "2026-09-08",
+      "period_to": "2026-09-14",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-22",
+      "time": "11:00",
+      "period_from": "2026-09-15",
+      "period_to": "2026-09-21",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-29",
+      "time": "11:00",
+      "period_from": "2026-09-22",
+      "period_to": "2026-09-28",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-06",
+      "time": "11:00",
+      "period_from": "2026-09-29",
+      "period_to": "2026-10-05",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-08-25",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Portatīvais dators Apple MacBook Neo 13″",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Ноутбук Apple MacBook Neo 13″",
+      "qty": 1,
+      "unit_value_eur": 899.01,
+      "total_value_eur": 899.01
+     },
+     {
+      "name": "Подарочная карта MAXIMA на 50 EUR",
+      "qty": 8,
+      "unit_value_eur": 50.0,
+      "total_value_eur": 400.0
+     }
+    ],
+    "prize_fund_eur": 1299.01,
+    "odds": "9 к 5000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-20; победителям звонят или присылают SMS",
+    "claim_deadline": "2026-11-03",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам AS «Latvijas Maiznieks», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+    "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (25.08.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (20.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1299.01 € = призовой фонд 1299.01 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 9, в фонде 9"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9053",
@@ -664,9 +1567,228 @@
     "rules": "https://www.loterijas.lv/loterija/veikalu-tikla-top-loterija-2/noteikumi/",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Veikalu tīkla top! loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «IEPIRKUMU GRUPA» (сеть магазинов top!)",
+    "permit": null,
+    "what_to_buy": "Покупка на сумму от 15.00 EUR (с PVN) в одном чеке; алкоголь (включая пиво), табак, электронные сигареты, лекарства, детские смеси до 6 мес., энергетики, подарочные и предоплаченные карты, коммунальные платежи в сумму не входят",
+    "min_purchase_eur": 15.0,
+    "where": "Любой физический магазин top! или mini top! по всей Латвии",
+    "how_to_enter": "SMS на номер 1838 (LMT, Tele2, Bite) в формате «TOP Номер_чека Имя Фамилия Город» (пример: TOP 12345 Janis Berzins Riga), бесплатно (некоторые операторы могут взять до 0.07 EUR); или анкета на сайте etop.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город, e-mail",
+    "registration_url": "https://etop.lv",
+    "keep": "Чек (с номером, совпадающим с зарегистрированным) до конца лотереи и получения приза",
+    "lottery_start": "2026-07-29",
+    "lottery_end": "2026-10-21",
+    "registration_start": "2026-07-29",
+    "registration_end": "2026-10-20",
+    "draws": [
+     {
+      "date": "2026-08-05",
+      "time": "11:00",
+      "period_from": "2026-07-29",
+      "period_to": "2026-08-04",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-08-12",
+      "time": "11:00",
+      "period_from": "2026-08-05",
+      "period_to": "2026-08-11",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-08-19",
+      "time": "11:00",
+      "period_from": "2026-08-12",
+      "period_to": "2026-08-18",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-08-26",
+      "time": "11:00",
+      "period_from": "2026-08-19",
+      "period_to": "2026-08-25",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-02",
+      "time": "11:00",
+      "period_from": "2026-08-26",
+      "period_to": "2026-09-01",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-09",
+      "time": "11:00",
+      "period_from": "2026-09-02",
+      "period_to": "2026-09-08",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-16",
+      "time": "11:00",
+      "period_from": "2026-09-09",
+      "period_to": "2026-09-15",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-23",
+      "time": "11:00",
+      "period_from": "2026-09-16",
+      "period_to": "2026-09-22",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-09-30",
+      "time": "11:00",
+      "period_from": "2026-09-23",
+      "period_to": "2026-09-29",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-07",
+      "time": "11:00",
+      "period_from": "2026-09-30",
+      "period_to": "2026-10-06",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-14",
+      "time": "11:00",
+      "period_from": "2026-10-07",
+      "period_to": "2026-10-13",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-21",
+      "time": "11:00",
+      "period_from": "2026-10-14",
+      "period_to": "2026-10-20",
+      "prizes": [
+       {
+        "name": "top! dāvanu karte 150.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-07-29",
+      "period_to": "2026-10-20",
+      "prizes": [
+       {
+        "name": "Денежный приз 15000 EUR (naudas balva)",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Денежный приз 15 000 EUR (Naudas balva)",
+      "qty": 1,
+      "unit_value_eur": 15000.0,
+      "total_value_eur": 15000.0
+     },
+     {
+      "name": "Подарочная карта top! dāvanu karte на 150 EUR",
+      "qty": 12,
+      "unit_value_eur": 150.0,
+      "total_value_eur": 1800.0
+     }
+    ],
+    "prize_fund_eur": 16800.0,
+    "odds": "13 к 15000",
+    "winners_published": "Полный список победителей — на etop.lv до 23:59 21 октября 2026; победителям сообщают звонком или SMS",
+    "claim_deadline": "2026-11-04",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «IEPIRKUMU GRUPA», магазинов top! и SIA «Visas Loterijas»",
+    "notes": "Для получения приза нужно предъявить чек и паспорт/ID-карту; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза в правилах не указана (период 29.07–20.10.2026); претензии — до 2026-11-05."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (29.07.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (21.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 16800.00 € = призовой фонд 16800.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 13, в фонде 13"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9091",
@@ -702,9 +1824,112 @@
     "rules": "https://www.loterijas.lv/loterija/the-pink-stuff-roza-tirisanas-speks/noteikumi/",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "THE PINK STUFF rozā tīrīšanas spēks",
+    "organizer": "SIA «Multum»",
+    "sponsor": null,
+    "permit": "9164",
+    "what_to_buy": "2 продукта THE PINK STUFF в одном чеке",
+    "min_purchase_eur": null,
+    "where": "Сеть магазинов RIMI по всей Латвии (включая новые магазины, открытые во время лотереи)",
+    "how_to_enter": "Заполнить анкету на сайте multum.lv/loterijas (бесплатно): имя, фамилия, телефон, номер чека, город и e-mail; имя, фамилию и город писать без диакритических знаков",
+    "registration_url": "multum.lv/loterijas",
+    "keep": "Чек с зарегистрированным номером, где видны 2 продукта THE PINK STUFF, купленные в RIMI",
+    "lottery_start": "2026-10-06",
+    "lottery_end": "2026-10-21",
+    "registration_start": "2026-10-06",
+    "registration_end": "2026-10-20",
+    "draws": [
+     {
+      "date": "2026-10-21",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-20",
+      "prizes": [
+       {
+        "name": "Viedtālrunis iPhone 17 PRO MAX",
+        "qty": 1
+       },
+       {
+        "name": "Tīrāmo līdzekļu THE PINK STUFF dāvanu komplekti",
+        "qty": 10
+       },
+       {
+        "name": "THE PINK STUFF multifunkcionāla tīrīšanas pasta 850g un divpusējs sūkli",
+        "qty": 20
+       },
+       {
+        "name": "THE PINK STUFF elektriskā tīrīšanas birste ar 4 maināmiem uzgaļiem",
+        "qty": 10
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Смартфон iPhone 17 PRO MAX",
+      "qty": 1,
+      "unit_value_eur": 1180.99,
+      "total_value_eur": 1180.99
+     },
+     {
+      "name": "Подарочный набор чистящих средств THE PINK STUFF",
+      "qty": 10,
+      "unit_value_eur": 23.99,
+      "total_value_eur": 239.9
+     },
+     {
+      "name": "Многофункциональная чистящая паста THE PINK STUFF 850g и двусторонняя губка",
+      "qty": 20,
+      "unit_value_eur": 6.56,
+      "total_value_eur": 131.2
+     },
+     {
+      "name": "Электрическая чистящая щётка THE PINK STUFF с 4 сменными насадками",
+      "qty": 10,
+      "unit_value_eur": 14.99,
+      "total_value_eur": 149.9
+     }
+    ],
+    "prize_fund_eur": 1701.99,
+    "odds": "41 из 20 000 (примерно 1 из 488)",
+    "winners_published": "21 октября 2026 года до 23:59 в Facebook, Instagram и TikTok THE PINK STUFF и на multum.lv/loterijas; победителям приходит SMS",
+    "claim_deadline": "2026-10-31",
+    "age_min": null,
+    "limits": "Один чек можно зарегистрировать только один раз; выигравший чек в дальнейших розыгрышах не участвует. Число чеков на человека не ограничено. Сотрудники Multum не участвуют",
+    "notes": "Призы выдаются в офисе SIA «Multum» (Gustava Zemgala gatve 77, Rīga) до 31 октября 2026 года при предъявлении документа, удостоверяющего личность, и чека."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Номер разрешения в правилах (9164) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата начала (06.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (21.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1701.99 € = призовой фонд 1701.99 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 41, в фонде 41"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9096",
@@ -717,8 +1942,8 @@
    "place": "“Mego”, “Vesko” un “Mini Vesko” veikali visā Latvijas Republikā",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://lottery.esteria.lv/_clients/megoloterija2026_2.php?lang=lv",
+    "rules": "https://lottery.esteria.lv/_clients/megoloterija2026_2.php?lang=lv&rules=1",
     "registration": null
    },
    "summary": null,
@@ -740,9 +1965,132 @@
     "rules": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Grite loterija Maxima veikalos",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "UAB «Grigeo Tissue» (производитель), бренд Grite",
+    "permit": null,
+    "what_to_buy": "Один или несколько продуктов Grite в одном чеке на общую сумму не менее 4.99 EUR (с НДС)",
+    "min_purchase_eur": 4.99,
+    "where": "Любой магазин MAXIMA по всей Латвии и интернет-магазин www.barbora.lv",
+    "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек о покупке (номер должен совпадать с зарегистрированным, в чеке должен быть виден товар Grite); при получении приза нужен также паспорт/ID-карта",
+    "lottery_start": "2026-09-28",
+    "lottery_end": "2026-10-27",
+    "registration_start": "2026-09-28",
+    "registration_end": "2026-10-26",
+    "draws": [
+     {
+      "date": "2026-10-06",
+      "time": "11:00",
+      "period_from": "2026-09-28",
+      "period_to": "2026-10-05",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 20
+       }
+      ]
+     },
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 20
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 20
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "11:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "MAXIMA dāvanu karte 50 EUR",
+        "qty": 20
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-09-28",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "Putekļsūcējs – robots Roborock Qrevo Curv QRC02-00",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Робот-пылесос Roborock Qrevo Curv QRC02-00",
+      "qty": 1,
+      "unit_value_eur": 805.42,
+      "total_value_eur": 805.42
+     },
+     {
+      "name": "Подарочная карта MAXIMA на 50 EUR",
+      "qty": 80,
+      "unit_value_eur": 50.0,
+      "total_value_eur": 4000.0
+     }
+    ],
+    "prize_fund_eur": 4805.42,
+    "odds": "81 к 5000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-27; победителям звонят или присылают SMS",
+    "claim_deadline": "2026-11-10",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам UAB «Grigeo Tissue», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+    "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (28.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (27.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 4805.42 € = призовой фонд 4805.42 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 81, в фонде 81"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9163",
@@ -899,9 +2247,88 @@
     "rules": "https://www.loterijas.lv/loterija/orbit-loterija-2/noteikumi/",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Orbit loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Mars Latvia»",
+    "permit": null,
+    "what_to_buy": "Любые 2 жевательные резинки Orbit или Hubba Bubba",
+    "min_purchase_eur": null,
+    "where": "Любые магазины и интернет-магазины по всей Латвии",
+    "how_to_enter": "Анкета на сайте www.yourchewyplace.com/lv-lv: имя, фамилия, дата рождения, номер чека, телефон и фото чека; бесплатно",
+    "registration_url": "https://www.yourchewyplace.com/lv-lv",
+    "keep": "Чек (номер совпадает с зарегистрированным, видны товары лотереи) до получения приза",
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2026-11-02",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-10-31",
+    "draws": [
+     {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-31",
+      "prizes": [
+       {
+        "name": "Euronics dāvanu karte 2000.00 EUR",
+        "qty": 1
+       },
+       {
+        "name": "Наушники JBL Tune 780 NC Black",
+        "qty": 80
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Наушники JBL Tune 780 NC Black",
+      "qty": 80,
+      "unit_value_eur": 71.39,
+      "total_value_eur": 5711.2
+     },
+     {
+      "name": "Подарочная карта Euronics dāvanu karte на 2000 EUR (на покупку учебного или музыкального оборудования)",
+      "qty": 1,
+      "unit_value_eur": 2000.0,
+      "total_value_eur": 2000.0
+     }
+    ],
+    "prize_fund_eur": 7711.2,
+    "odds": "81 к 2000",
+    "winners_published": "Полный список победителей — на www.yourchewyplace.com/lv-lv до 23:59 2 ноября 2026; победителям сообщают звонком или SMS",
+    "claim_deadline": "2026-11-16",
+    "age_min": 18,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Mars Latvia» и SIA «Visas Loterijas» и их семьи",
+    "notes": "Для получения приза нужны чек и паспорт/ID-карта; если на чеке не видно названий товаров, нужна заверенная продавцом квитанция или подпись с печатью магазина. Претензии — до 2026-11-17."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (02.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 7711.20 € = призовой фонд 7711.20 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 81, в фонде 81"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9183",
@@ -918,9 +2345,102 @@
     "rules": "https://www.loterijas.lv/loterija/birute-loterija/noteikumi/",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Birute loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "UAB «Birštono mineraliniai vandenys» ir Ko",
+    "permit": null,
+    "what_to_buy": "Минимум 1 любой продукт бренда Birute",
+    "min_purchase_eur": null,
+    "where": "Любое место торговли (магазин или интернет-магазин) по всей Латвии",
+    "how_to_enter": "Заполнить анкету на сайте www.birute.lt/lv: имя, фамилия, номер чека, телефон и e-mail (обязательны имя, фамилия, номер чека и телефон). Регистрация бесплатная",
+    "registration_url": "www.birute.lt/lv",
+    "keep": "Чек (документ о покупке) с зарегистрированным номером, где видна покупка продукта Birute",
+    "lottery_start": "2026-10-13",
+    "lottery_end": "2026-11-03",
+    "registration_start": "2026-10-13",
+    "registration_end": "2026-11-02",
+    "draws": [
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "“Birute” dāvanu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "11:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "“Birute” dāvanu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "11:00",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "“Birute” dāvanu komplekts",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочный набор «Birute»: подарочная карта Rimi на 100 EUR, упаковка воды Birute (12 x 0,5 л) и кулинарная книга Zanes Grēviņas «Našķoties un ciemoties. 107 normālas receptes, ar kurām dalīties (vai arī nedalīties)»",
+      "qty": 3,
+      "unit_value_eur": 136.75,
+      "total_value_eur": 410.25
+     }
+    ],
+    "prize_fund_eur": 410.25,
+    "odds": "3 к 2000",
+    "winners_published": "Полный список победителей — на www.birute.lt/lv до 23:59 3 ноября 2026 года; победителям звонят или пишут SMS",
+    "claim_deadline": "2026-11-19",
+    "age_min": 18,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Birštono mineraliniai vandenys и Visas Loterijas не участвуют",
+    "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 19 ноября 2026 года."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (13.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (03.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 410.25 € = призовой фонд 410.25 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 3, в фонде 3"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9112",
@@ -937,9 +2457,184 @@
     "rules": "https://www.kinder.com/lv/lv/xp/bueno/assets26/Noteikumi_KinderBueno_loterija_2026.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Izbaudi mirkli ar bueno!",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "Kinder Bueno; SIA «EUGESTA» (дистрибьютор товаров)",
+    "permit": null,
+    "what_to_buy": "Минимум 1 любой продукт бренда “Kinder Bueno”, кроме мороженого",
+    "min_purchase_eur": null,
+    "where": "Магазины и интернет-магазины по всей Латвии",
+    "how_to_enter": "Бесплатно зарегистрироваться на сайте www.kinder.com: имя, фамилия, номер чека (или накладной), контактный телефон; по желанию можно загрузить фото чека",
+    "registration_url": "www.kinder.com",
+    "keep": "Оригинал чека или накладной (видны товар, дата и номер документа) — до 2026-11-27",
+    "lottery_start": "2026-09-21",
+    "lottery_end": "2026-11-05",
+    "registration_start": "2026-09-21",
+    "registration_end": "2026-11-01",
+    "draws": [
+     {
+      "date": "2026-09-28",
+      "time": "11:30",
+      "period_from": "2026-09-21",
+      "period_to": "2026-09-27",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-10-05",
+      "time": "11:30",
+      "period_from": "2026-09-28",
+      "period_to": "2026-10-04",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-10-05",
+      "time": "11:30",
+      "period_from": "2026-09-21",
+      "period_to": "2026-10-04",
+      "prizes": [
+       {
+        "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-12",
+      "time": "11:30",
+      "period_from": "2026-10-05",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "11:30",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "11:30",
+      "period_from": "2026-09-21",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "11:30",
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:30",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 7
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:30",
+      "period_from": "2026-09-21",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "Vanilla Travel elektroniskā dāvanu karte ceļojumam 2000 EUR",
+        "qty": 1
+       },
+       {
+        "name": "DOUGLAS elektroniskā dāvanu karte 100 EUR",
+        "qty": 8
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Электронная подарочная карта на путешествие в турагентстве “Vanilla Travel” на 2000 EUR (действует до 2027-11-30)",
+      "qty": 3,
+      "unit_value_eur": 2000.0,
+      "total_value_eur": 6000.0
+     },
+     {
+      "name": "Электронная подарочная карта магазинов “DOUGLAS” на 100 EUR",
+      "qty": 50,
+      "unit_value_eur": 100.0,
+      "total_value_eur": 5000.0
+     }
+    ],
+    "prize_fund_eur": 11000.0,
+    "odds": "53/2000",
+    "winners_published": "На www.kinder.com в течение 3 рабочих дней после каждого розыгрыша; полный список — 2026-11-05",
+    "claim_deadline": "2026-11-20",
+    "age_min": 18,
+    "limits": "Один участник может выиграть 1 приз второго уровня в одном розыгрыше и 1 главный приз за всю лотерею; каждая регистрация — новый уникальный чек. Нельзя участвовать сотрудникам SIA «EUGESTA», SIA «SOMESE Baltic» и Latvijas filiāle FERRERO POLSKA COMMERCIAL",
+    "notes": "Карты DOUGLAS нужно запросить онлайн на www.kinder.com (раздел «Laimētāji») до 2026-11-15 с фото чека — их пришлют на e-mail; главный приз получают в офисе SOMESE Baltic в Риге (Ernestīnes iela 12) до 2026-11-20 с чеком и паспортом/ID"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (21.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (05.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 11000.00 € = призовой фонд 11000.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 53, в фонде 53"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9169",
@@ -1098,9 +2793,9 @@
    "place": "Latvijas Republika",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3",
+    "rules": "https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3/noteikumi",
+    "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app"
    },
    "summary": null,
    "checks": [],
@@ -1117,9 +2812,9 @@
    "place": "sporta klubos “MyFitness” un www.myfitness.lv visā Latvijas Republikā",
    "category": "service",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.myfitness.lv/jaunumi/vesela-dzive-sakas-seit/",
+    "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing",
+    "registration": "https://www.myfitness.lv/registreties/"
    },
    "summary": null,
    "checks": [],
@@ -1440,9 +3135,9 @@
    "place": "Latvijas Republika un interneta veikals \"rimi.lv/e-veikals\"",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.rimiloterija.lv/rudens/",
+    "rules": "https://www.rimiloterija.lv/rudens/assets26/WEB_Noteikumi_Rimi_rudens_loterija_2026.pdf",
+    "registration": "https://www.rimiloterija.lv/rudens/#registracija"
    },
    "summary": null,
    "checks": [],
@@ -1463,9 +3158,226 @@
     "rules": "https://www.loterijas.lv/loterija/selga-loterija-7/noteikumi/",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Selga loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Orkla Latvija» (производитель SELGA)",
+    "permit": null,
+    "what_to_buy": "Минимум 1 любой продукт SELGA или не менее 100 г весового продукта SELGA",
+    "min_purchase_eur": null,
+    "where": "Любые магазины и интернет-магазины по всей Латвии",
+    "how_to_enter": "Анкета на www.selgaloterija.lv: обязательно имя, фамилия, номер чека, телефон (также возраст, город, магазин, e-mail); бесплатно. После регистрации крутите колесо удачи — выпавший приз определяет, в каком розыгрыше вы участвуете; один чек — одно вращение",
+    "registration_url": "https://www.selgaloterija.lv",
+    "keep": "Чек (номер совпадает с зарегистрированным, видно название Selga) до получения приза",
+    "lottery_start": "2026-10-12",
+    "lottery_end": "2026-11-23",
+    "registration_start": "2026-10-12",
+    "registration_end": "2026-11-22",
+    "draws": [
+     {
+      "date": "2026-10-19",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "airBaltic dāvanu karte 500.00 EUR",
+        "qty": 1
+       },
+       {
+        "name": "Naudas balva 70.00 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "11:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "Naudas balva 70.00 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "Kafijas automāts Saeco GranAroma",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "Naudas balva 70.00 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "airBaltic dāvanu karte 500.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-09",
+      "time": "11:00",
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "Naudas balva 70.00 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-11-09",
+      "time": "11:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "Kafijas automāts Saeco GranAroma",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Naudas balva 70.00 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Telefons Iphone 17 PRO, 256 GB",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-23",
+      "time": "11:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "Kafijas automāts Saeco GranAroma",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-23",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "Naudas balva 2000 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Денежный приз 2000 EUR (Naudas balva)",
+      "qty": 1,
+      "unit_value_eur": 2000.0,
+      "total_value_eur": 2000.0
+     },
+     {
+      "name": "Телефон Iphone 17 PRO, 256 GB",
+      "qty": 1,
+      "unit_value_eur": 1349.0,
+      "total_value_eur": 1349.0
+     },
+     {
+      "name": "Кофемашина Saeco GranAroma",
+      "qty": 3,
+      "unit_value_eur": 649.99,
+      "total_value_eur": 1949.97
+     },
+     {
+      "name": "Подарочная карта airBaltic dāvanu karte на 500 EUR",
+      "qty": 2,
+      "unit_value_eur": 500.0,
+      "total_value_eur": 1000.0
+     },
+     {
+      "name": "Денежный приз 70 EUR (Naudas balva)",
+      "qty": 10,
+      "unit_value_eur": 70.0,
+      "total_value_eur": 700.0
+     }
+    ],
+    "prize_fund_eur": 6998.97,
+    "odds": "17 к 10000",
+    "winners_published": "Полный список победителей — на www.selgaloterija.lv до 23:59 23 ноября 2026; победителям сообщают звонком или SMS",
+    "claim_deadline": "2026-12-07",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Orkla Latvija» и SIA «Visas Loterijas»",
+    "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Розыгрыши проходят в 6 датах; претензии — до 2026-12-08."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (12.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (23.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 6998.97 € = призовой фонд 6998.97 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 17, в фонде 17"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9114",
@@ -1717,8 +3629,8 @@
    "place": "veikalu tīkla “LaTS” tirdzniecības vietās visā Latvijas Republikā un https://www.e-latts.lv",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://e-latts.lv/loterija.ltr",
+    "rules": "https://e-latts.lv/files/378/noteikumi-8.pdf",
     "registration": null
    },
    "summary": null,
@@ -2182,9 +4094,162 @@
     "rules": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Latvijas Graudu maize loterija Rimi veikalos",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "AS «Latvijas Maiznieks»",
+    "permit": null,
+    "what_to_buy": "Минимум 1 любой продукт Latvijas Maiznieks Graudu maize из списка в Приложении №1 к правилам",
+    "min_purchase_eur": null,
+    "where": "Любой магазин RIMI по всей Латвии и интернет-магазин www.rimi.lv/e-veikals",
+    "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, возраст, город, телефон, e-mail (обязательны имя, фамилия, номер чека и телефон). Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек (документ о покупке) с номером, указанным при регистрации",
+    "lottery_start": "2026-10-06",
+    "lottery_end": "2026-12-01",
+    "registration_start": "2026-10-06",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "11:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "11:00",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "11:00",
+      "period_from": "2026-11-03",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "11:00",
+      "period_from": "2026-11-10",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-24",
+      "time": "11:00",
+      "period_from": "2026-11-17",
+      "period_to": "2026-11-23",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-01",
+      "time": "11:00",
+      "period_from": "2026-11-24",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Робот-пылесос с функцией мытья PHILIPS HomeRun 2000. sērijas, белый",
+      "qty": 8,
+      "unit_value_eur": 240.0,
+      "total_value_eur": 1920.0
+     }
+    ],
+    "prize_fund_eur": 1920.0,
+    "odds": "8 к 5000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 1 декабря 2026 года; победителям звонят или пишут SMS",
+    "claim_deadline": "2026-12-15",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Latvijas Maiznieks, Rimi Latvia и Visas Loterijas не участвуют",
+    "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 15 декабря 2026 года."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (06.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (01.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1920.00 € = призовой фонд 1920.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 8, в фонде 8"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9185",
@@ -2351,9 +4416,9 @@
    "place": "Latvijas Republika",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.coca-cola.com/lv/lv/offerings/sprite-basketball",
+    "rules": "https://www.coca-cola.com/lv/lv/offerings/sprite-basketball/Noteikumi",
+    "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app"
    },
    "summary": null,
    "checks": [],

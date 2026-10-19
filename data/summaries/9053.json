@@ -1,0 +1,197 @@
+{
+ "title": "Veikalu tīkla top! loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «IEPIRKUMU GRUPA» (сеть магазинов top!)",
+ "permit": null,
+ "what_to_buy": "Покупка на сумму от 15.00 EUR (с PVN) в одном чеке; алкоголь (включая пиво), табак, электронные сигареты, лекарства, детские смеси до 6 мес., энергетики, подарочные и предоплаченные карты, коммунальные платежи в сумму не входят",
+ "min_purchase_eur": 15.0,
+ "where": "Любой физический магазин top! или mini top! по всей Латвии",
+ "how_to_enter": "SMS на номер 1838 (LMT, Tele2, Bite) в формате «TOP Номер_чека Имя Фамилия Город» (пример: TOP 12345 Janis Berzins Riga), бесплатно (некоторые операторы могут взять до 0.07 EUR); или анкета на сайте etop.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город, e-mail",
+ "registration_url": "https://etop.lv",
+ "keep": "Чек (с номером, совпадающим с зарегистрированным) до конца лотереи и получения приза",
+ "lottery_start": "2026-07-29",
+ "lottery_end": "2026-10-21",
+ "registration_start": "2026-07-29",
+ "registration_end": "2026-10-20",
+ "draws": [
+  {
+   "date": "2026-08-05",
+   "time": "11:00",
+   "period_from": "2026-07-29",
+   "period_to": "2026-08-04",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-08-12",
+   "time": "11:00",
+   "period_from": "2026-08-05",
+   "period_to": "2026-08-11",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-08-19",
+   "time": "11:00",
+   "period_from": "2026-08-12",
+   "period_to": "2026-08-18",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-08-26",
+   "time": "11:00",
+   "period_from": "2026-08-19",
+   "period_to": "2026-08-25",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-02",
+   "time": "11:00",
+   "period_from": "2026-08-26",
+   "period_to": "2026-09-01",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-09",
+   "time": "11:00",
+   "period_from": "2026-09-02",
+   "period_to": "2026-09-08",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-16",
+   "time": "11:00",
+   "period_from": "2026-09-09",
+   "period_to": "2026-09-15",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-23",
+   "time": "11:00",
+   "period_from": "2026-09-16",
+   "period_to": "2026-09-22",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "time": "11:00",
+   "period_from": "2026-09-23",
+   "period_to": "2026-09-29",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "time": "11:00",
+   "period_from": "2026-09-30",
+   "period_to": "2026-10-06",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "time": "11:00",
+   "period_from": "2026-10-07",
+   "period_to": "2026-10-13",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-21",
+   "time": "11:00",
+   "period_from": "2026-10-14",
+   "period_to": "2026-10-20",
+   "prizes": [
+    {
+     "name": "top! dāvanu karte 150.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-07-29",
+   "period_to": "2026-10-20",
+   "prizes": [
+    {
+     "name": "Денежный приз 15000 EUR (naudas balva)",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Денежный приз 15 000 EUR (Naudas balva)",
+   "qty": 1,
+   "unit_value_eur": 15000.0,
+   "total_value_eur": 15000.0
+  },
+  {
+   "name": "Подарочная карта top! dāvanu karte на 150 EUR",
+   "qty": 12,
+   "unit_value_eur": 150.0,
+   "total_value_eur": 1800.0
+  }
+ ],
+ "prize_fund_eur": 16800.0,
+ "odds": "13 к 15000",
+ "winners_published": "Полный список победителей — на etop.lv до 23:59 21 октября 2026; победителям сообщают звонком или SMS",
+ "claim_deadline": "2026-11-04",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «IEPIRKUMU GRUPA», магазинов top! и SIA «Visas Loterijas»",
+ "notes": "Для получения приза нужно предъявить чек и паспорт/ID-карту; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза в правилах не указана (период 29.07–20.10.2026); претензии — до 2026-11-05.",
+ "_rules_sha": "5a74b364ea8e4acf",
+ "_extracted": "2026-10-19T21:17:36+03:00"
+}

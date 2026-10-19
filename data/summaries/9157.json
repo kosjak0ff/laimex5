@@ -1,0 +1,131 @@
+{
+ "title": "Latvijas Graudu maize loterija Rimi veikalos",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "AS «Latvijas Maiznieks»",
+ "permit": null,
+ "what_to_buy": "Минимум 1 любой продукт Latvijas Maiznieks Graudu maize из списка в Приложении №1 к правилам",
+ "min_purchase_eur": null,
+ "where": "Любой магазин RIMI по всей Латвии и интернет-магазин www.rimi.lv/e-veikals",
+ "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, возраст, город, телефон, e-mail (обязательны имя, фамилия, номер чека и телефон). Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек (документ о покупке) с номером, указанным при регистрации",
+ "lottery_start": "2026-10-06",
+ "lottery_end": "2026-12-01",
+ "registration_start": "2026-10-06",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "11:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "11:00",
+   "period_from": "2026-10-27",
+   "period_to": "2026-11-02",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "11:00",
+   "period_from": "2026-11-03",
+   "period_to": "2026-11-09",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:00",
+   "period_from": "2026-11-10",
+   "period_to": "2026-11-16",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:00",
+   "period_from": "2026-11-17",
+   "period_to": "2026-11-23",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "time": "11:00",
+   "period_from": "2026-11-24",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "PHILIPS HomeRun 2000. sērijas Putekļsūcējs robots ar mazgāšanas funkciju, balts",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Робот-пылесос с функцией мытья PHILIPS HomeRun 2000. sērijas, белый",
+   "qty": 8,
+   "unit_value_eur": 240.0,
+   "total_value_eur": 1920.0
+  }
+ ],
+ "prize_fund_eur": 1920.0,
+ "odds": "8 к 5000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 1 декабря 2026 года; победителям звонят или пишут SMS",
+ "claim_deadline": "2026-12-15",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Latvijas Maiznieks, Rimi Latvia и Visas Loterijas не участвуют",
+ "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 15 декабря 2026 года.",
+ "_rules_sha": "c226f057c00117be",
+ "_extracted": "2026-10-19T21:17:36+03:00"
+}

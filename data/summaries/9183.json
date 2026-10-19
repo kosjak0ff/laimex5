@@ -1,0 +1,71 @@
+{
+ "title": "Birute loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "UAB «Birštono mineraliniai vandenys» ir Ko",
+ "permit": null,
+ "what_to_buy": "Минимум 1 любой продукт бренда Birute",
+ "min_purchase_eur": null,
+ "where": "Любое место торговли (магазин или интернет-магазин) по всей Латвии",
+ "how_to_enter": "Заполнить анкету на сайте www.birute.lt/lv: имя, фамилия, номер чека, телефон и e-mail (обязательны имя, фамилия, номер чека и телефон). Регистрация бесплатная",
+ "registration_url": "www.birute.lt/lv",
+ "keep": "Чек (документ о покупке) с зарегистрированным номером, где видна покупка продукта Birute",
+ "lottery_start": "2026-10-13",
+ "lottery_end": "2026-11-03",
+ "registration_start": "2026-10-13",
+ "registration_end": "2026-11-02",
+ "draws": [
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "“Birute” dāvanu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "11:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "“Birute” dāvanu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "11:00",
+   "period_from": "2026-10-27",
+   "period_to": "2026-11-02",
+   "prizes": [
+    {
+     "name": "“Birute” dāvanu komplekts",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочный набор «Birute»: подарочная карта Rimi на 100 EUR, упаковка воды Birute (12 x 0,5 л) и кулинарная книга Zanes Grēviņas «Našķoties un ciemoties. 107 normālas receptes, ar kurām dalīties (vai arī nedalīties)»",
+   "qty": 3,
+   "unit_value_eur": 136.75,
+   "total_value_eur": 410.25
+  }
+ ],
+ "prize_fund_eur": 410.25,
+ "odds": "3 к 2000",
+ "winners_published": "Полный список победителей — на www.birute.lt/lv до 23:59 3 ноября 2026 года; победителям звонят или пишут SMS",
+ "claim_deadline": "2026-11-19",
+ "age_min": 18,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Birštono mineraliniai vandenys и Visas Loterijas не участвуют",
+ "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 19 ноября 2026 года.",
+ "_rules_sha": "3e584dbf2e520b8c",
+ "_extracted": "2026-10-19T21:18:02+03:00"
+}

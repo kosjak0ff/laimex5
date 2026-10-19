@@ -1,0 +1,149 @@
+{
+ "title": "“Kūkas, tortes, ruletes!” loterija Maxima veikalos",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "AS «Latvijas Maiznieks» (производитель)",
+ "permit": null,
+ "what_to_buy": "Минимум 1 продукт Latvijas Maiznieks из списка (торты, рулеты, пирожные — приложение № 1 к правилам)",
+ "min_purchase_eur": null,
+ "where": "Любой магазин MAXIMA по всей Латвии и интернет-магазин www.barbora.lv",
+ "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек о покупке (номер должен совпадать с зарегистрированным, в чеке должен быть виден товар Latvijas Maiznieks); при получении приза нужен также паспорт/ID-карта",
+ "lottery_start": "2026-08-25",
+ "lottery_end": "2026-10-20",
+ "registration_start": "2026-08-25",
+ "registration_end": "2026-10-19",
+ "draws": [
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "period_from": "2026-08-25",
+   "period_to": "2026-08-31",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-08",
+   "time": "11:00",
+   "period_from": "2026-09-01",
+   "period_to": "2026-09-07",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "time": "11:00",
+   "period_from": "2026-09-08",
+   "period_to": "2026-09-14",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-22",
+   "time": "11:00",
+   "period_from": "2026-09-15",
+   "period_to": "2026-09-21",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "time": "11:00",
+   "period_from": "2026-09-22",
+   "period_to": "2026-09-28",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "time": "11:00",
+   "period_from": "2026-09-29",
+   "period_to": "2026-10-05",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-08-25",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Portatīvais dators Apple MacBook Neo 13″",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Ноутбук Apple MacBook Neo 13″",
+   "qty": 1,
+   "unit_value_eur": 899.01,
+   "total_value_eur": 899.01
+  },
+  {
+   "name": "Подарочная карта MAXIMA на 50 EUR",
+   "qty": 8,
+   "unit_value_eur": 50.0,
+   "total_value_eur": 400.0
+  }
+ ],
+ "prize_fund_eur": 1299.01,
+ "odds": "9 к 5000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-20; победителям звонят или присылают SMS",
+ "claim_deadline": "2026-11-03",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам AS «Latvijas Maiznieks», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+ "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя",
+ "_rules_sha": "512eea5581b53b4c",
+ "_extracted": "2026-10-19T21:17:50+03:00"
+}

@@ -1,0 +1,57 @@
+{
+ "title": "Orbit loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Mars Latvia»",
+ "permit": null,
+ "what_to_buy": "Любые 2 жевательные резинки Orbit или Hubba Bubba",
+ "min_purchase_eur": null,
+ "where": "Любые магазины и интернет-магазины по всей Латвии",
+ "how_to_enter": "Анкета на сайте www.yourchewyplace.com/lv-lv: имя, фамилия, дата рождения, номер чека, телефон и фото чека; бесплатно",
+ "registration_url": "https://www.yourchewyplace.com/lv-lv",
+ "keep": "Чек (номер совпадает с зарегистрированным, видны товары лотереи) до получения приза",
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2026-11-02",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-10-31",
+ "draws": [
+  {
+   "date": "2026-11-02",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-31",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 2000.00 EUR",
+     "qty": 1
+    },
+    {
+     "name": "Наушники JBL Tune 780 NC Black",
+     "qty": 80
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Наушники JBL Tune 780 NC Black",
+   "qty": 80,
+   "unit_value_eur": 71.39,
+   "total_value_eur": 5711.2
+  },
+  {
+   "name": "Подарочная карта Euronics dāvanu karte на 2000 EUR (на покупку учебного или музыкального оборудования)",
+   "qty": 1,
+   "unit_value_eur": 2000.0,
+   "total_value_eur": 2000.0
+  }
+ ],
+ "prize_fund_eur": 7711.2,
+ "odds": "81 к 2000",
+ "winners_published": "Полный список победителей — на www.yourchewyplace.com/lv-lv до 23:59 2 ноября 2026; победителям сообщают звонком или SMS",
+ "claim_deadline": "2026-11-16",
+ "age_min": 18,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Mars Latvia» и SIA «Visas Loterijas» и их семьи",
+ "notes": "Для получения приза нужны чек и паспорт/ID-карта; если на чеке не видно названий товаров, нужна заверенная продавцом квитанция или подпись с печатью магазина. Претензии — до 2026-11-17.",
+ "_rules_sha": "a3093401a0eff06c",
+ "_extracted": "2026-10-19T21:17:48+03:00"
+}

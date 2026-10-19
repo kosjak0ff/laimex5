@@ -1,0 +1,101 @@
+{
+ "title": "Grite loterija Maxima veikalos",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "UAB «Grigeo Tissue» (производитель), бренд Grite",
+ "permit": null,
+ "what_to_buy": "Один или несколько продуктов Grite в одном чеке на общую сумму не менее 4.99 EUR (с НДС)",
+ "min_purchase_eur": 4.99,
+ "where": "Любой магазин MAXIMA по всей Латвии и интернет-магазин www.barbora.lv",
+ "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек о покупке (номер должен совпадать с зарегистрированным, в чеке должен быть виден товар Grite); при получении приза нужен также паспорт/ID-карта",
+ "lottery_start": "2026-09-28",
+ "lottery_end": "2026-10-27",
+ "registration_start": "2026-09-28",
+ "registration_end": "2026-10-26",
+ "draws": [
+  {
+   "date": "2026-10-06",
+   "time": "11:00",
+   "period_from": "2026-09-28",
+   "period_to": "2026-10-05",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "11:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "MAXIMA dāvanu karte 50 EUR",
+     "qty": 20
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-09-28",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "Putekļsūcējs – robots Roborock Qrevo Curv QRC02-00",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Робот-пылесос Roborock Qrevo Curv QRC02-00",
+   "qty": 1,
+   "unit_value_eur": 805.42,
+   "total_value_eur": 805.42
+  },
+  {
+   "name": "Подарочная карта MAXIMA на 50 EUR",
+   "qty": 80,
+   "unit_value_eur": 50.0,
+   "total_value_eur": 4000.0
+  }
+ ],
+ "prize_fund_eur": 4805.42,
+ "odds": "81 к 5000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-27; победителям звонят или присылают SMS",
+ "claim_deadline": "2026-11-10",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам UAB «Grigeo Tissue», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+ "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя",
+ "_rules_sha": "eb2e4b00534511bc",
+ "_extracted": "2026-10-19T21:18:18+03:00"
+}

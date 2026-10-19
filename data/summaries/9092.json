@@ -1,0 +1,533 @@
+{
+ "title": "Svini Fazer jubileju un laimē ceļojumu uz Lapzemi!",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "Fazer Latvija SIA",
+ "permit": null,
+ "what_to_buy": "Минимум 1 хлеб/продукт Fazer из списка в Приложении № 1 правил (линейки Fazer GARDĀ, Fazer IERAUGA, Fazer Svaigi Cepta Tev!, Fazer STREET FOOD, Dzīvā, Apaļītis, Dream и др.)",
+ "min_purchase_eur": null,
+ "where": "Любой магазин MAXIMA по всей Латвии или интернет-магазин www.barbora.lv",
+ "how_to_enter": "SMS на номер 1838 (LMT, Tele2, Bite) в формате «FAZERJUBILEJA Номер_чека Имя Фамилия Возраст Город» (пример: FAZERJUBILEJA 123456 Janis Eglitis 23 Riga), бесплатно (некоторые операторы могут взять до 0.07 EUR); или анкета на www.fazer.lv: обязательно имя, фамилия, номер чека, телефон (также возраст, город)",
+ "registration_url": "https://www.fazer.lv",
+ "keep": "Чек (номер совпадает с зарегистрированным, видно название Fazer) до конца лотереи и получения приза",
+ "lottery_start": "2026-08-25",
+ "lottery_end": "2026-10-20",
+ "registration_start": "2026-08-25",
+ "registration_end": "2026-10-19",
+ "draws": [
+  {
+   "date": "2026-08-26",
+   "time": "11:00",
+   "period_from": "2026-08-25",
+   "period_to": "2026-08-25",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-08-27",
+   "time": "11:00",
+   "period_from": "2026-08-26",
+   "period_to": "2026-08-26",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-08-28",
+   "time": "11:00",
+   "period_from": "2026-08-27",
+   "period_to": "2026-08-27",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-08-31",
+   "time": "11:00",
+   "period_from": "2026-08-28",
+   "period_to": "2026-08-30",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-09-01",
+   "time": "11:00",
+   "period_from": "2026-08-31",
+   "period_to": "2026-08-31",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-02",
+   "time": "11:00",
+   "period_from": "2026-09-01",
+   "period_to": "2026-09-01",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-03",
+   "time": "11:00",
+   "period_from": "2026-09-02",
+   "period_to": "2026-09-02",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-04",
+   "time": "11:00",
+   "period_from": "2026-09-03",
+   "period_to": "2026-09-03",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-07",
+   "time": "11:00",
+   "period_from": "2026-09-04",
+   "period_to": "2026-09-06",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-09-08",
+   "time": "11:00",
+   "period_from": "2026-09-07",
+   "period_to": "2026-09-07",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-09",
+   "time": "11:00",
+   "period_from": "2026-09-08",
+   "period_to": "2026-09-08",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "time": "11:00",
+   "period_from": "2026-09-09",
+   "period_to": "2026-09-09",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-11",
+   "time": "11:00",
+   "period_from": "2026-09-10",
+   "period_to": "2026-09-10",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": "11:00",
+   "period_from": "2026-09-11",
+   "period_to": "2026-09-13",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-09-15",
+   "time": "11:00",
+   "period_from": "2026-09-14",
+   "period_to": "2026-09-14",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-16",
+   "time": "11:00",
+   "period_from": "2026-09-15",
+   "period_to": "2026-09-15",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-17",
+   "time": "11:00",
+   "period_from": "2026-08-25",
+   "period_to": "2026-09-16",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 25
+    }
+   ]
+  },
+  {
+   "date": "2026-09-18",
+   "time": "11:00",
+   "period_from": "2026-09-17",
+   "period_to": "2026-09-17",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-21",
+   "time": "11:00",
+   "period_from": "2026-09-18",
+   "period_to": "2026-09-20",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-09-22",
+   "time": "11:00",
+   "period_from": "2026-09-21",
+   "period_to": "2026-09-21",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-23",
+   "time": "11:00",
+   "period_from": "2026-09-22",
+   "period_to": "2026-09-22",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-24",
+   "time": "11:00",
+   "period_from": "2026-09-23",
+   "period_to": "2026-09-23",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-25",
+   "time": "11:00",
+   "period_from": "2026-09-24",
+   "period_to": "2026-09-24",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "time": "11:00",
+   "period_from": "2026-09-25",
+   "period_to": "2026-09-27",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "time": "11:00",
+   "period_from": "2026-09-28",
+   "period_to": "2026-09-28",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-30",
+   "time": "11:00",
+   "period_from": "2026-09-29",
+   "period_to": "2026-09-29",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-01",
+   "time": "11:00",
+   "period_from": "2026-09-30",
+   "period_to": "2026-09-30",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-02",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-01",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "time": "11:00",
+   "period_from": "2026-10-02",
+   "period_to": "2026-10-04",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "time": "11:00",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-05",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-07",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-06",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-08",
+   "time": "11:00",
+   "period_from": "2026-10-07",
+   "period_to": "2026-10-07",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-09",
+   "time": "11:00",
+   "period_from": "2026-10-08",
+   "period_to": "2026-10-08",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "time": "11:00",
+   "period_from": "2026-10-09",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-14",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-13",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-15",
+   "time": "11:00",
+   "period_from": "2026-10-14",
+   "period_to": "2026-10-14",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-16",
+   "time": "11:00",
+   "period_from": "2026-10-15",
+   "period_to": "2026-10-15",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "11:00",
+   "period_from": "2026-10-16",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 6
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-19",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Šokolāde Karl Fazer ar veseliem lazdu riekstiem, 200g",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-08-25",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Dāvanu karte no WEEKEND TRAVEL LATVIA 2000.00 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочная карта WEEKEND TRAVEL LATVIA на 2000 EUR (Dāvanu karte no WEEKEND TRAVEL LATVIA)",
+   "qty": 1,
+   "unit_value_eur": 2000.0,
+   "total_value_eur": 2000.0
+  },
+  {
+   "name": "Шоколад Karl Fazer ar veseliem lazdu riekstiem, 200g",
+   "qty": 135,
+   "unit_value_eur": 5.99,
+   "total_value_eur": 808.65
+  }
+ ],
+ "prize_fund_eur": 2808.65,
+ "odds": "136 к 10000",
+ "winners_published": "Полный список победителей — на www.fazer.lv до 23:59 20 октября 2026; победителям сообщают звонком или SMS",
+ "claim_deadline": "2026-11-03",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники Fazer Latvija SIA, маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
+ "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза (сертификат на поездку) в правилах не указана; в правилах шанс записан как «136 (simt trīsdesmit astoņi)» — цифры и слова расходятся.",
+ "_rules_sha": "5a6de34f01fca3df",
+ "_extracted": "2026-10-19T21:18:25+03:00"
+}

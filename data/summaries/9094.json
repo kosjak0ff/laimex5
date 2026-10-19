@@ -1,0 +1,155 @@
+{
+ "title": "KAIJA loterija veikalos Rimi",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Sanitex» (дистрибьютор товаров), бренд KAIJA",
+ "permit": null,
+ "what_to_buy": "Любые 2 продукта линии тунца KAIJA за одну покупку (список товаров — в приложении № 1 к правилам)",
+ "min_purchase_eur": null,
+ "where": "Любой магазин RIMI по всей Латвии и интернет-магазин www.rimi.lv/e-veikals",
+ "how_to_enter": "Заполнить анкету на сайте www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город и e-mail. Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек о покупке (его номер должен совпадать с зарегистрированным); при получении приза нужен также паспорт/ID-карта",
+ "lottery_start": "2026-09-08",
+ "lottery_end": "2026-10-20",
+ "registration_start": "2026-09-08",
+ "registration_end": "2026-10-19",
+ "draws": [
+  {
+   "date": "2026-09-15",
+   "time": "11:00",
+   "period_from": "2026-09-08",
+   "period_to": "2026-09-14",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-22",
+   "time": "11:00",
+   "period_from": "2026-09-15",
+   "period_to": "2026-09-21",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "time": "11:00",
+   "period_from": "2026-09-22",
+   "period_to": "2026-09-28",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "time": "11:00",
+   "period_from": "2026-09-29",
+   "period_to": "2026-10-05",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 50 EUR",
+     "qty": 3
+    },
+    {
+     "name": "KAIJA produktu grozs",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-09-08",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "NOVATOURS dāvanu karte 2000 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочная карта NOVATOURS на 2000 EUR",
+   "qty": 1,
+   "unit_value_eur": 2000.0,
+   "total_value_eur": 2000.0
+  },
+  {
+   "name": "Подарочная карта Rimi на 50 EUR",
+   "qty": 18,
+   "unit_value_eur": 50.0,
+   "total_value_eur": 900.0
+  },
+  {
+   "name": "Корзина продуктов KAIJA (KAIJA produktu grozs, 7 консервов/паштетов из тунца)",
+   "qty": 12,
+   "unit_value_eur": 12.5,
+   "total_value_eur": 150.0
+  }
+ ],
+ "prize_fund_eur": 3050.0,
+ "odds": "31 к 5000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-10-20; победителям звонят или присылают SMS",
+ "claim_deadline": "2026-11-03",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «Sanitex», SIA «RIMI LATVIA» и SIA «Visas Loterijas»",
+ "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя",
+ "_rules_sha": "7b28e24bc3f7a4cb",
+ "_extracted": "2026-10-19T21:17:37+03:00"
+}

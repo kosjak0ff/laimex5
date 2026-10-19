@@ -260,5 +260,39 @@
   "rules_type": "html",
   "rules_sha": "b19693ef8f5a8356",
   "rules_checked": "2026-10-19T21:14:54+03:00"
+ },
+ "9130": {
+  "page": "https://e-latts.lv/loterija.ltr",
+  "rules": "https://e-latts.lv/files/378/noteikumi-8.pdf",
+  "found_by": "agent-search"
+ },
+ "9096": {
+  "page": "https://lottery.esteria.lv/_clients/megoloterija2026_2.php?lang=lv",
+  "rules": "https://lottery.esteria.lv/_clients/megoloterija2026_2.php?lang=lv&rules=1",
+  "found_by": "agent-search"
+ },
+ "9116": {
+  "page": "https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3",
+  "rules": "https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3/noteikumi",
+  "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app",
+  "found_by": "agent-search"
+ },
+ "9128": {
+  "page": "https://www.coca-cola.com/lv/lv/offerings/sprite-basketball",
+  "rules": "https://www.coca-cola.com/lv/lv/offerings/sprite-basketball/Noteikumi",
+  "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app",
+  "found_by": "agent-search"
+ },
+ "9177": {
+  "page": "https://www.rimiloterija.lv/rudens/",
+  "rules": "https://www.rimiloterija.lv/rudens/assets26/WEB_Noteikumi_Rimi_rudens_loterija_2026.pdf",
+  "registration": "https://www.rimiloterija.lv/rudens/#registracija",
+  "found_by": "agent-search"
+ },
+ "9131": {
+  "page": "https://www.myfitness.lv/jaunumi/vesela-dzive-sakas-seit/",
+  "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing",
+  "registration": "https://www.myfitness.lv/registreties/",
+  "found_by": "agent-search"
  }
 }
