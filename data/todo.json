@@ -1,17 +1,12 @@
 {
- "generated": "2026-10-19T21:15:16+03:00",
+ "generated": "2026-10-19T21:25:20+03:00",
  "need_summary": [
-  "9053",
-  "9054",
-  "9069",
-  "9092",
-  "9094",
-  "9103",
-  "9112",
-  "9150",
-  "9157",
-  "9164",
-  "9183"
+  "9096",
+  "9116",
+  "9128",
+  "9130",
+  "9131",
+  "9177"
  ],
  "need_sources": [
   {
@@ -48,17 +43,6 @@
    "category": "shop"
   },
   {
-   "permit": "9096",
-   "organizer": "SIA “SMS SOLUTIONS”",
-   "organizer_reg": "40203006794",
-   "purchase": "divu preču pirkumam",
-   "name": "MEGO LIELĀ RUDENS LOTERIJA 2026!",
-   "start": "2026-08-17",
-   "end": "2026-10-27",
-   "place": "“Mego”, “Vesko” un “Mini Vesko” veikali visā Latvijas Republikā",
-   "category": "shop"
-  },
-  {
    "permit": "9102",
    "organizer": "Luminor Bank AS Latvijas filiāle",
    "organizer_reg": "40203154352",
@@ -81,17 +65,6 @@
    "category": "shop"
   },
   {
-   "permit": "9116",
-   "organizer": "SIA “Guilty”",
-   "organizer_reg": "50003254051",
-   "purchase": "Coca-Cola, Fanta vai Sprite produktu pirkumam",
-   "name": "Ar Coca-Cola tas garšo vēl labāk",
-   "start": "2026-09-07",
-   "end": "2026-11-06",
-   "place": "Latvijas Republika",
-   "category": "shop"
-  },
-  {
    "permit": "9121",
    "organizer": "SIA “Visas Loterijas”",
    "organizer_reg": "40103404235",
@@ -99,17 +72,6 @@
    "name": "Staburadzes preču loterija",
    "start": "2026-11-02",
    "end": "2026-12-21",
-   "place": "Latvijas Republika",
-   "category": "shop"
-  },
-  {
-   "permit": "9128",
-   "organizer": "SIA “Guilty”",
-   "organizer_reg": "50003254051",
-   "purchase": "Sprite produktu pirkumam",
-   "name": "Spēlē ar Sprite",
-   "start": "2026-10-01",
-   "end": "2026-12-04",
    "place": "Latvijas Republika",
    "category": "shop"
   },
@@ -123,28 +85,6 @@
    "end": "2026-12-07",
    "place": "Latvijas Republika",
    "category": "shop"
-  },
-  {
-   "permit": "9130",
-   "organizer": "SIA “SMS solutions”",
-   "organizer_reg": "40203006794",
-   "purchase": "vismaz 15.00 EUR vērtībā preču pirkumam",
-   "name": "“LATS” RUDENS LOTERIJA “DESMIT ŠTUKAS”",
-   "start": "2026-09-22",
-   "end": "2026-11-25",
-   "place": "veikalu tīkla “LaTS” tirdzniecības vietās visā Latvijas Republikā un https://www.e-latts.lv",
-   "category": "shop"
-  },
-  {
-   "permit": "9131",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "biedra līguma ar SIA “My Fitness” par kādu no abonementa veidiem noslēgšanai",
-   "name": "MyFitness rudens loterija 2026",
-   "start": "2026-09-09",
-   "end": "2026-11-06",
-   "place": "sporta klubos “MyFitness” un www.myfitness.lv visā Latvijas Republikā",
-   "category": "service"
   },
   {
    "permit": "9132",
@@ -210,17 +150,6 @@
    "start": "2026-10-02",
    "end": "2026-11-23",
    "place": "interneta vietne www.makskeresanaskarte.lv, www.manacope.lv vai mobilā aplikācija “Mana Cope”.",
-   "category": "shop"
-  },
-  {
-   "permit": "9177",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "pirkumam ar reģistrētu \"Mans Rimi\" karti vismaz 20,00 EUR vērtībā",
-   "name": "Rimi rudens loterija 2026",
-   "start": "2026-10-20",
-   "end": "2026-11-20",
-   "place": "Latvijas Republika un interneta veikals \"rimi.lv/e-veikals\"",
    "category": "shop"
   },
   {
@@ -356,5 +285,19 @@
    "category": "shop"
   }
  ],
- "broken": []
+ "broken": [
+  {
+   "permit": "9131",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "biedra līguma ar SIA “My Fitness” par kādu no abonementa veidiem noslēgšanai",
+   "name": "MyFitness rudens loterija 2026",
+   "start": "2026-09-09",
+   "end": "2026-11-06",
+   "place": "sporta klubos “MyFitness” un www.myfitness.lv visā Latvijas Republikā",
+   "category": "service",
+   "error": "текст правил не распознан (скан или не та страница)",
+   "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing"
+  }
+ ]
 }
