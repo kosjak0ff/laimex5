@@ -1,0 +1,179 @@
+{
+ "title": "Ādažu čipsi + Fanta = Garšīga Kompānija!",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Orkla Latvija» и SIA «Coca-Cola HBC Latvia»",
+ "permit": null,
+ "what_to_buy": "1 продукт Ādažu Čipsi и 1 продукт Fanta в одном чеке",
+ "min_purchase_eur": null,
+ "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+ "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно; каждый новый чек — новая регистрация",
+ "registration_url": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/",
+ "keep": "Чек, где видны Ādažu Čipsi и Fanta",
+ "lottery_start": "2026-09-28",
+ "lottery_end": "2026-11-23",
+ "registration_start": "2026-09-28",
+ "registration_end": "2026-11-22",
+ "draws": [
+  {
+   "date": "2026-10-05",
+   "time": "11:00",
+   "period_from": "2026-09-28",
+   "period_to": "2026-10-04",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "time": "11:00",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "11:00",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "time": "11:00",
+   "period_from": "2026-10-19",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "11:00",
+   "period_from": "2026-10-26",
+   "period_to": "2026-11-01",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "time": "11:00",
+   "period_from": "2026-11-02",
+   "period_to": "2026-11-08",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "time": "11:00",
+   "period_from": "2026-11-09",
+   "period_to": "2026-11-15",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "time": "11:00",
+   "period_from": "2026-11-16",
+   "period_to": "2026-11-22",
+   "prizes": [
+    {
+     "name": "Набор продуктов",
+     "qty": 10
+    },
+    {
+     "name": "Подарочная карта Brain Games 70 €",
+     "qty": 5
+    },
+    {
+     "name": "Телевизор Philips 65MLED920/12",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Телевизор Philips 65MLED920/12",
+   "qty": 1,
+   "unit_value_eur": 763.99,
+   "total_value_eur": 763.99
+  },
+  {
+   "name": "Подарочная карта Brain Games 70 €",
+   "qty": 40,
+   "unit_value_eur": 70.0,
+   "total_value_eur": 2800.0
+  },
+  {
+   "name": "Набор продуктов",
+   "qty": 80,
+   "unit_value_eur": 15.84,
+   "total_value_eur": 1267.2
+  }
+ ],
+ "prize_fund_eur": 4831.19,
+ "odds": "121 к 10000",
+ "winners_published": "23.11.2026 до 23:59 на loterijas.lv",
+ "claim_deadline": "2026-12-07",
+ "age_min": null,
+ "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+ "notes": "Телевизор разыгрывается в последний день среди всех регистраций за весь период",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:20+03:00"
+}

@@ -1,0 +1,99 @@
+{
+ "title": "Rimi interneta veikala oktobra loterija 2026",
+ "organizer": "SIA «SOMESE Baltic»",
+ "sponsor": "SIA «Rimi Latvia»",
+ "permit": "9163",
+ "what_to_buy": "Заказ в интернет-магазине rimi.lv/e-veikals минимум на 20 € (алкоголь, табак, лекарства, газеты, подарочные карты и т.п. в сумму не входят)",
+ "min_purchase_eur": 20.0,
+ "where": "Только интернет-магазин rimi.lv/e-veikals",
+ "how_to_enter": "Зарегистрировать номер заказа или итогового счёта на rimiloterija.lv: имя, фамилия, номер документа, телефон; фото счёта — по желанию. Бесплатно",
+ "registration_url": "https://www.rimiloterija.lv/oktobris/",
+ "keep": "Итоговый счёт заказа — до 13.11.2026",
+ "lottery_start": "2026-09-29",
+ "lottery_end": "2026-10-30",
+ "registration_start": "2026-09-29",
+ "registration_end": "2026-10-26",
+ "draws": [
+  {
+   "date": "2026-10-06",
+   "time": "14:00",
+   "period_from": "2026-09-29",
+   "period_to": "2026-10-05",
+   "prizes": [
+    {
+     "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "14:00",
+   "period_from": "2026-10-06",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "Пылесос Karcher FC 8 Smart Signature Line",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "14:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "14:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "Пылесос Karcher FC 8 Smart Signature Line",
+     "qty": 1
+    },
+    {
+     "name": "Робот-пылесос Karcher RVF 7 Comfort Extra",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Робот-пылесос Karcher RVF 7 Comfort Extra",
+   "qty": 1,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+   "qty": 2,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Пылесос Karcher FC 8 Smart Signature Line",
+   "qty": 2,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  }
+ ],
+ "prize_fund_eur": 3795.0,
+ "odds": "5 к 3000",
+ "winners_published": "На rimiloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 30.10.2026",
+ "claim_deadline": "2026-11-06",
+ "age_min": 16,
+ "limits": "Каждый новый заказ — новая регистрация; повторно зарегистрированный номер не участвует",
+ "notes": "Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Рига) или заказать доставку через loterijatev.lv до 5.11",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:21+03:00"
+}

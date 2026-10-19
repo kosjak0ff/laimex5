@@ -1,0 +1,117 @@
+{
+ "title": "M&M’s loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Mars Latvia»",
+ "permit": null,
+ "what_to_buy": "Минимум 2 упаковки M&M’s, Maltesers или Skittles в одном чеке",
+ "min_purchase_eur": null,
+ "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+ "how_to_enter": "Заполнить анкету на fun.mms.com/lv: имя, фамилия, дата рождения, номер чека, телефон и фото чека (обязательно). Бесплатно",
+ "registration_url": "https://www.fun.mms.com/lv",
+ "keep": "Оригинал чека",
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2026-11-17",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-11-15",
+ "draws": [
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "11:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "11:00",
+   "period_from": "2026-10-27",
+   "period_to": "2026-11-02",
+   "prizes": [
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "11:00",
+   "period_from": "2026-11-03",
+   "period_to": "2026-11-09",
+   "prizes": [
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-11-15",
+   "prizes": [
+    {
+     "name": "Домашний кинотеатр (проектор Samsung Freestyle, экран Celexon, звук Harman Kardon 7.1.4)",
+     "qty": 1
+    },
+    {
+     "name": "Билеты в кино (2 шт.)",
+     "qty": 50
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Домашний кинотеатр (проектор Samsung Freestyle, экран Celexon, звук Harman Kardon 7.1.4)",
+   "qty": 1,
+   "unit_value_eur": 3000.0,
+   "total_value_eur": 3000.0
+  },
+  {
+   "name": "Билеты в кино (2 шт.)",
+   "qty": 300,
+   "unit_value_eur": 14.0,
+   "total_value_eur": 4200.0
+  }
+ ],
+ "prize_fund_eur": 7200.0,
+ "odds": "301 к 2000",
+ "winners_published": "До 17.11.2026 на fun.mms.com/lv; победителям звонят или пишут SMS",
+ "claim_deadline": "2026-12-01",
+ "age_min": 18,
+ "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
+ "notes": "В последнем розыгрыше 17.11 участвуют все регистрации с 1.10 по 15.11",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:20+03:00"
+}

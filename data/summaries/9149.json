@@ -1,0 +1,175 @@
+{
+ "title": "Möller’s loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Orkla Care» (Möller’s)",
+ "permit": null,
+ "what_to_buy": "Минимум 1 продукт Möller’s или Möller’s Junior",
+ "min_purchase_eur": null,
+ "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+ "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+ "registration_url": "https://www.loterijas.lv/loterija/mollers-loterija/",
+ "keep": "Чек с покупкой Möller’s",
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2026-12-01",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-10-13",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-12",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Денежный приз 100 €",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "11:00",
+   "period_from": "2026-10-13",
+   "period_to": "2026-10-19",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Смартфон Apple iPhone 17 256GB",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "11:00",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Денежный приз 100 €",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "11:00",
+   "period_from": "2026-10-27",
+   "period_to": "2026-11-02",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Смартфон Apple iPhone 17 256GB",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "11:00",
+   "period_from": "2026-11-03",
+   "period_to": "2026-11-09",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Денежный приз 100 €",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:00",
+   "period_from": "2026-11-10",
+   "period_to": "2026-11-16",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Смартфон Apple iPhone 17 256GB",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:00",
+   "period_from": "2026-11-17",
+   "period_to": "2026-11-23",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Денежный приз 100 €",
+     "qty": 3
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "time": "11:00",
+   "period_from": "2026-11-24",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Корзина продуктов Möller’s",
+     "qty": 5
+    },
+    {
+     "name": "Смартфон Apple iPhone 17 256GB",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Смартфон Apple iPhone 17 256GB",
+   "qty": 4,
+   "unit_value_eur": 989.01,
+   "total_value_eur": 3956.04
+  },
+  {
+   "name": "Денежный приз 100 €",
+   "qty": 12,
+   "unit_value_eur": 100.0,
+   "total_value_eur": 1200.0
+  },
+  {
+   "name": "Корзина продуктов Möller’s",
+   "qty": 40,
+   "unit_value_eur": 50.0,
+   "total_value_eur": 2000.0
+  }
+ ],
+ "prize_fund_eur": 7156.04,
+ "odds": "56 к 5000",
+ "winners_published": "1.12.2026 до 23:59 на loterijas.lv",
+ "claim_deadline": null,
+ "age_min": null,
+ "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
+ "notes": "iPhone и денежные призы разыгрываются среди покупок за последние две недели, корзины — за последнюю неделю",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:20+03:00"
+}

@@ -1,0 +1,83 @@
+{
+ "title": "Roshen rudens loterija 2026",
+ "organizer": "SIA «SOMESE Baltic»",
+ "sponsor": "UAB «Roshen Nord»",
+ "permit": null,
+ "what_to_buy": "Минимум 1 любой продукт Lacmi",
+ "min_purchase_eur": null,
+ "where": "Магазины и интернет-магазины по всей Латвии",
+ "how_to_enter": "Зарегистрироваться на roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека; фото чека — по желанию. Бесплатно",
+ "registration_url": "https://roshenloterija.lv/",
+ "keep": "Чек или накладную с покупкой Lacmi — до 29.12.2026",
+ "lottery_start": "2026-10-19",
+ "lottery_end": "2026-12-03",
+ "registration_start": "2026-10-19",
+ "registration_end": "2026-11-29",
+ "draws": [
+  {
+   "date": "2026-10-26",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  },
+  {
+   "date": "2026-11-02",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  },
+  {
+   "date": "2026-11-09",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  },
+  {
+   "date": "2026-11-16",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  },
+  {
+   "date": "2026-11-23",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  },
+  {
+   "date": "2026-11-30",
+   "time": "13:00",
+   "period_from": null,
+   "period_to": null,
+   "prizes": []
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Денежный приз 3000 €",
+   "qty": 1,
+   "unit_value_eur": 3000.0,
+   "total_value_eur": 3000.0
+  },
+  {
+   "name": "Набор сладостей Lacmi, Yummi Gummi, Lovita (13 продуктов)",
+   "qty": 60,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  }
+ ],
+ "prize_fund_eur": 4234.2,
+ "odds": "61 к 1000",
+ "winners_published": "На roshenloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 3.12.2026",
+ "claim_deadline": "2026-12-18",
+ "age_min": 16,
+ "limits": "Один участник может выиграть один раз в каждом розыгрыше; каждый новый чек — новая регистрация",
+ "notes": "Распределение призов по розыгрышам указано в приложении к правилам",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:22+03:00"
+}

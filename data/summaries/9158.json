@@ -1,0 +1,67 @@
+{
+ "title": "Haribo loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Daisena Latvija» (Haribo)",
+ "permit": null,
+ "what_to_buy": "Любые 2 продукта «Haribo» в одном чеке",
+ "min_purchase_eur": null,
+ "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+ "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Регистрация бесплатная; каждый новый чек — новая регистрация",
+ "registration_url": "https://www.loterijas.lv/loterija/haribo-loterija-2/",
+ "keep": "Чек с номером и названием Haribo — нужен при получении приза",
+ "lottery_start": "2026-10-15",
+ "lottery_end": "2026-11-16",
+ "registration_start": "2026-10-15",
+ "registration_end": "2026-11-15",
+ "draws": [
+  {
+   "date": "2026-11-16",
+   "time": "11:00",
+   "period_from": "2026-10-15",
+   "period_to": "2026-11-15",
+   "prizes": [
+    {
+     "name": "Apple MacBook Neo",
+     "qty": 1
+    },
+    {
+     "name": "Apple Watch",
+     "qty": 3
+    },
+    {
+     "name": "Apple AirPods",
+     "qty": 4
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Apple MacBook Neo",
+   "qty": 1,
+   "unit_value_eur": 699.0,
+   "total_value_eur": 699.0
+  },
+  {
+   "name": "Apple Watch",
+   "qty": 3,
+   "unit_value_eur": 239.0,
+   "total_value_eur": 717.0
+  },
+  {
+   "name": "Apple AirPods",
+   "qty": 4,
+   "unit_value_eur": 129.0,
+   "total_value_eur": 516.0
+  }
+ ],
+ "prize_fund_eur": 1932.0,
+ "odds": "8 к 5000",
+ "winners_published": "16.11.2026 до 23:59 на loterijas.lv; победителям звонят или пишут SMS",
+ "claim_deadline": "2026-11-30",
+ "age_min": null,
+ "limits": "Один чек, один телефон и один человек могут выиграть только один приз",
+ "notes": null,
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:21+03:00"
+}

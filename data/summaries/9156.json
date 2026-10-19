@@ -1,0 +1,147 @@
+{
+ "title": "Dallmayr loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «German Products Baltics» (Dallmayr)",
+ "permit": null,
+ "what_to_buy": "Любой 1 продукт Dallmayr",
+ "min_purchase_eur": null,
+ "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+ "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+ "registration_url": "https://www.loterijas.lv/loterija/dallmayr-loterija/",
+ "keep": "Чек с покупкой Dallmayr",
+ "lottery_start": "2026-10-05",
+ "lottery_end": "2026-11-30",
+ "registration_start": "2026-10-05",
+ "registration_end": "2026-11-29",
+ "draws": [
+  {
+   "date": "2026-10-12",
+   "time": "11:00",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "11:00",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "Подарочная карта «2 Black Cabins» 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "time": "11:00",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "11:00",
+   "period_from": "2026-10-19",
+   "period_to": "2026-11-01",
+   "prizes": [
+    {
+     "name": "Подарочная карта «2 Black Cabins» 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "time": "11:00",
+   "period_from": "2026-10-26",
+   "period_to": "2026-11-08",
+   "prizes": [
+    {
+     "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "time": "11:00",
+   "period_from": "2026-11-02",
+   "period_to": "2026-11-15",
+   "prizes": [
+    {
+     "name": "Подарочная карта «2 Black Cabins» 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "time": "11:00",
+   "period_from": "2026-11-09",
+   "period_to": "2026-11-22",
+   "prizes": [
+    {
+     "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-30",
+   "time": "11:00",
+   "period_from": "2026-11-16",
+   "period_to": "2026-11-29",
+   "prizes": [
+    {
+     "name": "Подарочная карта «2 Black Cabins» 300 €",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта турагентства Kolumbs 1500 €",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочная карта турагентства Kolumbs 1500 €",
+   "qty": 1,
+   "unit_value_eur": 1500.0,
+   "total_value_eur": 1500.0
+  },
+  {
+   "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+   "qty": 4,
+   "unit_value_eur": 300.0,
+   "total_value_eur": 1200.0
+  },
+  {
+   "name": "Подарочная карта «2 Black Cabins» 300 €",
+   "qty": 4,
+   "unit_value_eur": 300.0,
+   "total_value_eur": 1200.0
+  }
+ ],
+ "prize_fund_eur": 3900.0,
+ "odds": "9 к 5000",
+ "winners_published": "30.11.2026 до 23:59 на loterijas.lv",
+ "claim_deadline": null,
+ "age_min": null,
+ "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+ "notes": "Каждый еженедельный розыгрыш охватывает покупки за последние две недели; главный приз — среди всех регистраций за весь период",
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:20+03:00"
+}

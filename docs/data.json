@@ -1,0 +1,2667 @@
+{
+ "updated": "2026-10-19T20:39:14+03:00",
+ "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
+ "registry_fetched": "2026-10-19T15:30:00+03:00",
+ "lotteries": [
+  {
+   "permit": "9085",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuriem diviem KH-7 produktiem",
+   "name": "KH-7 loterija veikalos Maxima",
+   "start": "2026-08-30",
+   "end": "2026-09-22",
+   "place": "jebkurš veikals MAXIMA Latvijas Republikā un interneta veikals www.barbora.lv",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9076",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Nabeghlavi produktam",
+   "name": "Nabeghlavi loterija",
+   "start": "2026-08-11",
+   "end": "2026-09-23",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikas teritorijā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9083",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuriem 2 zīmolu \"Magija\", \"Džiugas\" ,\"PIK NIK\" produktiem",
+   "name": "“”Magija”, “Džiugas” un “PIK NIK” produktu loterija top! veikalos”",
+   "start": "2026-08-26",
+   "end": "2026-09-23",
+   "place": "jebkurš veikals top!, mini top! Latvijā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9107",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "“Garnier” zīmola produktu pirkumam",
+   "name": "Garnier loterija 2026",
+   "start": "2026-08-25",
+   "end": "2026-09-25",
+   "place": "veikalos “Rimi” un interneta veikalā www.rimi.lv/e-veikals Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijatev.lv/grn-lv",
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9056",
+   "organizer": "SIA “ADgett”",
+   "organizer_reg": "40103715778",
+   "purchase": "Colgate, Palmolive, Lady Speed Stick vai Speed Stick produktu pirkumam",
+   "name": "Laimē EUR 1000!",
+   "start": "2026-07-09",
+   "end": "2026-09-30",
+   "place": "veikali „MAXIMA Latvija“ Latvijas Republikā un www.barbora.lv",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9073",
+   "organizer": "SIA “OUTLETICO”",
+   "organizer_reg": "40103979709",
+   "purchase": "Via Jurmala Outlet Village veikalos vismaz 20,00 EUR vērtībā pirkumam",
+   "name": "Piedzīvojumu spēle",
+   "start": "2026-07-13",
+   "end": "2026-09-30",
+   "place": "Via Jurmala Outlet Village teritorija, Jaunā iela 12, k-18, Piņķi, Babītes pagasts, Mārupes novads, LV-2107",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9039",
+   "organizer": "SIA \"MV GROUP Distribution LV\"",
+   "organizer_reg": "40003787568",
+   "purchase": "“Doritos” zīmola preču pirkumam",
+   "name": "Doritos Formula 1",
+   "start": "2026-08-01",
+   "end": "2026-10-01",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9065",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Pringles produktu pirkumam",
+   "name": "Pringles loterija",
+   "start": "2026-08-18",
+   "end": "2026-10-01",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9075",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Kellogg's produktam",
+   "name": "Kellogg's loterija",
+   "start": "2026-08-18",
+   "end": "2026-10-01",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9077",
+   "organizer": "SIA “Magnet Promotions”",
+   "organizer_reg": "40003639069",
+   "purchase": "jebkura viena OREO produkta pirkumam",
+   "name": "OREO x BTS AICINA",
+   "start": "2026-08-03",
+   "end": "2026-10-01",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9088",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuriem 2 Super Manki produktiem",
+   "name": "Super Manki loterija",
+   "start": "2026-08-15",
+   "end": "2026-10-01",
+   "place": "jebkura fiziska tirdzniecības vieta vai interneta veikals Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9101",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola Karl Fazer produktu pirkumam",
+   "name": "Karl Fazer loterija",
+   "start": "2026-08-24",
+   "end": "2026-10-01",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9115",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "“AVÈNE”, “BABĒ”, “KLORANE”, “BioNike”, “ISDIN”, “Sensilis”, “Cumlaude” vai “DUCRAY” produktu pirkumam",
+   "name": "Apotheka loterija",
+   "start": "2026-09-01",
+   "end": "2026-10-01",
+   "place": "www.apotheka.lv, “Apotheka Health & Beauty” un “Apotheka” Latvija",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9049",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "4010340435",
+   "purchase": "kļūšanai par Tele2 pēcapmaksas tarifu vai datu plāna lietotāju",
+   "name": "Tele2 loterija",
+   "start": "2026-07-01",
+   "end": "2026-10-02",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9063",
+   "organizer": "SIA ”SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "jebkura “Henkel” vai “Schwarzkopf” loterijas zīmola produkta pirkumam",
+   "name": "Henkel un Schwarzkopf loterija 2026",
+   "start": "2026-07-27",
+   "end": "2026-10-02",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.registerpromo.lv/lv/henkel-sch-lv",
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9078",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Haleon produktam Sensodyne, Parodontax, Aquafresh, Corega)",
+   "name": "Haleon dienas veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "tirdzniecības vietas Drogas Latvijas Republikas teritorijā vai interneta veikals www.drogas.lv.",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9108",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Old Spice produktu pirkumam",
+   "name": "Old Spice loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "Drogas visā Latvijas Republikā vai interneta veikals www.drogas.lv.",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9109",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Gillette, Gillette Venus vai King C Gillette produktu pirkumam",
+   "name": "Gillette loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "Drogas visā Latvijas Republikā vai interneta veikals www.drogas.lv",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9110",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Always, Naturella, Discreet vai Tampax produktu pirkumam",
+   "name": "Higiēnas dienu loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "veikalos Drogas visā Latvijas Republikā vai www.drogas.lv.",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9117",
+   "organizer": "SIA “STENDERS”",
+   "organizer_reg": "40003563248",
+   "purchase": "vismaz 25,00 EUR vērtībā preču pirkumam",
+   "name": "STENDERS. 25 gadi. Pārvēršot mirkļus zeltā",
+   "start": "2026-09-01",
+   "end": "2026-10-02",
+   "place": "STENDERS veikali Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9118",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Pampers produktu pirkumam",
+   "name": "Pampers loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "tirdzniecības vietas Drogas visā Latvijas Republikā vai www.drogas.lv.",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9133",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz 20,00 EUR vērtībā preču pirkumam",
+   "name": "Rimi interneta veikala septembra loterija 2026",
+   "start": "2026-09-01",
+   "end": "2026-10-02",
+   "place": "interneta veikalā www.rimi.lv/e-veikals Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.rimiloterija.lv/septembris/",
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "8903",
+   "organizer": "SIA \"'Guilty\"'",
+   "organizer_reg": "50003254051",
+   "purchase": "Fuzetea produktu pirkumam",
+   "name": "Fuzetea- piedzīvo katru dienu",
+   "start": "2026-06-01",
+   "end": "2026-10-05",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9058",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Lielmaize produktam",
+   "name": "Lielmaize Vislatvijas loterija",
+   "start": "2026-08-10",
+   "end": "2026-10-05",
+   "place": "jebkura tirdzniecības vieta (fiziska tirdzniecības vieta vai interneta veikals) Latvijas Republikas teritorijā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9135",
+   "organizer": "SIA “Autoskola EINŠTEINS”",
+   "organizer_reg": "40103961707",
+   "purchase": "transportlīdzekļu vadītāju kategorijām: A, B, BE, C vai CE pakalpojuma līguma noslēgšanai",
+   "name": "Laimē katru nedēļu Apple iPhone 17 Pro",
+   "start": "2026-09-07",
+   "end": "2026-10-05",
+   "place": "www.einsteins.lv vai mobilā lietotne “Autoskola Einšteins” Latvijas Republikā",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9081",
+   "organizer": "SIA “ADgett”",
+   "organizer_reg": "40103715778",
+   "purchase": "jebkuriem diviem Colgate vai Palmolive (izņemot gabaliņziepes) produktiem",
+   "name": "Laimē EUR 1000!",
+   "start": "2026-09-02",
+   "end": "2026-10-07",
+   "place": "“Drogas” veikali Latvijas Republikā interneta veikals www.drogas.lv,",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9111",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola ZIGMAS Loms produktu pirkumam",
+   "name": "ZIGMAS produktu loterija",
+   "start": "2026-09-01",
+   "end": "2026-10-09",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/zigmas-produktu-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/zigmas-produktu-loterija/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9047",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuru 3 (trīs) Snickers, Twix, Bounty vai Mars šokolādes batoniņu pirkumam",
+   "name": "Snickers Creamy loterija",
+   "start": "2026-08-17",
+   "end": "2026-10-12",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/snickers-creamy-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/snickers-creamy-loterija/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9038",
+   "organizer": "AS “Swedbank”",
+   "organizer_reg": "40003074764",
+   "purchase": "AS “Swedbank” pakalpojumam",
+   "name": "Pirmā karte bērnam",
+   "start": "2026-08-17",
+   "end": "2026-10-13",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9072",
+   "organizer": "SIA “ELVI Latvija”",
+   "organizer_reg": "50103276411",
+   "purchase": "10,00 eiro vērtībā preču pirkumam",
+   "name": "Trāpi desmitniekā",
+   "start": "2026-08-05",
+   "end": "2026-10-14",
+   "place": "“ELVI” veikalu tīkls visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/trapi-desmitnieka/",
+    "rules": "https://www.loterijas.lv/loterija/trapi-desmitnieka/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9071",
+   "organizer": "SIA „Latvijas Mobilais Telefons”",
+   "organizer_reg": "50003050931",
+   "purchase": "LMT Kartes “Sarunas nedēļai”, “Internets nedēļai” vai “Nedēļa visam” pakalpojumam",
+   "name": "LMT Kartes vasara 2026",
+   "start": "2026-07-14",
+   "end": "2026-10-20",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9092",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Fazer maizes pirkumam",
+   "name": "Svini Fazer jubileju un laimē ceļojumu uz Lapzemi!",
+   "start": "2026-08-25",
+   "end": "2026-10-20",
+   "place": "veikals MAXIMA Latvijas Republikā vai interneta veikals www.barbora.lv",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/",
+    "rules": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/"
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9094",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuru 2 (divu) KAIJA tunča līnijas produktu pirkumam",
+   "name": "KAIJA loterija veikalos Rimi",
+   "start": "2026-09-08",
+   "end": "2026-10-20",
+   "place": "veikals RIMI Latvijas Republikā un interneta veikals www.rimi.lv/e-veikals",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/",
+    "rules": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/"
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9103",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Latvijas Maiznieks produktu pirkumam",
+   "name": "“”Kūkas, tortes, ruletes!” loterija Maxima veikalos”",
+   "start": "2026-08-25",
+   "end": "2026-10-20",
+   "place": "veikali MAXIMA visā Latvijas Republikā un www.barbora.lv.",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/",
+    "rules": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/"
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9053",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "pirkumiem veikalos top!, mini top! vismaz 15.00 EUR vērtībā",
+   "name": "Veikalu tīkla top! loterija",
+   "start": "2026-07-29",
+   "end": "2026-10-21",
+   "place": "jebkura tirdzniecības vieta top!, mini top! visā Latvijas Republikas teritorijā.",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/veikalu-tikla-top-loterija-2/",
+    "rules": "https://www.loterijas.lv/loterija/veikalu-tikla-top-loterija-2/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9091",
+   "organizer": "SIA “Sprintlab group”",
+   "organizer_reg": "40103364801",
+   "purchase": "vismaz vienai Merild precei",
+   "name": "MERRILD Rudens Loterija veikalos TOP",
+   "start": "2026-09-23",
+   "end": "2026-10-21",
+   "place": "Veikali “TOP” un “mini top!” Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9164",
+   "organizer": "SIA “Multum”",
+   "organizer_reg": "44103113123",
+   "purchase": "2 THE PINK STUFF produktu pirkumam",
+   "name": "THE PINK STUFF rozā tīrīšanas spēks",
+   "start": "2026-10-06",
+   "end": "2026-10-21",
+   "place": "“RIMI” veikalu tīkls visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/the-pink-stuff-roza-tirisanas-speks/",
+    "rules": "https://www.loterijas.lv/loterija/the-pink-stuff-roza-tirisanas-speks/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9096",
+   "organizer": "SIA “SMS SOLUTIONS”",
+   "organizer_reg": "40203006794",
+   "purchase": "divu preču pirkumam",
+   "name": "MEGO LIELĀ RUDENS LOTERIJA 2026!",
+   "start": "2026-08-17",
+   "end": "2026-10-27",
+   "place": "“Mego”, “Vesko” un “Mini Vesko” veikali visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9150",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Grite produktam vai vairākiem Grite produktiem vienā pirkumā vismaz 4.99 EUR vērtībā",
+   "name": "Grite loterija Maxima veikalos",
+   "start": "2026-09-28",
+   "end": "2026-10-27",
+   "place": "Visi MAXIMA veikali Latvijas Republikā un interneta veikals www.barbora.lv",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/",
+    "rules": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/"
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9163",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "pirkumam vismaz 20,00 EUR vērtībā www.rimi.lv/e-veikals",
+   "name": "Rimi interneta veikala oktobra loterija 2026",
+   "start": "2026-09-29",
+   "end": "2026-10-30",
+   "place": "interneta veikals www.rimi.lv/e-veikals",
+   "category": "shop",
+   "links": {
+    "page": "https://www.rimiloterija.lv/oktobris/",
+    "rules": "https://www.rimiloterija.lv/oktobris/assets26/WEB_Noteikumi_E-Rimi_oktobris_loterija_2026.pdf",
+    "registration": "https://www.rimiloterija.lv/oktobris/"
+   },
+   "summary": {
+    "title": "Rimi interneta veikala oktobra loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "SIA «Rimi Latvia»",
+    "permit": "9163",
+    "what_to_buy": "Заказ в интернет-магазине rimi.lv/e-veikals минимум на 20 € (алкоголь, табак, лекарства, газеты, подарочные карты и т.п. в сумму не входят)",
+    "min_purchase_eur": 20.0,
+    "where": "Только интернет-магазин rimi.lv/e-veikals",
+    "how_to_enter": "Зарегистрировать номер заказа или итогового счёта на rimiloterija.lv: имя, фамилия, номер документа, телефон; фото счёта — по желанию. Бесплатно",
+    "registration_url": "https://www.rimiloterija.lv/oktobris/",
+    "keep": "Итоговый счёт заказа — до 13.11.2026",
+    "lottery_start": "2026-09-29",
+    "lottery_end": "2026-10-30",
+    "registration_start": "2026-09-29",
+    "registration_end": "2026-10-26",
+    "draws": [
+     {
+      "date": "2026-10-06",
+      "time": "14:00",
+      "period_from": "2026-09-29",
+      "period_to": "2026-10-05",
+      "prizes": [
+       {
+        "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-13",
+      "time": "14:00",
+      "period_from": "2026-10-06",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "Пылесос Karcher FC 8 Smart Signature Line",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "14:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "14:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "Пылесос Karcher FC 8 Smart Signature Line",
+        "qty": 1
+       },
+       {
+        "name": "Робот-пылесос Karcher RVF 7 Comfort Extra",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Робот-пылесос Karcher RVF 7 Comfort Extra",
+      "qty": 1,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     },
+     {
+      "name": "Робот-пылесос Karcher RVM 4 Comfort Extra",
+      "qty": 2,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     },
+     {
+      "name": "Пылесос Karcher FC 8 Smart Signature Line",
+      "qty": 2,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     }
+    ],
+    "prize_fund_eur": 3795.0,
+    "odds": "5 к 3000",
+    "winners_published": "На rimiloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 30.10.2026",
+    "claim_deadline": "2026-11-06",
+    "age_min": 16,
+    "limits": "Каждый новый заказ — новая регистрация; повторно зарегистрированный номер не участвует",
+    "notes": "Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Рига) или заказать доставку через loterijatev.lv до 5.11"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Номер разрешения в правилах (9163) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата начала (29.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (30.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 5, в фонде 5"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9054",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Orbit vai Hubba Bubba košļājamo gumiju pirkumam",
+   "name": "Orbit loterija",
+   "start": "2026-10-01",
+   "end": "2026-11-02",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/orbit-loterija-2/",
+    "rules": "https://www.loterijas.lv/loterija/orbit-loterija-2/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9183",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola Birute produktu pirkumam",
+   "name": "Birute loterija",
+   "start": "2026-10-13",
+   "end": "2026-11-03",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/birute-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/birute-loterija/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9112",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "“Kinder Bueno” zīmola produktu pirkumam",
+   "name": "Izbaudi mirkli ar bueno!",
+   "start": "2026-09-21",
+   "end": "2026-11-05",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.kinder.com/lv/lv/xp/bueno/",
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9169",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram kafijas zīmola Paulig produktam",
+   "name": "Paulig loterija veikalos Citro",
+   "start": "2026-10-08",
+   "end": "2026-11-05",
+   "place": "visas \"Citro\" tirdzniecības vietas Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/",
+    "rules": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/"
+   },
+   "summary": {
+    "title": "Paulig loterija veikalos Citro",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Paulig Latvia»",
+    "permit": null,
+    "what_to_buy": "Любой 1 продукт кофе Paulig",
+    "min_purchase_eur": null,
+    "where": "Только магазины Citro по всей Латвии",
+    "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+    "registration_url": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/",
+    "keep": "Чек из Citro с покупкой Paulig",
+    "lottery_start": "2026-10-08",
+    "lottery_end": "2026-11-05",
+    "registration_start": "2026-10-08",
+    "registration_end": "2026-11-04",
+    "draws": [
+     {
+      "date": "2026-10-15",
+      "time": "11:00",
+      "period_from": "2026-10-08",
+      "period_to": "2026-10-14",
+      "prizes": [
+       {
+        "name": "Кофемашина Krups Sensation Milk M75",
+        "qty": 1
+       },
+       {
+        "name": "Набор кофе Paulig",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-10-22",
+      "time": "11:00",
+      "period_from": "2026-10-15",
+      "period_to": "2026-10-21",
+      "prizes": [
+       {
+        "name": "Кофемашина Krups Sensation Milk M75",
+        "qty": 1
+       },
+       {
+        "name": "Набор кофе Paulig",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-10-29",
+      "time": "11:00",
+      "period_from": "2026-10-22",
+      "period_to": "2026-10-28",
+      "prizes": [
+       {
+        "name": "Кофемашина Krups Sensation Milk M75",
+        "qty": 1
+       },
+       {
+        "name": "Набор кофе Paulig",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-11-05",
+      "time": "11:00",
+      "period_from": "2026-10-29",
+      "period_to": "2026-11-04",
+      "prizes": [
+       {
+        "name": "Кофемашина Krups Sensation Milk M75",
+        "qty": 1
+       },
+       {
+        "name": "Набор кофе Paulig",
+        "qty": 5
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Кофемашина Krups Sensation Milk M75",
+      "qty": 4,
+      "unit_value_eur": 400.0,
+      "total_value_eur": 1600.0
+     },
+     {
+      "name": "Набор кофе Paulig",
+      "qty": 20,
+      "unit_value_eur": 30.0,
+      "total_value_eur": 600.0
+     }
+    ],
+    "prize_fund_eur": 2200.0,
+    "odds": "24 к 5000",
+    "winners_published": "5.11.2026 до 23:59 на loterijas.lv",
+    "claim_deadline": null,
+    "age_min": null,
+    "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+    "notes": null
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (08.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (05.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 2200.00 € = призовой фонд 2200.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 24, в фонде 24"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9116",
+   "organizer": "SIA “Guilty”",
+   "organizer_reg": "50003254051",
+   "purchase": "Coca-Cola, Fanta vai Sprite produktu pirkumam",
+   "name": "Ar Coca-Cola tas garšo vēl labāk",
+   "start": "2026-09-07",
+   "end": "2026-11-06",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9131",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "biedra līguma ar SIA “My Fitness” par kādu no abonementa veidiem noslēgšanai",
+   "name": "MyFitness rudens loterija 2026",
+   "start": "2026-09-09",
+   "end": "2026-11-06",
+   "place": "sporta klubos “MyFitness” un www.myfitness.lv visā Latvijas Republikā",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9158",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuriem 2 (diviem) „Haribo” produktiem",
+   "name": "Haribo loterija",
+   "start": "2026-10-15",
+   "end": "2026-11-16",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/haribo-loterija-2/",
+    "rules": "https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/haribo-loterija-2/"
+   },
+   "summary": {
+    "title": "Haribo loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Daisena Latvija» (Haribo)",
+    "permit": null,
+    "what_to_buy": "Любые 2 продукта «Haribo» в одном чеке",
+    "min_purchase_eur": null,
+    "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+    "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Регистрация бесплатная; каждый новый чек — новая регистрация",
+    "registration_url": "https://www.loterijas.lv/loterija/haribo-loterija-2/",
+    "keep": "Чек с номером и названием Haribo — нужен при получении приза",
+    "lottery_start": "2026-10-15",
+    "lottery_end": "2026-11-16",
+    "registration_start": "2026-10-15",
+    "registration_end": "2026-11-15",
+    "draws": [
+     {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "period_from": "2026-10-15",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Apple MacBook Neo",
+        "qty": 1
+       },
+       {
+        "name": "Apple Watch",
+        "qty": 3
+       },
+       {
+        "name": "Apple AirPods",
+        "qty": 4
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Apple MacBook Neo",
+      "qty": 1,
+      "unit_value_eur": 699.0,
+      "total_value_eur": 699.0
+     },
+     {
+      "name": "Apple Watch",
+      "qty": 3,
+      "unit_value_eur": 239.0,
+      "total_value_eur": 717.0
+     },
+     {
+      "name": "Apple AirPods",
+      "qty": 4,
+      "unit_value_eur": 129.0,
+      "total_value_eur": 516.0
+     }
+    ],
+    "prize_fund_eur": 1932.0,
+    "odds": "8 к 5000",
+    "winners_published": "16.11.2026 до 23:59 на loterijas.lv; победителям звонят или пишут SMS",
+    "claim_deadline": "2026-11-30",
+    "age_min": null,
+    "limits": "Один чек, один телефон и один человек могут выиграть только один приз",
+    "notes": null
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (15.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (16.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1932.00 € = призовой фонд 1932.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 8, в фонде 8"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9060",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuru 2 (divu) M&M's, Maltesers vai Skittles iepakojumu pirkumam",
+   "name": "M&M's loterija",
+   "start": "2026-10-01",
+   "end": "2026-11-17",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/mms-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/mms-loterija/noteikumi/",
+    "registration": null
+   },
+   "summary": {
+    "title": "M&M’s loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Mars Latvia»",
+    "permit": null,
+    "what_to_buy": "Минимум 2 упаковки M&M’s, Maltesers или Skittles в одном чеке",
+    "min_purchase_eur": null,
+    "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+    "how_to_enter": "Заполнить анкету на fun.mms.com/lv: имя, фамилия, дата рождения, номер чека, телефон и фото чека (обязательно). Бесплатно",
+    "registration_url": "https://www.fun.mms.com/lv",
+    "keep": "Оригинал чека",
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2026-11-17",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-11-15",
+    "draws": [
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "11:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "11:00",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "11:00",
+      "period_from": "2026-11-03",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "11:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Домашний кинотеатр (проектор Samsung Freestyle, экран Celexon, звук Harman Kardon 7.1.4)",
+        "qty": 1
+       },
+       {
+        "name": "Билеты в кино (2 шт.)",
+        "qty": 50
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Домашний кинотеатр (проектор Samsung Freestyle, экран Celexon, звук Harman Kardon 7.1.4)",
+      "qty": 1,
+      "unit_value_eur": 3000.0,
+      "total_value_eur": 3000.0
+     },
+     {
+      "name": "Билеты в кино (2 шт.)",
+      "qty": 300,
+      "unit_value_eur": 14.0,
+      "total_value_eur": 4200.0
+     }
+    ],
+    "prize_fund_eur": 7200.0,
+    "odds": "301 к 2000",
+    "winners_published": "До 17.11.2026 на fun.mms.com/lv; победителям звонят или пишут SMS",
+    "claim_deadline": "2026-12-01",
+    "age_min": 18,
+    "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
+    "notes": "В последнем розыгрыше 17.11 участвуют все регистрации с 1.10 по 15.11"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (17.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 7200.00 € = призовой фонд 7200.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 301, в фонде 301"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9172",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
+   "name": "VIVO rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "centra “VIVO” veikali (izņemot veikalu “Rimi”), Jelgavā, Katoļu iela 18,",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9173",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
+   "name": "OSTMALA rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "tirdzniecības centra “Ostmala” tirdzniecības vietas (izņemot veikalu “Rimi”), Liepāja, Kārļa Zāles laukums 8,",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9177",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "pirkumam ar reģistrētu \"Mans Rimi\" karti vismaz 20,00 EUR vērtībā",
+   "name": "Rimi rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "Latvijas Republika un interneta veikals \"rimi.lv/e-veikals\"",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9069",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkura SELGA produktu vai vismaz 100g SELGA sveramo produktu pirkumam",
+   "name": "Selga loterija",
+   "start": "2026-10-12",
+   "end": "2026-11-23",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/selga-loterija-7/",
+    "rules": "https://www.loterijas.lv/loterija/selga-loterija-7/noteikumi/",
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9114",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Ādažu čipsu produkts UN 1 (viena) Fanta produktu pirkumam",
+   "name": "Ādažu čipsi + Fanta = Garšīga Kompānija!",
+   "start": "2026-09-28",
+   "end": "2026-11-23",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/",
+    "rules": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/"
+   },
+   "summary": {
+    "title": "Ādažu čipsi + Fanta = Garšīga Kompānija!",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Orkla Latvija» и SIA «Coca-Cola HBC Latvia»",
+    "permit": null,
+    "what_to_buy": "1 продукт Ādažu Čipsi и 1 продукт Fanta в одном чеке",
+    "min_purchase_eur": null,
+    "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+    "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно; каждый новый чек — новая регистрация",
+    "registration_url": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/",
+    "keep": "Чек, где видны Ādažu Čipsi и Fanta",
+    "lottery_start": "2026-09-28",
+    "lottery_end": "2026-11-23",
+    "registration_start": "2026-09-28",
+    "registration_end": "2026-11-22",
+    "draws": [
+     {
+      "date": "2026-10-05",
+      "time": "11:00",
+      "period_from": "2026-09-28",
+      "period_to": "2026-10-04",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-10-12",
+      "time": "11:00",
+      "period_from": "2026-10-05",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "11:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-11-09",
+      "time": "11:00",
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       }
+      ]
+     },
+     {
+      "date": "2026-11-23",
+      "time": "11:00",
+      "period_from": "2026-11-16",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "Набор продуктов",
+        "qty": 10
+       },
+       {
+        "name": "Подарочная карта Brain Games 70 €",
+        "qty": 5
+       },
+       {
+        "name": "Телевизор Philips 65MLED920/12",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Телевизор Philips 65MLED920/12",
+      "qty": 1,
+      "unit_value_eur": 763.99,
+      "total_value_eur": 763.99
+     },
+     {
+      "name": "Подарочная карта Brain Games 70 €",
+      "qty": 40,
+      "unit_value_eur": 70.0,
+      "total_value_eur": 2800.0
+     },
+     {
+      "name": "Набор продуктов",
+      "qty": 80,
+      "unit_value_eur": 15.84,
+      "total_value_eur": 1267.2
+     }
+    ],
+    "prize_fund_eur": 4831.19,
+    "odds": "121 к 10000",
+    "winners_published": "23.11.2026 до 23:59 на loterijas.lv",
+    "claim_deadline": "2026-12-07",
+    "age_min": null,
+    "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+    "notes": "Телевизор разыгрывается в последний день среди всех регистраций за весь период"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (28.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (23.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 4831.19 € = призовой фонд 4831.19 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 121, в фонде 121"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9176",
+   "organizer": "SIA „Latvijas Lauku konsultāciju un izglītības centrs”,",
+   "organizer_reg": "40003347699",
+   "purchase": "Makšķerēšanas , vēžošanas, zemūdens medību kartes iegādei 3 mēnešiem",
+   "name": "Makšķernieku loterija!",
+   "start": "2026-10-02",
+   "end": "2026-11-23",
+   "place": "interneta vietne www.makskeresanaskarte.lv, www.manacope.lv vai mobilā aplikācija “Mana Cope”.",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9130",
+   "organizer": "SIA “SMS solutions”",
+   "organizer_reg": "40203006794",
+   "purchase": "vismaz 15.00 EUR vērtībā preču pirkumam",
+   "name": "“LATS” RUDENS LOTERIJA “DESMIT ŠTUKAS”",
+   "start": "2026-09-22",
+   "end": "2026-11-25",
+   "place": "veikalu tīkla “LaTS” tirdzniecības vietās visā Latvijas Republikā un https://www.e-latts.lv",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9156",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Dallmayr produktam",
+   "name": "Dallmayr loterija",
+   "start": "2026-10-05",
+   "end": "2026-11-30",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/dallmayr-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/dallmayr-loterija/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/dallmayr-loterija/"
+   },
+   "summary": {
+    "title": "Dallmayr loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «German Products Baltics» (Dallmayr)",
+    "permit": null,
+    "what_to_buy": "Любой 1 продукт Dallmayr",
+    "min_purchase_eur": null,
+    "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+    "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+    "registration_url": "https://www.loterijas.lv/loterija/dallmayr-loterija/",
+    "keep": "Чек с покупкой Dallmayr",
+    "lottery_start": "2026-10-05",
+    "lottery_end": "2026-11-30",
+    "registration_start": "2026-10-05",
+    "registration_end": "2026-11-29",
+    "draws": [
+     {
+      "date": "2026-10-12",
+      "time": "11:00",
+      "period_from": "2026-10-05",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "11:00",
+      "period_from": "2026-10-05",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "Подарочная карта «2 Black Cabins» 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "11:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "11:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "Подарочная карта «2 Black Cabins» 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-09",
+      "time": "11:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-16",
+      "time": "11:00",
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "Подарочная карта «2 Black Cabins» 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-23",
+      "time": "11:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-30",
+      "time": "11:00",
+      "period_from": "2026-11-16",
+      "period_to": "2026-11-29",
+      "prizes": [
+       {
+        "name": "Подарочная карта «2 Black Cabins» 300 €",
+        "qty": 1
+       },
+       {
+        "name": "Подарочная карта турагентства Kolumbs 1500 €",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта турагентства Kolumbs 1500 €",
+      "qty": 1,
+      "unit_value_eur": 1500.0,
+      "total_value_eur": 1500.0
+     },
+     {
+      "name": "Подарочная карта «Pavāru māja» (Лигатне) 300 €",
+      "qty": 4,
+      "unit_value_eur": 300.0,
+      "total_value_eur": 1200.0
+     },
+     {
+      "name": "Подарочная карта «2 Black Cabins» 300 €",
+      "qty": 4,
+      "unit_value_eur": 300.0,
+      "total_value_eur": 1200.0
+     }
+    ],
+    "prize_fund_eur": 3900.0,
+    "odds": "9 к 5000",
+    "winners_published": "30.11.2026 до 23:59 на loterijas.lv",
+    "claim_deadline": null,
+    "age_min": null,
+    "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+    "notes": "Каждый еженедельный розыгрыш охватывает покупки за последние две недели; главный приз — среди всех регистраций за весь период"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (05.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (30.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 3900.00 € = призовой фонд 3900.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 9, в фонде 9"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9178",
+   "organizer": "SIA \"Sorbum LV\"",
+   "organizer_reg": "40103605552",
+   "purchase": "Magija zīmola produkcijai",
+   "name": "Laimē savu sapņu piedzīvojumu!",
+   "start": "2026-10-01",
+   "end": "2026-11-30",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9113",
+   "organizer": "SIA “PTA”",
+   "organizer_reg": "40003386198",
+   "purchase": "Candy un Haier firmas preču pirkumam",
+   "name": "Pērc Candy un Haier tehniku un laimē",
+   "start": "2026-09-01",
+   "end": "2026-12-01",
+   "place": "Dambja iela 3A, Rīga, LV-1005, Latvija SIA “PTA” veikals",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9149",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Möller's un/vai Möller's Junior produktu pirkumam",
+   "name": "Möller’s loterija",
+   "start": "2026-10-01",
+   "end": "2026-12-01",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/mollers-loterija/",
+    "rules": "https://www.loterijas.lv/loterija/mollers-loterija/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/mollers-loterija/"
+   },
+   "summary": {
+    "title": "Möller’s loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Orkla Care» (Möller’s)",
+    "permit": null,
+    "what_to_buy": "Минимум 1 продукт Möller’s или Möller’s Junior",
+    "min_purchase_eur": null,
+    "where": "Любой магазин в Латвии, в том числе интернет-магазины",
+    "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+    "registration_url": "https://www.loterijas.lv/loterija/mollers-loterija/",
+    "keep": "Чек с покупкой Möller’s",
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2026-12-01",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-10-13",
+      "time": "11:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-12",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Денежный приз 100 €",
+        "qty": 3
+       }
+      ]
+     },
+     {
+      "date": "2026-10-20",
+      "time": "11:00",
+      "period_from": "2026-10-13",
+      "period_to": "2026-10-19",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Смартфон Apple iPhone 17 256GB",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "11:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Денежный приз 100 €",
+        "qty": 3
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "11:00",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Смартфон Apple iPhone 17 256GB",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "11:00",
+      "period_from": "2026-11-03",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Денежный приз 100 €",
+        "qty": 3
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "11:00",
+      "period_from": "2026-11-10",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Смартфон Apple iPhone 17 256GB",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-24",
+      "time": "11:00",
+      "period_from": "2026-11-17",
+      "period_to": "2026-11-23",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Денежный приз 100 €",
+        "qty": 3
+       }
+      ]
+     },
+     {
+      "date": "2026-12-01",
+      "time": "11:00",
+      "period_from": "2026-11-24",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Корзина продуктов Möller’s",
+        "qty": 5
+       },
+       {
+        "name": "Смартфон Apple iPhone 17 256GB",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Смартфон Apple iPhone 17 256GB",
+      "qty": 4,
+      "unit_value_eur": 989.01,
+      "total_value_eur": 3956.04
+     },
+     {
+      "name": "Денежный приз 100 €",
+      "qty": 12,
+      "unit_value_eur": 100.0,
+      "total_value_eur": 1200.0
+     },
+     {
+      "name": "Корзина продуктов Möller’s",
+      "qty": 40,
+      "unit_value_eur": 50.0,
+      "total_value_eur": 2000.0
+     }
+    ],
+    "prize_fund_eur": 7156.04,
+    "odds": "56 к 5000",
+    "winners_published": "1.12.2026 до 23:59 на loterijas.lv",
+    "claim_deadline": null,
+    "age_min": null,
+    "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
+    "notes": "iPhone и денежные призы разыгрываются среди покупок за последние две недели, корзины — за последнюю неделю"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (01.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 7156.04 € = призовой фонд 7156.04 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 56, в фонде 56"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9157",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Graudu maize produktam",
+   "name": "Latvijas Graudu maize loterija Rimi veikalos",
+   "start": "2026-10-06",
+   "end": "2026-12-01",
+   "place": "visi RIMI veikali Latvijas Republikā un interneta veikals www.rimi.lv/e-veikals",
+   "category": "shop",
+   "links": {
+    "page": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/",
+    "rules": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/"
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9185",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Filorga produktu pirkumam",
+   "name": "Filorga loterija",
+   "start": "2026-11-01",
+   "end": "2026-12-01",
+   "place": "“BENU” aptiekas vai e-aptieka www.benu.lv visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9186",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Pharmaceris produktu pirkumam",
+   "name": "Pharmaceris loterija",
+   "start": "2026-11-01",
+   "end": "2026-12-01",
+   "place": "aptiekas visā Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9174",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "jebkura vismaz viena “Lacmi” produkta pirkumam",
+   "name": "Roshen rudens loterija 2026",
+   "start": "2026-10-19",
+   "end": "2026-12-03",
+   "place": "Latvijas Republikas veikali un interneta veikali",
+   "category": "shop",
+   "links": {
+    "page": "https://roshenloterija.lv/",
+    "rules": "https://roshenloterija.lv/",
+    "registration": "https://roshenloterija.lv/"
+   },
+   "summary": {
+    "title": "Roshen rudens loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "UAB «Roshen Nord»",
+    "permit": null,
+    "what_to_buy": "Минимум 1 любой продукт Lacmi",
+    "min_purchase_eur": null,
+    "where": "Магазины и интернет-магазины по всей Латвии",
+    "how_to_enter": "Зарегистрироваться на roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека; фото чека — по желанию. Бесплатно",
+    "registration_url": "https://roshenloterija.lv/",
+    "keep": "Чек или накладную с покупкой Lacmi — до 29.12.2026",
+    "lottery_start": "2026-10-19",
+    "lottery_end": "2026-12-03",
+    "registration_start": "2026-10-19",
+    "registration_end": "2026-11-29",
+    "draws": [
+     {
+      "date": "2026-10-26",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     },
+     {
+      "date": "2026-11-02",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     },
+     {
+      "date": "2026-11-09",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     },
+     {
+      "date": "2026-11-16",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     },
+     {
+      "date": "2026-11-23",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     },
+     {
+      "date": "2026-11-30",
+      "time": "13:00",
+      "period_from": null,
+      "period_to": null,
+      "prizes": []
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Денежный приз 3000 €",
+      "qty": 1,
+      "unit_value_eur": 3000.0,
+      "total_value_eur": 3000.0
+     },
+     {
+      "name": "Набор сладостей Lacmi, Yummi Gummi, Lovita (13 продуктов)",
+      "qty": 60,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     }
+    ],
+    "prize_fund_eur": 4234.2,
+    "odds": "61 к 1000",
+    "winners_published": "На roshenloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 3.12.2026",
+    "claim_deadline": "2026-12-18",
+    "age_min": 16,
+    "limits": "Один участник может выиграть один раз в каждом розыгрыше; каждый новый чек — новая регистрация",
+    "notes": "Распределение призов по розыгрышам указано в приложении к правилам"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (19.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (03.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
+  },
+  {
+   "permit": "9128",
+   "organizer": "SIA “Guilty”",
+   "organizer_reg": "50003254051",
+   "purchase": "Sprite produktu pirkumam",
+   "name": "Spēlē ar Sprite",
+   "start": "2026-10-01",
+   "end": "2026-12-04",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9187",
+   "organizer": "SIA ”SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "zīmola “Somat” produktu pirkumam",
+   "name": "Somat rudens loterija 2026",
+   "start": "2026-10-26",
+   "end": "2026-12-04",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9129",
+   "organizer": "SIA “Guilty”",
+   "organizer_reg": "50003254051",
+   "purchase": "Schweppes produktu pirkumam",
+   "name": "Schweppes",
+   "start": "2026-10-01",
+   "end": "2026-12-07",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9121",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola Staburadze produktu pirkumam",
+   "name": "Staburadzes preču loterija",
+   "start": "2026-11-02",
+   "end": "2026-12-21",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9184",
+   "organizer": "SIA \"Visas Loterijas\"",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Philadelphia produktam",
+   "name": "Philadelphia loterija",
+   "start": "2026-11-16",
+   "end": "2026-12-29",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9190",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Duracell produktu pirkumam",
+   "name": "Duracell loterija",
+   "start": "2026-11-16",
+   "end": "2026-12-29",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9189",
+   "organizer": "SIA \"Visas Loterijas\"",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuriem 3 (trīs) Pringles 165g čipsu iepakojumiem",
+   "name": "Pringles loterija internetveikalā www.barbora.lv",
+   "start": "2026-12-01",
+   "end": "2026-12-30",
+   "place": "internetveikals www.barbora.lv",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9102",
+   "organizer": "Luminor Bank AS Latvijas filiāle",
+   "organizer_reg": "40203154352",
+   "purchase": "“Luminor” klientu pakalpojuma noslēgšanai",
+   "name": "Luminor Bloom testētāju loterija",
+   "start": "2026-08-06",
+   "end": "2027-01-04",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9181",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Tele2 vai Zelta Zivtiņa pēcapmaksas tarifu plāna vai datu plāna abonenta pakalpojumam",
+   "name": "Tele2 loterija",
+   "start": "2026-10-11",
+   "end": "2027-01-05",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9188",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Graudu maize produktam",
+   "name": "Latvijas Graudu maize loterija Elvi veikalos",
+   "start": "2026-10-28",
+   "end": "2027-01-06",
+   "place": "jebkurš veikals Elvi Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9132",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Tele2 pakalpojumam",
+   "name": "Zelta Zivtiņa Bonusu klubs",
+   "start": "2026-09-01",
+   "end": "2027-01-07",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9179",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "veikalā \"Citro\" vai \"Eldo\" veiktam pirkumam vismaz 10 EUR vērtībā",
+   "name": "Citro/Eldo veikalu tīklu loterija",
+   "start": "2026-11-05",
+   "end": "2027-01-07",
+   "place": "Latvijas Republika, \"Citro\" un \"Eldo\" veikalu tīkls un interneta veikals \"citro.lv/e-veikals/\"",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9182",
+   "organizer": "SIA \"SOMESE Baltic\"",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam Ferrero Rocher vai Ferrero Collection produktam (izņemot saldējumu)",
+   "name": "Pievienojiet savu zelta pieskārienu!",
+   "start": "2026-11-27",
+   "end": "2027-01-07",
+   "place": "veikali un interneta veikali Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9180",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks produktam",
+   "name": "Vislatvijas Kūku loterija",
+   "start": "2026-11-02",
+   "end": "2027-01-11",
+   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikā",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9162",
+   "organizer": "SIA \"Guilty “",
+   "organizer_reg": "50003254051",
+   "purchase": "Coca-Cola, Sprite, Fanta produktiem",
+   "name": "Ziemassvētki kopā ar Coca-Cola",
+   "start": "2026-11-02",
+   "end": "2027-01-18",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9089",
+   "organizer": "AAS “BALTA”",
+   "organizer_reg": "40003049409",
+   "purchase": "BALTA abonētās polises apdrošināšanas līguma (polises) noslēgšanas",
+   "name": "Drošība, kas nepārtrūkst!",
+   "start": "2026-08-01",
+   "end": "2027-01-28",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  },
+  {
+   "permit": "9167",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam Nutella® zīmola produktam",
+   "name": "Nutella® loterija",
+   "start": "2027-02-01",
+   "end": "2027-04-08",
+   "place": "Latvijas Republika (veikali un interneta veikali)",
+   "category": "shop",
+   "links": {
+    "page": null,
+    "rules": null,
+    "registration": null
+   },
+   "summary": null,
+   "checks": [],
+   "status": "no_summary"
+  }
+ ]
+}

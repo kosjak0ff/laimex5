@@ -1,0 +1,105 @@
+{
+ "title": "Paulig loterija veikalos Citro",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Paulig Latvia»",
+ "permit": null,
+ "what_to_buy": "Любой 1 продукт кофе Paulig",
+ "min_purchase_eur": null,
+ "where": "Только магазины Citro по всей Латвии",
+ "how_to_enter": "Заполнить анкету на loterijas.lv: имя, фамилия, номер чека, телефон. Бесплатно",
+ "registration_url": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/",
+ "keep": "Чек из Citro с покупкой Paulig",
+ "lottery_start": "2026-10-08",
+ "lottery_end": "2026-11-05",
+ "registration_start": "2026-10-08",
+ "registration_end": "2026-11-04",
+ "draws": [
+  {
+   "date": "2026-10-15",
+   "time": "11:00",
+   "period_from": "2026-10-08",
+   "period_to": "2026-10-14",
+   "prizes": [
+    {
+     "name": "Кофемашина Krups Sensation Milk M75",
+     "qty": 1
+    },
+    {
+     "name": "Набор кофе Paulig",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-22",
+   "time": "11:00",
+   "period_from": "2026-10-15",
+   "period_to": "2026-10-21",
+   "prizes": [
+    {
+     "name": "Кофемашина Krups Sensation Milk M75",
+     "qty": 1
+    },
+    {
+     "name": "Набор кофе Paulig",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-29",
+   "time": "11:00",
+   "period_from": "2026-10-22",
+   "period_to": "2026-10-28",
+   "prizes": [
+    {
+     "name": "Кофемашина Krups Sensation Milk M75",
+     "qty": 1
+    },
+    {
+     "name": "Набор кофе Paulig",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "time": "11:00",
+   "period_from": "2026-10-29",
+   "period_to": "2026-11-04",
+   "prizes": [
+    {
+     "name": "Кофемашина Krups Sensation Milk M75",
+     "qty": 1
+    },
+    {
+     "name": "Набор кофе Paulig",
+     "qty": 5
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Кофемашина Krups Sensation Milk M75",
+   "qty": 4,
+   "unit_value_eur": 400.0,
+   "total_value_eur": 1600.0
+  },
+  {
+   "name": "Набор кофе Paulig",
+   "qty": 20,
+   "unit_value_eur": 30.0,
+   "total_value_eur": 600.0
+  }
+ ],
+ "prize_fund_eur": 2200.0,
+ "odds": "24 к 5000",
+ "winners_published": "5.11.2026 до 23:59 на loterijas.lv",
+ "claim_deadline": null,
+ "age_min": null,
+ "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
+ "notes": null,
+ "_rules_sha": null,
+ "_extracted": "2026-10-19T20:35:21+03:00"
+}

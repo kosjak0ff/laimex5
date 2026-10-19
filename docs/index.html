@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Laimex — лотереи в магазинах Латвии</title>
+<meta name="description" content="Все действующие товарные лотереи Латвии: что купить, где зарегистрироваться, когда розыгрыши и какие призы. Обновляется каждое утро.">
+<meta name="theme-color" content="#a4343a">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700;800&family=PT+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-row">
+    <a class="brand" href="#">Laimex</a>
+    <button class="install" id="install" hidden>Установить на телефон</button>
+  </div>
+  <div class="wrap">
+    <h1>Лотереи в магазинах Латвии</h1>
+    <p class="lede">Что купить, где зарегистрировать чек и когда розыгрыш. Данные берём из реестра разрешений VID и официальных правил каждой лотереи; обновляем каждое утро.</p>
+  </div>
+</header>
+
+<div class="ios-hint wrap" id="ios-hint" hidden>
+  <p>Чтобы установить на iPhone: нажмите «Поделиться», затем «На экран Домой».</p>
+  <button class="link" id="ios-hint-close">Понятно</button>
+</div>
+
+<main class="wrap">
+  <nav class="tabs" aria-label="Какие лотереи показать">
+    <button class="tab" data-tab="now" aria-pressed="true">Идут сейчас <span class="n" data-count="now"></span></button>
+    <button class="tab" data-tab="soon" aria-pressed="false">Скоро <span class="n" data-count="soon"></span></button>
+    <button class="tab" data-tab="past" aria-pressed="false">Завершились <span class="n" data-count="past"></span></button>
+  </nav>
+  <div class="tools">
+    <label class="search">
+      <span class="sr">Поиск</span>
+      <input id="q" type="search" placeholder="Бренд, магазин или приз" autocomplete="off">
+    </label>
+    <div class="chips" role="group" aria-label="Фильтры">
+      <button class="chip" data-filter="ending" aria-pressed="false">Заканчиваются за неделю</button>
+      <button class="chip" data-filter="draw" aria-pressed="false">Розыгрыш в ближайшие 3 дня</button>
+      <button class="chip" data-filter="service" aria-pressed="false">Показать лотереи за услуги</button>
+    </div>
+  </div>
+  <p class="status" id="status" role="status">Загружаем лотереи…</p>
+  <ol class="list" id="list"></ol>
+</main>
+
+<footer class="foot wrap">
+  <p id="updated"></p>
+  <p>Сайт не связан с организаторами лотерей. Перед участием сверяйтесь с официальными правилами — ссылка есть у каждой лотереи. Источник списка: <a href="https://www.vid.gov.lv/lv/loterijas" rel="noopener">реестр VID</a>.</p>
+</footer>
+
+<template id="card-tpl">
+  <li class="ticket">
+    <article>
+      <header class="t-head">
+        <h2 class="t-title"></h2>
+        <p class="t-org"></p>
+        <p class="t-left"></p>
+      </header>
+      <dl class="receipt">
+        <div class="r-row"><dt>Купить</dt><dd class="r-buy"></dd></div>
+        <div class="r-row"><dt>Где</dt><dd class="r-where"></dd></div>
+        <div class="r-row"><dt>Регистрация</dt><dd class="r-reg"></dd></div>
+        <div class="r-row r-total"><dt>Призы</dt><dd class="r-prize"></dd></div>
+      </dl>
+      <p class="t-next"></p>
+      <div class="t-actions">
+        <a class="btn primary t-register" rel="noopener" target="_blank">Зарегистрировать чек</a>
+        <a class="btn t-rules" rel="noopener" target="_blank">Правила</a>
+        <button class="btn ghost t-more" aria-expanded="false">Подробнее</button>
+      </div>
+      <div class="t-details" hidden></div>
+    </article>
+  </li>
+</template>
+
+<script src="app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+# Робот Laimex: каждое утро скачивает реестр VID и правила лотерей, готовит задания
+# для Claude и пересобирает сайт. Работает бесплатно, потому что репозиторий публичный.
+#
+# Запускается:
+#  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
+#  - когда рутина Claude добавила новые ссылки на правила (изменился data/sources.json);
+#  - вручную: вкладка Actions → laimex-daily → Run workflow.
+#
+# Режим API (без рутины Claude): создайте переменную LAIMEX_MODE=api
+# и секрет ANTHROPIC_API_KEY в Settings → Secrets and variables → Actions.
+name: laimex-daily
+on:
+  schedule:
+    - cron: "37 2 * * *"
+  push:
+    branches: [main]
+    paths: ["data/sources.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: laimex
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Обновить данные и сайт, сохранить
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MODE: ${{ vars.LAIMEX_MODE || 'agent' }}
+        run: |
+          git config user.name "laimex-bot"
+          git config user.email "laimex-bot@users.noreply.github.com"
+          # до трёх попыток: если рутина Claude успела что-то отправить, начинаем с её версии
+          for attempt in 1 2 3; do
+            git fetch origin main && git reset --hard origin/main
+            python -m laimex daily --mode "$MODE"
+            git add data docs
+            if git diff --cached --quiet; then echo "Изменений нет"; exit 0; fi
+            git commit -m "Робот: обновление $(date +%F)"
+            if git push origin HEAD:main; then exit 0; fi
+            sleep 20
+          done
+          exit 1

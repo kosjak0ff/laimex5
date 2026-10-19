@@ -1,0 +1,90 @@
+"""Сквозной тест ежедневного цикла без интернета: все страницы подменены копиями."""
+import json
+from datetime import date
+
+import pytest
+
+from laimex import http, pipeline
+from test_core import ROWS, make_xls
+
+RULES_HTML = """<html><body><main><h1>Noteikumi</h1>
+<p>Preču loterijas “Haribo loterija” noteikumi. 1. Loterijas organizētājs: SIA “Visas Loterijas”.</p>
+<p>4.1. Loterijas norises sākuma datums: 2026. gada 15.oktobris. Beigu datums: 2026. gada 16. novembris.</p>
+<table><tr><td>Balva</td><td>Skaits</td></tr><tr><td>Apple MacBook Neo</td><td>1</td></tr></table>
+<p>""" + "Loterijas balvu izloze notiek ... " * 40 + """</p></main></body></html>"""
+
+PAGES = {
+    "https://www.vid.gov.lv/lv/loterijas":
+        '<a href="/lv/media/1/download">Izsniegtās preču un pakalpojumu loteriju atļaujas</a>',
+    "https://www.loterijas.lv/": '<a href="/loterija/haribo-loterija-2/">Haribo</a>',
+    "https://www.loterijas.lv/loterija/haribo-loterija-2/":
+        '<h1>Haribo loterija</h1><p>Atļaujas Nr. <strong>9158</strong></p>'
+        '<a class="get-terms" href="/loterija/haribo-loterija-2/noteikumi/">noteikumi</a>'
+        '<form class="lottery-registration"></form>',
+    "https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/": RULES_HTML,
+    "https://www.loterijatev.lv/": "<div>нет активных</div>",
+}
+
+
+class FakeResp:
+    def __init__(self, url, body):
+        self.url, self.status_code = url, 200
+        self.content = body if isinstance(body, bytes) else body.encode()
+        self.text = body if isinstance(body, str) else ""
+        self.headers = {"content-type": "application/vnd.ms-excel" if isinstance(body, bytes) else "text/html"}
+
+
+@pytest.fixture
+def sandbox(tmp_path, monkeypatch):
+    xls = make_xls(ROWS)
+    def fake_get(url, **kw):
+        if url.endswith("/media/1/download"):
+            return FakeResp(url, xls)
+        if url not in PAGES:
+            raise RuntimeError(f"нет копии для {url}")
+        return FakeResp(url, PAGES[url])
+    monkeypatch.setattr(http, "get", fake_get)
+    for name, sub in [("REGISTRY_JSON", "data/registry.json"), ("SOURCES_JSON", "data/sources.json"),
+                      ("TODO_JSON", "data/todo.json"), ("RULES_TEXT", "data/rules_text"),
+                      ("PENDING", "data/pending"), ("SUMMARIES", "data/summaries"), ("SITE", "docs")]:
+        monkeypatch.setattr(pipeline, name, tmp_path / sub)
+    (tmp_path / "data/rules_text").mkdir(parents=True)
+    (tmp_path / "data/summaries").mkdir(parents=True)
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 19))
+    return tmp_path
+
+
+def test_daily_cycle(sandbox):
+    todo = pipeline.daily("agent", log=lambda *a: None)
+    # Haribo найден у агентства, правила скачаны, создано задание на выжимку
+    assert todo["need_summary"] == ["9158"]
+    assert (sandbox / "data/pending/9158.md").read_text().count("Apple MacBook Neo") >= 1
+    # BALTA (услуга) без источника — в списке на поиск; журнал отброшен
+    assert [r["permit"] for r in todo["need_sources"]] == ["9089"]
+
+    from laimex.schema import SUMMARY_SCHEMA
+    summary = {k: None for k in SUMMARY_SCHEMA["required"]}
+    summary.update(title="Haribo loterija", organizer="SIA «Visas Loterijas»", what_to_buy="2 Haribo",
+                   where="Латвия", how_to_enter="loterijas.lv", lottery_start="2026-10-15",
+                   lottery_end="2026-11-16", draws=[], prizes=[{"name": "MacBook", "qty": 1,
+                   "unit_value_eur": 699, "total_value_eur": 699}], prize_fund_eur=699)
+    checks = pipeline.save_summary("9158", summary)
+    assert all(c["ok"] for c in checks)
+
+    # второй запуск: правила не менялись — повторная выжимка не нужна
+    todo2 = pipeline.daily("agent", log=lambda *a: None)
+    assert todo2["need_summary"] == []
+
+    site = json.loads((sandbox / "docs/data.json").read_text())
+    by = {x["permit"]: x for x in site["lotteries"]}
+    assert by["9158"]["status"] == "ok"
+    assert by["9158"]["links"]["registration"].endswith("/haribo-loterija-2/")
+    assert by["9089"]["status"] == "no_summary" and by["9089"]["category"] == "service"
+    assert "9191" not in by  # журнальная лотерея скрыта
+    assert (sandbox / "docs/index.html").exists() and (sandbox / "docs/sw.js").exists()
+    assert "__BUILD__" not in (sandbox / "docs/sw.js").read_text()
+
+    # правила изменились — выжимку нужно сделать заново
+    PAGES["https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/"] = RULES_HTML.replace("1</td>", "2</td>")
+    todo3 = pipeline.daily("agent", log=lambda *a: None)
+    assert todo3["need_summary"] == ["9158"]
