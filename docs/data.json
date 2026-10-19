@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-19T20:39:14+03:00",
+ "updated": "2026-10-19T21:13:47+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "registry_fetched": "2026-10-19T15:30:00+03:00",
+ "registry_fetched": "2026-10-19T21:12:46+03:00",
  "lotteries": [
   {
    "permit": "9085",
@@ -72,7 +72,7 @@
    "category": "shop",
    "links": {
     "page": "https://www.loterijatev.lv/grn-lv",
-    "rules": null,
+    "rules": "https://www.loterijatev.lv/loterija/grn-lv/@rules/WEB_Noteikumi_Garnier_loterija_2026.pdf",
     "registration": null
    },
    "summary": null,
@@ -281,7 +281,7 @@
    "category": "shop",
    "links": {
     "page": "https://www.registerpromo.lv/lv/henkel-sch-lv",
-    "rules": null,
+    "rules": "https://www.registerpromo.lv/lv/loterija/henkel-sch-lv/rules.html",
     "registration": null
    },
    "summary": null,
@@ -414,7 +414,7 @@
    "category": "shop",
    "links": {
     "page": "https://www.rimiloterija.lv/septembris/",
-    "rules": null,
+    "rules": "https://www.rimiloterija.lv/septembris/assets26/WEB_Noteikumi_E-Rimi_septembra_loterija_2026.pdf",
     "registration": null
    },
    "summary": null,
@@ -934,7 +934,7 @@
    "category": "shop",
    "links": {
     "page": "https://www.kinder.com/lv/lv/xp/bueno/",
-    "rules": null,
+    "rules": "https://www.kinder.com/lv/lv/xp/bueno/assets26/Noteikumi_KinderBueno_loterija_2026.pdf",
     "registration": null
    },
    "summary": null,

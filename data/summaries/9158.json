@@ -62,6 +62,6 @@
  "age_min": null,
  "limits": "Один чек, один телефон и один человек могут выиграть только один приз",
  "notes": null,
- "_rules_sha": null,
+ "_rules_sha": "8f50df75e616ddb7",
  "_extracted": "2026-10-19T20:35:21+03:00"
 }
