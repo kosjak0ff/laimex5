@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T06:30:15+03:00",
+ "updated": "2026-10-20T07:57:49+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-20T06:29:14+03:00",
  "lotteries": [
@@ -5425,9 +5425,9 @@
    "place": "Latvijas Republika",
    "category": "service",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.zeltazivtina.lv/bonusu-klubs",
+    "rules": "https://www.zeltazivtina.lv/storage/app/media/ZZ_BK_2026_Q4.pdf",
+    "registration": "https://www.zeltazivtina.lv/nac-pie-zz"
    },
    "summary": null,
    "checks": [],

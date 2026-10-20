@@ -337,5 +337,11 @@
   "rules_type": "pdf",
   "rules_sha": "909a9de86c6a9fa9",
   "rules_checked": "2026-10-20T06:30:12+03:00"
+ },
+ "9132": {
+  "page": "https://www.zeltazivtina.lv/bonusu-klubs",
+  "rules": "https://www.zeltazivtina.lv/storage/app/media/ZZ_BK_2026_Q4.pdf",
+  "registration": "https://www.zeltazivtina.lv/nac-pie-zz",
+  "found_by": "agent-search"
  }
 }
