@@ -1,0 +1,159 @@
+{
+ "title": "Spēlē ar Sprite",
+ "organizer": "SIA «Guilty»",
+ "sponsor": "SIA «Coca‑Cola HBC Latvia» (Sprite)",
+ "permit": null,
+ "what_to_buy": "Любой лотерейный Sprite с кодом под крышкой: Sprite Full Sugar, Sprite Zero, Sprite Chill в банках 0,33 л и бутылках 0,5 л; Sprite Full Sugar 0,85/1/1,5/1,75/2 л; Sprite Zero 1,5 л",
+ "min_purchase_eur": null,
+ "where": "Любые розничные магазины в Латвии",
+ "how_to_enter": "Активировать участие в лотерее в мобильном приложении Coca‑Cola и зарегистрировать там 10‑значный код из-под крышки",
+ "registration_url": null,
+ "keep": "Чек и крышку с уникальным кодом — их нужно предъявить при получении приза",
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2026-12-04",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-10-12",
+   "time": "12:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-08",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 30
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": "12:00",
+   "period_from": "2026-10-09",
+   "period_to": "2026-10-15",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 50
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "time": "12:00",
+   "period_from": "2026-10-16",
+   "period_to": "2026-10-22",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 60
+    }
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "time": "12:00",
+   "period_from": "2026-10-23",
+   "period_to": "2026-10-29",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 60
+    }
+   ]
+  },
+  {
+   "date": "2026-11-09",
+   "time": "12:00",
+   "period_from": "2026-10-30",
+   "period_to": "2026-11-05",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 60
+    }
+   ]
+  },
+  {
+   "date": "2026-11-16",
+   "time": "12:00",
+   "period_from": "2026-11-06",
+   "period_to": "2026-11-12",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 70
+    }
+   ]
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:00",
+   "period_from": "2026-11-13",
+   "period_to": "2026-11-19",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 70
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "time": "12:00",
+   "period_from": "2026-11-20",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "1 mēneša Go3 Sport+ kupons",
+     "qty": 100
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "time": "11:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "VIP biļetes Žalgiris basketbola spēlei 2 personām 10. decembrī",
+     "qty": 1
+    },
+    {
+     "name": "Standarta biļetes Žalgiris basketbola spēlei 2 personām 10. decembrī",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "VIP-билеты на матч Žalgiris на 2 человек (10 декабря)",
+   "qty": 1,
+   "unit_value_eur": 320.0,
+   "total_value_eur": 320.0
+  },
+  {
+   "name": "Стандартные билеты на матч Žalgiris на 2 человек (10 декабря)",
+   "qty": 1,
+   "unit_value_eur": 210.0,
+   "total_value_eur": 210.0
+  },
+  {
+   "name": "Купон Go3 Sport+ на 1 месяц",
+   "qty": 500,
+   "unit_value_eur": 24.99,
+   "total_value_eur": 12495.0
+  }
+ ],
+ "prize_fund_eur": 13025.0,
+ "odds": "502 к 569 242",
+ "winners_published": "Полный список победителей — на https://www.coca-cola.com/lv/lv до 4 декабря 2026; победителям пишут на e-mail из профиля приложения Coca‑Cola",
+ "claim_deadline": "2026-12-09",
+ "age_min": 13,
+ "limits": "Можно участвовать многократно, но один участник выигрывает не более 1 приза каждого вида и не более 3 призов всего. Не участвуют сотрудники организатора, дистрибьютора, рекламного агентства и их близкие родственники",
+ "notes": "Чтобы воспользоваться любым призом, нужно быть старше 18 лет (иначе — с согласия законного представителя). Купон Go3 действует до 31.03.2027; регистрация до 30.11.2026 17:00.",
+ "_rules_sha": "cf23d86414cebe4d",
+ "_extracted": "2026-10-20T06:20:21+03:00"
+}

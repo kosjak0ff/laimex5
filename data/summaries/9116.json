@@ -1,0 +1,187 @@
+{
+ "title": "Ar Coca‑Cola tas garšo vēl labāk",
+ "organizer": "SIA «Guilty»",
+ "sponsor": "SIA «Coca‑Cola HBC Latvia» (Coca‑Cola, Fanta, Sprite)",
+ "permit": null,
+ "what_to_buy": "Любой лотерейный напиток с уникальным кодом под крышкой: Coca‑Cola (Original, Zero Sugar, Zero Sugar Zero Caffeine, Cherry, Lemon, Lemon Zero, Zero Sugar Lime), Fanta (Orange, Orange Zero, Diablo), Sprite (Sprite, Zero, Chill) в стекле 0,25 л, банках 0,33 л и бутылках 0,5–2 л (полный список ассортимента — в п. 4.1 правил)",
+ "min_purchase_eur": null,
+ "where": "Любые розничные магазины в Латвии",
+ "how_to_enter": "Активировать участие в лотерее в мобильном приложении Coca‑Cola и зарегистрировать там 10‑значный код из-под крышки",
+ "registration_url": null,
+ "keep": "Чек и крышку с уникальным кодом — их нужно предъявить при получении приза",
+ "lottery_start": "2026-09-07",
+ "lottery_end": "2026-11-06",
+ "registration_start": "2026-09-07",
+ "registration_end": "2026-10-30",
+ "draws": [
+  {
+   "date": "2026-09-15",
+   "time": "12:00",
+   "period_from": "2026-09-07",
+   "period_to": "2026-09-13",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 4
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 600
+    }
+   ]
+  },
+  {
+   "date": "2026-09-22",
+   "time": "12:00",
+   "period_from": "2026-09-14",
+   "period_to": "2026-09-20",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 5
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-09-29",
+   "time": "12:00",
+   "period_from": "2026-09-21",
+   "period_to": "2026-09-27",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 5
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-10-06",
+   "time": "12:00",
+   "period_from": "2026-09-28",
+   "period_to": "2026-10-04",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 7
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-10-13",
+   "time": "12:00",
+   "period_from": "2026-10-05",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 8
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-10-20",
+   "time": "12:00",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-18",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 8
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "12:00",
+   "period_from": "2026-10-19",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 8
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 800
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "12:00",
+   "period_from": "2026-10-26",
+   "period_to": "2026-10-30",
+   "prizes": [
+    {
+     "name": "Euronics dāvanu karte 50 EUR",
+     "qty": 5
+    },
+    {
+     "name": "McDonald’s kupons Big Mac burgeris",
+     "qty": 600
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "12:00",
+   "period_from": "2026-09-07",
+   "period_to": "2026-10-30",
+   "prizes": [
+    {
+     "name": "Edenred priekšapmaksas karte 2000 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Предоплаченная карта Edenred Mastercard (Edenred priekšapmaksas karte)",
+   "qty": 1,
+   "unit_value_eur": 2000.0,
+   "total_value_eur": 2000.0
+  },
+  {
+   "name": "Подарочная карта Euronics dāvanu karte",
+   "qty": 50,
+   "unit_value_eur": 50.0,
+   "total_value_eur": 2500.0
+  },
+  {
+   "name": "Купон McDonald’s Big Mac burgeris",
+   "qty": 6000,
+   "unit_value_eur": 1.85,
+   "total_value_eur": 11100.0
+  }
+ ],
+ "prize_fund_eur": 15600.0,
+ "odds": "6051 к 6 975 889",
+ "winners_published": "Полный список победителей — на https://www.coca-cola.com/lv/lv до 6 ноября 2026; победителям пишут на e-mail из профиля приложения Coca‑Cola",
+ "claim_deadline": "2026-11-13",
+ "age_min": 13,
+ "limits": "Можно участвовать многократно, но один участник выигрывает не более 1 приза каждого вида и не более 3 призов всего. Не участвуют сотрудники организатора, дистрибьютора, рекламного агентства и их близкие родственники",
+ "notes": "Пользоваться картой Edenred и Euronics могут лица от 18 лет, купоном McDonald’s — от 16 лет (до этого — через законного представителя). Купон Big Mac действует до 30.11.2026 и активируется в приложении McDonald’s; регистрация до 30.10.2026 17:00.",
+ "_rules_sha": "3852b2a069f1e7df",
+ "_extracted": "2026-10-20T06:20:21+03:00"
+}

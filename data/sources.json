@@ -313,5 +313,20 @@
   "rules_type": "html",
   "rules_sha": "a4182ffede9e59ba",
   "rules_checked": "2026-10-19T21:25:08+03:00"
+ },
+ "9129": {
+  "page": "https://www.coca-cola.com/lv/lv/offerings/schweppes-gentlemen",
+  "rules": "https://www.coca-cola.com/content/dam/onexp/lv/lv/promotions/schweppes-netflix-2026/schweppes_ncp_lv.pdf",
+  "found_by": "agent-search"
+ },
+ "9181": {
+  "page": "https://www.tele2.lv/superpiedavajums/",
+  "rules": "https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf",
+  "found_by": "agent-search"
+ },
+ "9176": {
+  "page": "https://www.makskeresanaskarte.lv/news/pienacis_laiks_e_makskeresanas_kartes_loterijai",
+  "rules": "https://manacope.lv/files/file/62324",
+  "found_by": "agent-search"
  }
 }

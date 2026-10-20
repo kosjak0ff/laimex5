@@ -1,0 +1,189 @@
+{
+ "title": "Rimi rudens loterija 2026",
+ "organizer": "SIA «SOMESE Baltic»",
+ "sponsor": "SIA «Rimi Latvia»",
+ "permit": "9177",
+ "what_to_buy": "Покупка на сумму от 20.00 EUR в одном чеке с картой «Mans Rimi»; алкоголь (включая пиво), табак, курительные растительные продукты, электронные сигареты и жидкости, лекарства, энергетики, азартные игры, газеты и журналы, пожертвования, смеси для младенцев до 6 мес. и подарочные карты в сумму не входят",
+ "min_purchase_eur": 20.0,
+ "where": "Любой магазин Rimi в Латвии и интернет-магазин rimi.lv/e-veikals",
+ "how_to_enter": "Бесплатная регистрация на сайте www.rimiloterija.lv/rudens: имя, фамилия, номер чека (или итогового счёта интернет-заказа) и телефон; по желанию можно загрузить фото чека. Нужна активная карта «Mans Rimi», предъявленная при покупке",
+ "registration_url": "https://www.rimiloterija.lv/rudens",
+ "keep": "Оригинал чека или итогового счёта интернет-заказа до 2026-12-11",
+ "lottery_start": "2026-10-20",
+ "lottery_end": "2026-11-20",
+ "registration_start": "2026-10-20",
+ "registration_end": "2026-11-16",
+ "draws": [
+  {
+   "date": "2026-10-27",
+   "time": "14:30",
+   "period_from": "2026-10-20",
+   "period_to": "2026-10-26",
+   "prizes": [
+    {
+     "name": "Aerogrils “the Dual Smart Air Fry aerogrils AIR711”",
+     "qty": 1
+    },
+    {
+     "name": "Blenderis \"the Blend & More blenderis STB820\"",
+     "qty": 1
+    },
+    {
+     "name": "BENU aptiekas dāvanu karte 100 EUR",
+     "qty": 5
+    },
+    {
+     "name": "Lego komplekts “Home Alone”",
+     "qty": 3
+    },
+    {
+     "name": "Rimi dāvanu karte 100 EUR",
+     "qty": 25
+    }
+   ]
+  },
+  {
+   "date": "2026-11-03",
+   "time": "14:30",
+   "period_from": "2026-10-27",
+   "period_to": "2026-11-02",
+   "prizes": [
+    {
+     "name": "Aerogrils “the Dual Smart Air Fry aerogrils AIR711”",
+     "qty": 1
+    },
+    {
+     "name": "Blenderis \"the Blend & More blenderis STB820\"",
+     "qty": 1
+    },
+    {
+     "name": "BENU aptiekas dāvanu karte 100 EUR",
+     "qty": 5
+    },
+    {
+     "name": "Lego komplekts “Home Alone”",
+     "qty": 3
+    },
+    {
+     "name": "Rimi dāvanu karte 100 EUR",
+     "qty": 25
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "14:30",
+   "period_from": "2026-11-03",
+   "period_to": "2026-11-09",
+   "prizes": [
+    {
+     "name": "Aerogrils “the Dual Smart Air Fry aerogrils AIR711”",
+     "qty": 1
+    },
+    {
+     "name": "Blenderis \"the Blend & More blenderis STB820\"",
+     "qty": 1
+    },
+    {
+     "name": "BENU aptiekas dāvanu karte 100 EUR",
+     "qty": 5
+    },
+    {
+     "name": "Lego komplekts “Home Alone”",
+     "qty": 3
+    },
+    {
+     "name": "Rimi dāvanu karte 100 EUR",
+     "qty": 25
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "time": "14:30",
+   "period_from": "2026-11-10",
+   "period_to": "2026-11-16",
+   "prizes": [
+    {
+     "name": "Aerogrils “the Dual Smart Air Fry aerogrils AIR711”",
+     "qty": 1
+    },
+    {
+     "name": "Blenderis \"the Blend & More blenderis STB820\"",
+     "qty": 1
+    },
+    {
+     "name": "BENU aptiekas dāvanu karte 100 EUR",
+     "qty": 5
+    },
+    {
+     "name": "Lego komplekts “Home Alone”",
+     "qty": 3
+    },
+    {
+     "name": "Rimi dāvanu karte 100 EUR",
+     "qty": 25
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-10-20",
+   "period_to": "2026-11-16",
+   "prizes": [
+    {
+     "name": "Rimi dāvanu karte 5000 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочная карта Rimi dāvanu karte на 5000 EUR",
+   "qty": 1,
+   "unit_value_eur": 5000.0,
+   "total_value_eur": 5000.0
+  },
+  {
+   "name": "Подарочная карта Rimi dāvanu karte на 100 EUR",
+   "qty": 100,
+   "unit_value_eur": 100.0,
+   "total_value_eur": 10000.0
+  },
+  {
+   "name": "Набор Lego «Home Alone»",
+   "qty": 12,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Подарочная карта аптеки BENU на 100 EUR",
+   "qty": 20,
+   "unit_value_eur": 100.0,
+   "total_value_eur": 2000.0
+  },
+  {
+   "name": "Аэрогриль «the Dual Smart Air Fry aerogrils AIR711»",
+   "qty": 4,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Блендер «the Blend & More blenderis STB820»",
+   "qty": 4,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  }
+ ],
+ "prize_fund_eur": 21919.08,
+ "odds": "141 к 20 000",
+ "winners_published": "На www.rimiloterija.lv/rudens в течение 2 рабочих дней после каждого розыгрыша; полный список — 20 ноября 2026",
+ "claim_deadline": "2026-12-04",
+ "age_min": 16,
+ "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз, повторная регистрация — только с новой покупкой. Не участвуют сотрудники SOMESE Baltic, Rimi Latvia и Rimi Baltic",
+ "notes": "Призы выдают в офисе организатора (Ernestīnes iela 12, Rīga) по паспорту/ID или, по заявке на loterijatev.lv до 03.12.2026, высылают в пакомат Omniva. Дата розыгрыша главного приза в правилах не указана; претензии — до 2026-12-11.",
+ "_rules_sha": "8b39310c5b71a660",
+ "_extracted": "2026-10-20T06:20:21+03:00"
+}
