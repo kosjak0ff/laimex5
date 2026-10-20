@@ -1,8 +1,9 @@
 {
- "generated": "2026-10-20T06:30:15+03:00",
+ "generated": "2026-10-20T07:59:15+03:00",
  "need_summary": [
   "9129",
   "9131",
+  "9132",
   "9176",
   "9181"
  ],
@@ -72,17 +73,6 @@
    "end": "2026-12-21",
    "place": "Latvijas Republika",
    "category": "shop"
-  },
-  {
-   "permit": "9132",
-   "organizer": "SIA “Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "Tele2 pakalpojumam",
-   "name": "Zelta Zivtiņa Bonusu klubs",
-   "start": "2026-09-01",
-   "end": "2027-01-07",
-   "place": "Latvijas Republika",
-   "category": "service"
   },
   {
    "permit": "9162",
