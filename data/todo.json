@@ -1,9 +1,11 @@
 {
- "generated": "2026-10-20T07:59:15+03:00",
+ "generated": "2026-10-20T10:55:17+03:00",
  "need_summary": [
   "9129",
   "9131",
   "9132",
+  "9172",
+  "9173",
   "9176",
   "9181"
  ],
@@ -94,28 +96,6 @@
    "start": "2027-02-01",
    "end": "2027-04-08",
    "place": "Latvijas Republika (veikali un interneta veikali)",
-   "category": "shop"
-  },
-  {
-   "permit": "9172",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
-   "name": "VIVO rudens loterija 2026",
-   "start": "2026-10-20",
-   "end": "2026-11-20",
-   "place": "centra “VIVO” veikali (izņemot veikalu “Rimi”), Jelgavā, Katoļu iela 18,",
-   "category": "shop"
-  },
-  {
-   "permit": "9173",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
-   "name": "OSTMALA rudens loterija 2026",
-   "start": "2026-10-20",
-   "end": "2026-11-20",
-   "place": "tirdzniecības centra “Ostmala” tirdzniecības vietas (izņemot veikalu “Rimi”), Liepāja, Kārļa Zāles laukums 8,",
    "category": "shop"
   },
   {

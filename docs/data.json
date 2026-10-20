@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-20T07:59:15+03:00",
+ "updated": "2026-10-20T10:55:17+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "registry_fetched": "2026-10-20T07:58:11+03:00",
+ "registry_fetched": "2026-10-20T10:54:06+03:00",
  "lotteries": [
   {
    "permit": "9085",
@@ -3343,8 +3343,8 @@
    "place": "centra “VIVO” veikali (izņemot veikalu “Rimi”), Jelgavā, Katoļu iela 18,",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://www.loterijatev.lv/vivo",
+    "rules": "https://www.loterijatev.lv/loterija/vivo/@rules/WEB_Noteikumi_VIVO_rudens_loterija_2026.pdf",
     "registration": null
    },
    "summary": null,
@@ -3362,8 +3362,8 @@
    "place": "tirdzniecības centra “Ostmala” tirdzniecības vietas (izņemot veikalu “Rimi”), Liepāja, Kārļa Zāles laukums 8,",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://www.loterijatev.lv/ostmala",
+    "rules": "https://www.loterijatev.lv/loterija/ostmala/@rules/WEB_oteikumi_OSTMALA_rudens_loterija_2026.pdf",
     "registration": null
    },
    "summary": null,
