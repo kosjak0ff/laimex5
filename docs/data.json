@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-21T06:21:43+03:00",
+ "updated": "2026-10-21T06:23:26+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "registry_fetched": "2026-10-20T10:54:06+03:00",
+ "registry_fetched": "2026-10-21T06:22:11+03:00",
  "lotteries": [
   {
    "permit": "9085",
@@ -1802,7 +1802,7 @@
    "category": "shop",
    "links": {
     "page": "https://merrildloterija.lv/",
-    "rules": null,
+    "rules": "https://merrildloterija.lv/noteikumi/",
     "registration": "https://merrildloterija.lv/"
    },
    "summary": null,

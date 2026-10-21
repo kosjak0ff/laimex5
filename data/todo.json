@@ -1,26 +1,11 @@
 {
- "generated": "2026-10-20T10:55:17+03:00",
+ "generated": "2026-10-21T06:23:26+03:00",
  "need_summary": [
-  "9129",
-  "9131",
-  "9132",
-  "9172",
-  "9173",
-  "9176",
-  "9181"
+  "9091",
+  "9113",
+  "9131"
  ],
  "need_sources": [
-  {
-   "permit": "9071",
-   "organizer": "SIA „Latvijas Mobilais Telefons”",
-   "organizer_reg": "50003050931",
-   "purchase": "LMT Kartes “Sarunas nedēļai”, “Internets nedēļai” vai “Nedēļa visam” pakalpojumam",
-   "name": "LMT Kartes vasara 2026",
-   "start": "2026-07-14",
-   "end": "2026-10-20",
-   "place": "Latvijas Republika",
-   "category": "service"
-  },
   {
    "permit": "9089",
    "organizer": "AAS “BALTA”",
@@ -33,17 +18,6 @@
    "category": "service"
   },
   {
-   "permit": "9091",
-   "organizer": "SIA “Sprintlab group”",
-   "organizer_reg": "40103364801",
-   "purchase": "vismaz vienai Merild precei",
-   "name": "MERRILD Rudens Loterija veikalos TOP",
-   "start": "2026-09-23",
-   "end": "2026-10-21",
-   "place": "Veikali “TOP” un “mini top!” Latvijas Republikā",
-   "category": "shop"
-  },
-  {
    "permit": "9102",
    "organizer": "Luminor Bank AS Latvijas filiāle",
    "organizer_reg": "40203154352",
@@ -53,17 +27,6 @@
    "end": "2027-01-04",
    "place": "Latvijas Republika",
    "category": "service"
-  },
-  {
-   "permit": "9113",
-   "organizer": "SIA “PTA”",
-   "organizer_reg": "40003386198",
-   "purchase": "Candy un Haier firmas preču pirkumam",
-   "name": "Pērc Candy un Haier tehniku un laimē",
-   "start": "2026-09-01",
-   "end": "2026-12-01",
-   "place": "Dambja iela 3A, Rīga, LV-1005, Latvija SIA “PTA” veikals",
-   "category": "shop"
   },
   {
    "permit": "9121",
