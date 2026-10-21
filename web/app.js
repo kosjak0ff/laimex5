@@ -30,6 +30,7 @@ function plural(n, one, few, many) {
   if (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) return few;
   return many;
 }
+function days(n) { return `${n} ${plural(n, "день", "дня", "дней")}`; }
 function el(tag, attrs = {}, ...kids) {
   const e = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
@@ -42,11 +43,19 @@ function el(tag, attrs = {}, ...kids) {
 
 // ---------------------------------------------------------------- данные
 
+// Последний день, когда можно купить и зарегистрировать чек.
+function regEnd(it) { return it.summary?.registration_end || it.end; }
+
+// soon — ещё не началась; open — можно участвовать; closed — регистрация закончилась,
+// но лотерея ещё идёт (ждём розыгрыша); past — завершилась.
 function phase(it) {
   if (it.start > state.today) return "soon";
   if (it.end < state.today) return "past";
-  return "now";
+  if (regEnd(it) < state.today) return "closed";
+  return "open";
 }
+function tabOf(it) { const p = phase(it); return p === "open" || p === "closed" ? "now" : p; }
+
 function nextDraw(it) {
   const draws = it.summary?.draws || [];
   return draws.map(d => d.date).filter(d => d && d >= state.today).sort()[0] || null;
@@ -57,21 +66,36 @@ function mainPrize(s) {
 }
 function haystack(it) {
   const s = it.summary || {};
-  return [it.name, it.organizer, it.purchase, it.place, s.title, s.sponsor, s.what_to_buy, s.where,
-    ...(s.prizes || []).map(p => p.name)].join(" ").toLowerCase();
+  return [it.name, it.organizer, it.purchase, it.place, s.title, s.sponsor, s.what_to_buy, s.buy_short,
+    s.where, ...(s.prizes || []).map(p => p.name)].join(" ").toLowerCase();
+}
+
+// Короткая строка «что купить»: из выжимки, иначе обрезаем полную.
+function shortBuy(it) {
+  const s = it.summary;
+  if (s?.buy_short) return s.buy_short;
+  const full = s?.what_to_buy || it.purchase || "";
+  const cut = full.split(/;|\(| — /)[0].trim();
+  return cut.length > 110 ? cut.slice(0, 105).replace(/\s+\S*$/, "") + "…" : cut;
 }
 
 function visible() {
   const q = state.q.trim().toLowerCase();
-  let list = state.items.filter(it => phase(it) === state.tab);
+  let list = state.items.filter(it => tabOf(it) === state.tab);
   if (!state.filters.has("service")) list = list.filter(it => it.category !== "service");
-  if (state.filters.has("ending")) list = list.filter(it => daysBetween(state.today, it.end) <= 7);
+  if (state.filters.has("ending")) list = list.filter(it =>
+    phase(it) === "open" && daysBetween(state.today, regEnd(it)) <= 7);
   if (state.filters.has("draw")) list = list.filter(it => {
     const d = nextDraw(it); return d && daysBetween(state.today, d) <= 3;
   });
   if (q) list = list.filter(it => it._hay.includes(q));
-  const by = { now: (a, b) => a.end.localeCompare(b.end), soon: (a, b) => a.start.localeCompare(b.start),
-    past: (a, b) => b.end.localeCompare(a.end) }[state.tab];
+  const rank = { open: 0, closed: 1, soon: 0, past: 0 };
+  const by = {
+    now: (a, b) => rank[phase(a)] - rank[phase(b)] ||
+      (phase(a) === "open" ? regEnd(a).localeCompare(regEnd(b)) : a.end.localeCompare(b.end)),
+    soon: (a, b) => a.start.localeCompare(b.start),
+    past: (a, b) => b.end.localeCompare(a.end),
+  }[state.tab];
   return list.sort(by);
 }
 
@@ -79,11 +103,12 @@ function visible() {
 
 function leftLabel(it) {
   const p = phase(it);
-  if (p === "soon") return { text: `начнётся ${fmtDate(it.start)}`, hot: false };
+  if (p === "soon") return { text: `с ${fmtDate(it.start)}`, hot: false };
   if (p === "past") return { text: `завершилась ${fmtDate(it.end)}`, hot: false };
-  const n = daysBetween(state.today, it.end);
+  if (p === "closed") return { text: "регистрация закрыта", hot: false };
+  const n = daysBetween(state.today, regEnd(it));
   if (n === 0) return { text: "последний день", hot: true };
-  return { text: `ещё ${n} ${plural(n, "день", "дня", "дней")}`, hot: n <= 3 };
+  return { text: `ещё ${days(n)}`, hot: n <= 3 };
 }
 
 function prizeLine(s) {
@@ -91,46 +116,49 @@ function prizeLine(s) {
   const top = mainPrize(s);
   const total = s.prizes.reduce((a, p) => a + (p.qty || 0), 0);
   const rest = total - (top.qty || 1);
-  let t = (top.qty > 1 ? `${top.qty} × ` : "") + top.name;
-  if (rest > 0) t += ` и ещё ${rest} ${plural(rest, "приз", "приза", "призов")}`;
+  let name = top.name.length > 48 ? top.name.slice(0, 45).replace(/\s+\S*$/, "") + "…" : top.name;
+  let t = (top.qty > 1 ? `${top.qty} × ` : "") + name;
+  if (rest > 0) t += ` и ещё ${rest}`;
   if (s.prize_fund_eur != null) t += `, фонд ${money(s.prize_fund_eur)}`;
   return t;
 }
 
-function registrationLine(it) {
-  const s = it.summary;
-  if (!s) return `до ${fmtDate(it.end)} (уточните в правилах)`;
-  const a = s.registration_start, b = s.registration_end || s.lottery_end;
-  return a && a > state.today ? `с ${fmtDate(a)} по ${fmtDate(b)}` : `до ${fmtDate(b)}`;
+function regLine(it) {
+  const p = phase(it), s = it.summary;
+  if (p === "closed") return `приём закрыт ${fmtDate(regEnd(it))}`;
+  if (p === "soon") return s?.registration_start ? `${fmtRange(s.registration_start, regEnd(it))}` : `с ${fmtDate(it.start)}`;
+  if (!s) return `${fmtDate(it.end)} (уточните в правилах)`;
+  return fmtDate(regEnd(it));
 }
 
 function card(it) {
   const node = $("#card-tpl").content.firstElementChild.cloneNode(true);
-  const s = it.summary;
+  const s = it.summary, p = phase(it);
   node.id = `p-${it.permit}`;
+  node.classList.toggle("is-closed", p === "closed");
   $(".t-title", node).textContent = s?.title || it.name || it.purchase;
-  $(".t-org", node).textContent = s?.sponsor && s.sponsor !== s.organizer
-    ? `${s.sponsor}, проводит ${s.organizer}` : (s?.organizer || it.organizer);
+  $(".t-org", node).textContent = s?.sponsor || s?.organizer || it.organizer;
   const left = leftLabel(it);
   const lt = $(".t-left", node);
   lt.textContent = left.text;
   lt.classList.toggle("hot", left.hot);
-  $(".r-buy", node).textContent = s?.what_to_buy || it.purchase;
-  $(".r-where", node).textContent = s?.where || it.place;
-  $(".r-reg", node).textContent = registrationLine(it);
+  $(".r-buy", node).textContent = shortBuy(it);
+  $(".r-reg", node).textContent = regLine(it);
   $(".r-prize", node).textContent = prizeLine(s);
 
   const nd = nextDraw(it);
-  if (nd && phase(it) !== "past") {
+  if (nd && p !== "past") {
     const n = daysBetween(state.today, nd);
-    const when = n === 0 ? "сегодня" : n === 1 ? "завтра" : `через ${n} ${plural(n, "день", "дня", "дней")}`;
-    $(".t-next", node).append("Следующий розыгрыш: ", el("b", {}, fmtDate(nd)), ` (${when})`);
+    const when = n === 0 ? "сегодня" : n === 1 ? "завтра" : `через ${days(n)}`;
+    $(".t-next", node).append(p === "closed" ? "Розыгрыш: " : "Ближайший розыгрыш: ",
+      el("b", {}, fmtDate(nd)), ` (${when})`);
   }
 
   const reg = it.links?.registration || s?.registration_url || it.links?.page;
   const regA = $(".t-register", node);
-  if (reg && phase(it) === "now") regA.href = reg; else regA.hidden = true;
-  if (phase(it) === "soon" && reg) { regA.hidden = false; regA.href = reg; regA.textContent = "Сайт лотереи"; regA.classList.remove("primary"); }
+  if (reg && p === "open") regA.href = reg;
+  else if (reg && p === "soon") { regA.href = reg; regA.textContent = "Сайт лотереи"; regA.classList.remove("primary"); }
+  else regA.hidden = true;
   const rulesA = $(".t-rules", node);
   if (it.links?.rules) rulesA.href = it.links.rules; else rulesA.hidden = true;
 
@@ -151,12 +179,16 @@ function details(it) {
   if (!s) {
     out.push(el("p", { class: "pending" }, "Правила этой лотереи ещё не разобраны. Ниже — данные из реестра VID; подробности появятся после следующего обновления."));
   } else if (it.status === "ok") {
-    out.push(el("p", { class: "check ok" }, `Сверено автоматически: ${it.checks.length} ${plural(it.checks.length, "проверка", "проверки", "проверок")} из ${it.checks.length} — даты совпадают с реестром VID, сумма призов сходится с фондом.`));
+    out.push(el("p", { class: "check ok" }, `Сверено автоматически: даты совпадают с реестром VID, сумма призов сходится с фондом (${it.checks.length} ${plural(it.checks.length, "проверка", "проверки", "проверок")}).`));
   } else {
     const bad = it.checks.filter(c => !c.ok);
     out.push(el("div", { class: "check warn" }, el("strong", {}, "Проверьте по правилам. "),
       "Автоматическая сверка нашла расхождения:", el("ul", {}, bad.map(c => el("li", {}, c.text)))));
   }
+
+  out.push(el("h3", {}, "Что купить и где"));
+  out.push(el("p", {}, s?.what_to_buy || it.purchase));
+  out.push(el("p", {}, s?.where || it.place));
 
   if (s?.how_to_enter || s?.keep || s?.limits) {
     out.push(el("h3", {}, "Как участвовать"));
@@ -185,8 +217,8 @@ function details(it) {
       el("td", {}, p.name),
       el("td", {}, `${p.qty} × ${money(p.unit_value_eur) || "?"}`),
       el("td", {}, money(p.total_value_eur))));
-    out.push(el("table", { class: "prizes" }, el("tbody", {}, rows),
-      s.prize_fund_eur != null ? el("tfoot", {}, el("tr", {}, el("td", {}, "Призовой фонд"), el("td", {}), el("td", {}, money(s.prize_fund_eur)))) : null));
+    out.push(el("div", { class: "table-wrap" }, el("table", { class: "prizes" }, el("tbody", {}, rows),
+      s.prize_fund_eur != null ? el("tfoot", {}, el("tr", {}, el("td", {}, "Призовой фонд"), el("td", {}), el("td", {}, money(s.prize_fund_eur)))) : null)));
   }
 
   out.push(el("h3", {}, "Даты и организатор"));
@@ -211,17 +243,31 @@ function render() {
   const counts = { now: 0, soon: 0, past: 0 };
   for (const it of state.items) {
     if (!state.filters.has("service") && it.category === "service") continue;
-    counts[phase(it)]++;
+    if (phase(it) === "closed") continue; // в счётчике — только где можно участвовать
+    counts[tabOf(it)]++;
   }
   for (const [k, v] of Object.entries(counts)) $(`[data-count="${k}"]`).textContent = v;
   const list = visible();
-  const ol = $("#list");
-  ol.replaceChildren(...list.map(card));
+  const nodes = [];
+  let divided = false;
+  for (const it of list) {
+    if (state.tab === "now" && phase(it) === "closed" && !divided) {
+      nodes.push(el("li", { class: "divider" },
+        el("h2", {}, "Регистрация закончилась"),
+        el("p", {}, "Чеки уже не принимают, но розыгрыши ещё впереди.")));
+      divided = true;
+    }
+    nodes.push(card(it));
+  }
+  $("#list").replaceChildren(...nodes);
   const st = $("#status");
   if (!list.length) {
     st.textContent = state.q || state.filters.size
       ? "Ничего не нашлось. Уберите фильтры или измените запрос."
       : state.tab === "soon" ? "Новых объявленных лотерей пока нет." : "Здесь пока пусто.";
+  } else if (state.tab === "now") {
+    const open = list.filter(it => phase(it) === "open").length;
+    st.textContent = `Можно участвовать: ${open} ${plural(open, "лотерея", "лотереи", "лотерей")}`;
   } else {
     st.textContent = `${list.length} ${plural(list.length, "лотерея", "лотереи", "лотерей")}`;
   }
@@ -232,7 +278,7 @@ function openFromHash() {
   if (!id.startsWith("p-")) return;
   const it = state.items.find(x => `p-${x.permit}` === id);
   if (!it) return;
-  if (phase(it) !== state.tab) { state.tab = phase(it); syncTabs(); render(); }
+  if (tabOf(it) !== state.tab) { state.tab = tabOf(it); syncTabs(); render(); }
   const li = document.getElementById(id);
   if (!li) return;
   li.classList.add("focus");

@@ -127,8 +127,12 @@ def step_todo(rows: list[dict], sources: dict, log=print) -> dict:
             f"{text_file.read_text(encoding='utf-8')}\n",
             encoding="utf-8",
         )
+    # с какого дня лотерея ждёт выжимку или правила — для контроля здоровья
+    prev = load(TODO_JSON, {}).get("waiting_since", {})
+    waiting = set(need_summary) | {r["permit"] for r in need_sources if r["start"] <= today().isoformat()}
+    waiting_since = {p: prev.get(p, today().isoformat()) for p in sorted(waiting)}
     todo = {"generated": now_iso(), "need_summary": need_summary,
-            "need_sources": need_sources, "broken": broken}
+            "need_sources": need_sources, "broken": broken, "waiting_since": waiting_since}
     save(TODO_JSON, todo)
     log(f"Нужна выжимка: {len(need_summary)}; не найдены правила: {len(need_sources)}; "
         f"проблемы с правилами: {len(broken)}")

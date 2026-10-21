@@ -88,3 +88,19 @@ def test_daily_cycle(sandbox):
     PAGES["https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/"] = RULES_HTML.replace("1</td>", "2</td>")
     todo3 = pipeline.daily("agent", log=lambda *a: None)
     assert todo3["need_summary"] == ["9158"]
+
+
+def test_health(sandbox, monkeypatch):
+    from laimex import health
+    monkeypatch.setattr(health, "SUMMARIES", sandbox / "data/summaries")
+    monkeypatch.setattr(health, "REGISTRY_JSON", sandbox / "data/registry.json")
+    monkeypatch.setattr(health, "TODO_JSON", sandbox / "data/todo.json")
+    monkeypatch.setattr(health, "HEALTH_JSON", sandbox / "data/health.json")
+    pipeline.daily("agent", log=lambda *a: None)
+    # сразу после запуска: реестр свежий, выжимка ждёт 0 дней — всё в порядке
+    assert health.check(date(2026, 10, 19))["ok"]
+    # через 4 дня та же лотерея всё ещё ждёт выжимку — тревога
+    res = health.check(date(2026, 10, 23))
+    assert not res["ok"]
+    assert any("9158" in p for p in res["problems"])
+    assert any("Реестр VID" in p for p in res["problems"])

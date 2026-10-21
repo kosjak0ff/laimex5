@@ -3,7 +3,7 @@
 #
 # Запускается:
 #  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
-#  - когда рутина Claude добавила новые ссылки на правила (изменился data/sources.json);
+#  - задачей Claude (tools/run_robot.py): в начале её работы и после того, как она нашла новые правила;
 #  - вручную: вкладка Actions → laimex-daily → Run workflow.
 # Готовый сайт публикуется в ветку gh-pages: https://kosjak0ff.github.io/laimex5/
 #
@@ -13,12 +13,10 @@ name: laimex-daily
 on:
   schedule:
     - cron: "37 2 * * *"
-  push:
-    branches: [main]
-    paths: ["data/sources.json"]
   workflow_dispatch:
 permissions:
   contents: write
+  issues: write
 concurrency:
   group: laimex
   cancel-in-progress: false
@@ -54,3 +52,8 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: tools/publish_pages.sh
+      - name: Проверить здоровье (при проблемах откроется issue и придёт письмо)
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python -m laimex health --github-issue "$GITHUB_REPOSITORY"

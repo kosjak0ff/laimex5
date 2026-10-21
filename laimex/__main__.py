@@ -5,6 +5,7 @@
   python -m laimex save 9158 f.json — сохранить выжимку и показать проверки
   python -m laimex add-source 9158 --page URL [--rules URL] [--registration URL] [--no-fetch]
   python -m laimex build            — только пересобрать сайт
+  python -m laimex health           — проверить, всё ли обновляется
 """
 from __future__ import annotations
 
@@ -33,6 +34,8 @@ def main(argv=None):
     a.add_argument("--found-by", default="agent-search")
     a.add_argument("--no-fetch", action="store_true", help="только записать ссылки, правила скачает GitHub Actions")
     sub.add_parser("build")
+    h = sub.add_parser("health")
+    h.add_argument("--github-issue", metavar="OWNER/REPO", help="открыть/закрыть issue при проблемах")
     args = ap.parse_args(argv)
     ensure_dirs()
 
@@ -67,6 +70,12 @@ def main(argv=None):
         print(json.dumps(src.get(args.permit, {}), ensure_ascii=False, indent=1))
     elif args.cmd == "build":
         pipeline.build_site()
+    elif args.cmd == "health":
+        from . import health
+        res = health.check()
+        print("Всё в порядке" if res["ok"] else "Проблемы:\n- " + "\n- ".join(res["problems"]))
+        if args.github_issue:
+            print("Issue:", health.sync_issue(res, args.github_issue))
     return 0
 
 

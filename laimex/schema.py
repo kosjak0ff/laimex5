@@ -8,7 +8,7 @@ SUMMARY_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
     "required": [
-        "title", "organizer", "sponsor", "permit", "what_to_buy", "min_purchase_eur",
+        "title", "organizer", "sponsor", "permit", "what_to_buy", "buy_short", "min_purchase_eur",
         "where", "how_to_enter", "registration_url", "keep", "lottery_start", "lottery_end",
         "registration_start", "registration_end", "draws", "prizes", "prize_fund_eur",
         "odds", "winners_published", "claim_deadline", "age_min", "limits", "notes",
@@ -19,6 +19,7 @@ SUMMARY_SCHEMA = {
         "sponsor": {"type": ["string", "null"], "description": "Производитель/бренд/магазин, если указан отдельно"},
         "permit": {"type": ["string", "null"], "description": "Номер разрешения, если он есть в тексте правил, иначе null"},
         "what_to_buy": {"type": "string", "description": "По-русски, коротко и точно: что и сколько купить в одном чеке. Сохраняй названия товаров как в оригинале"},
+        "buy_short": {"type": "string", "description": "По-русски, не длиннее 70–90 символов: самое главное условие для карточки, например «2 продукта Haribo в одном чеке» или «Покупка от 20 € в Rimi с картой Mans Rimi». Если покупать можно только в одной сети или ТЦ — укажи её. Без списков исключений"},
         "min_purchase_eur": MONEY,
         "where": {"type": "string", "description": "По-русски: где покупать (сети, интернет-магазины, вся Латвия)"},
         "how_to_enter": {"type": "string", "description": "По-русски: как зарегистрироваться (форма на сайте, код под крышкой, карта лояльности — автоматически, SMS) и какие данные нужны"},
@@ -83,6 +84,7 @@ INSTRUCTIONS = """\
 Текстовые поля пиши по-русски, коротко и понятно обычному покупателю;
 названия товаров, брендов, магазинов и моделей призов оставляй как в оригинале.
 Даты — в формате YYYY-MM-DD. Суммы — числом в евро (5806.19).
+buy_short — короткая строка для карточки (до 90 символов); подробности и исключения — в what_to_buy.
 Розыгрыши (izlozes) перечисли все, с датой, временем, периодом покупок и призами.
 Призы (balvas) — по видам: количество, цена одного, общая цена. prize_fund_eur — итоговая
 сумма фонда (balvu fonds), как она указана в правилах.
@@ -95,6 +97,8 @@ def validate_shape(summary: dict) -> list[str]:
     for key in SUMMARY_SCHEMA["required"]:
         if key not in summary:
             errors.append(f"нет поля {key}")
+    if len(summary.get("buy_short") or "") > 100:
+        errors.append("buy_short длиннее 100 символов — сократи")
     if not isinstance(summary.get("draws", []), list):
         errors.append("draws должен быть списком")
     if not isinstance(summary.get("prizes", []), list):
