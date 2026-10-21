@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T11:43:21+03:00",
+ "updated": "2026-10-21T11:46:01+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-21T11:42:05+03:00",
  "lotteries": [
@@ -1809,9 +1809,95 @@
     "rules": "https://merrildloterija.lv/noteikumi/",
     "registration": "https://merrildloterija.lv/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "MERRILD Rudens Loterija veikalos TOP",
+    "organizer": "SIA «Sprintlab group»",
+    "sponsor": "«Lavazza Danmark» ApS (дистрибьютор Merrild)",
+    "permit": null,
+    "what_to_buy": "Минимум 1 кофе в зёрнах Merrild 1 кг в одном чеке: KAFIJAS PUPIŅAS MERRILD ARABICA 1KG, MERRILD CREMA 1KG, MERRILD CREMA DOLCE 1KG или MERRILD BARISTA CREMOSO 1KG",
+    "buy_short": "1 кофе в зёрнах Merrild 1 кг в магазинах TOP",
+    "min_purchase_eur": null,
+    "where": "Магазины сети «TOP» (и «mini top!») в Латвии, список партнёров — в приложении к правилам",
+    "how_to_enter": "Зарегистрировать чек на сайте www.merrildloterija.lv: номер и дата чека, имя, фамилия, телефон. Регистрация бесплатная, каждый чек — один раз",
+    "registration_url": "www.merrildloterija.lv",
+    "keep": "Чек до получения приза",
+    "lottery_start": "2026-09-23",
+    "lottery_end": "2026-10-21",
+    "registration_start": "2026-09-23",
+    "registration_end": "2026-10-20",
+    "draws": [
+     {
+      "date": "2026-10-21",
+      "time": "11:00",
+      "period_from": "2026-09-23",
+      "period_to": "2026-10-20",
+      "prizes": [
+       {
+        "name": "Smeg EGF03RDEU espresso kafijas automāts, sarkans",
+        "qty": 1
+       },
+       {
+        "name": "Smeg CGF01RDEU kafijas dzirnaviņas, sarkanas",
+        "qty": 3
+       },
+       {
+        "name": "Merrild Crema kafijas dāvanu komplekts",
+        "qty": 10
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Эспрессо-кофемашина Smeg EGF03RDEU, красная",
+      "qty": 1,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     },
+     {
+      "name": "Кофемолка Smeg CGF01RDEU, красная",
+      "qty": 3,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     },
+     {
+      "name": "Подарочный набор кофе Merrild Crema",
+      "qty": 10,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     }
+    ],
+    "prize_fund_eur": 1720.0,
+    "odds": "14 призов примерно на 6000 участников",
+    "winners_published": "На сайте www.merrildloterija.lv до конца дня розыгрыша (21.10.2026): имя, фамилия и номер чека; организатор звонит победителям",
+    "claim_deadline": "2026-11-20",
+    "age_min": 18,
+    "limits": "Один участник может выиграть только 1 приз; каждый чек участвует один раз; участвовать можно неограниченно с новыми чеками",
+    "notes": "Приз отправляют курьером. Победитель должен в течение 10 дней после звонка прислать фото выигравшего чека на e-mail или WhatsApp организатора; если не выйти на связь за 3 рабочих дня после розыгрыша — приз уходит резервисту."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (23.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (21.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 14, в фонде 14"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9164",
@@ -3075,9 +3161,43 @@
     "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing",
     "registration": "https://www.myfitness.lv/registreties/"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "MyFitness rudens loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "SIA «My Fitness»",
+    "permit": null,
+    "what_to_buy": "Заключить членский договор с SIA «My Fitness» на любой вид абонемента (по данным реестра VID)",
+    "buy_short": "Членский договор на любой абонемент MyFitness",
+    "min_purchase_eur": null,
+    "where": "Спортклубы «MyFitness» и сайт www.myfitness.lv по всей Латвии",
+    "how_to_enter": null,
+    "registration_url": null,
+    "keep": null,
+    "lottery_start": "2026-09-09",
+    "lottery_end": "2026-11-06",
+    "registration_start": null,
+    "registration_end": null,
+    "draws": [],
+    "prizes": [],
+    "prize_fund_eur": null,
+    "odds": null,
+    "winners_published": null,
+    "claim_deadline": null,
+    "age_min": null,
+    "limits": null,
+    "notes": "Правила опубликованы на Google Диске и не читаются; найти их текст в другом месте не удалось. Выжимка сделана только по записи реестра VID — нет призов, розыгрышей и порядка участия."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (09.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (06.11.2026) совпадает с реестром VID"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9158",
@@ -4963,9 +5083,89 @@
     "rules": "https://ptaveikals.b-cdn.net/wp-content/uploads/loterijas_noteikumi_candy_haier.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Pērc Candy un Haier tehniku un laimē",
+    "organizer": "SIA «PTA»",
+    "sponsor": null,
+    "permit": null,
+    "what_to_buy": "Любой товар марок Candy или Haier в магазине «PTA»; на каждый купленный товар — отдельный чек и отдельный купон",
+    "buy_short": "Техника Candy или Haier в магазине PTA (Dambja iela 3A, Рига)",
+    "min_purchase_eur": null,
+    "where": "Только магазин SIA «PTA», Dambja iela 3A, Рига",
+    "how_to_enter": "После покупки заполнить в магазине лотерейный купон (имя, фамилия, телефон, номер чека) и опустить его в лотерейный ящик. Сколько товаров Candy/Haier — столько купонов",
+    "registration_url": null,
+    "keep": "Чек, номер которого указан на купоне",
+    "lottery_start": "2026-09-01",
+    "lottery_end": "2026-12-01",
+    "registration_start": "2026-09-01",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-11-30",
+      "time": "19:10",
+      "period_from": "2026-09-01",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Mikroviļņu krāsns Candy CMG2071M",
+        "qty": 70
+       },
+       {
+        "name": "Mikroviļņu krāsns Haier HAMGI20S2STB (38001045)",
+        "qty": 30
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Микроволновая печь Candy CMG2071M",
+      "qty": 70,
+      "unit_value_eur": 48.4,
+      "total_value_eur": 3388.0
+     },
+     {
+      "name": "Микроволновая печь Haier HAMGI20S2STB (38001045)",
+      "qty": 30,
+      "unit_value_eur": 61.71,
+      "total_value_eur": 1851.3
+     }
+    ],
+    "prize_fund_eur": 5239.3,
+    "odds": "100:1500, т.е. 1 приз на 15 покупателей",
+    "winners_published": "1 декабря 2026 на https://ptaveikals.lv/akcijas-piedavajumi/ (имя, фамилия, последние 4 цифры телефона); победителям звонят",
+    "claim_deadline": "2027-01-10",
+    "age_min": null,
+    "limits": "Покупка и купон — до 30.11.2026 19:00. Приз не меняется и не выплачивается деньгами",
+    "notes": "Участвовать могут жители Латвии любого возраста. Приз забирают в кассе магазина PTA с документом и чеком; транспортировку оплачивает победитель."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (01.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 5239.30 € = призовой фонд 5239.30 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 100, в фонде 100"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9149",

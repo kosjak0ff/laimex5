@@ -1,0 +1,58 @@
+{
+ "title": "Pērc Candy un Haier tehniku un laimē",
+ "organizer": "SIA «PTA»",
+ "sponsor": null,
+ "permit": null,
+ "what_to_buy": "Любой товар марок Candy или Haier в магазине «PTA»; на каждый купленный товар — отдельный чек и отдельный купон",
+ "buy_short": "Техника Candy или Haier в магазине PTA (Dambja iela 3A, Рига)",
+ "min_purchase_eur": null,
+ "where": "Только магазин SIA «PTA», Dambja iela 3A, Рига",
+ "how_to_enter": "После покупки заполнить в магазине лотерейный купон (имя, фамилия, телефон, номер чека) и опустить его в лотерейный ящик. Сколько товаров Candy/Haier — столько купонов",
+ "registration_url": null,
+ "keep": "Чек, номер которого указан на купоне",
+ "lottery_start": "2026-09-01",
+ "lottery_end": "2026-12-01",
+ "registration_start": "2026-09-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-11-30",
+   "time": "19:10",
+   "period_from": "2026-09-01",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Mikroviļņu krāsns Candy CMG2071M",
+     "qty": 70
+    },
+    {
+     "name": "Mikroviļņu krāsns Haier HAMGI20S2STB (38001045)",
+     "qty": 30
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Микроволновая печь Candy CMG2071M",
+   "qty": 70,
+   "unit_value_eur": 48.4,
+   "total_value_eur": 3388.0
+  },
+  {
+   "name": "Микроволновая печь Haier HAMGI20S2STB (38001045)",
+   "qty": 30,
+   "unit_value_eur": 61.71,
+   "total_value_eur": 1851.3
+  }
+ ],
+ "prize_fund_eur": 5239.3,
+ "odds": "100:1500, т.е. 1 приз на 15 покупателей",
+ "winners_published": "1 декабря 2026 на https://ptaveikals.lv/akcijas-piedavajumi/ (имя, фамилия, последние 4 цифры телефона); победителям звонят",
+ "claim_deadline": "2027-01-10",
+ "age_min": null,
+ "limits": "Покупка и купон — до 30.11.2026 19:00. Приз не меняется и не выплачивается деньгами",
+ "notes": "Участвовать могут жители Латвии любого возраста. Приз забирают в кассе магазина PTA с документом и чеком; транспортировку оплачивает победитель.",
+ "_rules_sha": "78c3c435ff213fe9",
+ "_extracted": "2026-10-21T11:44:34+03:00"
+}
