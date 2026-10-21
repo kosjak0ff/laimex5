@@ -238,6 +238,8 @@ function details(it) {
     s?.claim_deadline && ["Забрать приз до", fmtDate(s.claim_deadline, true)],
     s?.age_min && ["Возраст", `от ${s.age_min} лет`],
     s?.odds && ["Шанс выиграть", s.odds],
+    it.links?.page && ["Страница лотереи", el("a", { href: it.links.page, target: "_blank", rel: "noopener" },
+      new URL(it.links.page).hostname.replace(/^www\./, ""))],
     ["Организатор", `${it.organizer}, рег. № ${it.organizer_reg}`],
     ["Разрешение VID", `№ ${it.permit}`],
     ["Условие в реестре", it.purchase],

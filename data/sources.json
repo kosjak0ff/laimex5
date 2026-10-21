@@ -310,11 +310,11 @@
   "page": "https://www.myfitness.lv/jaunumi/vesela-dzive-sakas-seit/",
   "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing",
   "registration": "https://www.myfitness.lv/registreties/",
-  "found_by": "agent-search",
-  "rules_type": "html",
-  "rules_sha": "a4182ffede9e59ba",
-  "rules_checked": "2026-10-21T11:42:57+03:00",
-  "error": "текст правил не распознан (скан или не та страница)"
+  "found_by": "agent-search; правила прислал владелец сайта",
+  "rules_type": "local",
+  "rules_sha": "dd5543497c2e8fcc",
+  "rules_checked": "2026-10-21T12:17:29+03:00",
+  "rules_local": "data/manual_rules/9131.txt"
  },
  "9129": {
   "page": "https://www.coca-cola.com/lv/lv/offerings/schweppes-gentlemen",

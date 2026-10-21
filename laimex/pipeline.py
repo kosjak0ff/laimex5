@@ -1,13 +1,14 @@
 """Главный конвейер: реестр → источники → правила → задания на выжимку → сайт."""
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 from datetime import datetime
 from pathlib import Path
 
 from . import discover, http, registry, rules, validate
-from .config import (DATA, KEEP_FINISHED_DAYS, PENDING, RULES_TEXT, SITE, SUMMARIES, TZ, WEB,
+from .config import (ROOT, DATA, KEEP_FINISHED_DAYS, PENDING, RULES_TEXT, SITE, SUMMARIES, TZ, WEB,
                      WORK, ensure_dirs, today)
 from .schema import validate_shape
 
@@ -72,7 +73,15 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
                     log(f"  {permit}: правила встроены в страницу кампании")
             except Exception as e:  # noqa: BLE001
                 log(f"  ! {permit}: страница недоступна: {e}")
-        if src.get("rules"):
+        if src.get("rules_local"):
+            # правила, которые робот скачать не может (например, Google Диск) — их текст
+            # положен в репозиторий вручную, ссылка rules остаётся для кнопки «Правила» на сайте
+            text = (ROOT / src["rules_local"]).read_text(encoding="utf-8")
+            src.pop("error", None)
+            src.update(rules_type="local", rules_sha=hashlib.sha256(text.encode()).hexdigest()[:16],
+                       rules_checked=now_iso())
+            (RULES_TEXT / f"{permit}.txt").write_text(text, encoding="utf-8")
+        elif src.get("rules"):
             try:
                 got = rules.fetch_rules(src["rules"])
             except http.Blocked:
