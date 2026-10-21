@@ -122,6 +122,9 @@ h1 { font-size: clamp(1.5rem, 5.5vw, 2.25rem); line-height: 1.1; font-weight: 80
 .btn.ghost { border-color: transparent; color: var(--carmine-ink); padding: 0 8px; }
 .btn[hidden] { display: none; }
 
+.hidden-note { color: var(--muted); font-size: 0.875rem; }
+.hidden-note .link { min-height: 0; padding: 4px; text-decoration: underline; }
+
 /* разделитель «регистрация закончилась» */
 .divider { padding: 12px 0 0; }
 .divider h2 { font-size: 1rem; margin: 0; }

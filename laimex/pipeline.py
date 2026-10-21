@@ -84,7 +84,9 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
                 continue
             src.pop("error", None)
             if not got["ok"]:
-                src["error"] = "текст правил не распознан (скан или не та страница)"
+                src["error"] = ("правила на Google Диске: роботам скачивать оттуда запрещено"
+                                if "drive.google.com" in src["rules"] else
+                                "текст правил не распознан (скан или не та страница)")
             src.update(rules_type=got["type"], rules_sha=got["sha"], rules_checked=now_iso())
             (RULES_TEXT / f"{permit}.txt").write_text(got["text"], encoding="utf-8")
     save(SOURCES_JSON, sources)
@@ -183,6 +185,9 @@ def build_site(log=print) -> Path:
         checks = validate.check(summ, row) if summ else []
         if summ:
             st = validate.status(checks)
+            if st == "ok" and (not summ.get("prizes") or not summ.get("draws")
+                               or summ.get("prize_fund_eur") is None):
+                st = "partial"  # полные правила прочитать не удалось
         else:
             st = "no_summary"
         clean_summ = {k: v for k, v in (summ or {}).items() if not k.startswith("_")} or None

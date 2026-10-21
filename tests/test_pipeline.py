@@ -66,7 +66,9 @@ def test_daily_cycle(sandbox):
     summary = {k: None for k in SUMMARY_SCHEMA["required"]}
     summary.update(title="Haribo loterija", organizer="SIA «Visas Loterijas»", what_to_buy="2 Haribo",
                    where="Латвия", how_to_enter="loterijas.lv", lottery_start="2026-10-15",
-                   lottery_end="2026-11-16", draws=[], prizes=[{"name": "MacBook", "qty": 1,
+                   lottery_end="2026-11-16",
+                   draws=[{"date": "2026-11-16", "time": "11:00", "period_from": None, "period_to": None,
+                           "prizes": [{"name": "MacBook", "qty": 1}]}], prizes=[{"name": "MacBook", "qty": 1,
                    "unit_value_eur": 699, "total_value_eur": 699}], prize_fund_eur=699)
     checks = pipeline.save_summary("9158", summary)
     assert all(c["ok"] for c in checks)
@@ -80,6 +82,11 @@ def test_daily_cycle(sandbox):
     assert by["9158"]["status"] == "ok"
     assert by["9158"]["links"]["registration"].endswith("/haribo-loterija-2/")
     assert by["9089"]["status"] == "no_summary" and by["9089"]["category"] == "service"
+    # выжимка без розыгрышей — «неполные данные», а не «сверено»
+    pipeline.save_summary("9158", dict(summary, draws=[]))
+    pipeline.build_site(log=lambda *a: None)
+    site = json.loads((sandbox / "docs/data.json").read_text())
+    assert {x["permit"]: x for x in site["lotteries"]}["9158"]["status"] == "partial"
     assert "9191" not in by  # журнальная лотерея скрыта
     assert (sandbox / "docs/index.html").exists() and (sandbox / "docs/sw.js").exists()
     assert "__BUILD__" not in (sandbox / "docs/sw.js").read_text()

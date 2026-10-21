@@ -82,7 +82,8 @@ function shortBuy(it) {
 function visible() {
   const q = state.q.trim().toLowerCase();
   let list = state.items.filter(it => tabOf(it) === state.tab);
-  if (!state.filters.has("service")) list = list.filter(it => it.category !== "service");
+  // лотереи за услуги скрыты, но поиск находит и их
+  if (!state.filters.has("service") && !q) list = list.filter(it => it.category !== "service");
   if (state.filters.has("ending")) list = list.filter(it =>
     phase(it) === "open" && daysBetween(state.today, regEnd(it)) <= 7);
   if (state.filters.has("draw")) list = list.filter(it => {
@@ -143,6 +144,11 @@ function card(it) {
   lt.textContent = left.text;
   lt.classList.toggle("hot", left.hot);
   $(".r-buy", node).textContent = shortBuy(it);
+  if (it.category === "service") {  // за услугу: чека нет
+    $(".r-row:nth-child(1) dt", node).textContent = "Условие";
+    $(".r-row:nth-child(2) dt", node).textContent = "Участие до";
+    $(".t-register", node).textContent = "Участвовать";
+  }
   $(".r-reg", node).textContent = regLine(it);
   $(".r-prize", node).textContent = prizeLine(s);
 
@@ -178,6 +184,9 @@ function details(it) {
   const s = it.summary, out = [];
   if (!s) {
     out.push(el("p", { class: "pending" }, "Правила этой лотереи ещё не разобраны. Ниже — данные из реестра VID; подробности появятся после следующего обновления."));
+  } else if (it.status === "partial") {
+    out.push(el("div", { class: "check warn" }, el("strong", {}, "Данные неполные. "),
+      s.notes || "Полные правила прочитать не удалось.", " Уточняйте призы и розыгрыши в правилах или на сайте лотереи."));
   } else if (it.status === "ok") {
     out.push(el("p", { class: "check ok" }, `Сверено автоматически: даты совпадают с реестром VID, сумма призов сходится с фондом (${it.checks.length} ${plural(it.checks.length, "проверка", "проверки", "проверок")}).`));
   } else {
@@ -186,7 +195,7 @@ function details(it) {
       "Автоматическая сверка нашла расхождения:", el("ul", {}, bad.map(c => el("li", {}, c.text)))));
   }
 
-  out.push(el("h3", {}, "Что купить и где"));
+  out.push(el("h3", {}, it.category === "service" ? "Что нужно сделать" : "Что купить и где"));
   out.push(el("p", {}, s?.what_to_buy || it.purchase));
   out.push(el("p", {}, s?.where || it.place));
 
@@ -195,7 +204,7 @@ function details(it) {
     if (s.how_to_enter) out.push(el("p", {}, s.how_to_enter));
     if (s.keep) out.push(el("p", {}, `Сохраните: ${s.keep}`));
     if (s.limits) out.push(el("p", {}, s.limits));
-    if (s.notes) out.push(el("p", {}, s.notes));
+    if (s.notes && it.status !== "partial") out.push(el("p", {}, s.notes));
   }
 
   if (s?.draws?.length) {
@@ -258,6 +267,15 @@ function render() {
       divided = true;
     }
     nodes.push(card(it));
+  }
+  if (!state.filters.has("service") && !state.q.trim()) {
+    const hidden = state.items.filter(it => it.category === "service" && tabOf(it) === state.tab).length;
+    if (hidden) {
+      const btn = el("button", { class: "link" }, "Показать");
+      btn.addEventListener("click", () => $('.chip[data-filter="service"]').click());
+      nodes.push(el("li", { class: "hidden-note" },
+        `Ещё ${hidden} ${plural(hidden, "лотерея", "лотереи", "лотерей")} за услуги (связь, банк, страхование, спортклуб) скрыто. `, btn));
+    }
   }
   $("#list").replaceChildren(...nodes);
   const st = $("#status");

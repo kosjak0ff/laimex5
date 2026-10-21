@@ -3,26 +3,46 @@
  "organizer": "SIA «SOMESE Baltic»",
  "sponsor": "SIA «My Fitness»",
  "permit": null,
- "what_to_buy": "Заключить членский договор с SIA «My Fitness» на любой вид абонемента (по данным реестра VID)",
- "buy_short": "Членский договор на любой абонемент MyFitness",
+ "what_to_buy": "Стать членом MyFitness (заключить договор на любой абонемент) с 09.09 по 31.10.2026 и при вступлении отметить участие в лотерее",
+ "buy_short": "Стать членом MyFitness и отметить участие в лотерее",
  "min_purchase_eur": null,
  "where": "Спортклубы «MyFitness» и сайт www.myfitness.lv по всей Латвии",
- "how_to_enter": null,
- "registration_url": null,
+ "how_to_enter": "Оформить членство онлайн на myfitness.lv или в клубе MyFitness и при вступлении отметить галочкой участие в лотерее. Отдельной регистрации чека нет",
+ "registration_url": "https://www.myfitness.lv/registreties/",
  "keep": null,
  "lottery_start": "2026-09-09",
  "lottery_end": "2026-11-06",
- "registration_start": null,
- "registration_end": null,
- "draws": [],
- "prizes": [],
+ "registration_start": "2026-09-09",
+ "registration_end": "2026-10-31",
+ "draws": [
+  {
+   "date": "2026-11-04",
+   "time": null,
+   "period_from": "2026-09-09",
+   "period_to": "2026-10-31",
+   "prizes": [
+    {
+     "name": "Поездка для двоих во французские Альпы с горными походами (организует IZIPIZI)",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Поездка для двоих во французские Альпы с горными походами (организует IZIPIZI)",
+   "qty": 1,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  }
+ ],
  "prize_fund_eur": null,
  "odds": null,
- "winners_published": null,
+ "winners_published": "6.11.2026 на myfitness.lv",
  "claim_deadline": null,
  "age_min": null,
  "limits": null,
- "notes": "Правила опубликованы на Google Диске и не читаются; найти их текст в другом месте не удалось. Выжимка сделана только по записи реестра VID — нет призов, розыгрышей и порядка участия.",
+ "notes": "Полные правила выложены на Google Диске, роботам читать их запрещено. Данные взяты с официальной страницы MyFitness: стоимость приза и призовой фонд там не указаны.",
  "_rules_sha": "a4182ffede9e59ba",
  "_extracted": "2026-10-21T11:45:52+03:00"
 }
