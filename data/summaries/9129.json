@@ -1,0 +1,133 @@
+{
+ "title": "Coca-Cola patērētāju loterija „Schweppes”",
+ "organizer": "SIA «Guilty»",
+ "sponsor": "SIA «Coca-Cola HBC Latvia»",
+ "permit": null,
+ "what_to_buy": "Минимум 1 продукт Schweppes из списка: Pink Mixer (1L, 1.5L PET), Tonic Water (0.33L банка, 1L, 1.5L PET), Tonic Water Zero (1L PET), Bitter Lemon (0.33L банка, 1L PET), Tangerine (1L PET), Blueberry Mojito (0.33L банка), Cherry Pepper (1.5L PET)",
+ "min_purchase_eur": null,
+ "where": "Розничные магазины по всей Латвии",
+ "how_to_enter": "Активировать участие в лотерее в мобильном приложении Coca-Cola и зарегистрировать там чек покупки",
+ "registration_url": null,
+ "keep": "Чек покупки лотерейного продукта",
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2026-12-07",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-10-13",
+   "time": "15:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-10-11",
+   "prizes": [
+    {
+     "name": "i/c Akropole dāvanu karte 50 EUR",
+     "qty": 7
+    },
+    {
+     "name": "i/c Akropole dāvanu karte 100 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-10-27",
+   "time": "15:00",
+   "period_from": "2026-10-12",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "i/c Akropole dāvanu karte 50 EUR",
+     "qty": 7
+    },
+    {
+     "name": "i/c Akropole dāvanu karte 100 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "15:00",
+   "period_from": "2026-10-26",
+   "period_to": "2026-11-08",
+   "prizes": [
+    {
+     "name": "i/c Akropole dāvanu karte 50 EUR",
+     "qty": 7
+    },
+    {
+     "name": "i/c Akropole dāvanu karte 100 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "time": "12:00",
+   "period_from": "2026-11-09",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "i/c Akropole dāvanu karte 50 EUR",
+     "qty": 9
+    },
+    {
+     "name": "i/c Akropole dāvanu karte 100 EUR",
+     "qty": 2
+    }
+   ]
+  },
+  {
+   "date": "2026-12-02",
+   "time": "12:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Jaungada vakara pasākums Londonā diviem + priekšapmaksas karte 500 EUR",
+     "qty": 1
+    },
+    {
+     "name": "Stilistes Inna Bertāne konsultācija + priekšapmaksas karte 500 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Новогодний вечер в Лондоне для двоих (перелёт Rīga-Londona-Rīga, трансфер, ночь в Champneys Henlow, ужин и завтрак, SPA) + предоплаченная карта 500 EUR",
+   "qty": 1,
+   "unit_value_eur": 5300,
+   "total_value_eur": 5300
+  },
+  {
+   "name": "Консультация стилиста Inna Bertāne + предоплаченная карта 500 EUR",
+   "qty": 1,
+   "unit_value_eur": 900,
+   "total_value_eur": 900
+  },
+  {
+   "name": "Подарочная карта i/c Akropole 50 EUR",
+   "qty": 30,
+   "unit_value_eur": 50,
+   "total_value_eur": 1500
+  },
+  {
+   "name": "Подарочная карта i/c Akropole 100 EUR",
+   "qty": 5,
+   "unit_value_eur": 100,
+   "total_value_eur": 500
+  }
+ ],
+ "prize_fund_eur": 8200,
+ "odds": "37 к 317 889",
+ "winners_published": "Полный список победителей — на https://www.coca-cola.com/lv/lv до 7 декабря 2026 года; победителям пишут на e-mail из профиля приложения Coca-Cola",
+ "claim_deadline": "2026-12-16",
+ "age_min": 13,
+ "limits": "Можно участвовать несколько раз; не больше 1 приза в каждой категории и не больше 3 призов всего на участника. Сотрудники организатора, Coca-Cola HBC Latvia и агентства не участвуют",
+ "notes": "Для поездки в Лондон и консультации стилиста победителю (и гостю) должно быть 18 лет. Для получения приза нужны паспорт/eID и чек; договориться с организатором (тел. +371 29239666) до 16 декабря 2026 года.",
+ "_rules_sha": "5f7cd73d6135fe11",
+ "_extracted": "2026-10-21T06:08:24+03:00"
+}

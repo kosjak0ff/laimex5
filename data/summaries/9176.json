@@ -1,0 +1,167 @@
+{
+ "title": "Makšķernieku loterija!",
+ "organizer": "SIA «Latvijas Lauku konsultāciju un izglītības centrs»",
+ "sponsor": null,
+ "permit": null,
+ "what_to_buy": "Рыболовная карта (MAKŠĶERĒŠANAS, VĒŽOŠANAS, ZEMŪDENS MEDĪBU KARTE) на 3 месяца",
+ "min_purchase_eur": null,
+ "where": "Онлайн: www.makskeresanaskarte.lv, www.manacope.lv или мобильное приложение “Mana Cope”",
+ "how_to_enter": "После оплаты карты отметить, что хотите участвовать в лотерее. Участник — человек, на чьё имя оформлена карта; нужны телефон и номер документа покупки. Регистрация бесплатная",
+ "registration_url": "www.makskeresanaskarte.lv",
+ "keep": null,
+ "lottery_start": "2026-10-02",
+ "lottery_end": "2026-11-23",
+ "registration_start": "2026-10-02",
+ "registration_end": "2026-11-17",
+ "draws": [
+  {
+   "date": "2026-11-23",
+   "time": "11:00",
+   "period_from": "2026-10-02",
+   "period_to": "2026-11-17",
+   "prizes": [
+    {
+     "name": "Patriot Tackle System EVA makšķerēšanas soma ar 4 piederumu kastēm",
+     "qty": 1
+    },
+    {
+     "name": "Lowrance HOOK REVEAL 5 83/200 HDI eholote",
+     "qty": 1
+    },
+    {
+     "name": "Daiwa 24 Luvias LT 3000D makšķerēšanas spole",
+     "qty": 1
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-SR māneklis – Kibinago",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-SR māneklis – Chart Back Zebra",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-SR māneklis – Lime Chart",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-SR māneklis – Chart Back Pearl",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-SR māneklis – Green Flash Ghost",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-DR māneklis – Green Flash Ghost",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-DR māneklis – Kibinago",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-DR māneklis – Pearl Ghost Perch",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-DR māneklis – Aurora Sunset Laser",
+     "qty": 2
+    },
+    {
+     "name": "Daiwa Tournament Current Master 93F-DR māneklis – Lazer Red",
+     "qty": 2
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Рыболовная сумка Patriot Tackle System EVA с 4 коробками для снастей",
+   "qty": 1,
+   "unit_value_eur": 79.0,
+   "total_value_eur": 79.0
+  },
+  {
+   "name": "Эхолот Lowrance HOOK REVEAL 5 83/200 HDI",
+   "qty": 1,
+   "unit_value_eur": 375.1,
+   "total_value_eur": 375.1
+  },
+  {
+   "name": "Рыболовная катушка Daiwa 24 Luvias LT 3000D",
+   "qty": 1,
+   "unit_value_eur": 370.01,
+   "total_value_eur": 370.01
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-SR – Kibinago",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-SR – Chart Back Zebra",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-SR – Lime Chart",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-SR – Chart Back Pearl",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-SR – Green Flash Ghost",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-DR – Green Flash Ghost",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-DR – Kibinago",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-DR – Pearl Ghost Perch",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-DR – Aurora Sunset Laser",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  },
+  {
+   "name": "Воблер Daiwa Tournament Current Master 93F-DR – Lazer Red",
+   "qty": 2,
+   "unit_value_eur": 17.9,
+   "total_value_eur": 35.8
+  }
+ ],
+ "prize_fund_eur": 1182.11,
+ "odds": "23 к 5000",
+ "winners_published": "Полный список — на www.makskeresanaskarte.lv 23 ноября 2026 года до 23:59; победителям звонят или пишут SMS",
+ "claim_deadline": "2026-12-07",
+ "age_min": null,
+ "limits": "Один участник может выиграть один приз; каждая купленная карта — отдельная регистрация. Сотрудники LLKC и Visas Loterijas не участвуют",
+ "notes": "Чек хранить не обязательно. За призом — с паспортом/ID-картой, договориться с SIA «Visas Loterijas» (тел. 67686540, будни 9–17) до 7 декабря 2026 года. В таблице розыгрыша воблер 93F-DR Kibinago указан дважды вместо Pearl Ghost Perch — здесь по списку призового фонда.",
+ "_rules_sha": "909a9de86c6a9fa9",
+ "_extracted": "2026-10-21T06:09:18+03:00"
+}

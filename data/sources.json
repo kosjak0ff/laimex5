@@ -368,5 +368,15 @@
   "rules_type": "pdf",
   "rules_sha": "0b4088ec9fbecee7",
   "rules_checked": "2026-10-20T10:55:10+03:00"
+ },
+ "9113": {
+  "page": "https://ptaveikals.lv/akcijas-piedavajumi/",
+  "rules": "https://ptaveikals.b-cdn.net/wp-content/uploads/loterijas_noteikumi_candy_haier.pdf",
+  "found_by": "agent-search"
+ },
+ "9091": {
+  "page": "https://merrildloterija.lv/",
+  "registration": "https://merrildloterija.lv/",
+  "found_by": "agent-search"
  }
 }

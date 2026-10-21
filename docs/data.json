@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T10:55:17+03:00",
+ "updated": "2026-10-21T06:21:43+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-20T10:54:06+03:00",
  "lotteries": [
@@ -1801,9 +1801,9 @@
    "place": "Veikali “TOP” un “mini top!” Latvijas Republikā",
    "category": "shop",
    "links": {
-    "page": null,
+    "page": "https://merrildloterija.lv/",
     "rules": null,
-    "registration": null
+    "registration": "https://merrildloterija.lv/"
    },
    "summary": null,
    "checks": [],
@@ -3347,9 +3347,136 @@
     "rules": "https://www.loterijatev.lv/loterija/vivo/@rules/WEB_Noteikumi_VIVO_rudens_loterija_2026.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "VIVO rudens loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "SIA «Plesko Real Estate» (tirdzniecības centrs “VIVO”)",
+    "permit": "9172",
+    "what_to_buy": "1 покупка минимум на 10,00 EUR в любом магазине, ресторане, кафе или месте услуг ТЦ “VIVO” (кроме Rimi). В сумму не входят алкоголь (в т.ч. пиво), табак, электронные сигареты, лекарства, энергетики, азартные игры, детские смеси до 6 мес., подарочные карты, оплата счетов и финансовые операции",
+    "min_purchase_eur": 10,
+    "where": "ТЦ “VIVO”, Jelgava, Katoļu iela 18 (кроме магазина Rimi)",
+    "how_to_enter": "Бесплатно зарегистрироваться на www.loterijatev.lv/vivo: имя, фамилия, номер чека, телефон; по желанию можно загрузить фото чека",
+    "registration_url": "https://www.loterijatev.lv/vivo",
+    "keep": "Оригинал чека до 4 декабря 2026 года (видны сумма, товары, дата, место и номер)",
+    "lottery_start": "2026-10-20",
+    "lottery_end": "2026-11-20",
+    "registration_start": "2026-10-20",
+    "registration_end": "2026-11-16",
+    "draws": [
+     {
+      "date": "2026-10-27",
+      "time": "13:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "VIVO dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "13:00",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "VIVO dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "13:00",
+      "period_from": "2026-11-03",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "VIVO dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "13:00",
+      "period_from": "2026-11-10",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "VIVO dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "13:00",
+      "period_from": "2026-10-20",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "Viedtālrunis Apple iPhone 17 Pro, 256GB, Cosmic Orange",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Смартфон Apple iPhone 17 Pro, 256GB, Cosmic Orange",
+      "qty": 1,
+      "unit_value_eur": 1171.28,
+      "total_value_eur": 1171.28
+     },
+     {
+      "name": "Подарочная карта ТЦ “VIVO” 50 EUR",
+      "qty": 40,
+      "unit_value_eur": 50,
+      "total_value_eur": 2000
+     }
+    ],
+    "prize_fund_eur": 3171.28,
+    "odds": "41/1000",
+    "winners_published": "На www.loterijatev.lv/vivo в течение 2 рабочих дней после каждого розыгрыша; полный список — 20 ноября 2026 года",
+    "claim_deadline": "2026-11-27",
+    "age_min": 16,
+    "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ VIVO не участвуют",
+    "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Номер разрешения в правилах (9172) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата начала (20.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (20.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 3171.28 € = призовой фонд 3171.28 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 41, в фонде 41"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9173",
@@ -3366,9 +3493,136 @@
     "rules": "https://www.loterijatev.lv/loterija/ostmala/@rules/WEB_oteikumi_OSTMALA_rudens_loterija_2026.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "OSTMALA rudens loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "SIA «Rimi Latvia» (tirdzniecības centrs “Ostmala”)",
+    "permit": "9173",
+    "what_to_buy": "1 покупка минимум на 10,00 EUR в любом магазине, ресторане, кафе или месте услуг ТЦ “Ostmala” (кроме Rimi). В сумму не входят алкоголь (в т.ч. пиво), табак, электронные сигареты, лекарства, энергетики, азартные игры, детские смеси до 6 мес., подарочные карты, оплата счетов и финансовые операции",
+    "min_purchase_eur": 10,
+    "where": "ТЦ “Ostmala”, Liepāja, Kārļa Zāles laukums 8 (кроме магазина Rimi)",
+    "how_to_enter": "Бесплатно зарегистрироваться на www.loterijatev.lv/ostmala: имя, фамилия, номер чека, телефон; по желанию можно загрузить фото чека",
+    "registration_url": "https://www.loterijatev.lv/ostmala",
+    "keep": "Оригинал чека до 4 декабря 2026 года (видны сумма, товары, дата, место и номер)",
+    "lottery_start": "2026-10-20",
+    "lottery_end": "2026-11-20",
+    "registration_start": "2026-10-20",
+    "registration_end": "2026-11-16",
+    "draws": [
+     {
+      "date": "2026-10-27",
+      "time": "13:30",
+      "period_from": "2026-10-20",
+      "period_to": "2026-10-26",
+      "prizes": [
+       {
+        "name": "OSTMALA dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-03",
+      "time": "13:30",
+      "period_from": "2026-10-27",
+      "period_to": "2026-11-02",
+      "prizes": [
+       {
+        "name": "OSTMALA dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "13:30",
+      "period_from": "2026-11-03",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "OSTMALA dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "13:30",
+      "period_from": "2026-11-10",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "OSTMALA dāvanu karte 50 EUR",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "13:30",
+      "period_from": "2026-10-20",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "Viedtālrunis Apple iPhone 17 Pro, 256GB, Cosmic Orange",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Смартфон Apple iPhone 17 Pro, 256GB, Cosmic Orange",
+      "qty": 1,
+      "unit_value_eur": 1171.28,
+      "total_value_eur": 1171.28
+     },
+     {
+      "name": "Подарочная карта ТЦ “Ostmala” 50 EUR",
+      "qty": 40,
+      "unit_value_eur": 50,
+      "total_value_eur": 2000
+     }
+    ],
+    "prize_fund_eur": 3171.28,
+    "odds": "41/1000",
+    "winners_published": "На www.loterijatev.lv/ostmala в течение 2 рабочих дней после каждого розыгрыша; полный список — 20 ноября 2026 года",
+    "claim_deadline": "2026-11-27",
+    "age_min": 16,
+    "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ Ostmala не участвуют",
+    "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Номер разрешения в правилах (9173) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата начала (20.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (20.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 3171.28 € = призовой фонд 3171.28 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 41, в фонде 41"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9177",
@@ -4071,9 +4325,198 @@
     "rules": "https://manacope.lv/files/file/62324",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Makšķernieku loterija!",
+    "organizer": "SIA «Latvijas Lauku konsultāciju un izglītības centrs»",
+    "sponsor": null,
+    "permit": null,
+    "what_to_buy": "Рыболовная карта (MAKŠĶERĒŠANAS, VĒŽOŠANAS, ZEMŪDENS MEDĪBU KARTE) на 3 месяца",
+    "min_purchase_eur": null,
+    "where": "Онлайн: www.makskeresanaskarte.lv, www.manacope.lv или мобильное приложение “Mana Cope”",
+    "how_to_enter": "После оплаты карты отметить, что хотите участвовать в лотерее. Участник — человек, на чьё имя оформлена карта; нужны телефон и номер документа покупки. Регистрация бесплатная",
+    "registration_url": "www.makskeresanaskarte.lv",
+    "keep": null,
+    "lottery_start": "2026-10-02",
+    "lottery_end": "2026-11-23",
+    "registration_start": "2026-10-02",
+    "registration_end": "2026-11-17",
+    "draws": [
+     {
+      "date": "2026-11-23",
+      "time": "11:00",
+      "period_from": "2026-10-02",
+      "period_to": "2026-11-17",
+      "prizes": [
+       {
+        "name": "Patriot Tackle System EVA makšķerēšanas soma ar 4 piederumu kastēm",
+        "qty": 1
+       },
+       {
+        "name": "Lowrance HOOK REVEAL 5 83/200 HDI eholote",
+        "qty": 1
+       },
+       {
+        "name": "Daiwa 24 Luvias LT 3000D makšķerēšanas spole",
+        "qty": 1
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-SR māneklis – Kibinago",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-SR māneklis – Chart Back Zebra",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-SR māneklis – Lime Chart",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-SR māneklis – Chart Back Pearl",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-SR māneklis – Green Flash Ghost",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-DR māneklis – Green Flash Ghost",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-DR māneklis – Kibinago",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-DR māneklis – Pearl Ghost Perch",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-DR māneklis – Aurora Sunset Laser",
+        "qty": 2
+       },
+       {
+        "name": "Daiwa Tournament Current Master 93F-DR māneklis – Lazer Red",
+        "qty": 2
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Рыболовная сумка Patriot Tackle System EVA с 4 коробками для снастей",
+      "qty": 1,
+      "unit_value_eur": 79.0,
+      "total_value_eur": 79.0
+     },
+     {
+      "name": "Эхолот Lowrance HOOK REVEAL 5 83/200 HDI",
+      "qty": 1,
+      "unit_value_eur": 375.1,
+      "total_value_eur": 375.1
+     },
+     {
+      "name": "Рыболовная катушка Daiwa 24 Luvias LT 3000D",
+      "qty": 1,
+      "unit_value_eur": 370.01,
+      "total_value_eur": 370.01
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-SR – Kibinago",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-SR – Chart Back Zebra",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-SR – Lime Chart",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-SR – Chart Back Pearl",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-SR – Green Flash Ghost",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-DR – Green Flash Ghost",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-DR – Kibinago",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-DR – Pearl Ghost Perch",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-DR – Aurora Sunset Laser",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     },
+     {
+      "name": "Воблер Daiwa Tournament Current Master 93F-DR – Lazer Red",
+      "qty": 2,
+      "unit_value_eur": 17.9,
+      "total_value_eur": 35.8
+     }
+    ],
+    "prize_fund_eur": 1182.11,
+    "odds": "23 к 5000",
+    "winners_published": "Полный список — на www.makskeresanaskarte.lv 23 ноября 2026 года до 23:59; победителям звонят или пишут SMS",
+    "claim_deadline": "2026-12-07",
+    "age_min": null,
+    "limits": "Один участник может выиграть один приз; каждая купленная карта — отдельная регистрация. Сотрудники LLKC и Visas Loterijas не участвуют",
+    "notes": "Чек хранить не обязательно. За призом — с паспортом/ID-картой, договориться с SIA «Visas Loterijas» (тел. 67686540, будни 9–17) до 7 декабря 2026 года. В таблице розыгрыша воблер 93F-DR Kibinago указан дважды вместо Pearl Ghost Perch — здесь по списку призового фонда."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (02.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (23.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1182.11 € = призовой фонд 1182.11 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 23, в фонде 23"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9130",
@@ -4493,8 +4936,8 @@
    "place": "Dambja iela 3A, Rīga, LV-1005, Latvija SIA “PTA” veikals",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://ptaveikals.lv/akcijas-piedavajumi/",
+    "rules": "https://ptaveikals.b-cdn.net/wp-content/uploads/loterijas_noteikumi_candy_haier.pdf",
     "registration": null
    },
    "summary": null,
@@ -5277,9 +5720,164 @@
     "rules": "https://www.coca-cola.com/content/dam/onexp/lv/lv/promotions/schweppes-netflix-2026/schweppes_ncp_lv.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Coca-Cola patērētāju loterija „Schweppes”",
+    "organizer": "SIA «Guilty»",
+    "sponsor": "SIA «Coca-Cola HBC Latvia»",
+    "permit": null,
+    "what_to_buy": "Минимум 1 продукт Schweppes из списка: Pink Mixer (1L, 1.5L PET), Tonic Water (0.33L банка, 1L, 1.5L PET), Tonic Water Zero (1L PET), Bitter Lemon (0.33L банка, 1L PET), Tangerine (1L PET), Blueberry Mojito (0.33L банка), Cherry Pepper (1.5L PET)",
+    "min_purchase_eur": null,
+    "where": "Розничные магазины по всей Латвии",
+    "how_to_enter": "Активировать участие в лотерее в мобильном приложении Coca-Cola и зарегистрировать там чек покупки",
+    "registration_url": null,
+    "keep": "Чек покупки лотерейного продукта",
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2026-12-07",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-10-13",
+      "time": "15:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "i/c Akropole dāvanu karte 50 EUR",
+        "qty": 7
+       },
+       {
+        "name": "i/c Akropole dāvanu karte 100 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-10-27",
+      "time": "15:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "i/c Akropole dāvanu karte 50 EUR",
+        "qty": 7
+       },
+       {
+        "name": "i/c Akropole dāvanu karte 100 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-10",
+      "time": "15:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "i/c Akropole dāvanu karte 50 EUR",
+        "qty": 7
+       },
+       {
+        "name": "i/c Akropole dāvanu karte 100 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-02",
+      "time": "12:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "i/c Akropole dāvanu karte 50 EUR",
+        "qty": 9
+       },
+       {
+        "name": "i/c Akropole dāvanu karte 100 EUR",
+        "qty": 2
+       }
+      ]
+     },
+     {
+      "date": "2026-12-02",
+      "time": "12:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Jaungada vakara pasākums Londonā diviem + priekšapmaksas karte 500 EUR",
+        "qty": 1
+       },
+       {
+        "name": "Stilistes Inna Bertāne konsultācija + priekšapmaksas karte 500 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Новогодний вечер в Лондоне для двоих (перелёт Rīga-Londona-Rīga, трансфер, ночь в Champneys Henlow, ужин и завтрак, SPA) + предоплаченная карта 500 EUR",
+      "qty": 1,
+      "unit_value_eur": 5300,
+      "total_value_eur": 5300
+     },
+     {
+      "name": "Консультация стилиста Inna Bertāne + предоплаченная карта 500 EUR",
+      "qty": 1,
+      "unit_value_eur": 900,
+      "total_value_eur": 900
+     },
+     {
+      "name": "Подарочная карта i/c Akropole 50 EUR",
+      "qty": 30,
+      "unit_value_eur": 50,
+      "total_value_eur": 1500
+     },
+     {
+      "name": "Подарочная карта i/c Akropole 100 EUR",
+      "qty": 5,
+      "unit_value_eur": 100,
+      "total_value_eur": 500
+     }
+    ],
+    "prize_fund_eur": 8200,
+    "odds": "37 к 317 889",
+    "winners_published": "Полный список победителей — на https://www.coca-cola.com/lv/lv до 7 декабря 2026 года; победителям пишут на e-mail из профиля приложения Coca-Cola",
+    "claim_deadline": "2026-12-16",
+    "age_min": 13,
+    "limits": "Можно участвовать несколько раз; не больше 1 приза в каждой категории и не больше 3 призов всего на участника. Сотрудники организатора, Coca-Cola HBC Latvia и агентства не участвуют",
+    "notes": "Для поездки в Лондон и консультации стилиста победителю (и гостю) должно быть 18 лет. Для получения приза нужны паспорт/eID и чек; договориться с организатором (тел. +371 29239666) до 16 декабря 2026 года."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (07.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 8200.00 € = призовой фонд 8200.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 37, в фонде 37"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9121",
@@ -5391,9 +5989,88 @@
     "rules": "https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf",
     "registration": null
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Tele2 loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Tele2»",
+    "permit": null,
+    "what_to_buy": "Быть или стать абонентом тарифного плана постоплаты или дата-плана Tele2 или Zelta Zivtiņa (в т.ч. перейти от другого оператора)",
+    "min_purchase_eur": null,
+    "where": "Услуги Tele2 / Zelta Zivtiņa, вся Латвия",
+    "how_to_enter": "Отправить бесплатное SMS с текстом TELE2ZIEMA на номер 1620. Участник определяется по номеру и имени в договоре",
+    "registration_url": null,
+    "keep": null,
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2027-01-05",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-12-31",
+    "draws": [
+     {
+      "date": "2027-01-05",
+      "time": "12:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-12-31",
+      "prizes": [
+       {
+        "name": "Akropole dāvanu karte 1000 EUR",
+        "qty": 1
+       },
+       {
+        "name": "Televizors Samsung 55\" / UE55U8092HUXXH",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта Akropole 1000 EUR",
+      "qty": 1,
+      "unit_value_eur": 1000,
+      "total_value_eur": 1000
+     },
+     {
+      "name": "Телевизор Samsung 55\" / UE55U8092HUXXH",
+      "qty": 1,
+      "unit_value_eur": 369.24,
+      "total_value_eur": 369.24
+     }
+    ],
+    "prize_fund_eur": 1369.24,
+    "odds": "2:5000",
+    "winners_published": "На www.tele2.lv в день розыгрыша, 5 января 2027 года до 23:59; Tele2 звонит или пишет SMS победителям",
+    "claim_deadline": "2027-01-19",
+    "age_min": null,
+    "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
+    "notes": "Приз выдают лично у SIA «Visas Loterijas» (Dzirnavu iela 37-63, Rīga) по паспорту/ID-карте; тел. 67686540. В правилах начало лотереи — 1 октября 2026, в реестре VID — 11 октября."
+   },
+   "checks": [
+    {
+     "ok": false,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (05.01.2027) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1369.24 € = призовой фонд 1369.24 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 2, в фонде 2"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "needs_review"
   },
   {
    "permit": "9188",
@@ -5429,9 +6106,90 @@
     "rules": "https://www.zeltazivtina.lv/storage/app/media/ZZ_BK_2026_Q4.pdf",
     "registration": "https://www.zeltazivtina.lv/nac-pie-zz"
    },
-   "summary": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Zelta Zivtiņa Bonusu klubs",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «Tele2» (Zelta Zivtiņa)",
+    "permit": null,
+    "what_to_buy": "Стать клиентом постоплаты Zelta Zivtiņa или Tele2 (в т.ч. перейти от другого оператора или с предоплаты Zelta Zivtiņa) либо оплатить счёт за тарифный план постоплаты. Абоненты только дата-планов не участвуют",
+    "min_purchase_eur": null,
+    "where": "Услуги Tele2 / Zelta Zivtiņa, вся Латвия",
+    "how_to_enter": "Отправить бесплатное SMS с текстом Bonuss на номер 1620 или отметить участие в профиле самообслуживания Mana Zelta Zivtiņa / Mans Tele2. Участник определяется по номеру подключения и имени в договоре",
+    "registration_url": null,
+    "keep": null,
+    "lottery_start": "2026-09-01",
+    "lottery_end": "2027-01-07",
+    "registration_start": "2026-09-01",
+    "registration_end": "2026-12-31",
+    "draws": [
+     {
+      "date": "2026-11-05",
+      "time": "12:00",
+      "period_from": "2026-09-01",
+      "period_to": "2026-10-31",
+      "prizes": [
+       {
+        "name": "Naudas balva 1000.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2027-01-07",
+      "time": "12:00",
+      "period_from": "2026-11-01",
+      "period_to": "2026-12-31",
+      "prizes": [
+       {
+        "name": "Naudas balva 1000.00 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Денежный приз 1000 EUR (налоги платит Tele2)",
+      "qty": 2,
+      "unit_value_eur": 1000,
+      "total_value_eur": 2000
+     }
+    ],
+    "prize_fund_eur": 2000,
+    "odds": "2:150 000",
+    "winners_published": "На www.zeltazivtina.lv и www.tele2.lv в день розыгрыша; полный список — 7 января 2027 года до 23:59. Tele2 звонит или пишет SMS победителю",
+    "claim_deadline": "2027-01-21",
+    "age_min": null,
+    "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
+    "notes": "Приз перечисляют на банковский счёт победителя (не третьего лица) в течение 3 рабочих дней после заявления; нужен паспорт/ID-карта. Телефон организатора 67686540."
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.09.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (07.01.2027) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 2000.00 € = призовой фонд 2000.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 2, в фонде 2"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9179",

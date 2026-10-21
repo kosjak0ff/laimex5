@@ -1,0 +1,59 @@
+{
+ "title": "Zelta Zivtiņa Bonusu klubs",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Tele2» (Zelta Zivtiņa)",
+ "permit": null,
+ "what_to_buy": "Стать клиентом постоплаты Zelta Zivtiņa или Tele2 (в т.ч. перейти от другого оператора или с предоплаты Zelta Zivtiņa) либо оплатить счёт за тарифный план постоплаты. Абоненты только дата-планов не участвуют",
+ "min_purchase_eur": null,
+ "where": "Услуги Tele2 / Zelta Zivtiņa, вся Латвия",
+ "how_to_enter": "Отправить бесплатное SMS с текстом Bonuss на номер 1620 или отметить участие в профиле самообслуживания Mana Zelta Zivtiņa / Mans Tele2. Участник определяется по номеру подключения и имени в договоре",
+ "registration_url": null,
+ "keep": null,
+ "lottery_start": "2026-09-01",
+ "lottery_end": "2027-01-07",
+ "registration_start": "2026-09-01",
+ "registration_end": "2026-12-31",
+ "draws": [
+  {
+   "date": "2026-11-05",
+   "time": "12:00",
+   "period_from": "2026-09-01",
+   "period_to": "2026-10-31",
+   "prizes": [
+    {
+     "name": "Naudas balva 1000.00 EUR",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2027-01-07",
+   "time": "12:00",
+   "period_from": "2026-11-01",
+   "period_to": "2026-12-31",
+   "prizes": [
+    {
+     "name": "Naudas balva 1000.00 EUR",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Денежный приз 1000 EUR (налоги платит Tele2)",
+   "qty": 2,
+   "unit_value_eur": 1000,
+   "total_value_eur": 2000
+  }
+ ],
+ "prize_fund_eur": 2000,
+ "odds": "2:150 000",
+ "winners_published": "На www.zeltazivtina.lv и www.tele2.lv в день розыгрыша; полный список — 7 января 2027 года до 23:59. Tele2 звонит или пишет SMS победителю",
+ "claim_deadline": "2027-01-21",
+ "age_min": null,
+ "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
+ "notes": "Приз перечисляют на банковский счёт победителя (не третьего лица) в течение 3 рабочих дней после заявления; нужен паспорт/ID-карта. Телефон организатора 67686540.",
+ "_rules_sha": "be13c0a050f82f39",
+ "_extracted": "2026-10-21T06:08:38+03:00"
+}

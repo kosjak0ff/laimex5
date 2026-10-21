@@ -1,0 +1,57 @@
+{
+ "title": "Tele2 loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «Tele2»",
+ "permit": null,
+ "what_to_buy": "Быть или стать абонентом тарифного плана постоплаты или дата-плана Tele2 или Zelta Zivtiņa (в т.ч. перейти от другого оператора)",
+ "min_purchase_eur": null,
+ "where": "Услуги Tele2 / Zelta Zivtiņa, вся Латвия",
+ "how_to_enter": "Отправить бесплатное SMS с текстом TELE2ZIEMA на номер 1620. Участник определяется по номеру и имени в договоре",
+ "registration_url": null,
+ "keep": null,
+ "lottery_start": "2026-10-01",
+ "lottery_end": "2027-01-05",
+ "registration_start": "2026-10-01",
+ "registration_end": "2026-12-31",
+ "draws": [
+  {
+   "date": "2027-01-05",
+   "time": "12:00",
+   "period_from": "2026-10-01",
+   "period_to": "2026-12-31",
+   "prizes": [
+    {
+     "name": "Akropole dāvanu karte 1000 EUR",
+     "qty": 1
+    },
+    {
+     "name": "Televizors Samsung 55\" / UE55U8092HUXXH",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Подарочная карта Akropole 1000 EUR",
+   "qty": 1,
+   "unit_value_eur": 1000,
+   "total_value_eur": 1000
+  },
+  {
+   "name": "Телевизор Samsung 55\" / UE55U8092HUXXH",
+   "qty": 1,
+   "unit_value_eur": 369.24,
+   "total_value_eur": 369.24
+  }
+ ],
+ "prize_fund_eur": 1369.24,
+ "odds": "2:5000",
+ "winners_published": "На www.tele2.lv в день розыгрыша, 5 января 2027 года до 23:59; Tele2 звонит или пишет SMS победителям",
+ "claim_deadline": "2027-01-19",
+ "age_min": null,
+ "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
+ "notes": "Приз выдают лично у SIA «Visas Loterijas» (Dzirnavu iela 37-63, Rīga) по паспорту/ID-карте; тел. 67686540. В правилах начало лотереи — 1 октября 2026, в реестре VID — 11 октября.",
+ "_rules_sha": "05d010ee47798575",
+ "_extracted": "2026-10-21T06:09:28+03:00"
+}
