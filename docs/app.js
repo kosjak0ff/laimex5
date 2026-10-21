@@ -332,6 +332,11 @@ $$(".chip").forEach(b => b.addEventListener("click", () => {
 }));
 $("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
 window.addEventListener("hashchange", openFromHash);
+// любые ссылки на другие сайты открываются в новом окне
+document.addEventListener("click", e => {
+  const a = e.target.closest("a[href]");
+  if (a && a.origin !== location.origin) { a.target = "_blank"; a.rel = "noopener"; }
+}, true);
 
 // ---------------------------------------------------------------- установка
 
