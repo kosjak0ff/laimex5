@@ -4,7 +4,7 @@ from datetime import date
 
 import pytest
 
-from laimex import http, pipeline
+from laimex import http, pipeline, registry
 from test_core import ROWS, make_xls
 
 RULES_HTML = """<html><body><main><h1>Noteikumi</h1>
@@ -167,3 +167,16 @@ def test_add_result_and_site(sandbox):
     data = json.loads((sandbox / "docs/data.json").read_text(encoding="utf-8"))
     item = next(i for i in data["lotteries"] if i["permit"] == "9158")
     assert item["results"]["winners_url"] == "https://example.lv/laimetaji"
+
+
+def test_registry_unreachable_uses_cache(sandbox, monkeypatch):
+    pipeline.daily("agent", log=lambda *a: None)
+    before = (sandbox / "data/registry.json").read_text()
+
+    def down():
+        raise http.requests.ConnectTimeout("www.vid.gov.lv timed out")
+    monkeypatch.setattr(registry, "fetch", down)
+    todo = pipeline.daily("agent", log=lambda *a: None)
+    assert todo["need_summary"] == ["9158"]
+    # копия реестра не перезаписана: дата fetched старая, проверка здоровья это увидит
+    assert (sandbox / "data/registry.json").read_text() == before
