@@ -38,6 +38,7 @@
     <button class="tab" data-tab="now" aria-pressed="true">Идут сейчас <span class="n" data-count="now"></span></button>
     <button class="tab" data-tab="soon" aria-pressed="false">Скоро <span class="n" data-count="soon"></span></button>
     <button class="tab" data-tab="past" aria-pressed="false">Завершились <span class="n" data-count="past"></span></button>
+    <button class="tab" data-tab="fav" aria-pressed="false">★ Отмеченные <span class="n" data-count="fav"></span></button>
   </nav>
   <div class="tools">
     <label class="search">
@@ -48,6 +49,18 @@
       <button class="chip" data-filter="ending" aria-pressed="false">Регистрация до 7 дней</button>
       <button class="chip" data-filter="draw" aria-pressed="false">Розыгрыш скоро</button>
       <button class="chip" data-filter="service" aria-pressed="false">Лотереи за услуги</button>
+    </div>
+    <div class="chips" id="stores" role="group" aria-label="Магазин" hidden></div>
+    <div class="view">
+      <label class="sort">
+        <span>Сортировка</span>
+        <select id="sort">
+          <option value="ending">Скоро закончится</option>
+          <option value="prize">Крупный приз</option>
+          <option value="new">Новые</option>
+        </select>
+      </label>
+      <button class="chip" id="compact" type="button" aria-pressed="false">Компактно</button>
     </div>
   </div>
   <p class="status" id="status" role="status">Загружаем лотереи…</p>
@@ -65,6 +78,7 @@
       <header class="t-head">
         <h2 class="t-title"></h2>
         <p class="t-left"></p>
+        <button class="t-star" type="button" aria-pressed="false" aria-label="Отметить лотерею">☆</button>
       </header>
       <p class="t-org"></p>
       <dl class="receipt">
@@ -76,6 +90,7 @@
       <div class="t-actions">
         <a class="btn primary t-register" rel="noopener" target="_blank">Зарегистрировать чек</a>
         <a class="btn t-rules" rel="noopener" target="_blank">Правила</a>
+        <button class="btn t-cal" type="button">В календарь</button>
         <button class="btn ghost t-more" aria-expanded="false">Подробнее</button>
       </div>
       <div class="t-details" hidden></div>
