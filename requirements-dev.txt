@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest>=8.0
+xlwt>=1.3  # тесты собирают поддельный реестр VID в формате xls

@@ -4,7 +4,7 @@ from __future__ import annotations
 import hashlib
 import json
 import shutil
-from datetime import datetime
+from datetime import date, datetime
 from pathlib import Path
 
 from . import discover, http, registry, rules, validate
@@ -15,6 +15,8 @@ from .schema import validate_shape
 REGISTRY_JSON = DATA / "registry.json"
 SOURCES_JSON = DATA / "sources.json"
 TODO_JSON = DATA / "todo.json"
+RESULTS_JSON = DATA / "results.json"   # результаты розыгрышей: ссылки на победителей
+RESULTS_RECHECK_DAYS = 3                # не искать результаты одной лотереи чаще
 
 
 # ------------------------------------------------------------------ файлы
@@ -108,26 +110,61 @@ def summary_path(permit: str) -> Path:
     return SUMMARIES / f"{permit}.json"
 
 
+def results_reason(row: dict, summ: dict | None, res: dict | None, now: str) -> str | None:
+    """Почему нужно поискать сведения о розыгрышах (None — не нужно).
+
+    Только для идущих и прошедших лотерей. Когда найдена страница с победителями, искать
+    больше нечего: организаторы дописывают туда новые розыгрыши. Одну и ту же лотерею не ищем
+    чаще раза в RESULTS_RECHECK_DAYS дней, чтобы рутина не тратила поиск впустую.
+    """
+    if not row.get("start") or row["start"] > now:
+        return None
+    res = res or {}
+    if res.get("winners_url"):
+        return None
+    checked = res.get("checked")
+    if checked and (date.fromisoformat(now) - date.fromisoformat(checked)).days < RESULTS_RECHECK_DAYS:
+        return None
+    draws = [d.get("date") for d in (summ or {}).get("draws") or []]
+    if summ and not draws and row["end"] >= now:
+        return "в выжимке нет дат розыгрышей — найти даты и призы"
+    passed = sorted({d for d in draws if d and d < now})
+    if passed:
+        return (f"прошло розыгрышей: {len(passed)}, последний {passed[-1]} — "
+                "найти страницу с победителями")
+    if row["end"] < now:
+        return "лотерея закончилась — найти результаты и страницу с победителями"
+    return None
+
+
+def _neg(iso: str) -> int:
+    return -date.fromisoformat(iso).toordinal()
+
+
 def step_todo(rows: list[dict], sources: dict, log=print) -> dict:
     shutil.rmtree(PENDING, ignore_errors=True)
     PENDING.mkdir(parents=True, exist_ok=True)
-    need_summary, need_sources, broken = [], [], []
+    need_summary, need_sources, need_results, broken = [], [], [], []
+    results = load(RESULTS_JSON, {})
+    now = today().isoformat()
     for row in rows:
         p = row["permit"]
-        if row["end"] < today().isoformat():
-            continue  # закончившиеся не дорабатываем
+        summ = load(summary_path(p), None)
+        reason = results_reason(row, summ, results.get(p), now)
+        if reason:
+            need_results.append({**row, "reason": reason})
+        if row["end"] < now:
+            continue  # правила и выжимки закончившихся не дорабатываем
         src = sources.get(p, {})
         text_file = RULES_TEXT / f"{p}.txt"
         if not src.get("rules") or not text_file.exists():
-            need_sources.append(row)
+            # правила ищем только у идущих лотерей: у будущих информации обычно ещё нет
+            if row.get("start") and row["start"] <= now:
+                need_sources.append(row)
             continue
         if src.get("error"):
             broken.append({**row, "error": src["error"], "rules": src.get("rules")})
-        summ = load(summary_path(p), None)
-        if summ and summ.get("_rules_sha") is None and src.get("rules_sha"):
-            # выжимка сделана вручную до первого запуска робота — принимаем её
-            summ["_rules_sha"] = src["rules_sha"]
-            save(summary_path(p), summ)
+        # выжимка без _rules_sha сделана не по скачанным правилам — переделываем
         if summ and summ.get("_rules_sha") == src.get("rules_sha"):
             continue
         need_summary.append(p)
@@ -140,13 +177,19 @@ def step_todo(rows: list[dict], sources: dict, log=print) -> dict:
         )
     # с какого дня лотерея ждёт выжимку или правила — для контроля здоровья
     prev = load(TODO_JSON, {}).get("waiting_since", {})
-    waiting = set(need_summary) | {r["permit"] for r in need_sources if r["start"] <= today().isoformat()}
-    waiting_since = {p: prev.get(p, today().isoformat()) for p in sorted(waiting)}
+    waiting = set(need_summary) | {r["permit"] for r in need_sources}
+    waiting_since = {p: prev.get(p, now) for p in sorted(waiting)}
+    # сначала те, у которых раньше закончилась регистрация
+    need_sources.sort(key=lambda r: (r["end"], r["permit"]))
+    # сначала идущие (это важнее посетителям), потом недавно закончившиеся
+    need_results.sort(key=lambda r: (r["end"] < now, r["end"] if r["end"] >= now else _neg(r["end"]),
+                                     r["permit"]))
     todo = {"generated": now_iso(), "need_summary": need_summary,
-            "need_sources": need_sources, "broken": broken, "waiting_since": waiting_since}
+            "need_sources": need_sources, "need_results": need_results, "broken": broken,
+            "waiting_since": waiting_since}
     save(TODO_JSON, todo)
     log(f"Нужна выжимка: {len(need_summary)}; не найдены правила: {len(need_sources)}; "
-        f"проблемы с правилами: {len(broken)}")
+        f"нужны сведения о розыгрышах: {len(need_results)}; проблемы с правилами: {len(broken)}")
     return todo
 
 
@@ -181,11 +224,26 @@ def add_source(permit: str, page: str | None, rules_url: str | None,
     return step_sources(rows, only={permit})
 
 
+def add_result(permit: str, winners_url: str | None, note: str | None) -> dict:
+    """Записать, что удалось узнать о розыгрышах. Вызывается и когда ничего не нашлось:
+    дата проверки не даст искать то же самое каждый день."""
+    results = load(RESULTS_JSON, {})
+    cur = results.setdefault(permit, {})
+    if winners_url:
+        cur["winners_url"] = winners_url
+    if note:
+        cur["note"] = note
+    cur["checked"] = today().isoformat()
+    save(RESULTS_JSON, results)
+    return cur
+
+
 # ------------------------------------------------------------- шаг 4: сайт
 
 def build_site(log=print) -> Path:
     reg = load(REGISTRY_JSON, {"lotteries": [], "fetched": None, "source": None})
     sources = load(SOURCES_JSON, {})
+    results = load(RESULTS_JSON, {})
     items = []
     for row in reg["lotteries"]:
         p = row["permit"]
@@ -204,6 +262,7 @@ def build_site(log=print) -> Path:
             **row,
             "links": {k: src.get(k) for k in ("page", "rules", "registration")},
             "summary": clean_summ,
+            "results": results.get(p),
             "checks": checks,
             "status": st,
         })
