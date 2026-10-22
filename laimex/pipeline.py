@@ -39,7 +39,16 @@ def now_iso():
 # --------------------------------------------------------------- шаг 1: реестр
 
 def step_registry(log=print) -> list[dict]:
-    url, rows = registry.fetch()
+    try:
+        url, rows = registry.fetch()
+    except Exception as e:  # noqa: BLE001
+        # сайт VID бывает недоступен по нескольку часов — работаем с прошлой копией реестра;
+        # дата fetched не меняется, поэтому проверка здоровья заметит, если это затянется
+        cached = load(REGISTRY_JSON, None)
+        if not cached:
+            raise
+        log(f"! Реестр VID недоступен ({e}), берём копию от {cached.get('fetched')}")
+        return registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
     rel = registry.relevant(rows, today(), KEEP_FINISHED_DAYS)
     save(REGISTRY_JSON, {"source": url, "fetched": now_iso(), "total_in_file": len(rows),
                          "lotteries": rel})
