@@ -4,6 +4,7 @@
   python -m laimex todo             — что осталось сделать (для агента)
   python -m laimex save 9158 f.json — сохранить выжимку и показать проверки
   python -m laimex add-source 9158 --page URL [--rules URL] [--registration URL] [--no-fetch]
+  python -m laimex add-result 9158 [--winners URL] [--note TEXT]
   python -m laimex build            — только пересобрать сайт
   python -m laimex health           — проверить, всё ли обновляется
 """
@@ -33,6 +34,10 @@ def main(argv=None):
     a.add_argument("--registration")
     a.add_argument("--found-by", default="agent-search")
     a.add_argument("--no-fetch", action="store_true", help="только записать ссылки, правила скачает GitHub Actions")
+    r = sub.add_parser("add-result")
+    r.add_argument("permit")
+    r.add_argument("--winners", help="страница или файл со списком победителей")
+    r.add_argument("--note", help="по-русски для посетителей сайта: что известно о розыгрышах")
     sub.add_parser("build")
     h = sub.add_parser("health")
     h.add_argument("--github-issue", metavar="OWNER/REPO", help="открыть/закрыть issue при проблемах")
@@ -53,6 +58,10 @@ def main(argv=None):
         for r in todo["need_sources"]:
             print(f"   {r['permit']} | {r['name']} | {r['organizer']} | {r['purchase']} | "
                   f"{r['start']}..{r['end']} | {r['place']}")
+        need_results = todo.get("need_results", [])
+        print(f"Нужны сведения о розыгрышах ({len(need_results)}):")
+        for r in need_results:
+            print(f"   {r['permit']} | {r['name']} | {r['organizer']} | {r['start']}..{r['end']} | {r['reason']}")
         if todo["broken"]:
             print(f"Проблемы с правилами ({len(todo['broken'])}):")
             for r in todo["broken"]:
@@ -68,6 +77,9 @@ def main(argv=None):
         src = pipeline.add_source(args.permit, args.page, args.rules, args.registration,
                                   args.found_by, fetch=not args.no_fetch)
         print(json.dumps(src.get(args.permit, {}), ensure_ascii=False, indent=1))
+    elif args.cmd == "add-result":
+        res = pipeline.add_result(args.permit, args.winners, args.note)
+        print(json.dumps(res, ensure_ascii=False, indent=1))
     elif args.cmd == "build":
         pipeline.build_site()
     elif args.cmd == "health":

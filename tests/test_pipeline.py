@@ -46,11 +46,14 @@ def sandbox(tmp_path, monkeypatch):
     monkeypatch.setattr(http, "get", fake_get)
     for name, sub in [("REGISTRY_JSON", "data/registry.json"), ("SOURCES_JSON", "data/sources.json"),
                       ("TODO_JSON", "data/todo.json"), ("RULES_TEXT", "data/rules_text"),
-                      ("PENDING", "data/pending"), ("SUMMARIES", "data/summaries"), ("SITE", "docs")]:
+                      ("PENDING", "data/pending"), ("SUMMARIES", "data/summaries"), ("SITE", "docs"),
+                      ("RESULTS_JSON", "data/results.json")]:
         monkeypatch.setattr(pipeline, name, tmp_path / sub)
     (tmp_path / "data/rules_text").mkdir(parents=True)
     (tmp_path / "data/summaries").mkdir(parents=True)
     monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 19))
+    # время записи реестра тоже подменяем, иначе тест зависит от сегодняшней даты
+    monkeypatch.setattr(pipeline, "now_iso", lambda: "2026-10-19T12:00:00+03:00")
     return tmp_path
 
 
@@ -111,3 +114,56 @@ def test_health(sandbox, monkeypatch):
     assert not res["ok"]
     assert any("9158" in p for p in res["problems"])
     assert any("Реестр VID" in p for p in res["problems"])
+
+
+def test_sources_searched_only_for_running(sandbox):
+    rows = [
+        {"permit": "1", "name": "Идёт", "start": "2026-10-01", "end": "2026-11-01"},
+        {"permit": "2", "name": "Будущая", "start": "2026-10-25", "end": "2026-12-01"},
+        {"permit": "3", "name": "Без даты начала", "start": None, "end": "2026-12-01"},
+    ]
+    todo = pipeline.step_todo(rows, {}, log=lambda *a: None)
+    assert [r["permit"] for r in todo["need_sources"]] == ["1"]
+    assert set(todo["waiting_since"]) == {"1"}
+
+
+def test_results_reason():
+    now = "2026-10-19"
+    row = {"permit": "1", "start": "2026-09-01", "end": "2026-11-30"}
+    summ = {"draws": [{"date": "2026-10-01"}, {"date": "2026-10-15"}, {"date": "2026-11-30"}]}
+    assert "розыгрышей: 2, последний 2026-10-15" in pipeline.results_reason(row, summ, None, now)
+    # страница с победителями уже найдена — искать нечего
+    assert pipeline.results_reason(row, summ, {"winners_url": "https://x"}, now) is None
+    # недавно искали — не повторяем
+    assert pipeline.results_reason(row, summ, {"checked": "2026-10-17"}, now) is None
+    assert pipeline.results_reason(row, summ, {"checked": "2026-10-15"}, now)
+    # будущая лотерея и лотерея без прошедших розыгрышей — не ищем
+    assert pipeline.results_reason(dict(row, start="2026-10-25"), summ, None, now) is None
+    assert pipeline.results_reason(row, {"draws": [{"date": "2026-11-30"}]}, None, now) is None
+    # в выжимке нет дат розыгрышей — ищем даты
+    assert "нет дат" in pipeline.results_reason(row, {"draws": []}, None, now)
+    # закончилась, выжимки нет — ищем победителей
+    assert "закончилась" in pipeline.results_reason(dict(row, end="2026-10-10"), None, None, now)
+
+
+def test_results_order(sandbox):
+    rows = [
+        {"permit": "1", "name": "Давно закончилась", "start": "2026-08-01", "end": "2026-09-25"},
+        {"permit": "2", "name": "Недавно закончилась", "start": "2026-08-01", "end": "2026-10-10"},
+        {"permit": "3", "name": "Идёт", "start": "2026-10-01", "end": "2026-11-30"},
+    ]
+    (sandbox / "data/summaries/3.json").write_text('{"draws": [{"date": "2026-10-05"}]}', encoding="utf-8")
+    todo = pipeline.step_todo(rows, {}, log=lambda *a: None)
+    assert [r["permit"] for r in todo["need_results"]] == ["3", "2", "1"]
+
+
+def test_add_result_and_site(sandbox):
+    pipeline.daily("agent", log=lambda *a: None)
+    pipeline.add_result("9158", None, "Победители пока не опубликованы")
+    res = pipeline.add_result("9158", "https://example.lv/laimetaji", "Победители первого розыгрыша опубликованы")
+    assert res == {"winners_url": "https://example.lv/laimetaji",
+                   "note": "Победители первого розыгрыша опубликованы", "checked": "2026-10-19"}
+    pipeline.build_site(log=lambda *a: None)
+    data = json.loads((sandbox / "docs/data.json").read_text(encoding="utf-8"))
+    item = next(i for i in data["lotteries"] if i["permit"] == "9158")
+    assert item["results"]["winners_url"] == "https://example.lv/laimetaji"
