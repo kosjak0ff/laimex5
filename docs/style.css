@@ -78,6 +78,14 @@ h1 { font-size: clamp(1.5rem, 5.5vw, 2.25rem); line-height: 1.1; font-weight: 80
   border: 1px solid var(--rule); border-radius: 999px; padding: 9px 12px; cursor: pointer; white-space: nowrap;
 }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chips[hidden] { display: none; }
+.view { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; }
+.sort { display: flex; align-items: center; gap: 8px; font-size: 0.875rem; color: var(--muted); }
+.sort select {
+  font: 400 0.875rem var(--sans); color: var(--ink); background: var(--paper);
+  border: 1px solid var(--rule); border-radius: 10px; padding: 8px 10px; min-height: 40px;
+}
+@media (max-width: 420px) { .sort span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); } }
 .status { color: var(--muted); margin: 0 0 10px; font-size: 0.9375rem; }
 
 /* лотерея — как чек */
@@ -92,7 +100,16 @@ h1 { font-size: clamp(1.5rem, 5.5vw, 2.25rem); line-height: 1.1; font-weight: 80
 }
 .ticket:target article, .ticket.focus article { box-shadow: inset 0 0 0 2px var(--carmine); }
 .ticket.is-closed article { opacity: 0.82; }
-.t-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 12px; align-items: start; }
+.t-head { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; column-gap: 8px; align-items: start; }
+.t-star {
+  margin: -10px -10px 0 0; width: 44px; height: 44px; flex: none; font-size: 1.375rem; line-height: 1;
+  color: var(--muted); background: none; border: 0; border-radius: 8px; cursor: pointer;
+}
+.t-star[aria-pressed="true"] { color: var(--carmine-ink); }
+.badge {
+  display: inline-block; vertical-align: 2px; font: 500 0.6875rem/1 var(--sans); letter-spacing: 0.02em;
+  color: var(--carmine-ink); background: var(--carmine-soft); border-radius: 999px; padding: 3px 7px;
+}
 .t-title { font-size: 1.0625rem; line-height: 1.25; font-weight: 700; margin: 0; letter-spacing: -0.01em; }
 .t-left { margin: 2px 0 0; white-space: nowrap; font-size: 0.8125rem; font-weight: 500; color: var(--muted); text-align: right; }
 .t-left.hot { color: var(--carmine-ink); }
@@ -159,6 +176,15 @@ h1 { font-size: clamp(1.5rem, 5.5vw, 2.25rem); line-height: 1.1; font-weight: 80
 .empty { background: var(--paper); border-radius: 6px; padding: 20px; }
 .foot { color: var(--muted); font-size: 0.875rem; padding-top: 32px; padding-bottom: 40px; }
 .foot a { color: inherit; }
+
+/* компактный вид: только приз и ближайший розыгрыш */
+.compact .list { gap: 10px; }
+.compact .ticket article { padding: 10px 14px 16px; }
+.compact .receipt { margin-top: 6px; padding-top: 4px; }
+.compact .r-row:not(.r-total) { display: none; }
+.compact .r-total { margin-top: 0; padding-top: 0; border-top: 0; }
+.compact .t-next { margin-top: 4px; }
+.compact .t-actions { margin-top: 8px; }
 
 @media (prefers-reduced-motion: no-preference) {
   .t-details:not([hidden]) { animation: open 160ms ease-out; }

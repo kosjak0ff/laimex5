@@ -3,7 +3,34 @@
 const $ = (s, el = document) => el.querySelector(s);
 const $$ = (s, el = document) => [...el.querySelectorAll(s)];
 
-const state = { tab: "now", q: "", filters: new Set(), items: [], today: rigaToday() };
+const state = { tab: "now", q: "", filters: new Set(), store: null, sort: "ending", compact: false,
+  fav: new Set(), items: [], today: rigaToday() };
+
+// ---------------------------------------------------------------- хранилище
+
+// Всё, что помним между заходами; без хранилища (приватный режим) сайт просто не помнит.
+function readStore(key, fallback) {
+  try { const v = localStorage.getItem(key); return v == null ? fallback : JSON.parse(v); }
+  catch (e) { return fallback; }
+}
+function writeStore(key, value) {
+  try { localStorage.setItem(key, JSON.stringify(value)); } catch (e) { /* без хранилища */ }
+}
+function savePrefs() {
+  writeStore("prefs", { tab: state.tab, filters: [...state.filters], store: state.store,
+    sort: state.sort, compact: state.compact });
+}
+function saveFav() { writeStore("fav", [...state.fav]); }
+(function restore() {
+  const p = readStore("prefs", {}) || {};
+  if (["now", "soon", "past", "fav"].includes(p.tab)) state.tab = p.tab;
+  if (Array.isArray(p.filters)) state.filters = new Set(p.filters.filter(f => typeof f === "string"));
+  if (typeof p.store === "string") state.store = p.store;
+  if (["ending", "prize", "new"].includes(p.sort)) state.sort = p.sort;
+  state.compact = p.compact === true;
+  const fav = readStore("fav", []);
+  if (Array.isArray(fav)) state.fav = new Set(fav.map(String));
+})();
 
 function rigaToday() {
   // YYYY-MM-DD в часовом поясе Риги
@@ -64,10 +91,36 @@ function mainPrize(s) {
   if (!s?.prizes?.length) return null;
   return [...s.prizes].sort((a, b) => (b.unit_value_eur || 0) - (a.unit_value_eur || 0))[0];
 }
+// Поиск без учёта регистра и латышской диакритики: ā→a, š→s, ļ→l.
+function norm(t) { return String(t || "").toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, ""); }
 function haystack(it) {
   const s = it.summary || {};
-  return [it.name, it.organizer, it.purchase, it.place, s.title, s.sponsor, s.what_to_buy, s.buy_short,
-    s.where, ...(s.prizes || []).map(p => p.name)].join(" ").toLowerCase();
+  return norm([it.name, it.organizer, it.purchase, it.place, s.title, s.sponsor, s.what_to_buy, s.buy_short,
+    s.where, ...(s.prizes || []).map(p => p.name)].join(" "));
+}
+
+// Торговые сети: ищем название в «где покупать» (реестр и выжимка). Оговорки вроде
+// «(izņemot veikalu Rimi)» / «(кроме магазина Rimi)» не считаются.
+const STORES = [
+  ["Maxima", "maxima|barbora"], ["Rimi"], ["Lidl"], ["Top"], ["Elvi"], ["Mego"], ["Vesko"], ["Spar"], ["Aibe"],
+  ["LaTS"], ["Citro"], ["Drogas"], ["Apotheka"], ["Benu"], ["Mēness aptieka"], ["Euroaptieka"], ["Stenders"],
+  ["Depo"], ["Narvesen"], ["Circle K"], ["Virši"], ["Pepco"],
+].map(([name, words]) => [name, new RegExp(`(^|[^\\p{L}])(${words || norm(name)})(?!\\p{L})`, "u")]);
+function storesOf(it) {
+  const where = norm(`${it.place || ""} ${it.summary?.where || ""}`)
+    .replace(/\(?\s*(izn?emot|кроме)[^),.;]*\)?/gu, " ");
+  return STORES.filter(([, re]) => re.test(where)).map(([name]) => name);
+}
+
+// Сумма для сортировки «Крупный приз»: призовой фонд, иначе самый дорогой приз.
+function prizeValue(it) {
+  const s = it.summary;
+  if (s?.prize_fund_eur != null) return s.prize_fund_eur;
+  return mainPrize(s)?.unit_value_eur || 0;
+}
+function isNew(it) {
+  const n = daysBetween(it.start, state.today);
+  return n >= 0 && n < 7;
 }
 
 // Короткая строка «что купить»: из выжимки, иначе обрезаем полную.
@@ -79,25 +132,38 @@ function shortBuy(it) {
   return cut.length > 110 ? cut.slice(0, 105).replace(/\s+\S*$/, "") + "…" : cut;
 }
 
+function inTab(it) { return state.tab === "fav" ? state.fav.has(it.permit) : tabOf(it) === state.tab; }
+
+// Лотереи вкладки до фильтров (из них же — список сетей для чипов).
+function tabItems() {
+  const q = norm(state.q.trim());
+  let list = state.items.filter(inTab);
+  // лотереи за услуги скрыты, но поиск находит и их; отмеченные видны всегда
+  if (state.tab !== "fav" && !state.filters.has("service") && !q) list = list.filter(it => it.category !== "service");
+  return list;
+}
+
 function visible() {
-  const q = state.q.trim().toLowerCase();
-  let list = state.items.filter(it => tabOf(it) === state.tab);
-  // лотереи за услуги скрыты, но поиск находит и их
-  if (!state.filters.has("service") && !q) list = list.filter(it => it.category !== "service");
+  const q = norm(state.q.trim());
+  let list = tabItems();
   if (state.filters.has("ending")) list = list.filter(it =>
     phase(it) === "open" && daysBetween(state.today, regEnd(it)) <= 7);
   if (state.filters.has("draw")) list = list.filter(it => {
     const d = nextDraw(it); return d && daysBetween(state.today, d) <= 3;
   });
+  if (state.store) list = list.filter(it => it._stores.includes(state.store));
   if (q) list = list.filter(it => it._hay.includes(q));
-  const rank = { open: 0, closed: 1, soon: 0, past: 0 };
+  // на «Идут сейчас» закрытые для чеков всегда ниже; в отмеченных — по фазам
+  const rank = state.tab === "fav" ? { open: 0, closed: 1, soon: 2, past: 3 } : { open: 0, closed: 1, soon: 0, past: 0 };
+  const soonest = (a, b) => phase(a) === "past" ? b.end.localeCompare(a.end)
+    : phase(a) === "soon" ? a.start.localeCompare(b.start)
+    : phase(a) === "open" ? regEnd(a).localeCompare(regEnd(b)) : a.end.localeCompare(b.end);
   const by = {
-    now: (a, b) => rank[phase(a)] - rank[phase(b)] ||
-      (phase(a) === "open" ? regEnd(a).localeCompare(regEnd(b)) : a.end.localeCompare(b.end)),
-    soon: (a, b) => a.start.localeCompare(b.start),
-    past: (a, b) => b.end.localeCompare(a.end),
-  }[state.tab];
-  return list.sort(by);
+    ending: soonest,
+    prize: (a, b) => prizeValue(b) - prizeValue(a) || soonest(a, b),
+    new: (a, b) => b.start.localeCompare(a.start) || soonest(a, b),
+  }[state.sort];
+  return list.sort((a, b) => rank[phase(a)] - rank[phase(b)] || by(a, b));
 }
 
 // ---------------------------------------------------------------- карточка
@@ -138,6 +204,10 @@ function card(it) {
   node.id = `p-${it.permit}`;
   node.classList.toggle("is-closed", p === "closed");
   $(".t-title", node).textContent = s?.title || it.name || it.purchase;
+  if (isNew(it)) $(".t-title", node).append(" ", el("span", { class: "badge" }, "новая"));
+  const star = $(".t-star", node);
+  syncStar(star, it);
+  star.addEventListener("click", () => toggleFav(it, star));
   $(".t-org", node).textContent = s?.sponsor || s?.organizer || it.organizer;
   const left = leftLabel(it);
   const lt = $(".t-left", node);
@@ -167,6 +237,9 @@ function card(it) {
   else regA.hidden = true;
   const rulesA = $(".t-rules", node);
   if (it.links?.rules) rulesA.href = it.links.rules; else rulesA.hidden = true;
+  const cal = $(".t-cal", node);
+  if (calEvents(it).length) cal.addEventListener("click", () => downloadIcs(it));
+  else cal.hidden = true;
 
   const more = $(".t-more", node), det = $(".t-details", node);
   more.addEventListener("click", () => {
@@ -178,6 +251,83 @@ function card(it) {
     if (open) history.replaceState(null, "", `#${node.id}`);
   });
   return node;
+}
+
+// ---------------------------------------------------------------- отмеченные
+
+function syncStar(btn, it) {
+  const on = state.fav.has(it.permit);
+  btn.setAttribute("aria-pressed", String(on));
+  btn.setAttribute("aria-label", on ? "Убрать из отмеченных" : "Отметить лотерею");
+  btn.title = on ? "Убрать из отмеченных" : "Отметить";
+  btn.textContent = on ? "★" : "☆";
+}
+function toggleFav(it, btn) {
+  state.fav.has(it.permit) ? state.fav.delete(it.permit) : state.fav.add(it.permit);
+  saveFav();
+  if (state.tab === "fav") { render(); return; }
+  syncStar(btn, it);
+  $('[data-count="fav"]').textContent = favCount();
+}
+function favCount() { return state.items.filter(it => state.fav.has(it.permit)).length; }
+
+// ---------------------------------------------------------------- календарь
+
+// События на весь день: конец регистрации и будущие розыгрыши.
+function calEvents(it) {
+  const title = it.summary?.title || it.name || it.purchase;
+  const out = [];
+  const re = regEnd(it);
+  if (re && re >= state.today && phase(it) !== "past")
+    out.push({ id: `reg-${re}`, date: re,
+      summary: `${it.category === "service" ? "Конец участия" : "Конец регистрации чеков"}: ${title}` });
+  const seen = new Set();  // несколько розыгрышей в один день — одно событие
+  for (const d of it.summary?.draws || []) {
+    if (!d.date || d.date < state.today || seen.has(d.date)) continue;
+    seen.add(d.date);
+    out.push({ id: `draw-${d.date}`, date: d.date,
+      summary: `Розыгрыш${d.time ? " в " + d.time : ""}: ${title}` });
+  }
+  return out;
+}
+function icsText(t) { return String(t).replace(/\\/g, "\\\\").replace(/;/g, "\\;").replace(/,/g, "\\,").replace(/\r?\n/g, "\\n"); }
+// Строки iCalendar не длиннее 75 байт; продолжение начинается с пробела.
+function icsFold(line) {
+  const enc = new TextEncoder(), parts = [];
+  let cur = "", size = 0;
+  for (const ch of line) {
+    const n = enc.encode(ch).length;
+    if (size + n > (parts.length ? 74 : 75)) { parts.push(cur); cur = ""; size = 0; }
+    cur += ch; size += n;
+  }
+  parts.push(cur);
+  return parts.join("\r\n ");
+}
+function icsDate(iso) { return iso.replace(/-/g, ""); }
+function nextDay(iso) { return new Date(Date.parse(iso) + dayMs).toISOString().slice(0, 10); }
+function buildIcs(it) {
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").replace(/\.\d+/, "");
+  const page = `${location.origin}${location.pathname}#p-${it.permit}`;
+  const lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Laimex//Loterijas//RU", "CALSCALE:GREGORIAN",
+    "METHOD:PUBLISH"];
+  for (const ev of calEvents(it)) {
+    lines.push("BEGIN:VEVENT", `UID:${it.permit}-${ev.id}@laimex`, `DTSTAMP:${stamp}`,
+      `DTSTART;VALUE=DATE:${icsDate(ev.date)}`, `DTEND;VALUE=DATE:${icsDate(nextDay(ev.date))}`,
+      `SUMMARY:${icsText(ev.summary)}`,
+      `DESCRIPTION:${icsText(`Разрешение VID № ${it.permit}. Подробнее: ${page}`)}`,
+      `URL:${page}`, "TRANSP:TRANSPARENT", "END:VEVENT");
+  }
+  lines.push("END:VCALENDAR");
+  return lines.map(icsFold).join("\r\n") + "\r\n";
+}
+function downloadIcs(it) {
+  const blob = new Blob([buildIcs(it)], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = el("a", { href: url, download: `laimex-${it.permit.replace(/[^\w.-]+/g, "_")}.ics` });
+  document.body.append(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
 }
 
 function details(it) {
@@ -257,6 +407,21 @@ function details(it) {
 
 // ---------------------------------------------------------------- отрисовка
 
+function renderStores() {
+  const present = new Set(tabItems().flatMap(it => it._stores));
+  if (state.store) present.add(state.store);  // выбранную сеть всегда можно снять
+  const box = $("#stores");
+  box.replaceChildren(...STORES.filter(([name]) => present.has(name)).map(([name]) => {
+    const b = el("button", { class: "chip", type: "button", "aria-pressed": String(state.store === name) }, name);
+    b.addEventListener("click", () => {
+      state.store = state.store === name ? null : name;
+      savePrefs(); render();
+    });
+    return b;
+  }));
+  box.hidden = !box.childElementCount;
+}
+
 function render() {
   const counts = { now: 0, soon: 0, past: 0 };
   for (const it of state.items) {
@@ -264,7 +429,9 @@ function render() {
     if (phase(it) === "closed") continue; // в счётчике — только где можно участвовать
     counts[tabOf(it)]++;
   }
+  counts.fav = favCount();
   for (const [k, v] of Object.entries(counts)) $(`[data-count="${k}"]`).textContent = v;
+  renderStores();
   const list = visible();
   const nodes = [];
   let divided = false;
@@ -277,7 +444,7 @@ function render() {
     }
     nodes.push(card(it));
   }
-  if (!state.filters.has("service") && !state.q.trim()) {
+  if (state.tab !== "fav" && !state.filters.has("service") && !state.q.trim()) {
     const hidden = state.items.filter(it => it.category === "service" && tabOf(it) === state.tab).length;
     if (hidden) {
       const btn = el("button", { class: "link" }, "Показать");
@@ -289,7 +456,9 @@ function render() {
   $("#list").replaceChildren(...nodes);
   const st = $("#status");
   if (!list.length) {
-    st.textContent = state.q || state.filters.size
+    st.textContent = state.tab === "fav" && !favCount()
+      ? "Отметьте лотереи звёздочкой ☆ — они появятся здесь, даже когда завершатся."
+      : state.q || state.filters.size || state.store
       ? "Ничего не нашлось. Уберите фильтры или измените запрос."
       : state.tab === "soon" ? "Новых объявленных лотерей пока нет." : "Здесь пока пусто.";
   } else if (state.tab === "now") {
@@ -305,7 +474,7 @@ function openFromHash() {
   if (!id.startsWith("p-")) return;
   const it = state.items.find(x => `p-${x.permit}` === id);
   if (!it) return;
-  if (tabOf(it) !== state.tab) { state.tab = tabOf(it); syncTabs(); render(); }
+  if (!inTab(it)) { state.tab = tabOf(it); syncTabs(); render(); }
   const li = document.getElementById(id);
   if (!li) return;
   li.classList.add("focus");
@@ -317,12 +486,19 @@ function openFromHash() {
 function syncTabs() {
   $$(".tab").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.tab === state.tab)));
 }
+function syncControls() {
+  syncTabs();
+  $$(".chip[data-filter]").forEach(b => b.setAttribute("aria-pressed", String(state.filters.has(b.dataset.filter))));
+  $("#sort").value = state.sort;
+  $("#compact").setAttribute("aria-pressed", String(state.compact));
+  document.body.classList.toggle("compact", state.compact);
+}
 
 async function load() {
   try {
     const r = await fetch("data.json", { cache: "no-cache" });
     const data = await r.json();
-    state.items = data.lotteries.map(it => ({ ...it, _hay: haystack(it) }));
+    state.items = data.lotteries.map(it => ({ ...it, permit: String(it.permit), _hay: haystack(it), _stores: storesOf(it) }));
     const upd = new Date(data.updated);
     $("#updated").textContent = `Обновлено ${upd.toLocaleString("ru-RU", { timeZone: "Europe/Riga", day: "numeric", month: "long", hour: "2-digit", minute: "2-digit" })}.`;
     render();
@@ -332,13 +508,20 @@ async function load() {
   }
 }
 
-$$(".tab").forEach(b => b.addEventListener("click", () => { state.tab = b.dataset.tab; syncTabs(); render(); }));
-$$(".chip").forEach(b => b.addEventListener("click", () => {
+$$(".tab").forEach(b => b.addEventListener("click", () => {
+  state.tab = b.dataset.tab; syncTabs(); savePrefs(); render();
+}));
+$$(".chip[data-filter]").forEach(b => b.addEventListener("click", () => {
   const f = b.dataset.filter;
   state.filters.has(f) ? state.filters.delete(f) : state.filters.add(f);
   b.setAttribute("aria-pressed", String(state.filters.has(f)));
-  render();
+  savePrefs(); render();
 }));
+$("#sort").addEventListener("change", e => { state.sort = e.target.value; savePrefs(); render(); });
+$("#compact").addEventListener("click", () => {
+  state.compact = !state.compact; syncControls(); savePrefs();
+});
+syncControls();
 $("#q").addEventListener("input", e => { state.q = e.target.value; render(); });
 window.addEventListener("hashchange", openFromHash);
 // любые ссылки на другие сайты открываются в новом окне
