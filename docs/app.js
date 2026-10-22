@@ -219,6 +219,13 @@ function details(it) {
         el("small", {}, [period, prizes].filter(Boolean).join(". "))));
     })));
   }
+  const res = it.results;
+  if (res?.winners_url || res?.note) {
+    out.push(el("h3", {}, "Результаты"));
+    if (res.winners_url) out.push(el("p", {}, el("a", { href: res.winners_url, target: "_blank", rel: "noopener" },
+      "Список победителей")));
+    if (res.note) out.push(el("p", {}, res.note));
+  }
 
   if (s?.prizes?.length) {
     out.push(el("h3", {}, "Призы"));

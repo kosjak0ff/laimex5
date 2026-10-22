@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T06:12:25+03:00",
+ "updated": "2026-10-22T21:17:58+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-21T11:42:05+03:00",
  "lotteries": [
@@ -19,6 +19,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -38,6 +39,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -57,6 +59,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -76,6 +79,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -95,6 +99,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -114,6 +119,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -133,6 +139,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -152,6 +159,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -171,6 +179,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -190,6 +199,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -209,6 +219,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -228,6 +239,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -247,6 +259,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -266,6 +279,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -285,6 +299,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -304,6 +319,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -323,6 +339,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -342,6 +359,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -361,6 +379,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -380,6 +399,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -399,6 +419,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -418,6 +439,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -437,6 +459,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -456,6 +479,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -475,6 +499,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -494,6 +519,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -513,6 +539,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -532,6 +559,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -551,6 +579,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -570,6 +599,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -589,6 +619,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -1139,6 +1170,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники Fazer Latvija SIA, маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
     "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза (сертификат на поездку) в правилах не указана; в правилах шанс записан как «136 (simt trīsdesmit astoņi)» — цифры и слова расходятся."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -1336,6 +1368,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «Sanitex», SIA «RIMI LATVIA» и SIA «Visas Loterijas»",
     "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -1527,6 +1560,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам AS «Latvijas Maiznieks», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
     "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -1766,6 +1800,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «IEPIRKUMU GRUPA», магазинов top! и SIA «Visas Loterijas»",
     "notes": "Для получения приза нужно предъявить чек и паспорт/ID-карту; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза в правилах не указана (период 29.07–20.10.2026); претензии — до 2026-11-05."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -1875,6 +1910,7 @@
     "limits": "Один участник может выиграть только 1 приз; каждый чек участвует один раз; участвовать можно неограниченно с новыми чеками",
     "notes": "Приз отправляют курьером. Победитель должен в течение 10 дней после звонка прислать фото выигравшего чека на e-mail или WhatsApp организатора; если не выйти на связь за 3 рабочих дня после розыгрыша — приз уходит резервисту."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -1990,6 +2026,7 @@
     "limits": "Один чек можно зарегистрировать только один раз; выигравший чек в дальнейших розыгрышах не участвует. Число чеков на человека не ограничено. Сотрудники Multum не участвуют",
     "notes": "Призы выдаются в офисе SIA «Multum» (Gustava Zemgala gatve 77, Rīga) до 31 октября 2026 года при предъявлении документа, удостоверяющего личность, и чека."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2063,6 +2100,7 @@
     "limits": "Один покупатель может зарегистрировать 1 чек в день",
     "notes": "Доступна только краткая версия правил: список призов, розыгрышей и брендов (Приложение № 2) в ней не приведён — смотрите полные правила на www.megoloterija.lv."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2194,6 +2232,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам UAB «Grigeo Tissue», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
     "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2335,6 +2374,7 @@
     "limits": "Каждый новый заказ — новая регистрация; повторно зарегистрированный номер не участвует",
     "notes": "Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Рига) или заказать доставку через loterijatev.lv до 5.11"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2434,6 +2474,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Mars Latvia» и SIA «Visas Loterijas» и их семьи",
     "notes": "Для получения приза нужны чек и паспорт/ID-карта; если на чеке не видно названий товаров, нужна заверенная продавцом квитанция или подпись с печатью магазина. Претензии — до 2026-11-17."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2547,6 +2588,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Birštono mineraliniai vandenys и Visas Loterijas не участвуют",
     "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 19 ноября 2026 года."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2742,6 +2784,7 @@
     "limits": "Один участник может выиграть 1 приз второго уровня в одном розыгрыше и 1 главный приз за всю лотерею; каждая регистрация — новый уникальный чек. Нельзя участвовать сотрудникам SIA «EUGESTA», SIA «SOMESE Baltic» и Latvijas filiāle FERRERO POLSKA COMMERCIAL",
     "notes": "Карты DOUGLAS нужно запросить онлайн на www.kinder.com (раздел «Laimētāji») до 2026-11-15 с фото чека — их пришлют на e-mail; главный приз получают в офисе SOMESE Baltic в Риге (Ernestīnes iela 12) до 2026-11-20 с чеком и паспортом/ID"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -2889,6 +2932,7 @@
     "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
     "notes": null
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3118,6 +3162,7 @@
     "limits": "Можно участвовать многократно, но один участник выигрывает не более 1 приза каждого вида и не более 3 призов всего. Не участвуют сотрудники организатора, дистрибьютора, рекламного агентства и их близкие родственники",
     "notes": "Пользоваться картой Edenred и Euronics могут лица от 18 лет, купоном McDonald’s — от 16 лет (до этого — через законного представителя). Купон Big Mac действует до 30.11.2026 и активируется в приложении McDonald’s; регистрация до 30.10.2026 17:00."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3207,6 +3252,7 @@
     "limits": "Участвуют только те, кто заключил договор в период 09.09–31.10.2026: по тексту правил клиенты со старым договором не участвуют. Регистрироваться можно один раз. За участников 12–15 лет договор подписывает опекун. Не участвуют сотрудники My Fitness и SOMESE Baltic",
     "notes": "В приз входят перелёты Рига–Женева и Цюрих–Рига, трансферы, 7 ночей в апартаментах отеля 4*, подъёмники, Aiguille du Midi, Mer de Glace и гид; страховка не входит. Приз забирают лично в офисе My Fitness (Rīga, Ernesta Birznieka-Upīša 21E) до 20.11.2026 с паспортом или ID-картой и персональным кодом"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3316,6 +3362,7 @@
     "limits": "Один чек, один телефон и один человек могут выиграть только один приз",
     "notes": null
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3475,6 +3522,7 @@
     "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
     "notes": "В последнем розыгрыше 17.11 участвуют все регистрации с 1.10 по 15.11"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3618,6 +3666,7 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ VIVO не участвуют",
     "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -3765,6 +3814,7 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ Ostmala не участвуют",
     "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -4000,6 +4050,7 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз, повторная регистрация — только с новой покупкой. Не участвуют сотрудники SOMESE Baltic, Rimi Latvia и Rimi Baltic",
     "notes": "Призы выдают в офисе организатора (Ernestīnes iela 12, Rīga) по паспорту/ID или, по заявке на loterijatev.lv до 03.12.2026, высылают в пакомат Omniva. Дата розыгрыша главного приза в правилах не указана; претензии — до 2026-12-11."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -4237,6 +4288,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Orkla Latvija» и SIA «Visas Loterijas»",
     "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Розыгрыши проходят в 6 датах; претензии — до 2026-12-08."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -4458,6 +4510,7 @@
     "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
     "notes": "Телевизор разыгрывается в последний день среди всех регистраций за весь период"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -4667,6 +4720,7 @@
     "limits": "Один участник может выиграть один приз; каждая купленная карта — отдельная регистрация. Сотрудники LLKC и Visas Loterijas не участвуют",
     "notes": "Чек хранить не обязательно. За призом — с паспортом/ID-картой, договориться с SIA «Visas Loterijas» (тел. 67686540, будни 9–17) до 7 декабря 2026 года. В таблице розыгрыша воблер 93F-DR Kibinago указан дважды вместо Pearl Ghost Perch — здесь по списку призового фонда."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -4864,6 +4918,7 @@
     "limits": "Один чек можно зарегистрировать один раз; не более 10 чеков в календарную неделю на участника; выигравший чек в дальнейших розыгрышах не участвует. Не участвуют сотрудники SMS solutions и сети LaTS и их родственники первой степени",
     "notes": "Для получения приза нужно отправить скан/фото чека на info@esteria.eu, затем указать банковский счёт — деньги переводят в течение 3 недель, наличными не выдают. Претензии — до 2027-01-08."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5057,6 +5112,7 @@
     "limits": "Один чек, один телефон и один человек могут выиграть только один раз",
     "notes": "Каждый еженедельный розыгрыш охватывает покупки за последние две недели; главный приз — среди всех регистраций за весь период"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5101,6 +5157,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -5175,6 +5232,7 @@
     "limits": "Покупка и купон — до 30.11.2026 19:00. Приз не меняется и не выплачивается деньгами",
     "notes": "Участвовать могут жители Латвии любого возраста. Приз забирают в кассе магазина PTA с документом и чеком; транспортировку оплачивает победитель."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5392,6 +5450,7 @@
     "limits": "Один человек (телефон, имя) выигрывает один раз за всю лотерею; один чек — один приз",
     "notes": "iPhone и денежные призы разыгрываются среди покупок за последние две недели, корзины — за последнюю неделю"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5565,6 +5624,7 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Сотрудники Latvijas Maiznieks, Rimi Latvia и Visas Loterijas не участвуют",
     "notes": "Повторные покупки дают дополнительные регистрации. Для получения приза нужны чек и паспорт/ID-карта; о получении нужно договориться с организатором (тел. 67686540) до 15 декабря 2026 года."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5609,6 +5669,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -5628,6 +5689,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -5728,6 +5790,7 @@
     "limits": "Один участник может выиграть один раз в каждом розыгрыше; каждый новый чек — новая регистрация",
     "notes": "Распределение призов по розыгрышам указано в приложении к правилам"
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5921,6 +5984,7 @@
     "limits": "Можно участвовать многократно, но один участник выигрывает не более 1 приза каждого вида и не более 3 призов всего. Не участвуют сотрудники организатора, дистрибьютора, рекламного агентства и их близкие родственники",
     "notes": "Чтобы воспользоваться любым призом, нужно быть старше 18 лет (иначе — с согласия законного представителя). Купон Go3 действует до 31.03.2027; регистрация до 30.11.2026 17:00."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -5965,6 +6029,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6115,6 +6180,7 @@
     "limits": "Можно участвовать несколько раз; не больше 1 приза в каждой категории и не больше 3 призов всего на участника. Сотрудники организатора, Coca-Cola HBC Latvia и агентства не участвуют",
     "notes": "Для поездки в Лондон и консультации стилиста победителю (и гостю) должно быть 18 лет. Для получения приза нужны паспорт/eID и чек; договориться с организатором (тел. +371 29239666) до 16 декабря 2026 года."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -6159,6 +6225,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6178,6 +6245,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6197,6 +6265,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6216,6 +6285,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6235,6 +6305,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6309,6 +6380,7 @@
     "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
     "notes": "Приз выдают лично у SIA «Visas Loterijas» (Dzirnavu iela 37-63, Rīga) по паспорту/ID-карте; тел. 67686540. В правилах начало лотереи — 1 октября 2026, в реестре VID — 11 октября."
    },
+   "results": null,
    "checks": [
     {
      "ok": false,
@@ -6353,6 +6425,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6429,6 +6502,7 @@
     "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
     "notes": "Приз перечисляют на банковский счёт победителя (не третьего лица) в течение 3 рабочих дней после заявления; нужен паспорт/ID-карта. Телефон организатора 67686540."
    },
+   "results": null,
    "checks": [
     {
      "ok": true,
@@ -6473,6 +6547,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6492,6 +6567,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6511,6 +6587,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6530,6 +6607,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6549,6 +6627,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   },
@@ -6568,6 +6647,7 @@
     "registration": null
    },
    "summary": null,
+   "results": null,
    "checks": [],
    "status": "no_summary"
   }
