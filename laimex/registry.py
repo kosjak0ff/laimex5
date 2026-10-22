@@ -163,8 +163,13 @@ def relevant(rows: list[dict], today: date, keep_finished_days: int) -> list[dic
     return out
 
 
-def fetch() -> tuple[str, list[dict]]:
-    page = http.get(VID_PAGE)
+def fetch(known_url: str | None = None) -> tuple[str, list[dict] | None]:
+    """Скачать реестр. Если ссылка на файл не изменилась (known_url), файл не скачиваем
+    и возвращаем rows=None: VID банит адреса, которые часто к нему обращаются, поэтому
+    запросов минимум и без повторов."""
+    page = http.get(VID_PAGE, retries=0)
     url = find_registry_url(page.text, page.url)
-    xls = http.get(url, timeout=60)
+    if url == known_url:
+        return url, None
+    xls = http.get(url, timeout=60, retries=0)
     return url, parse_xls(xls.content)

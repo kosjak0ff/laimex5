@@ -39,19 +39,30 @@ def now_iso():
 # --------------------------------------------------------------- шаг 1: реестр
 
 def step_registry(log=print) -> list[dict]:
+    cached = load(REGISTRY_JSON, None)
+    if cached and (cached.get("checked") or "")[:10] == today().isoformat():
+        # к VID обращаемся не чаще раза в день, даже если робот запускают несколько раз
+        log(f"Реестр VID сегодня уже проверяли, берём копию от {cached.get('fetched')}")
+        return registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
     try:
-        url, rows = registry.fetch()
+        url, rows = registry.fetch(known_url=(cached or {}).get("source"))
     except Exception as e:  # noqa: BLE001
-        # сайт VID бывает недоступен по нескольку часов — работаем с прошлой копией реестра;
+        # сайт VID бывает недоступен по нескольку дней — работаем с прошлой копией реестра;
         # дата fetched не меняется, поэтому проверка здоровья заметит, если это затянется
-        cached = load(REGISTRY_JSON, None)
         if not cached:
             raise
+        save(REGISTRY_JSON, dict(cached, checked=now_iso()))
         log(f"! Реестр VID недоступен ({e}), берём копию от {cached.get('fetched')}")
         return registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
+    if rows is None:
+        # ссылка на файл та же — реестр не обновлялся; отмечаем, что проверили сегодня
+        rel = registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
+        save(REGISTRY_JSON, dict(cached, fetched=now_iso(), checked=now_iso(), lotteries=rel))
+        log(f"Реестр VID не изменился ({url}), актуальных: {len(rel)}")
+        return rel
     rel = registry.relevant(rows, today(), KEEP_FINISHED_DAYS)
-    save(REGISTRY_JSON, {"source": url, "fetched": now_iso(), "total_in_file": len(rows),
-                         "lotteries": rel})
+    save(REGISTRY_JSON, {"source": url, "fetched": now_iso(), "checked": now_iso(),
+                         "total_in_file": len(rows), "lotteries": rel})
     log(f"Реестр: {len(rows)} записей в файле, актуальных без журнальных: {len(rel)}")
     return rel
 
