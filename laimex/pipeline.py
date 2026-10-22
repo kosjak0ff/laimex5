@@ -38,10 +38,12 @@ def now_iso():
 
 # --------------------------------------------------------------- шаг 1: реестр
 
-def step_registry(log=print) -> list[dict]:
+def step_registry(log=print, allow_cache: bool = True) -> list[dict]:
     try:
         url, rows = registry.fetch()
     except Exception as e:  # noqa: BLE001
+        if not allow_cache:
+            raise
         # сайт VID бывает недоступен по нескольку часов — работаем с прошлой копией реестра;
         # дата fetched не меняется, поэтому проверка здоровья заметит, если это затянется
         cached = load(REGISTRY_JSON, None)

@@ -180,3 +180,14 @@ def test_registry_unreachable_uses_cache(sandbox, monkeypatch):
     assert todo["need_summary"] == ["9158"]
     # копия реестра не перезаписана: дата fetched старая, проверка здоровья это увидит
     assert (sandbox / "data/registry.json").read_text() == before
+
+
+def test_registry_command_does_not_use_cache(sandbox, monkeypatch):
+    pipeline.daily("agent", log=lambda *a: None)
+
+    def down():
+        raise http.requests.ConnectTimeout("www.vid.gov.lv timed out")
+    monkeypatch.setattr(registry, "fetch", down)
+    # команда registry (её запускает tools/push_registry.py) не должна выдавать старую копию за свежую
+    with pytest.raises(http.requests.ConnectTimeout):
+        pipeline.step_registry(log=lambda *a: None, allow_cache=False)

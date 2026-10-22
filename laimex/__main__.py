@@ -5,6 +5,7 @@
   python -m laimex save 9158 f.json — сохранить выжимку и показать проверки
   python -m laimex add-source 9158 --page URL [--rules URL] [--registration URL] [--no-fetch]
   python -m laimex add-result 9158 [--winners URL] [--note TEXT]
+  python -m laimex registry         — только скачать реестр VID (без копии: ошибка, если сайт недоступен)
   python -m laimex build            — только пересобрать сайт
   python -m laimex health           — проверить, всё ли обновляется
 """
@@ -38,6 +39,7 @@ def main(argv=None):
     r.add_argument("permit")
     r.add_argument("--winners", help="страница или файл со списком победителей")
     r.add_argument("--note", help="по-русски для посетителей сайта: что известно о розыгрышах")
+    sub.add_parser("registry")
     sub.add_parser("build")
     h = sub.add_parser("health")
     h.add_argument("--github-issue", metavar="OWNER/REPO", help="открыть/закрыть issue при проблемах")
@@ -80,6 +82,8 @@ def main(argv=None):
     elif args.cmd == "add-result":
         res = pipeline.add_result(args.permit, args.winners, args.note)
         print(json.dumps(res, ensure_ascii=False, indent=1))
+    elif args.cmd == "registry":
+        pipeline.step_registry(allow_cache=False)
     elif args.cmd == "build":
         pipeline.build_site()
     elif args.cmd == "health":
