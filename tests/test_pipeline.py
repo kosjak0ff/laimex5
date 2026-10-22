@@ -173,10 +173,40 @@ def test_registry_unreachable_uses_cache(sandbox, monkeypatch):
     pipeline.daily("agent", log=lambda *a: None)
     before = (sandbox / "data/registry.json").read_text()
 
-    def down():
+    def down(**kw):
         raise http.requests.ConnectTimeout("www.vid.gov.lv timed out")
     monkeypatch.setattr(registry, "fetch", down)
+    monkeypatch.setattr(pipeline, "now_iso", lambda: "2026-10-20T12:00:00+03:00")
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 20))
     todo = pipeline.daily("agent", log=lambda *a: None)
     assert todo["need_summary"] == ["9158"]
-    # копия реестра не перезаписана: дата fetched старая, проверка здоровья это увидит
-    assert (sandbox / "data/registry.json").read_text() == before
+    # дата fetched старая, проверка здоровья это увидит
+    after = json.loads((sandbox / "data/registry.json").read_text())
+    assert after["fetched"] == json.loads(before)["fetched"]
+
+
+def test_registry_file_downloaded_only_when_link_changes(sandbox, monkeypatch):
+    calls = []
+    real_get = http.get
+
+    def counting_get(url, **kw):
+        if "vid.gov.lv" in url:
+            calls.append((url, kw.get("retries")))
+        return real_get(url, **kw)
+    monkeypatch.setattr(http, "get", counting_get)
+    pipeline.step_registry(log=lambda *a: None)
+    assert [u for u, _ in calls] == ["https://www.vid.gov.lv/lv/loterijas",
+                                     "https://www.vid.gov.lv/lv/media/1/download"]
+    assert all(r == 0 for _, r in calls)  # к VID без повторов
+    calls.clear()
+    # в тот же день повторный запуск к VID не ходит вовсе
+    pipeline.step_registry(log=lambda *a: None)
+    assert calls == []
+    monkeypatch.setattr(pipeline, "now_iso", lambda: "2026-10-20T12:00:00+03:00")
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 20))
+    rows = pipeline.step_registry(log=lambda *a: None)
+    # ссылка та же — файл не скачиваем, но отмечаем, что реестр проверен
+    assert [u for u, _ in calls] == ["https://www.vid.gov.lv/lv/loterijas"]
+    assert {r["permit"] for r in rows} == {"9158", "9089"}
+    saved = json.loads((sandbox / "data/registry.json").read_text(encoding="utf-8"))
+    assert saved["fetched"] == "2026-10-20T12:00:00+03:00"
