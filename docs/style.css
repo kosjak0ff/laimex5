@@ -2,7 +2,7 @@
 :root {
   --page: #F2EEE3; --ticket: #FFFDF7; --ink: #102019; --muted: #52605A; --rule: #CFC7B4;
   --accent: #0B7A53; --accent-text: #0B7A53; --accent-ink: #FFFFFF; --accent-soft: #DDF2E8;
-  --gold: #8A5F00; --gold2: #F2C14E; --gold-soft: #F6E3AE;
+  --gold: #8A5F00; --gold2: #F2C14E; --gold-soft: #F6E3AE; --logo-gold: #E5AE2E;
   --warn: #B04A00; --warn-soft: #FCE6D2; --stub: #FBF6E8;
   --scrim: rgba(16, 32, 25, 0.38); --shadow: 0 18px 40px rgba(16, 32, 25, 0.16); --focus: #1D5FBF;
   --display: "Unbounded", "Manrope", system-ui, sans-serif;
@@ -13,7 +13,7 @@
   :root:not([data-theme="light"]) {
     --page: #08110D; --ticket: #13221B; --ink: #EAF3EE; --muted: #9FB2A8; --rule: #2D4037;
     --accent: #3DD69A; --accent-text: #5BE0AA; --accent-ink: #04170F; --accent-soft: #173A2B;
-    --gold: #F0C75E; --gold2: #F0C75E; --gold-soft: #3D3112;
+    --gold: #F0C75E; --gold2: #F0C75E; --gold-soft: #3D3112; --logo-gold: #F0C75E;
     --warn: #FF9F66; --warn-soft: #3B2414; --stub: #182A21;
     --scrim: rgba(0, 0, 0, 0.6); --shadow: 0 18px 40px rgba(0, 0, 0, 0.5); --focus: #8DB8FF;
     color-scheme: dark;
@@ -22,7 +22,7 @@
 :root[data-theme="dark"] {
   --page: #08110D; --ticket: #13221B; --ink: #EAF3EE; --muted: #9FB2A8; --rule: #2D4037;
   --accent: #3DD69A; --accent-text: #5BE0AA; --accent-ink: #04170F; --accent-soft: #173A2B;
-  --gold: #F0C75E; --gold2: #F0C75E; --gold-soft: #3D3112;
+  --gold: #F0C75E; --gold2: #F0C75E; --gold-soft: #3D3112; --logo-gold: #F0C75E;
   --warn: #FF9F66; --warn-soft: #3B2414; --stub: #182A21;
   --scrim: rgba(0, 0, 0, 0.6); --shadow: 0 18px 40px rgba(0, 0, 0, 0.5); --focus: #8DB8FF;
   color-scheme: dark;
@@ -48,7 +48,7 @@ button { cursor: pointer; }
 /* ------------------------------------------------------------ шапка */
 .top-row { display: flex; align-items: center; gap: 16px 24px; padding-top: 20px; padding-bottom: 20px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); border-radius: 12px; }
-.brand-mark { width: 44px; height: 36px; flex: none; }
+.brand-mark { width: 46px; height: 46px; flex: none; }
 .brand-name { font: 800 28px/1 var(--display); letter-spacing: -0.03em; }
 .menu { display: flex; gap: 6px; padding: 6px; margin-left: auto; background: var(--ticket); border-radius: 999px; }
 .menu a, .more-btn {
@@ -347,7 +347,7 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
 }
 .install-offer p { margin: 0; flex: 1; font-weight: 700; font-size: 14px; line-height: 1.3; }
 .install-offer .btn { min-height: 40px; padding: 0 16px; }
-.install-offer .brand-mark { width: 36px; height: 30px; }
+.install-offer .brand-mark { width: 36px; height: 36px; }
 .icon-btn { width: 40px; height: 40px; border: 0; border-radius: 50%; display: grid; place-items: center; background: none; color: var(--muted); flex: none; }
 
 /* нижнее меню телефона */
@@ -370,7 +370,7 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
   .wrap { padding: 0 16px; }
   .top-row { gap: 10px; padding: 9px 8px 9px 16px; }
   .brand { gap: 10px; }
-  .brand-mark { width: 36px; height: 30px; }
+  .brand-mark { width: 36px; height: 36px; }
   .brand-name { font-size: 22px; }
   .menu, .theme { display: none; }
   .theme-cycle { display: grid; }
