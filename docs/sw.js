@@ -1,5 +1,5 @@
 // Работа без интернета: оболочка сайта из кэша, список лотерей — сначала из сети.
-const VERSION = "laimex-2026-10-22T22:02:37+03:00";
+const VERSION = "laimex-2026-10-23T06:11:10+03:00";
 const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
   "icons/icon-192.png", "icons/icon-512.png"];
 
