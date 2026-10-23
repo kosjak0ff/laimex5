@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Laimex переехал</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://laimex.pages.dev/">
+<noscript><meta http-equiv="refresh" content="0;url=https://laimex.pages.dev/"></noscript>
+<style>
+  :root { --page: #F2EEE3; --ticket: #FFFDF7; --ink: #102019; --muted: #52605A; --accent: #0B7A53; --accent-ink: #FFFFFF; }
+  @media (prefers-color-scheme: dark) {
+    :root { --page: #08110D; --ticket: #13221B; --ink: #EAF3EE; --muted: #9FB2A8; --accent: #3DD69A; --accent-ink: #04170F; }
+  }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; box-sizing: border-box;
+    background: var(--page); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 420px; background: var(--ticket); border-radius: 16px; padding: 24px; }
+  h1 { font-size: 22px; margin: 0 0 8px; }
+  p { margin: 0 0 16px; color: var(--muted); }
+  a.btn { display: inline-block; background: var(--accent); color: var(--accent-ink); text-decoration: none;
+    font-weight: 700; padding: 12px 18px; border-radius: 999px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Laimex переехал</h1>
+  <p>Новый адрес: <b>laimex.pages.dev</b>. «Мои лотереи» и настройки переедут вместе с вами.</p>
+  <p id="app-note" hidden>Если Laimex установлен как приложение, удалите старое и установите его заново с нового адреса.</p>
+  <p><a class="btn" id="go" href="https://laimex.pages.dev/">Открыть Laimex</a></p>
+</main>
+<script>
+  // Старый адрес kosjak0ff.github.io/laimex5. Хранилище браузера у нового адреса своё, поэтому
+  // «Мои лотереи», фильтры и тему передаём в ссылке «#import=…», сайт их заберёт.
+  (function () {
+    var NEW = "https://laimex.pages.dev/";
+    var q = new URLSearchParams(location.search);
+    if (location.hash.indexOf("#p-") === 0) q.set("l", decodeURIComponent(location.hash.slice(3)));
+    var keep = {}, any = false;
+    ["fav", "prefs", "theme"].forEach(function (k) {
+      try { var v = localStorage.getItem(k); if (v != null) { keep[k] = JSON.parse(v); any = true; } } catch (e) {}
+    });
+    var qs = q.toString();
+    var target = NEW + (qs ? "?" + qs : "") + (any ? "#import=" + encodeURIComponent(JSON.stringify(keep)) : "");
+    document.getElementById("go").href = target;
+
+    // старое приложение и его кэш больше не нужны
+    var cleanup = [];
+    if ("serviceWorker" in navigator) cleanup.push(navigator.serviceWorker.getRegistrations()
+      .then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+    if ("caches" in window) cleanup.push(caches.keys()
+      .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }));
+
+    // установленное приложение не уводим молча: пусть человек прочтёт про переустановку
+    if (matchMedia("(display-mode: standalone)").matches || navigator.standalone) {
+      document.getElementById("app-note").hidden = false;
+      return;
+    }
+    var go = function () { location.replace(target); };
+    Promise.all(cleanup).then(go, go);
+    setTimeout(go, 1500);
+  })();
+</script>
+</body>
+</html>
