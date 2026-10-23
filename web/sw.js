@@ -1,6 +1,6 @@
 // Работа без интернета: оболочка сайта из кэша, список лотерей — сначала из сети.
 const VERSION = "laimex-__BUILD__";
-const SHELL = ["./", "index.html", "style.css", "app.js", "manifest.webmanifest",
+const SHELL = ["./", "style.css", "app.js", "manifest.webmanifest",
   "icons/logo.svg", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", e => {
@@ -21,7 +21,7 @@ self.addEventListener("fetch", e => {
       const copy = res.clone();
       caches.open(VERSION).then(c => c.put(req, copy));
       return res;
-    }).catch(() => caches.match(req, { ignoreSearch: !isData }).then(r => r || caches.match("index.html"))));
+    }).catch(() => caches.match(req, { ignoreSearch: !isData }).then(r => r || caches.match("./"))));
     return;
   }
   e.respondWith(caches.match(req).then(hit => hit || fetch(req).then(res => {
