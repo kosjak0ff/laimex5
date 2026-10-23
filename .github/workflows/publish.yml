@@ -1,10 +1,10 @@
-# Публикует сайт, когда рутина Claude (или человек) меняет папку docs/ в ветке main.
-# Изменения самого робота публикуются в laimex-daily.
-name: laimex-publish
+# Старый адрес https://kosjak0ff.github.io/laimex5/: публикует в ветку gh-pages страницу переезда
+# на https://laimex.pages.dev/. Сам сайт публикует Cloudflare Pages при каждом изменении main.
+name: laimex-old-address
 on:
   push:
     branches: [main]
-    paths: ["docs/**"]
+    paths: ["tools/old-site/**", "tools/publish_pages.sh"]
   workflow_dispatch:
 permissions:
   contents: write
@@ -17,7 +17,7 @@ jobs:
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
-      - name: Опубликовать сайт
+      - name: Опубликовать страницу переезда
         env:
           GH_TOKEN: ${{ github.token }}
         run: tools/publish_pages.sh

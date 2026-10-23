@@ -31,6 +31,18 @@ function savePrefs() {
   writeStore("prefs", { tab: state.tab, sort: state.sort, stores: [...state.stores], types: [...state.types] });
 }
 function saveFav() { writeStore("fav", [...state.fav]); }
+// «Мои лотереи», фильтры и тема со старого адреса kosjak0ff.github.io/laimex5 приходят в ссылке
+// «#import=…»: у нового адреса своё хранилище. Избранное объединяем, остальное не перезаписываем.
+(function importOld() {
+  if (!location.hash.startsWith("#import=")) return;
+  try {
+    const old = JSON.parse(decodeURIComponent(location.hash.slice(8)));
+    const mine = readStore("fav", []);
+    if (Array.isArray(old.fav)) writeStore("fav", [...new Set([...(Array.isArray(mine) ? mine : []), ...old.fav.map(String)])]);
+    for (const k of ["prefs", "theme"]) if (old[k] != null && readStore(k, null) == null) writeStore(k, old[k]);
+  } catch (e) { /* испорченная ссылка */ }
+  history.replaceState(null, "", location.pathname + location.search);
+})();
 (function restore() {
   const p = readStore("prefs", {}) || {};
   if (TABS.includes(p.tab)) state.tab = p.tab;

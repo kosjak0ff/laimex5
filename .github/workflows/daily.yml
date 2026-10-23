@@ -5,7 +5,8 @@
 #  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
 #  - задачей Claude (tools/run_robot.py): в начале её работы и после того, как она нашла новые правила;
 #  - вручную: вкладка Actions → laimex-daily → Run workflow.
-# Готовый сайт публикуется в ветку gh-pages: https://kosjak0ff.github.io/laimex5/
+# Готовый сайт (папку docs/) Cloudflare Pages публикует сам после каждого изменения main:
+# https://laimex.pages.dev/
 #
 # Режим API (без рутины Claude): создайте переменную LAIMEX_MODE=api
 # и секрет ANTHROPIC_API_KEY в Settings → Secrets and variables → Actions.
@@ -48,10 +49,6 @@ jobs:
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 20
           done
-      - name: Опубликовать сайт
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: tools/publish_pages.sh
       - name: Проверить здоровье (при проблемах откроется issue и придёт письмо)
         if: always()
         env:

@@ -14,7 +14,7 @@ WORK = ROOT / "work"                     # временные файлы, не �
 PENDING = DATA / "pending"               # задания на выжимку (в git: их читает рутина Claude)
 IMAGES = DATA / "images"                 # баннеры лотерей, уменьшенные для карточек
 WEB = ROOT / "web"                       # исходники сайта
-SITE = ROOT / "docs"                     # готовый сайт (GitHub Pages: main /docs)
+SITE = ROOT / "docs"                     # готовый сайт (Cloudflare Pages: main /docs)
 
 TZ = ZoneInfo("Europe/Riga")
 
