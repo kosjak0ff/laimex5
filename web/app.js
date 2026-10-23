@@ -665,6 +665,23 @@ function closeDetail() {
 
 // ---------------------------------------------------------------- отрисовка
 
+// Заголовок главной меняется при каждом открытии; тот же, что в прошлый раз, не повторяем.
+const HEADLINES = [
+  ["Чек — твой ", "билет."],
+  ["Каждый чек — это ", "шанс."],
+  ["Покупай как обычно и ", "выигрывай."],
+  ["Удача прячется в ", "чеках."],
+  ["Купил, отправил чек, ", "выиграл."],
+];
+function renderHeadline() {
+  const last = readStore("headline", -1);
+  let i = Math.floor(Math.random() * (HEADLINES.length - 1));
+  if (i >= last && last >= 0) i++;
+  writeStore("headline", i);
+  const [before, accent, after] = HEADLINES[i];
+  $("#headline").replaceChildren(before, el("span", { class: "accent" }, accent), after || "");
+}
+
 function renderNextDraw() {
   const box = $("#next-draw");
   let best = null, names = [];
@@ -981,6 +998,7 @@ function legacyHash() {
 window.addEventListener("hashchange", () => { if (legacyHash()) { readUrl(); renderRoute(true); } });
 legacyHash();
 readUrl();
+renderHeadline();
 renderControls();
 renderRoute(false);
 syncMineCount();
