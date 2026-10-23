@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T10:54:51+03:00",
+ "updated": "2026-10-23T16:13:12+03:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-21T11:42:05+03:00",
  "lotteries": [
@@ -18,6 +18,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -38,6 +39,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -58,6 +60,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -78,6 +81,7 @@
     "rules": "https://www.loterijatev.lv/loterija/grn-lv/@rules/WEB_Noteikumi_Garnier_loterija_2026.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -98,6 +102,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -118,6 +123,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -138,6 +144,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -158,6 +165,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -178,6 +186,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -198,6 +207,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -218,6 +228,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -238,6 +249,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -258,6 +270,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -278,6 +291,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -298,6 +312,7 @@
     "rules": "https://www.registerpromo.lv/lv/loterija/henkel-sch-lv/rules.html",
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -318,6 +333,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -338,6 +354,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -358,6 +375,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -378,6 +396,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -398,6 +417,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -418,6 +438,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -438,6 +459,7 @@
     "rules": "https://www.rimiloterija.lv/septembris/assets26/WEB_Noteikumi_E-Rimi_septembra_loterija_2026.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -458,6 +480,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -478,6 +501,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -498,6 +522,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -518,6 +543,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -538,6 +564,7 @@
     "rules": "https://www.loterijas.lv/loterija/zigmas-produktu-loterija/noteikumi/",
     "registration": null
    },
+   "banner": "img/9111.jpg",
    "summary": null,
    "results": null,
    "checks": [],
@@ -558,6 +585,7 @@
     "rules": "https://www.loterijas.lv/loterija/snickers-creamy-loterija/noteikumi/",
     "registration": null
    },
+   "banner": "img/9047.jpg",
    "summary": null,
    "results": null,
    "checks": [],
@@ -578,6 +606,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -598,6 +627,7 @@
     "rules": "https://www.loterijas.lv/loterija/trapi-desmitnieka/noteikumi/",
     "registration": null
    },
+   "banner": "img/9072.jpg",
    "summary": null,
    "results": null,
    "checks": [],
@@ -618,6 +648,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -638,6 +669,7 @@
     "rules": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/"
    },
+   "banner": "img/9092.jpg",
    "summary": {
     "title": "Svini Fazer jubileju un laimē ceļojumu uz Lapzemi!",
     "organizer": "SIA «Visas Loterijas»",
@@ -1214,6 +1246,7 @@
     "rules": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/"
    },
+   "banner": "img/9094.jpg",
    "summary": {
     "title": "KAIJA loterija veikalos Rimi",
     "organizer": "SIA «Visas Loterijas»",
@@ -1412,6 +1445,7 @@
     "rules": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/"
    },
+   "banner": "img/9103.jpg",
    "summary": {
     "title": "“Kūkas, tortes, ruletes!” loterija Maxima veikalos",
     "organizer": "SIA «Visas Loterijas»",
@@ -1604,6 +1638,7 @@
     "rules": "https://www.loterijas.lv/loterija/veikalu-tikla-top-loterija-2/noteikumi/",
     "registration": null
    },
+   "banner": "img/9053.jpg",
    "summary": {
     "title": "Veikalu tīkla top! loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -1844,6 +1879,7 @@
     "rules": "https://merrildloterija.lv/noteikumi/",
     "registration": "https://merrildloterija.lv/"
    },
+   "banner": null,
    "summary": {
     "title": "MERRILD Rudens Loterija veikalos TOP",
     "organizer": "SIA «Sprintlab group»",
@@ -1950,6 +1986,7 @@
     "rules": "https://www.loterijas.lv/loterija/the-pink-stuff-roza-tirisanas-speks/noteikumi/",
     "registration": null
    },
+   "banner": "img/9164.jpg",
    "summary": {
     "title": "THE PINK STUFF rozā tīrīšanas spēks",
     "organizer": "SIA «Multum»",
@@ -2074,6 +2111,7 @@
     "rules": "https://lottery.esteria.lv/_clients/megoloterija2026_2.php?lang=lv&rules=1",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "MEGO LIELĀ RUDENS LOTERIJA 2026!",
     "organizer": "SIA «SMS SOLUTIONS»",
@@ -2135,6 +2173,7 @@
     "rules": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/grite-loterija-maxima-veikalos/"
    },
+   "banner": "img/9150.jpg",
    "summary": {
     "title": "Grite loterija Maxima veikalos",
     "organizer": "SIA «Visas Loterijas»",
@@ -2283,6 +2322,7 @@
     "rules": "https://www.rimiloterija.lv/oktobris/assets26/WEB_Noteikumi_E-Rimi_oktobris_loterija_2026.pdf",
     "registration": "https://www.rimiloterija.lv/oktobris/"
    },
+   "banner": null,
    "summary": {
     "title": "Rimi interneta veikala oktobra loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -2428,6 +2468,7 @@
     "rules": "https://www.loterijas.lv/loterija/orbit-loterija-2/noteikumi/",
     "registration": null
    },
+   "banner": "img/9054.jpg",
    "summary": {
     "title": "Orbit loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -2528,6 +2569,7 @@
     "rules": "https://www.loterijas.lv/loterija/birute-loterija/noteikumi/",
     "registration": null
    },
+   "banner": "img/9183.jpg",
    "summary": {
     "title": "Birute loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -2645,6 +2687,7 @@
     "rules": "https://www.kinder.com/lv/lv/xp/bueno/assets26/Noteikumi_KinderBueno_loterija_2026.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "Izbaudi mirkli ar bueno!",
     "organizer": "SIA «SOMESE Baltic»",
@@ -2844,6 +2887,7 @@
     "rules": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/paulig-loterija-veikalos-citro/"
    },
+   "banner": "img/9169.jpg",
    "summary": {
     "title": "Paulig loterija veikalos Citro",
     "organizer": "SIA «Visas Loterijas»",
@@ -2996,6 +3040,7 @@
     "rules": "https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3/noteikumi",
     "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app"
    },
+   "banner": null,
    "summary": {
     "title": "Ar Coca‑Cola tas garšo vēl labāk",
     "organizer": "SIA «Guilty»",
@@ -3229,6 +3274,7 @@
     "rules": "https://drive.google.com/file/d/1H7KdhYEnfV7mHz3vL6eN_ocat9Zm5tyn/view?usp=sharing",
     "registration": "https://www.myfitness.lv/registreties/"
    },
+   "banner": null,
    "summary": {
     "title": "MyFitness rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -3319,6 +3365,7 @@
     "rules": "https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/haribo-loterija-2/"
    },
+   "banner": "img/9158.jpg",
    "summary": {
     "title": "Haribo loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -3429,6 +3476,7 @@
     "rules": "https://www.loterijas.lv/loterija/mms-loterija/noteikumi/",
     "registration": null
    },
+   "banner": "img/9060.jpg",
    "summary": {
     "title": "M&M’s loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -3592,6 +3640,7 @@
     "rules": "https://www.loterijatev.lv/loterija/vivo/@rules/WEB_Noteikumi_VIVO_rudens_loterija_2026.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "VIVO rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -3740,6 +3789,7 @@
     "rules": "https://www.loterijatev.lv/loterija/ostmala/@rules/WEB_oteikumi_OSTMALA_rudens_loterija_2026.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "OSTMALA rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -3888,6 +3938,7 @@
     "rules": "https://www.rimiloterija.lv/rudens/assets26/WEB_Noteikumi_Rimi_rudens_loterija_2026.pdf",
     "registration": "https://www.rimiloterija.lv/rudens/#registracija"
    },
+   "banner": null,
    "summary": {
     "title": "Rimi rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -4120,6 +4171,7 @@
     "rules": "https://www.loterijas.lv/loterija/selga-loterija-7/noteikumi/",
     "registration": null
    },
+   "banner": "img/9069.jpg",
    "summary": {
     "title": "Selga loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -4361,6 +4413,7 @@
     "rules": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/adazu-cipsi-fanta-garsiga-kompanija/"
    },
+   "banner": "img/9114.jpg",
    "summary": {
     "title": "Ādažu čipsi + Fanta = Garšīga Kompānija!",
     "organizer": "SIA «Visas Loterijas»",
@@ -4587,6 +4640,7 @@
     "rules": "https://manacope.lv/files/file/62324",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "Makšķernieku loterija!",
     "organizer": "SIA «Latvijas Lauku konsultāciju un izglītības centrs»",
@@ -4797,6 +4851,7 @@
     "rules": "https://e-latts.lv/files/378/noteikumi-8.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "\"LATS\" RUDENS LOTERIJA DESMIT ŠTUKAS!",
     "organizer": "SIA «SMS solutions»",
@@ -4999,6 +5054,7 @@
     "rules": "https://www.loterijas.lv/loterija/dallmayr-loterija/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/dallmayr-loterija/"
    },
+   "banner": "img/9156.jpg",
    "summary": {
     "title": "Dallmayr loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -5189,6 +5245,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -5209,6 +5266,7 @@
     "rules": "https://ptaveikals.b-cdn.net/wp-content/uploads/loterijas_noteikumi_candy_haier.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "Pērc Candy un Haier tehniku un laimē",
     "organizer": "SIA «PTA»",
@@ -5309,6 +5367,7 @@
     "rules": "https://www.loterijas.lv/loterija/mollers-loterija/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/mollers-loterija/"
    },
+   "banner": "img/9149.jpg",
    "summary": {
     "title": "Möller’s loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -5527,6 +5586,7 @@
     "rules": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/noteikumi/",
     "registration": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-rimi-veikalos/"
    },
+   "banner": "img/9157.jpg",
    "summary": {
     "title": "Latvijas Graudu maize loterija Rimi veikalos",
     "organizer": "SIA «Visas Loterijas»",
@@ -5701,6 +5761,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -5721,6 +5782,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -5741,6 +5803,7 @@
     "rules": "https://roshenloterija.lv/",
     "registration": "https://roshenloterija.lv/"
    },
+   "banner": null,
    "summary": {
     "title": "Roshen rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
@@ -5859,6 +5922,7 @@
     "rules": "https://www.coca-cola.com/lv/lv/offerings/sprite-basketball/Noteikumi",
     "registration": "https://www.coca-cola.com/lv/lv/offerings/coca-cola-app"
    },
+   "banner": null,
    "summary": {
     "title": "Spēlē ar Sprite",
     "organizer": "SIA «Guilty»",
@@ -6061,6 +6125,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6081,6 +6146,7 @@
     "rules": "https://www.coca-cola.com/content/dam/onexp/lv/lv/promotions/schweppes-netflix-2026/schweppes_ncp_lv.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "Coca-Cola patērētāju loterija „Schweppes”",
     "organizer": "SIA «Guilty»",
@@ -6257,6 +6323,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6277,6 +6344,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6297,6 +6365,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6317,6 +6386,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6337,6 +6407,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6357,6 +6428,7 @@
     "rules": "https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf",
     "registration": null
    },
+   "banner": null,
    "summary": {
     "title": "Tele2 loterija",
     "organizer": "SIA «Visas Loterijas»",
@@ -6457,6 +6529,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6477,6 +6550,7 @@
     "rules": "https://www.zeltazivtina.lv/storage/app/media/ZZ_BK_2026_Q4.pdf",
     "registration": "https://www.zeltazivtina.lv/nac-pie-zz"
    },
+   "banner": null,
    "summary": {
     "title": "Zelta Zivtiņa Bonusu klubs",
     "organizer": "SIA «Visas Loterijas»",
@@ -6579,6 +6653,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6599,6 +6674,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6619,6 +6695,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6639,6 +6716,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6659,6 +6737,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],
@@ -6679,6 +6758,7 @@
     "rules": null,
     "registration": null
    },
+   "banner": null,
    "summary": null,
    "results": null,
    "checks": [],

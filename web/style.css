@@ -180,32 +180,71 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
   list-style: none; margin: 24px 0 0; padding: 0; display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(500px, 100%), 1fr)); gap: 22px;
 }
-.ticket { position: relative; display: flex; border-radius: 20px; overflow: hidden; background: var(--ticket); }
-.ticket.is-closed .t-main { opacity: 0.8; }
-.t-main { flex: 1; min-width: 0; display: block; padding: 20px 22px; color: var(--ink); text-decoration: none; }
+/* Все билеты одной высоты: баннер с постоянными пропорциями, строки обрезаются, место под метки есть всегда. */
+.ticket { position: relative; display: flex; flex-direction: column; border-radius: 20px; overflow: hidden; background: var(--ticket); }
+.ticket.is-closed .t-main, .ticket.is-closed .t-hero { opacity: 0.8; }
+.t-hero {
+  position: relative; display: block; aspect-ratio: 1200 / 420; overflow: hidden;
+  background: var(--tint); container-type: inline-size;
+}
+.t-hero img { display: block; width: 100%; height: 100%; object-fit: cover; }
+/* Свой баннер: цвет бренда, узор из значка товара и логотипы брендов на наклейках. */
+.made {
+  position: absolute; inset: 0; display: flex; align-items: center; padding: 0 34cqw 3cqw 6cqw;
+  background-color: var(--tint); background-size: 96px 96px;
+}
+.made::after { content: ""; position: absolute; inset: 0; background: linear-gradient(100deg, transparent 40%, rgba(0, 0, 0, 0.16)); }
+.made .big {
+  position: absolute; z-index: 1; right: 7cqw; top: 50%; width: 24cqw; height: 24cqw;
+  transform: translateY(-50%) rotate(-8deg); color: var(--tint-ink);
+}
+.stickers { position: relative; z-index: 2; display: flex; flex-wrap: wrap; gap: 2cqw; }
+.sticker {
+  display: grid; place-items: center; height: 10cqw; padding: 1.8cqw 3cqw; border-radius: 2.4cqw;
+  background: #FFFFFF; box-shadow: 0 1.2cqw 3cqw rgba(0, 0, 0, 0.2); transform: rotate(-2deg);
+}
+.sticker:nth-child(even) { transform: rotate(2deg); }
+.sticker img { height: 100%; width: auto; max-width: 22cqw; object-fit: contain; }
+.sticker.word {
+  max-width: 58cqw; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font: 800 4.6cqw/1 var(--display); letter-spacing: -0.02em;
+}
+.sticker.word:only-child { height: 13cqw; padding: 2cqw 4.5cqw; font-size: 6.6cqw; }
+.t-row { position: relative; flex: 1; display: flex; }
+.t-main { flex: 1; min-width: 0; display: block; padding: 12px 22px 18px; color: var(--ink); text-decoration: none; }
 .t-main:hover .t-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
 .t-main:focus-visible { outline-offset: -3px; border-radius: 20px; }
-.t-head { display: flex; align-items: center; gap: 14px; }
+.t-head { display: flex; align-items: flex-start; gap: 14px; }
+/* название (до двух строк) и тип товара: блок постоянной высоты */
+.t-head > span:last-child { flex: 1; min-width: 0; height: calc(2.5 * 16px + 2px + 1.5 * 13px); overflow: hidden; }
+.t-head .mono { position: relative; margin-top: -32px; }
 .mono {
   flex: none; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center;
   background: var(--tint); color: var(--tint-ink); font: 700 16px/1 var(--display); letter-spacing: -0.02em;
   box-shadow: 0 0 0 3px var(--ticket), 0 0 0 5px var(--tint);
 }
-.t-title { display: block; font: 600 16px/1.25 var(--display); }
-.t-cat { display: block; margin-top: 2px; font-size: 13px; color: var(--muted); }
+.mono .art { width: 62%; height: 62%; }
+.t-title {
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  font: 600 16px/1.25 var(--display);
+}
+.t-cat {
+  display: block; min-height: 1.5em; margin-top: 2px; font-size: 13px; line-height: 1.5; color: var(--muted);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
 .badge {
   display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; vertical-align: 1px;
   font: 800 11px/1.5 var(--sans); background: var(--gold-soft); color: var(--ink);
 }
 .t-lines { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; font-size: 14px; }
 .t-line { display: flex; gap: 10px; align-items: flex-start; }
-.t-line .ic { margin-top: 1px; color: var(--accent-text); }
-.t-line.where span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.t-line .ic { flex: none; margin-top: 1px; color: var(--accent-text); }
+.t-line > :not(.ic) { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .t-line.prize { color: var(--gold); font-weight: 700; }
 .t-line.prize .ic { color: inherit; }
 .t-line.prize.none { color: var(--muted); font-weight: 500; }
-.t-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; font-size: 12px; font-weight: 700; }
-.t-tags span { padding: 4px 10px; border-radius: 999px; background: var(--page); }
+.t-tags { display: flex; gap: 8px; min-height: 26px; margin-top: 14px; overflow: hidden; font-size: 12px; font-weight: 700; }
+.t-tags span { flex: none; padding: 4px 10px; border-radius: 999px; background: var(--page); line-height: 18px; }
 .t-tags .warn { background: var(--warn-soft); color: var(--warn); }
 .t-stub {
   flex: none; width: 124px; padding: 8px 8px 16px; border-left: 2px dashed var(--rule);
@@ -227,8 +266,8 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
 .s-word .l2 { display: block; }
 .s-sub { font-size: 12px; color: var(--muted); }
 .s-sub a { font-weight: 700; }
-.ticket > .notch { right: 112px; }
-.ticket > .notch.t { top: -12px; } .ticket > .notch.b { bottom: -12px; }
+.t-row > .notch { right: 112px; }
+.t-row > .notch.t { top: -12px; } .t-row > .notch.b { bottom: -12px; }
 
 .divider, .hidden-note { grid-column: 1 / -1; }
 .divider { padding-top: 10px; }
@@ -418,10 +457,12 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
   .f-foot .btn { flex: 1; height: 50px; }
 
   .list { margin-top: 10px; gap: 14px; grid-template-columns: minmax(0, 1fr); }
-  .ticket { flex-direction: column; }
-  .t-main { padding: 16px 16px 14px; }
+  .t-row { flex-direction: column; }
+  .t-main { padding: 10px 16px 14px; }
   .t-head { gap: 12px; }
   .mono { width: 42px; height: 42px; font-size: 14px; box-shadow: 0 0 0 2px var(--ticket), 0 0 0 4px var(--tint); }
+  .t-head .mono { margin-top: -26px; }
+  .t-head > span:last-child { height: calc(2.5 * 15px + 2px + 1.5 * 13px); }
   .t-title { font-size: 15px; }
   .t-lines { margin-top: 12px; gap: 6px; }
   .t-line { gap: 8px; }
@@ -436,7 +477,7 @@ h1 { margin: 0; font: 800 64px/1 var(--display); letter-spacing: -0.04em; text-w
   .s-text { flex: 1; display: block; font-size: 13px; line-height: 1.25; }
   .s-word, .s-sub { display: block; font-size: 13px; }
   .s-word .l2 { display: inline; }
-  .ticket > .notch { display: none; }
+  .t-row > .notch { display: none; }
   .t-stub::before, .t-stub::after {
     content: ""; position: absolute; top: -11px; width: 20px; height: 20px; border-radius: 50%; background: var(--page);
   }

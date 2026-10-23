@@ -44,12 +44,16 @@ def parse_loterijas_lv_page(html: str, url: str) -> dict | None:
             rules = urljoin(url, a["href"])
             break
     title = soup.find("h1")
+    # в обложке сначала идёт картинка-заглушка (data:), баннер — следующий img
+    covers = (img.get("data-src") or img.get("src") or "" for img in soup.select(".lottery-cover img"))
+    banner = next((u.strip() for u in covers if u.strip() and not u.startswith("data:")), None)
     return {
         "permit": m.group(1),
         "page": url,
         "rules": rules,
         "registration": url if soup.select_one("form.lottery-registration") else None,
         "title": title.get_text(" ", strip=True) if title else None,
+        "banner_src": urljoin(url, banner) if banner else None,
         "found_by": "loterijas.lv",
     }
 

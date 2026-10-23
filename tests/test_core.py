@@ -51,7 +51,11 @@ def test_parse_and_filter():
     assert cats == {"9158": "shop", "9089": "service"}  # журнал и старая отброшены
 
 
-LOTERIJAS_PAGE = """<html><body><main><h1>Haribo loterija</h1>
+LOTERIJAS_PAGE = """<html><body><main>
+<div class="container lottery-cover"><div class="wrapper"><img class="placeholder" src="data:image/png;base64,iVBO">
+<img class="cover"
+ src="https://www.loterijas.lv/wp-content/uploads/2026/09/haribo-1200x420.jpg" alt=""></div></div>
+<h1>Haribo loterija</h1>
 <div class="details"><p>Atļaujas Nr. <strong>9158</strong></p>
 <p>Skatīt <a class="get-terms" href="https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/">noteikumus</a></p></div>
 <form class="ui-form lottery-registration"><input name="ReceiptUnique"></form>
@@ -63,6 +67,7 @@ def test_loterijas_lv_page():
     assert info["permit"] == "9158"
     assert info["rules"].endswith("/noteikumi/")
     assert info["registration"] == "https://www.loterijas.lv/loterija/haribo-loterija-2/"
+    assert info["banner_src"] == "https://www.loterijas.lv/wp-content/uploads/2026/09/haribo-1200x420.jpg"
 
 
 def test_loterijas_lv_index_skips_rules():
