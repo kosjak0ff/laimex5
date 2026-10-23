@@ -167,6 +167,14 @@ function typesOf(it) {
   return out.length ? out : ["Другое"];
 }
 
+// Логотипы брендов для своего баннера (web/brands/). У кого логотипа нет, название набирается шрифтом.
+const LOGOS = {
+  "Coca-Cola": "coca-cola.png", "Fanta": "fanta.png", "Sprite": "sprite.png", "Schweppes": "schweppes.png",
+  "Fuzetea": "fuzetea.png", "Kinder": "kinder.png", "Nutella": "nutella.png", "OREO": "oreo.png", "Kellogg's": "kelloggs.png",
+  "Colgate": "colgate.png", "Palmolive": "palmolive.png", "Speed Stick": "speed-stick.png", "Garnier": "garnier.png",
+  "Henkel": "henkel.png", "Old Spice": "old-spice.png", "Gillette": "gillette.png", "Duracell": "duracell.png",
+  "Haier": "haier.png", "Tele2": "tele2.png", "Swedbank": "swedbank.png", "Luminor": "luminor.png", "Maxima": "maxima.png",
+};
 // Бренд для значка: ищем известное название в условии покупки, затем в названии лотереи.
 const BRANDS = [
   ["Coca-Cola", "coca-cola|coca cola", "#E41E2B", "CC"], ["Fanta", "fanta", "#F57C00"], ["Sprite", "sprite", "#00843D"],
@@ -179,17 +187,28 @@ const BRANDS = [
   ["Kaija", "kaija", "#0A6CB0"], ["Ādažu", "adazu", "#C24E00", "ĀČ"], ["Pringles", "pringles", "#C8102E"],
   ["Philadelphia", "philadelphia", "#1F4E8C"], ["Grite", "grite", "#2E8B57"], ["Möller’s", "moller", "#0A6CB0"],
   ["Filorga", "filorga", "#33415C"], ["Pharmaceris", "pharmaceris", "#2E6B30"], ["The Pink Stuff", "pink stuff", "#D6336C", "PS"],
-  ["Somat", "somat", "#0A5CA8"], ["Duracell", "duracell", "#8A5F00"], ["Candy", "candy|haier", "#C8102E"],
+  ["Somat", "somat", "#0A5CA8"], ["Duracell", "duracell", "#8A5F00"], ["Candy", "candy", "#C8102E"], ["Haier", "haier", "#0A5CA8"],
   ["MyFitness", "myfitness|my fitness", "#E30613", "MF"], ["Tele2", "tele2|zelta zivtin", "#33415C", "T2"],
   ["Luminor", "luminor", "#6B2C91"], ["BALTA", "balta", "#C8102E"], ["KH-7", "kh-7", "#2E6B30", "KH"],
   ["Makšķernieku", "maksker", "#0A6CB0", "Mk"], ["VIVO", "vivo", "#6B2C91"], ["Ostmala", "ostmala", "#1F4E8C"],
   ["Mego", "mego", "#E30613"], ["Rimi", "rimi", "#C8102E"], ["Maxima", "maxima|barbora", "#C8102E", "Mx"],
   ["top!", "top", "#E30613", "top"], ["LaTS", "lats", "#E30613"], ["Citro", "citro", "#F57C00"], ["Elvi", "elvi", "#E30613"],
-].map(([name, words, tint, mono]) => ({ name, re: new RegExp(`(^|[^\\p{L}])(${words})`, "u"), tint, mono }));
+  ["Eldo", "eldo", "#1F4E8C"], ["Colgate", "colgate", "#C8102E"], ["Palmolive", "palmolive", "#0B7A53"],
+  ["Speed Stick", "speed stick", "#33415C", "SS"], ["Garnier", "garnier", "#2E6B30"], ["Henkel", "henkel", "#C8102E"],
+  ["Schwarzkopf", "schwarzkopf", "#33415C"], ["Sensodyne", "sensodyne", "#1F4E8C"], ["Parodontax", "parodontax", "#2E6B30"],
+  ["Aquafresh", "aquafresh", "#0A6CB0"], ["Corega", "corega", "#0A6CB0"], ["Old Spice", "old spice", "#B0182E", "OS"],
+  ["Gillette", "gillette", "#1F4E8C"], ["Always", "always", "#6B2C91"], ["Naturella", "naturella", "#2E8B57"],
+  ["Discreet", "discreet", "#B0306A"], ["Tampax", "tampax", "#1F4E8C"], ["Pampers", "pampers", "#0A7C86"],
+  ["Stenders", "stenders", "#8A5F00"], ["Fuzetea", "fuzetea", "#0B7A53"], ["Swedbank", "swedbank", "#C24E00"],
+  ["LMT", "lmt", "#6B2C91"], ["Džiugas", "dziugas", "#C8102E"], ["PIK NIK", "pik nik", "#C24E00", "PN"],
+  ["Nabeghlavi", "nabeghlavi", "#0A6CB0"], ["Zigmas", "zigmas", "#0A6CB0"], ["Doritos", "doritos", "#C8102E"],
+  ["Kellogg's", "kellogg", "#C8102E", "K"], ["OREO", "oreo", "#1F4E8C"], ["Super Manki", "super manki", "#C24E00", "SM"],
+  ["Via Jurmala", "via jurmala", "#33415C", "VJ"], ["Einšteins", "einsteins", "#1F4E8C"],
+].map(([name, words, tint, mono]) => ({ name, re: new RegExp(`(^|[^\\p{L}])(${words})`, "u"), tint, mono, logo: LOGOS[name] }));
 const TINTS = ["#C8102E", "#1F4E8C", "#C24E00", "#6B2C91", "#0A6CB0", "#0B7A53", "#B0306A", "#2E6B30", "#8A5F00"];
 const STOP = /^(loterija|svini|izbaudi|ar|perc|spele|laime|pievienojiet|ziemassvetki|drosiba|vislatvijas|kas|un|the|la)$/;
 function brandOf(it) {
-  const texts = [it.purchase, it.name, it.summary?.buy_short].map(norm);
+  const texts = [it.purchase, it.name, it.summary?.buy_short, it.place, it.organizer].map(norm);
   for (const t of texts) {
     let best = null, at = Infinity;
     for (const b of BRANDS) {
@@ -212,6 +231,126 @@ function paint(name, mono, tint) {
   const light = ["#F2B700", "#F2C14E"].includes(tint);
   return { name, mono, tint, ink: light ? "#1A1400" : "#FFFFFF" };
 }
+
+// ---------------------------------------------------------------- картинка билета
+
+// Значки по типу товара (рисунок 32×32, линии цветом текста). Тот же значок идёт в кружок
+// на билете и узором в фон своего баннера, если у лотереи нет баннера организатора.
+const ART = {
+  coffee: '<path d="M6 13h17v6a7 7 0 0 1-7 7h-3a7 7 0 0 1-7-7z"/><path d="M23 15h1.5a3 3 0 0 1 0 6H22M11 4c-1.2 1.5 1.2 2.5 0 4M16 4c-1.2 1.5 1.2 2.5 0 4M4 29h21"/>',
+  drink: '<path d="M8 10h16l-2 18a2 2 0 0 1-2 1.8h-8A2 2 0 0 1 10 28z"/><path d="M9 16h14M17 10l3-7h4"/><circle cx="14" cy="21" r="1"/><circle cx="18" cy="24.5" r="1"/>',
+  bear: '<g fill="currentColor" stroke="none"><circle cx="10.5" cy="6.5" r="3"/><circle cx="21.5" cy="6.5" r="3"/><ellipse cx="16" cy="11" rx="7" ry="6"/><ellipse cx="16" cy="21" rx="8" ry="8"/><circle cx="8" cy="17.5" r="2.6"/><circle cx="24" cy="17.5" r="2.6"/><circle cx="10.5" cy="27" r="3"/><circle cx="21.5" cy="27" r="3"/></g>',
+  candy: '<circle cx="16" cy="16" r="6.5"/><path d="M10.2 13L3.5 9.5v13l6.7-3.5M21.8 13l6.7-3.5v13l-6.7-3.5M13 12.5c2.5 1.5 4.5 4 5.5 6.5"/>',
+  chocolate: '<path d="M9 14V5a1.5 1.5 0 0 1 1.5-1.5h11A1.5 1.5 0 0 1 23 5v9M9 9h14M16 3.5V14"/><path d="M7.5 14h17v13.5a1.5 1.5 0 0 1-1.5 1.5H9a1.5 1.5 0 0 1-1.5-1.5zM7.5 17l3-2.5 3 2.5 3-2.5 3 2.5 3-2.5 2 2"/>',
+  cookie: '<circle cx="16" cy="16" r="12"/><g fill="currentColor" stroke="none"><circle cx="11" cy="12" r="1.6"/><circle cx="19.5" cy="10.5" r="1.6"/><circle cx="20.5" cy="19.5" r="1.6"/><circle cx="12" cy="20.5" r="1.6"/><circle cx="16" cy="15.5" r="1.2"/></g>',
+  cake: '<path d="M4 15L26 8v18H4z"/><path d="M4 20.5h22M4 15c3 2 6 0 9 1.5s6-.5 9 .5 4-1 4-2M19.5 10V5"/><circle cx="19.5" cy="3.2" r=".8" fill="currentColor"/>',
+  gum: '<circle cx="16" cy="14" r="10"/><path d="M10.5 11a6 6 0 0 1 4.5-4M11.5 27c2-2.2 7-2.2 9 0"/>',
+  cheese: '<path d="M4 23v-9L21 6l7 8v9z"/><path d="M4 14h24"/><circle cx="11" cy="18.5" r="1.8"/><circle cx="20" cy="19" r="1.3"/>',
+  chips: '<path d="M8 4h16l-1.5 3 1.5 3v12l-1.5 3 1.5 3H8l1.5-3L8 22V10l1.5-3z"/><path d="M12.5 15.5l3.5-3 4 2.5-3.5 3.5z"/>',
+  bread: '<path d="M6 14.5A5.5 5.5 0 0 1 10 5h12a5.5 5.5 0 0 1 4 9.5V26a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 6 26z"/><path d="M11.5 11l2 3M16 10l2 3M20.5 11l1.5 2.5"/>',
+  fish: '<path d="M3 16c4-6 11-8 17-4 2 1.4 3.5 2.6 4.5 4-1 1.4-2.5 2.6-4.5 4-6 4-13 2-17-4z"/><path d="M24.5 16L29 11v10z"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/>',
+  cereal: '<path d="M4 15h24a12 12 0 0 1-24 0z"/><path d="M10 27h12"/><circle cx="11" cy="11" r="1.8"/><circle cx="16" cy="9" r="1.8"/><circle cx="21" cy="11" r="1.8"/>',
+  food: '<circle cx="16" cy="16" r="7.5"/><path d="M3.5 5v6a2 2 0 0 0 4 0V5M5.5 11v16M27.5 5c-2 2-2.5 6-2 10h2v12"/>',
+  tooth: '<path d="M16 7.5c-2-2-6-3-8.5-.5S5 14 7 18c1 2 1 9 3.5 9s2-6 5.5-6 3 6 5.5 6 2.5-7 3.5-9c2-4 3.5-8.5 1-11S18 5.5 16 7.5z"/>',
+  razor: '<rect x="6" y="4" width="20" height="8" rx="2"/><path d="M6 8h20M16 12v5"/><rect x="13" y="17" width="6" height="11" rx="3"/>',
+  baby: '<circle cx="16" cy="9" r="5"/><path d="M7 17.5c0-2 2.5-3.5 9-3.5s9 1.5 9 3.5-3.5 3.5-9 3.5-9-1.5-9-3.5z"/><circle cx="16" cy="25.5" r="3"/>',
+  beauty: '<rect x="5" y="15" width="20" height="13" rx="3"/><rect x="7" y="10" width="16" height="5" rx="1.5"/><path d="M10 21.5h10M26 3v6M23 6h6"/>',
+  health: '<path d="M7.5 24.5a5 5 0 0 1 0-7l10-10a5 5 0 0 1 7 7l-10 10a5 5 0 0 1-7 0z"/><path d="M12.5 12.5l7 7"/>',
+  dish: '<circle cx="14" cy="18" r="10"/><circle cx="14" cy="18" r="5.5"/><path d="M25 3v6M22 6h6M28.5 13v3M27 14.5h3"/>',
+  spray: '<path d="M10 13h9l2 4v10.5a1.5 1.5 0 0 1-1.5 1.5h-10A1.5 1.5 0 0 1 8 27.5V17z"/><path d="M12 13V9h6l3 2h3M12 9L9.5 5H19M27 7v.1M28 12v.1M25.5 3.5v.1"/>',
+  paper: '<ellipse cx="10" cy="12" rx="5" ry="7"/><ellipse cx="10" cy="12" rx="1.5" ry="2.2"/><path d="M10 5h13c2.8 0 5 3.1 5 7v15H15V19"/>',
+  home: '<path d="M4 15L16 5l12 10M7 13v14h18V13M13 27v-7h6v7"/>',
+  battery: '<rect x="9" y="6" width="14" height="23" rx="2"/><path d="M13 3h6v3M17 11l-4 6h6l-4 6"/>',
+  appliance: '<rect x="6" y="3.5" width="20" height="25" rx="2.5"/><path d="M6 9.5h20M12.5 19.5c1.5-1 2.5 1 3.5 0s2.5-1 3.5 0"/><circle cx="16" cy="19" r="6"/>',
+  phone: '<rect x="10" y="3" width="12" height="26" rx="3"/><path d="M14.5 25h3M5.5 11a9 9 0 0 0 0 10M26.5 11a9 9 0 0 1 0 10"/>',
+  card: '<rect x="3.5" y="7" width="25" height="18" rx="3"/><path d="M3.5 12.5h25M8 19.5h6"/>',
+  shield: '<path d="M16 3.5l10 4v8c0 6-4.2 10.6-10 13-5.8-2.4-10-7-10-13v-8z"/><path d="M11.5 16l3 3 6-6"/>',
+  dumbbell: '<path d="M10 16h12M2.5 13v6M29.5 13v6"/><rect x="5" y="9" width="5" height="14" rx="1.5"/><rect x="22" y="9" width="5" height="14" rx="1.5"/>',
+  car: '<path d="M4 22v-6l3.5-6.5h17L28 16v6z"/><path d="M4 16h24"/><circle cx="9.5" cy="22.5" r="2.8"/><circle cx="22.5" cy="22.5" r="2.8"/>',
+  bag: '<path d="M6 10h20l-1.5 18h-17z"/><path d="M11.5 13V8a4.5 4.5 0 0 1 9 0v5"/>',
+  ticket: '<path d="M4 9h24v4.5a2.5 2.5 0 0 0 0 5V23H4v-4.5a2.5 2.5 0 0 0 0-5z"/><path d="M20 9v14" stroke-dasharray="2.5 2.5"/>',
+};
+// Значок по словам в условии покупки и названии; первый подошедший. Если ничего не нашлось,
+// берём значок по типу товара.
+const KINDS = [
+  ["car", /transportlidzekl|vaditaj|autoskol/], ["fish", /maksker|zivs|tunc|тунц|kaija|zigmas|loms/],
+  ["phone", /tele2|lmt|zelta zivtin|tarif/], ["card", /swedbank|luminor|banka/], ["shield", /balta|apdrosin|polis/],
+  ["dumbbell", /myfitness|my fitness|fitnes/], ["coffee", /kafij|кофе|paulig|merrild|dallmayr|jacobs|nescafe/],
+  ["chips", /cips|чипс|pringles|doritos|adazu/],
+  ["drink", /coca|fanta|sprite|schweppes|fuzetea|nabeghlavi|birute|mineral|(^|\s)(udens|sula|teja|alus|сок)|напит|dzerien|pepsi|чай|пиво/],
+  ["bear", /haribo|zelej|marmelad/], ["gum", /orbit|hubba|kosl|жвач/],
+  ["chocolate", /sokol|шокол|snickers|twix|bounty|mars|kinder|bueno|ferrero|nutella|karl fazer|milka/],
+  ["cookie", /selga|cepum|печень|oreo/], ["cake", /kuk|торт|рулет|rulet|staburadz|tort/],
+  ["candy", /m&m|maltesers|skittles|konfekt|конфет|saldum|lacmi|roshen/],
+  ["cheese", /siers|сыр|philadelphia|dziugas|magija|pik nik|biezpien/], ["bread", /maiz|хлеб|graudu/],
+  ["cereal", /kellogg|parslas|musli/], ["tooth", /colgate|sensodyne|parodontax|aquafresh|corega|zobu|haleon/],
+  ["razor", /gillette|skuv/], ["baby", /pampers|autini/],
+  ["beauty", /filorga|pharmaceris|garnier|kosmetik|косметик|stenders|avene|klorane|isdin|bionike|schwarzkopf|henkel|old spice|palmolive|speed stick|always|naturella|tampax|discreet|nivea|higien/],
+  ["health", /moller|витамин|vitamin|apotheka|aptiek/], ["dish", /somat|fairy|trauku/],
+  ["spray", /pink stuff|kh-7|tirisan/], ["paper", /grite|papir|salvet/], ["battery", /duracell|bateri/],
+  ["appliance", /candy|haier|tehnik|техник/],
+  ["bag", /vismaz\s*\d|покупка от|rimi|maxima|top!|mego|citro|elvi|lats|vivo|ostmala|outlet/],
+];
+const TYPE_ART = { "Еда": "food", "Напитки": "drink", "Сладости": "candy", "Красота и уход": "beauty", "Здоровье": "health",
+  "Для дома": "home", "Любая покупка": "bag" };
+function kindOf(it) {
+  const s = it.summary || {};
+  const t = norm([it.purchase, it.name, s.title, s.sponsor, s.buy_short].join(" "));
+  const hit = KINDS.find(([, re]) => re.test(t));
+  if (hit) return hit[0];
+  return TYPE_ART[it._types.find(x => TYPE_ART[x])] || "ticket";
+}
+function art(kind, cls = "art") {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", cls);
+  svg.setAttribute("viewBox", "0 0 32 32");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2.2");
+  svg.setAttribute("stroke-linecap", "round");
+  svg.setAttribute("stroke-linejoin", "round");
+  svg.innerHTML = ART[kind];
+  return svg;
+}
+// Узор фона своего баннера: значок, повторённый в шахматном порядке.
+const patterns = new Map();
+function patternOf(kind) {
+  if (!patterns.has(kind)) {
+    const g = `fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"`;
+    const a = ART[kind].replace(/currentColor/g, "#fff");
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120">`
+      + `<g ${g} opacity=".16" transform="translate(10 12) rotate(-12 16 16)">${a}</g><g ${g} opacity=".16" transform="translate(70 70) rotate(10 16 16)">${a}</g></svg>`;
+    patterns.set(kind, `url("data:image/svg+xml,${encodeURIComponent(svg)}")`);
+  }
+  return patterns.get(kind);
+}
+// Бренды лотереи для своего баннера: известные из условия покупки (с логотипом, если он есть), а если
+// таких нет, названия в кавычках оттуда же — «“AVÈNE”, “BABĒ”, “KLORANE”». Не больше четырёх.
+function brandsOf(it) {
+  const t = norm(it.purchase);
+  const out = BRANDS.map(b => ({ b, m: b.re.exec(t) })).filter(x => x.m).sort((x, y) => x.m.index - y.m.index)
+    .map(({ b }) => ({ name: b.name, logo: b.logo, tint: b.tint }));
+  if (!out.length) {
+    for (const m of String(it.purchase || "").matchAll(/[“”"„«]\s*([^“”"„«»,;]{2,24}?)\s*[“”"»]/g)) {
+      if (/\p{L}/u.test(m[1]) && !out.some(x => norm(x.name) === norm(m[1]))) out.push({ name: m[1].trim() });
+    }
+  }
+  return out.length ? out.slice(0, 4) : [{ name: it._brand.name, logo: LOGOS[it._brand.name], tint: it._brand.tint }];
+}
+function heroOf(it) {
+  if (it.banner) return el("img", { src: it.banner, alt: "", loading: "lazy", decoding: "async", width: 720, height: 252 });
+  const b = it._brand;
+  const box = el("span", { class: "made" },
+    el("span", { class: "stickers" }, brandsOf(it).map(x => x.logo
+      ? el("span", { class: "sticker" }, el("img", { src: `brands/${x.logo}`, alt: x.name, loading: "lazy" }))
+      : el("span", { class: "sticker word", style: `color:${inkOn(x.tint || b.tint)}` }, x.name))),
+    art(it._kind, "art big"));
+  box.style.backgroundImage = patternOf(it._kind);
+  return box;
+}
+// Название бренда на белой наклейке: светлые фирменные цвета не читаются, берём тёмный.
+function inkOn(tint) { return ["#F2B700", "#F2C14E", "#F57C00"].includes(tint) ? "#1A1400" : tint; }
 
 // Шансы в правилах записаны по-разному: «121 к 10000», «41 из 20 000», «2:5000», «53/2000».
 // Приводим к «1 к N».
@@ -353,6 +492,7 @@ function syncStar(b, it) {
 function card(it) {
   const s = it.summary, p = phase(it), b = it._brand, st = stub(it);
   const li = el("li", { class: `ticket${p === "closed" ? " is-closed" : ""}${st.urgent ? " urgent" : ""}`, id: `p-${it.permit}` });
+  const href = `?l=${encodeURIComponent(it.permit)}`;
   li.style.setProperty("--tint", b.tint);
   li.style.setProperty("--tint-ink", b.ink);
   const cats = it._types.filter(t => t !== "Другое").join(" · ");
@@ -365,27 +505,29 @@ function card(it) {
   if (it._odds != null) tags.push(el("span", {}, `Шанс ${oddsText(it._odds)}`));
   if (it.status === "needs_review") tags.push(el("span", { class: "warn" }, "Проверьте по правилам"));
   li.append(
-    el("a", { class: "t-main", href: `?l=${encodeURIComponent(it.permit)}`, "data-open": it.permit },
-      el("span", { class: "t-head" },
-        el("span", { class: "mono", "aria-hidden": "true" }, b.mono),
-        el("span", {},
-          el("span", { class: "t-title" }, titleOf(it), isNew(it) && p !== "soon" ? el("span", { class: "badge" }, "новая") : null),
-          cats ? el("span", { class: "t-cat" }, cats) : null)),
-      el("span", { class: "t-lines" },
-        el("span", { class: "t-line" }, icon("cart"), el("b", {}, shortBuy(it))),
-        el("span", { class: "t-line where" }, icon("store"), el("span", {}, s?.where || it.place)),
-        prize),
-      tags.length ? el("span", { class: "t-tags" }, tags) : null),
-    el("div", { class: "t-stub" },
-      starButton(it, "star"),
-      el("span", { class: `s-num${st.small ? " small" : ""}` }, st.num),
-      el("span", { class: "s-text" },
-        el("span", { class: "s-word" }, st.word, st.l2 ? " " : "", st.l2 ? el("span", { class: "l2" }, st.l2) : null),
-        p === "past" && it.results?.winners_url
-          ? el("span", { class: "s-sub" }, el("a", { href: it.results.winners_url, target: "_blank", rel: "noopener" }, "Победители ↗"))
-          : st.sub ? el("span", { class: "s-sub" }, st.sub) : null)),
-    el("span", { class: "notch t", "aria-hidden": "true" }),
-    el("span", { class: "notch b", "aria-hidden": "true" }));
+    el("a", { class: "t-hero", href, "data-open": it.permit, tabindex: "-1", "aria-hidden": "true" }, heroOf(it)),
+    el("div", { class: "t-row" },
+      el("a", { class: "t-main", href, "data-open": it.permit },
+        el("span", { class: "t-head" },
+          el("span", { class: "mono", "aria-hidden": "true" }, art(it._kind)),
+          el("span", {},
+            el("span", { class: "t-title" }, titleOf(it), isNew(it) && p !== "soon" ? el("span", { class: "badge" }, "новая") : null),
+            el("span", { class: "t-cat" }, cats))),
+        el("span", { class: "t-lines" },
+          el("span", { class: "t-line" }, icon("cart"), el("b", {}, shortBuy(it))),
+          el("span", { class: "t-line" }, icon("store"), el("span", {}, s?.where || it.place)),
+          prize),
+        el("span", { class: "t-tags" }, tags)),
+      el("div", { class: "t-stub" },
+        starButton(it, "star"),
+        el("span", { class: `s-num${st.small ? " small" : ""}` }, st.num),
+        el("span", { class: "s-text" },
+          el("span", { class: "s-word" }, st.word, st.l2 ? " " : "", st.l2 ? el("span", { class: "l2" }, st.l2) : null),
+          p === "past" && it.results?.winners_url
+            ? el("span", { class: "s-sub" }, el("a", { href: it.results.winners_url, target: "_blank", rel: "noopener" }, "Победители ↗"))
+            : st.sub ? el("span", { class: "s-sub" }, st.sub) : null)),
+      el("span", { class: "notch t", "aria-hidden": "true" }),
+      el("span", { class: "notch b", "aria-hidden": "true" })));
   return li;
 }
 
@@ -606,7 +748,7 @@ function renderDetail() {
   box.replaceChildren(
     close,
     el("div", { class: "d-head" },
-      el("span", { class: "mono", "aria-hidden": "true" }, b.mono),
+      el("span", { class: "mono", "aria-hidden": "true" }, art(it._kind)),
       el("div", { style: "min-width:0" },
         el("h2", { id: "d-title" }, titleOf(it)),
         el("p", { class: "d-meta" }, `Разрешение VID № ${it.permit}${sponsor ? " · " + sponsor : ""}`))),
@@ -639,7 +781,7 @@ function closeDetail() {
   const permit = state.sel;
   if (history.state?.detail) history.back();
   else navigate(state.page, null, { replace: true });
-  const back = $(`[data-open="${CSS.escape(permit)}"]`);
+  const back = $(`.t-main[data-open="${CSS.escape(permit)}"]`);
   if (back) back.focus({ preventScroll: true });
 }
 
@@ -972,6 +1114,7 @@ async function load() {
       it._any = anyStore(it);
       it._types = typesOf(it);
       it._brand = brandOf(it);
+      it._kind = kindOf(it);
       it._odds = oddsOf(it);
       it._fund = it.summary?.prize_fund_eur ?? null;
       it._spend = spendOf(it);

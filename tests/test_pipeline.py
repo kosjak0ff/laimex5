@@ -1,11 +1,20 @@
 """Сквозной тест ежедневного цикла без интернета: все страницы подменены копиями."""
+import io
 import json
 from datetime import date
 
 import pytest
+from PIL import Image
 
-from laimex import http, pipeline, registry
+from laimex import http, images, pipeline, registry
 from test_core import ROWS, make_xls
+
+
+def png(w, h):
+    out = io.BytesIO()
+    Image.new("RGBA", (w, h), (200, 30, 40, 255)).save(out, "PNG")
+    return out.getvalue()
+
 
 RULES_HTML = """<html><body><main><h1>Noteikumi</h1>
 <p>Preču loterijas “Haribo loterija” noteikumi. 1. Loterijas organizētājs: SIA “Visas Loterijas”.</p>
@@ -18,11 +27,13 @@ PAGES = {
         '<a href="/lv/media/1/download">Izsniegtās preču un pakalpojumu loteriju atļaujas</a>',
     "https://www.loterijas.lv/": '<a href="/loterija/haribo-loterija-2/">Haribo</a>',
     "https://www.loterijas.lv/loterija/haribo-loterija-2/":
+        '<div class="lottery-cover"><img class="cover" src="/wp-content/uploads/haribo-1200x420.png"></div>'
         '<h1>Haribo loterija</h1><p>Atļaujas Nr. <strong>9158</strong></p>'
         '<a class="get-terms" href="/loterija/haribo-loterija-2/noteikumi/">noteikumi</a>'
         '<form class="lottery-registration"></form>',
     "https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/": RULES_HTML,
     "https://www.loterijatev.lv/": "<div>нет активных</div>",
+    "https://www.loterijas.lv/wp-content/uploads/haribo-1200x420.png": png(1200, 420),
 }
 
 
@@ -49,6 +60,8 @@ def sandbox(tmp_path, monkeypatch):
                       ("PENDING", "data/pending"), ("SUMMARIES", "data/summaries"), ("SITE", "docs"),
                       ("RESULTS_JSON", "data/results.json")]:
         monkeypatch.setattr(pipeline, name, tmp_path / sub)
+    monkeypatch.setattr(pipeline, "IMAGES", tmp_path / "data/images")
+    monkeypatch.setattr(images, "IMAGES", tmp_path / "data/images")
     (tmp_path / "data/rules_text").mkdir(parents=True)
     (tmp_path / "data/summaries").mkdir(parents=True)
     monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 19))
@@ -93,6 +106,9 @@ def test_daily_cycle(sandbox):
     assert "9191" not in by  # журнальная лотерея скрыта
     assert (sandbox / "docs/index.html").exists() and (sandbox / "docs/sw.js").exists()
     assert "__BUILD__" not in (sandbox / "docs/sw.js").read_text()
+    # баннер с loterijas.lv уменьшен и лежит рядом с сайтом; у BALTA баннера нет
+    assert by["9158"]["banner"] == "img/9158.jpg" and by["9089"]["banner"] is None
+    assert Image.open(sandbox / "docs/img/9158.jpg").size == (720, 252)
 
     # правила изменились — выжимку нужно сделать заново
     PAGES["https://www.loterijas.lv/loterija/haribo-loterija-2/noteikumi/"] = RULES_HTML.replace("1</td>", "2</td>")

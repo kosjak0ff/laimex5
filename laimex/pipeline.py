@@ -7,9 +7,9 @@ import shutil
 from datetime import date, datetime
 from pathlib import Path
 
-from . import discover, http, registry, rules, validate
-from .config import (ROOT, DATA, KEEP_FINISHED_DAYS, PENDING, RULES_TEXT, SITE, SUMMARIES, TZ, WEB,
-                     WORK, ensure_dirs, today)
+from . import discover, http, images, registry, rules, validate
+from .config import (ROOT, DATA, IMAGES, KEEP_FINISHED_DAYS, PENDING, RULES_TEXT, SITE, SUMMARIES, TZ,
+                     WEB, WORK, ensure_dirs, today)
 from .schema import validate_shape
 
 REGISTRY_JSON = DATA / "registry.json"
@@ -281,6 +281,7 @@ def build_site(log=print) -> Path:
         items.append({
             **row,
             "links": {k: src.get(k) for k in ("page", "rules", "registration")},
+            "banner": f"img/{p}.jpg" if (IMAGES / f"{p}.jpg").exists() else None,
             "summary": clean_summ,
             "results": results.get(p),
             "checks": checks,
@@ -293,6 +294,12 @@ def build_site(log=print) -> Path:
             dest = SITE / f.relative_to(WEB)
             dest.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(f, dest)
+    # баннеры: только тех лотерей, что сейчас на сайте
+    shutil.rmtree(SITE / "img", ignore_errors=True)
+    for it in items:
+        if it["banner"]:
+            (SITE / "img").mkdir(exist_ok=True)
+            shutil.copy2(IMAGES / f"{it['permit']}.jpg", SITE / it["banner"])
     data = {"updated": now_iso(), "registry_source": reg.get("source"),
             "registry_fetched": reg.get("fetched"), "lotteries": items}
     save(SITE / "data.json", data)
@@ -311,6 +318,7 @@ def daily(mode: str, log=print):
     ensure_dirs()
     rows = step_registry(log)
     sources = step_sources(rows, log)
+    images.fetch_banners(sources, {r["permit"] for r in rows}, log)
     todo = step_todo(rows, sources, log)
     if mode == "api":
         from .extract_api import extract

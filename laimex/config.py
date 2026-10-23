@@ -12,6 +12,7 @@ SUMMARIES = DATA / "summaries"
 RULES_TEXT = DATA / "rules_text"        # извлечённый текст правил (кэш)
 WORK = ROOT / "work"                     # временные файлы, не в git
 PENDING = DATA / "pending"               # задания на выжимку (в git: их читает рутина Claude)
+IMAGES = DATA / "images"                 # баннеры лотерей, уменьшенные для карточек
 WEB = ROOT / "web"                       # исходники сайта
 SITE = ROOT / "docs"                     # готовый сайт (GitHub Pages: main /docs)
 
@@ -39,5 +40,5 @@ def today():
 
 
 def ensure_dirs():
-    for p in (DATA, SUMMARIES, RULES_TEXT, WORK, PENDING, SITE):
+    for p in (DATA, SUMMARIES, RULES_TEXT, WORK, PENDING, IMAGES, SITE):
         p.mkdir(parents=True, exist_ok=True)
