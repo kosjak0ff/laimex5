@@ -1,8 +1,6 @@
 {
- "generated": "2026-10-24T06:10:35+03:00",
- "need_summary": [
-  "9069"
- ],
+ "generated": "2026-10-24T10:35:51+03:00",
+ "need_summary": [],
  "need_sources": [
   {
    "permit": "9178",
@@ -39,126 +37,6 @@
   }
  ],
  "need_results": [
-  {
-   "permit": "9130",
-   "organizer": "SIA “SMS solutions”",
-   "organizer_reg": "40203006794",
-   "purchase": "vismaz 15.00 EUR vērtībā preču pirkumam",
-   "name": "“LATS” RUDENS LOTERIJA “DESMIT ŠTUKAS”",
-   "start": "2026-09-22",
-   "end": "2026-11-25",
-   "place": "veikalu tīkla “LaTS” tirdzniecības vietās visā Latvijas Republikā un https://www.e-latts.lv",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 4, последний 2026-10-20 — найти страницу с победителями"
-  },
-  {
-   "permit": "9156",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "jebkuram Dallmayr produktam",
-   "name": "Dallmayr loterija",
-   "start": "2026-10-05",
-   "end": "2026-11-30",
-   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikā",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 2, последний 2026-10-19 — найти страницу с победителями"
-  },
-  {
-   "permit": "9149",
-   "organizer": "SIA “Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "Möller's un/vai Möller's Junior produktu pirkumam",
-   "name": "Möller’s loterija",
-   "start": "2026-10-01",
-   "end": "2026-12-01",
-   "place": "Latvijas Republika",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 2, последний 2026-10-20 — найти страницу с победителями"
-  },
-  {
-   "permit": "9157",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "jebkuram Latvijas Maiznieks Graudu maize produktam",
-   "name": "Latvijas Graudu maize loterija Rimi veikalos",
-   "start": "2026-10-06",
-   "end": "2026-12-01",
-   "place": "visi RIMI veikali Latvijas Republikā un interneta veikals www.rimi.lv/e-veikals",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 2, последний 2026-10-20 — найти страницу с победителями"
-  },
-  {
-   "permit": "9128",
-   "organizer": "SIA “Guilty”",
-   "organizer_reg": "50003254051",
-   "purchase": "Sprite produktu pirkumam",
-   "name": "Spēlē ar Sprite",
-   "start": "2026-10-01",
-   "end": "2026-12-04",
-   "place": "Latvijas Republika",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 2, последний 2026-10-19 — найти страницу с победителями"
-  },
-  {
-   "permit": "9129",
-   "organizer": "SIA “Guilty”",
-   "organizer_reg": "50003254051",
-   "purchase": "Schweppes produktu pirkumam",
-   "name": "Schweppes",
-   "start": "2026-10-01",
-   "end": "2026-12-07",
-   "place": "Latvijas Republika",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 1, последний 2026-10-13 — найти страницу с победителями"
-  },
-  {
-   "permit": "9053",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "pirkumiem veikalos top!, mini top! vismaz 15.00 EUR vērtībā",
-   "name": "Veikalu tīkla top! loterija",
-   "start": "2026-07-29",
-   "end": "2026-10-21",
-   "place": "jebkura tirdzniecības vieta top!, mini top! visā Latvijas Republikas teritorijā.",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 12, последний 2026-10-21 — найти страницу с победителями"
-  },
-  {
-   "permit": "9091",
-   "organizer": "SIA “Sprintlab group”",
-   "organizer_reg": "40103364801",
-   "purchase": "vismaz vienai Merild precei",
-   "name": "MERRILD Rudens Loterija veikalos TOP",
-   "start": "2026-09-23",
-   "end": "2026-10-21",
-   "place": "Veikali “TOP” un “mini top!” Latvijas Republikā",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 1, последний 2026-10-21 — найти страницу с победителями"
-  },
-  {
-   "permit": "9164",
-   "organizer": "SIA “Multum”",
-   "organizer_reg": "44103113123",
-   "purchase": "2 THE PINK STUFF produktu pirkumam",
-   "name": "THE PINK STUFF rozā tīrīšanas spēks",
-   "start": "2026-10-06",
-   "end": "2026-10-21",
-   "place": "“RIMI” veikalu tīkls visā Latvijas Republikā",
-   "category": "shop",
-   "reason": "прошло розыгрышей: 1, последний 2026-10-21 — найти страницу с победителями"
-  },
-  {
-   "permit": "9071",
-   "organizer": "SIA „Latvijas Mobilais Telefons”",
-   "organizer_reg": "50003050931",
-   "purchase": "LMT Kartes “Sarunas nedēļai”, “Internets nedēļai” vai “Nedēļa visam” pakalpojumam",
-   "name": "LMT Kartes vasara 2026",
-   "start": "2026-07-14",
-   "end": "2026-10-20",
-   "place": "Latvijas Republika",
-   "category": "service",
-   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
-  },
   {
    "permit": "9092",
    "organizer": "SIA „Visas Loterijas”",
@@ -536,7 +414,6 @@
   }
  ],
  "waiting_since": {
-  "9069": "2026-10-23",
   "9089": "2026-10-21",
   "9102": "2026-10-21",
   "9178": "2026-10-21"
