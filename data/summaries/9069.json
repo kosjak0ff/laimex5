@@ -1,15 +1,15 @@
 {
  "title": "Selga loterija",
  "organizer": "SIA «Visas Loterijas»",
- "sponsor": "SIA «Orkla Latvija» (производитель SELGA)",
+ "sponsor": "SIA «Orkla Latvija» (производитель)",
  "permit": null,
- "what_to_buy": "Минимум 1 любой продукт SELGA или не менее 100 г весового продукта SELGA",
- "buy_short": "1 продукт SELGA или от 100 г весового SELGA",
+ "what_to_buy": "Любой продукт SELGA или не менее 100 г весового продукта SELGA; в чеке должно быть видно название Selga",
+ "buy_short": "Любой продукт SELGA (весовой — от 100 г)",
  "min_purchase_eur": null,
- "where": "Любые магазины и интернет-магазины по всей Латвии",
- "how_to_enter": "Анкета на www.selgaloterija.lv: обязательно имя, фамилия, номер чека, телефон (также возраст, город, магазин, e-mail); бесплатно. После регистрации крутите колесо удачи — выпавший приз определяет, в каком розыгрыше вы участвуете; один чек — одно вращение",
+ "where": "Любое место торговли (магазин или интернет-магазин) по всей Латвии",
+ "how_to_enter": "Анкета на сайте www.selgaloterija.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город, магазин, e-mail; бесплатно. После регистрации крутите колесо удачи — приз, на котором оно остановится, определяет, в каком розыгрыше участвует чек",
  "registration_url": "https://www.selgaloterija.lv",
- "keep": "Чек (номер совпадает с зарегистрированным, видно название Selga) до получения приза",
+ "keep": "Чек с номером, совпадающим с зарегистрированным, до получения приза",
  "lottery_start": "2026-10-12",
  "lottery_end": "2026-11-23",
  "registration_start": "2026-10-12",
@@ -34,21 +34,13 @@
   {
    "date": "2026-10-26",
    "time": "11:00",
-   "period_from": "2026-10-19",
+   "period_from": "2026-10-12",
    "period_to": "2026-10-25",
    "prizes": [
     {
      "name": "Naudas balva 70.00 EUR",
      "qty": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-10-26",
-   "time": "11:00",
-   "period_from": "2026-10-12",
-   "period_to": "2026-10-25",
-   "prizes": [
+    },
     {
      "name": "Kafijas automāts Saeco GranAroma",
      "qty": 1
@@ -58,21 +50,13 @@
   {
    "date": "2026-11-02",
    "time": "11:00",
-   "period_from": "2026-10-26",
+   "period_from": "2026-10-19",
    "period_to": "2026-11-01",
    "prizes": [
     {
      "name": "Naudas balva 70.00 EUR",
      "qty": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-11-02",
-   "time": "11:00",
-   "period_from": "2026-10-19",
-   "period_to": "2026-11-01",
-   "prizes": [
+    },
     {
      "name": "airBaltic dāvanu karte 500.00 EUR",
      "qty": 1
@@ -82,22 +66,14 @@
   {
    "date": "2026-11-09",
    "time": "11:00",
-   "period_from": "2026-11-02",
-   "period_to": "2026-11-08",
-   "prizes": [
-    {
-     "name": "Naudas balva 70.00 EUR",
-     "qty": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "time": "11:00",
    "period_from": "2026-10-26",
    "period_to": "2026-11-08",
    "prizes": [
     {
+     "name": "Naudas balva 70.00 EUR",
+     "qty": 2
+    },
+    {
      "name": "Kafijas automāts Saeco GranAroma",
      "qty": 1
     }
@@ -106,35 +82,15 @@
   {
    "date": "2026-11-16",
    "time": "11:00",
-   "period_from": "2026-11-09",
+   "period_from": "2026-10-12",
    "period_to": "2026-11-15",
    "prizes": [
     {
      "name": "Naudas balva 70.00 EUR",
      "qty": 2
-    }
-   ]
-  },
-  {
-   "date": "2026-11-16",
-   "time": "11:00",
-   "period_from": "2026-11-02",
-   "period_to": "2026-11-15",
-   "prizes": [
+    },
     {
      "name": "Telefons Iphone 17 PRO, 256 GB",
-     "qty": 1
-    }
-   ]
-  },
-  {
-   "date": "2026-11-23",
-   "time": "11:00",
-   "period_from": "2026-11-09",
-   "period_to": "2026-11-22",
-   "prizes": [
-    {
-     "name": "Kafijas automāts Saeco GranAroma",
      "qty": 1
     }
    ]
@@ -145,6 +101,10 @@
    "period_from": "2026-10-12",
    "period_to": "2026-11-22",
    "prizes": [
+    {
+     "name": "Kafijas automāts Saeco GranAroma",
+     "qty": 1
+    },
     {
      "name": "Naudas balva 2000 EUR",
      "qty": 1
@@ -160,19 +120,19 @@
    "total_value_eur": 2000.0
   },
   {
-   "name": "Телефон Iphone 17 PRO, 256 GB",
+   "name": "Telefons Iphone 17 PRO, 256 GB",
    "qty": 1,
    "unit_value_eur": 1349.0,
    "total_value_eur": 1349.0
   },
   {
-   "name": "Кофемашина Saeco GranAroma",
+   "name": "Kafijas automāts Saeco GranAroma",
    "qty": 3,
    "unit_value_eur": 649.99,
    "total_value_eur": 1949.97
   },
   {
-   "name": "Подарочная карта airBaltic dāvanu karte на 500 EUR",
+   "name": "airBaltic dāvanu karte на 500 EUR",
    "qty": 2,
    "unit_value_eur": 500.0,
    "total_value_eur": 1000.0
@@ -189,8 +149,8 @@
  "winners_published": "Полный список победителей — на www.selgaloterija.lv до 23:59 23 ноября 2026; победителям сообщают звонком или SMS",
  "claim_deadline": "2026-12-07",
  "age_min": null,
- "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Orkla Latvija» и SIA «Visas Loterijas»",
- "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Розыгрыши проходят в 6 датах; претензии — до 2026-12-08.",
- "_rules_sha": "64aefd56682fe322",
- "_extracted": "2026-10-19T21:18:06+03:00"
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники SIA «Orkla Latvija» и SIA «Visas Loterijas»",
+ "notes": "Розыгрыши каждый понедельник в 11:00; у еженедельных призов период — прошлая неделя, у кофемашин, airBaltic, iPhone и 2000 EUR — более длинные периоды (указаны по главному призу розыгрыша). Для получения приза нужны чек и паспорт/ID-карта; претензии — до 2026-12-08.",
+ "_rules_sha": "a761efce43896dbe",
+ "_extracted": "2026-10-24T06:11:15+03:00"
 }
