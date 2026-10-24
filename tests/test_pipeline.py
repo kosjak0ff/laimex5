@@ -58,7 +58,7 @@ def sandbox(tmp_path, monkeypatch):
     for name, sub in [("REGISTRY_JSON", "data/registry.json"), ("SOURCES_JSON", "data/sources.json"),
                       ("TODO_JSON", "data/todo.json"), ("RULES_TEXT", "data/rules_text"),
                       ("PENDING", "data/pending"), ("SUMMARIES", "data/summaries"), ("SITE", "docs"),
-                      ("RESULTS_JSON", "data/results.json")]:
+                      ("RESULTS_JSON", "data/results.json"), ("INBOX", "data/inbox")]:
         monkeypatch.setattr(pipeline, name, tmp_path / sub)
     monkeypatch.setattr(pipeline, "IMAGES", tmp_path / "data/images")
     monkeypatch.setattr(images, "IMAGES", tmp_path / "data/images")
@@ -128,8 +128,84 @@ def test_health(sandbox, monkeypatch):
     # через 4 дня та же лотерея всё ещё ждёт выжимку — тревога
     res = health.check(date(2026, 10, 23))
     assert not res["ok"]
-    assert any("9158" in p for p in res["problems"])
-    assert any("Реестр VID" in p for p in res["problems"])
+    keys = {p["key"]: p for p in res["problems"]}
+    assert "9158" in keys["late_summary"]["why"] and "?l=9158" in keys["late_summary"]["why"]
+    assert "data/inbox" in keys["registry"]["do"]  # говорит, что сделать и куда загрузить файл
+    assert "failed" not in keys and "robot_failed" not in keys
+    res = health.check(date(2026, 10, 19), failed_run="https://example/run/1")
+    assert res["problems"][0]["key"] == "robot_failed" and "https://example/run/1" in res["problems"][0]["do"]
+
+
+def test_health_issue_sync(sandbox, monkeypatch):
+    from laimex import health
+    for name, sub in [("SUMMARIES", "data/summaries"), ("REGISTRY_JSON", "data/registry.json"),
+                      ("TODO_JSON", "data/todo.json"), ("HEALTH_JSON", "data/health.json")]:
+        monkeypatch.setattr(health, name, sandbox / sub)
+    pipeline.daily("agent", log=lambda *a: None)
+    issues, calls = [], []
+
+    def fake_gh(*args):
+        calls.append(args)
+        if args[:2] == ("api", "repos/o/r/issues?state=open&per_page=50"):
+            return json.dumps(issues)
+        return ""
+    monkeypatch.setattr(health, "_gh", fake_gh)
+
+    res = health.check(date(2026, 10, 23), repo="o/r")
+    assert health.sync_issue(res, "o/r") == "открыто"
+    body = next(a for a in calls[-1] if a.startswith("body="))[5:]
+    assert "Что сделать:" in body and "https://github.com/o/r/upload/main/data/inbox" in body
+    assert "laimex.pages.dev" in body
+
+    # старое issue с прежним названием: переименовываем, переписываем и пишем комментарий (письмо)
+    issues.append({"number": 6, "title": "Laimex: нужна проверка", "body": "Робот Laimex заметил проблему"})
+    calls.clear()
+    assert health.sync_issue(res, "o/r") == "обновлено"
+    assert any("title=Laimex: что нужно сделать" in a for c in calls for a in c)
+    assert any(a.endswith("/comments") for c in calls for a in c)
+
+    # тот же набор проблем на следующий день: текст обновляется молча, без комментария
+    issues[0] = {"number": 6, "title": health.ISSUE_TITLE, "body": health.issue_body(res)}
+    calls.clear()
+    health.sync_issue(health.check(date(2026, 10, 24), repo="o/r"), "o/r")
+    assert not any(a.endswith("/comments") for c in calls for a in c)
+
+    # всё наладилось — закрываем с объяснением
+    assert health.sync_issue({"ok": True, "problems": []}, "o/r") == "закрыто"
+
+
+def test_registry_from_uploaded_file(sandbox, monkeypatch):
+    from test_core import ROWS, make_xls
+    pipeline.daily("agent", log=lambda *a: None)
+    inbox = sandbox / "data/inbox"
+    inbox.mkdir()
+    (inbox / "README.md").write_text("инструкция")
+    (inbox / "atlaujas.xls").write_bytes(make_xls(ROWS[:1]))
+
+    def down(**kw):
+        raise AssertionError("к VID ходить не нужно, файл уже загружен")
+    monkeypatch.setattr(registry, "fetch", down)
+    monkeypatch.setattr(pipeline, "now_iso", lambda: "2026-10-22T12:00:00+03:00")
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 22))
+    rows = pipeline.step_registry(log=lambda *a: None)
+    assert [r["permit"] for r in rows] == ["9158"]
+    saved = json.loads((sandbox / "data/registry.json").read_text(encoding="utf-8"))
+    assert saved["fetched"] == "2026-10-22T12:00:00+03:00" and saved["manual"] == "atlaujas.xls"
+    assert saved["source"] == "https://www.vid.gov.lv/lv/media/1/download"
+    assert [f.name for f in inbox.iterdir()] == ["README.md"]  # файл убран, инструкция осталась
+
+    # не реестр — файл остаётся, проверка здоровья скажет, что его не удалось прочитать
+    (inbox / "foto.jpg").write_bytes(b"not xls")
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 23))
+    monkeypatch.setattr(registry, "fetch", lambda **kw: ("https://www.vid.gov.lv/lv/media/1/download", None))
+    pipeline.step_registry(log=lambda *a: None)
+    assert (inbox / "foto.jpg").exists()
+    from laimex import health
+    monkeypatch.setattr(health, "REGISTRY_JSON", sandbox / "data/registry.json")
+    monkeypatch.setattr(health, "TODO_JSON", sandbox / "data/todo.json")
+    monkeypatch.setattr(health, "HEALTH_JSON", sandbox / "data/health.json")
+    assert any(p["key"] == "inbox_bad" and "foto.jpg" in p["why"]
+               for p in health.check(date(2026, 10, 23))["problems"])
 
 
 def test_sources_searched_only_for_running(sandbox):

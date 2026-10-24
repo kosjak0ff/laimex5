@@ -4,7 +4,8 @@
 # Запускается:
 #  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
 #  - задачей Claude (tools/run_robot.py): в начале её работы и после того, как она нашла новые правила;
-#  - вручную: вкладка Actions → laimex-daily → Run workflow.
+#  - вручную: вкладка Actions → laimex-daily → Run workflow;
+#  - когда владелец загрузил файл реестра VID в data/inbox/ (если VID не пускает робота).
 # Готовый сайт (папку docs/) Cloudflare Pages публикует сам после каждого изменения main:
 # https://laimex.pages.dev/
 #
@@ -15,6 +16,9 @@ on:
   schedule:
     - cron: "37 2 * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["data/inbox/**"]
 permissions:
   contents: write
   issues: write
@@ -49,8 +53,12 @@ jobs:
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 20
           done
-      - name: Проверить здоровье (при проблемах откроется issue и придёт письмо)
+      # При проблемах робот открывает issue «Laimex: что нужно сделать» с инструкцией по-русски,
+      # и GitHub присылает письмо. Если упал предыдущий шаг, это тоже попадёт в issue.
+      - name: Проверить здоровье и сообщить владельцу
         if: always()
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python -m laimex health --github-issue "$GITHUB_REPOSITORY"
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          FAILED: ${{ job.status != 'success' && '--failed' || '' }}
+        run: python -m laimex health --github-issue "$GITHUB_REPOSITORY" --run-url "$RUN_URL" $FAILED

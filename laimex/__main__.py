@@ -41,6 +41,8 @@ def main(argv=None):
     sub.add_parser("build")
     h = sub.add_parser("health")
     h.add_argument("--github-issue", metavar="OWNER/REPO", help="открыть/закрыть issue при проблемах")
+    h.add_argument("--run-url", help="ссылка на журнал этого запуска робота")
+    h.add_argument("--failed", action="store_true", help="робот в этом запуске упал")
     args = ap.parse_args(argv)
     ensure_dirs()
 
@@ -84,10 +86,12 @@ def main(argv=None):
         pipeline.build_site()
     elif args.cmd == "health":
         from . import health
-        res = health.check()
-        print("Всё в порядке" if res["ok"] else "Проблемы:\n- " + "\n- ".join(res["problems"]))
+        res = health.check(failed_run=(args.run_url or "см. вкладку Actions") if args.failed else None,
+                           repo=args.github_issue or health.REPO)
+        print("Всё в порядке" if res["ok"] else
+              "Проблемы:\n- " + "\n- ".join(p["title"] for p in res["problems"]))
         if args.github_issue:
-            print("Issue:", health.sync_issue(res, args.github_issue))
+            print("Issue на GitHub:", health.sync_issue(res, args.github_issue, args.run_url))
     return 0
 
 
