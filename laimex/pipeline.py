@@ -17,6 +17,7 @@ SOURCES_JSON = DATA / "sources.json"
 TODO_JSON = DATA / "todo.json"
 RESULTS_JSON = DATA / "results.json"   # результаты розыгрышей: ссылки на победителей
 RESULTS_RECHECK_DAYS = 3                # не искать результаты одной лотереи чаще
+INBOX = DATA / "inbox"                  # сюда владелец загружает файл реестра, если VID не пускает робота
 
 
 # ------------------------------------------------------------------ файлы
@@ -38,8 +39,38 @@ def now_iso():
 
 # --------------------------------------------------------------- шаг 1: реестр
 
+def inbox_files() -> list[Path]:
+    """Файлы реестра, загруженные владельцем через GitHub (всё, кроме README)."""
+    if not INBOX.exists():
+        return []
+    return sorted(f for f in INBOX.iterdir() if f.is_file() and f.name != "README.md")
+
+
+def registry_from_inbox(cached: dict | None, log=print) -> list[dict] | None:
+    """Взять реестр из файла, который владелец скачал с сайта VID и загрузил в data/inbox/.
+    Прочитанный файл удаляем; нечитаемый оставляем, о нём сообщит проверка здоровья."""
+    for f in reversed(inbox_files()):  # самый новый по имени — первым
+        try:
+            rows = registry.parse_xls(f.read_bytes())
+        except Exception as e:  # noqa: BLE001
+            log(f"! Файл {f.name} в data/inbox не похож на реестр VID: {e}")
+            continue
+        rel = registry.relevant(rows, today(), KEEP_FINISHED_DAYS)
+        # source оставляем прежним: завтра робот сравнит с ним ссылку на сайте VID
+        save(REGISTRY_JSON, {"source": (cached or {}).get("source"), "manual": f.name,
+                             "fetched": now_iso(), "checked": now_iso(),
+                             "total_in_file": len(rows), "lotteries": rel})
+        f.unlink()
+        log(f"Реестр взят из загруженного файла {f.name}: {len(rows)} записей, актуальных: {len(rel)}")
+        return rel
+    return None
+
+
 def step_registry(log=print) -> list[dict]:
     cached = load(REGISTRY_JSON, None)
+    manual = registry_from_inbox(cached, log)
+    if manual is not None:
+        return manual
     if cached and (cached.get("checked") or "")[:10] == today().isoformat():
         # к VID обращаемся не чаще раза в день, даже если робот запускают несколько раз
         log(f"Реестр VID сегодня уже проверяли, берём копию от {cached.get('fetched')}")
