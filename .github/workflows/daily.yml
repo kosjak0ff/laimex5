@@ -2,7 +2,9 @@
 # для Claude и пересобирает сайт. Работает бесплатно, потому что репозиторий публичный.
 #
 # Запускается:
-#  - каждый день в 02:37 UTC (05:37 по Риге летом, 04:37 зимой);
+#  - каждый день в 22:17 UTC (01:17 по Риге летом, 00:17 зимой). GitHub запускает по
+#    расписанию с опозданием до 5 часов, поэтому ставим сразу после полуночи по Риге:
+#    даже с опозданием робот обновит сайт к утру, если задача Claude не отработает;
 #  - задачей Claude (tools/run_robot.py): в начале её работы и после того, как она нашла новые правила;
 #  - вручную: вкладка Actions → laimex-daily → Run workflow;
 #  - когда владелец загрузил файл реестра VID в data/inbox/ (если VID не пускает робота).
@@ -14,7 +16,7 @@
 name: laimex-daily
 on:
   schedule:
-    - cron: "37 2 * * *"
+    - cron: "17 22 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -30,8 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
@@ -48,7 +50,7 @@ jobs:
             python -m laimex daily --mode "$MODE"
             git add data docs
             if git diff --cached --quiet; then echo "Изменений нет"; break; fi
-            git commit -m "Робот: обновление $(date +%F)"
+            git commit -m "Робот: обновление $(TZ=Europe/Riga date +%F)"
             if git push origin HEAD:main; then break; fi
             if [ "$attempt" = 3 ]; then exit 1; fi
             sleep 20
