@@ -132,8 +132,12 @@ def test_health(sandbox, monkeypatch):
     assert not res["ok"]
     keys = {p["key"]: p for p in res["problems"]}
     assert "9158" in keys["late_summary"]["why"] and "?l=9158" in keys["late_summary"]["why"]
-    assert "data/inbox" in keys["registry"]["do"]  # говорит, что сделать и куда загрузить файл
     assert "failed" not in keys and "robot_failed" not in keys
+    assert not any(k.startswith("registry") for k in keys)  # реестру 4 дня — напоминать рано
+    # реестру неделя — пора загрузить файл; ещё через неделю — новое напоминание
+    keys = {p["key"]: p for p in health.check(date(2026, 10, 26))["problems"]}
+    assert "data/inbox" in keys["registry_w1"]["do"]  # говорит, что сделать и куда загрузить файл
+    assert "registry_w2" in {p["key"] for p in health.check(date(2026, 11, 2))["problems"]}
     res = health.check(date(2026, 10, 19), failed_run="https://example/run/1")
     assert res["problems"][0]["key"] == "robot_failed" and "https://example/run/1" in res["problems"][0]["do"]
 
@@ -153,7 +157,7 @@ def test_health_issue_sync(sandbox, monkeypatch):
         return ""
     monkeypatch.setattr(health, "_gh", fake_gh)
 
-    res = health.check(date(2026, 10, 23), repo="o/r")
+    res = health.check(date(2026, 10, 26), repo="o/r")
     assert health.sync_issue(res, "o/r") == "открыто"
     body = next(a for a in calls[-1] if a.startswith("body="))[5:]
     assert "Что сделать:" in body and "https://github.com/o/r/upload/main/data/inbox" in body
@@ -169,8 +173,16 @@ def test_health_issue_sync(sandbox, monkeypatch):
     # тот же набор проблем на следующий день: текст обновляется молча, без комментария
     issues[0] = {"number": 6, "title": health.ISSUE_TITLE, "body": health.issue_body(res)}
     calls.clear()
-    health.sync_issue(health.check(date(2026, 10, 24), repo="o/r"), "o/r")
+    health.sync_issue(health.check(date(2026, 10, 27), repo="o/r"), "o/r")
     assert not any(a.endswith("/comments") for c in calls for a in c)
+
+    # реестр так и не загрузили: через неделю повторное напоминание комментарием (письмо)
+    issues[0] = {"number": 6, "title": health.ISSUE_TITLE, "body": health.issue_body(res)}
+    calls.clear()
+    health.sync_issue(health.check(date(2026, 11, 2), repo="o/r"), "o/r")
+    comment = next(a for c in calls if any(x.endswith("/comments") for x in c)
+                   for a in c if a.startswith("body="))
+    assert "Пора загрузить реестр VID" in comment
 
     # всё наладилось — закрываем с объяснением
     assert health.sync_issue({"ok": True, "problems": []}, "o/r") == "закрыто"
