@@ -24,7 +24,9 @@ RULES_HTML = """<html><body><main><h1>Noteikumi</h1>
 
 PAGES = {
     "https://www.vid.gov.lv/lv/loterijas":
-        '<a href="/lv/media/1/download">Izsniegtās preču un pakalpojumu loteriju atļaujas</a>',
+        '<div class="file-link-wrap"><a href="/lv/media/1/download" type="application/vnd.ms-excel; length=842240"'
+        ' title="Loteriju_reģistrs_16.10.2026..xls">Izsniegtās preču un pakalpojumu loteriju atļaujas</a>'
+        '<div class="c_tooltip-text__content">Pievienots: 16.10.2026</div></div>',
     "https://www.loterijas.lv/": '<a href="/loterija/haribo-loterija-2/">Haribo</a>',
     "https://www.loterijas.lv/loterija/haribo-loterija-2/":
         '<div class="lottery-cover"><img class="cover" src="/wp-content/uploads/haribo-1200x420.png"></div>'
@@ -197,7 +199,7 @@ def test_registry_from_uploaded_file(sandbox, monkeypatch):
     # не реестр — файл остаётся, проверка здоровья скажет, что его не удалось прочитать
     (inbox / "foto.jpg").write_bytes(b"not xls")
     monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 23))
-    monkeypatch.setattr(registry, "fetch", lambda **kw: ("https://www.vid.gov.lv/lv/media/1/download", None))
+    monkeypatch.setattr(registry, "fetch", lambda **kw: ("https://www.vid.gov.lv/lv/media/1/download", "v1", None))
     pipeline.step_registry(log=lambda *a: None)
     assert (inbox / "foto.jpg").exists()
     from laimex import health
@@ -277,7 +279,7 @@ def test_registry_unreachable_uses_cache(sandbox, monkeypatch):
     assert after["fetched"] == json.loads(before)["fetched"]
 
 
-def test_registry_file_downloaded_only_when_link_changes(sandbox, monkeypatch):
+def test_registry_file_downloaded_only_when_file_changes(sandbox, monkeypatch):
     calls = []
     real_get = http.get
 
@@ -297,8 +299,18 @@ def test_registry_file_downloaded_only_when_link_changes(sandbox, monkeypatch):
     monkeypatch.setattr(pipeline, "now_iso", lambda: "2026-10-20T12:00:00+03:00")
     monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 20))
     rows = pipeline.step_registry(log=lambda *a: None)
-    # ссылка та же — файл не скачиваем, но отмечаем, что реестр проверен
+    # файл на сайте тот же — не скачиваем, но отмечаем, что реестр проверен
     assert [u for u, _ in calls] == ["https://www.vid.gov.lv/lv/loterijas"]
     assert {r["permit"] for r in rows} == {"9158", "9089"}
     saved = json.loads((sandbox / "data/registry.json").read_text(encoding="utf-8"))
+    assert saved["version"] == "Loteriju_reģistrs_16.10.2026..xls | 842240 | 16.10.2026"
     assert saved["fetched"] == "2026-10-20T12:00:00+03:00"
+    # VID положил новый файл под ту же ссылку — скачиваем
+    page = "https://www.vid.gov.lv/lv/loterijas"
+    monkeypatch.setitem(PAGES, page, PAGES[page].replace("16.10.2026", "30.10.2026"))
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 31))
+    calls.clear()
+    pipeline.step_registry(log=lambda *a: None)
+    assert [u for u, _ in calls] == [page, "https://www.vid.gov.lv/lv/media/1/download"]
+    saved = json.loads((sandbox / "data/registry.json").read_text(encoding="utf-8"))
+    assert saved["version"].endswith("| 30.10.2026")

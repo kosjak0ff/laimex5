@@ -35,6 +35,24 @@ ROWS = [
 ]
 
 
+# кусок настоящей страницы VID (копия web.archive.org от 02.04.2026)
+VID_REAL = """<div class="file-link-wrap"><div class="file-links">
+<span class="visually-hidden">Lejupielādēt: </span>
+<a href="/lv/media/34040/download?attachment" type="application/vnd.ms-excel; length=842240"
+ title="Loteriju_reģistrs_25.03.2026..xls" class="file" rel="nofollow" data-media="34040"
+ aria-label="XLS datne - Izsniegtās preču un pakalpojumu loteriju atļaujas">Izsniegtās preču un pakalpojumu loteriju atļaujas</a>
+<span class="tooltip-wrapper media-tooltip"><div class="c_tooltip "><div class="c_tooltip-text " role="tooltip" hidden="">
+<div class="c_tooltip-text__content">
+      Pievienots: 26.03.2026
+    </div></div></div></span></div></div>"""
+
+
+def test_registry_version_from_page():
+    url, version = registry.find_registry_link(VID_REAL, "https://www.vid.gov.lv/lv/loterijas")
+    assert url == "https://www.vid.gov.lv/lv/media/34040/download?attachment"
+    assert version == "Loteriju_reģistrs_25.03.2026..xls | 842240 | 26.03.2026"
+
+
 def test_find_registry_url():
     url = registry.find_registry_url(VID_HTML, "https://www.vid.gov.lv/lv/loterijas")
     assert url == "https://www.vid.gov.lv/lv/media/34040/download?attachment"
