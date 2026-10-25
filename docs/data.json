@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T06:10:34+02:00",
+ "updated": "2026-10-25T06:22:50+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-21T11:42:05+03:00",
  "lotteries": [
@@ -482,7 +482,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Не удалось найти страницу с победителями",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -503,7 +506,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Организатор пока не опубликовал список победителей на странице лотереи",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -545,7 +551,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Не удалось найти страницу с победителями",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -566,7 +575,10 @@
    },
    "banner": "img/9111.jpg",
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Не удалось найти страницу с победителями",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -587,7 +599,11 @@
    },
    "banner": "img/9047.jpg",
    "summary": null,
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijas.lv/loterija/snickers-creamy-loterija/",
+    "note": "На странице лотереи есть ссылка «Skatīt laimētājus» на сайт Snickers со списком победителей",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -608,7 +624,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Не удалось найти страницу с победителями",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -629,7 +648,11 @@
    },
    "banner": "img/9072.jpg",
    "summary": null,
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijas.lv/loterija/trapi-desmitnieka/",
+    "note": "Победители всех розыгрышей с 12.08 по 14.10 опубликованы на странице лотереи на loterijas.lv",
+    "checked": "2026-10-25"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -1205,7 +1228,11 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники Fazer Latvija SIA, маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
     "notes": "Для получения приза нужны чек и паспорт/ID-карта; за ребёнка приз получает законный представитель. Дата розыгрыша главного приза (сертификат на поездку) в правилах не указана; в правилах шанс записан как «136 (simt trīsdesmit astoņi)» — цифры и слова расходятся."
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/",
+    "note": "Победители ежедневных розыгрышей публикуются на странице лотереи на loterijas.lv",
+    "checked": "2026-10-25"
+   },
    "checks": [
     {
      "ok": true,
@@ -1404,7 +1431,11 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «Sanitex», SIA «RIMI LATVIA» и SIA «Visas Loterijas»",
     "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/",
+    "note": "Победители всех розыгрышей с 15.09 по 20.10 опубликованы на странице лотереи на loterijas.lv",
+    "checked": "2026-10-25"
+   },
    "checks": [
     {
      "ok": true,
@@ -1597,7 +1628,11 @@
     "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам AS «Latvijas Maiznieks», маркетинга SIA «MAXIMA Latvija», SIA «Patrika» и SIA «Visas Loterijas»",
     "notes": "Каждое выполнение условий — отдельная регистрация. Дата розыгрыша главного приза в правилах не указана; несовершеннолетний может получить приз через законного представителя"
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/",
+    "note": "Победители всех розыгрышей с 01.09 по 20.10 опубликованы на странице лотереи на loterijas.lv",
+    "checked": "2026-10-25"
+   },
    "checks": [
     {
      "ok": true,

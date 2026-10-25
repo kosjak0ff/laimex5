@@ -81,5 +81,50 @@
  "9071": {
   "note": "Страницу с результатами лотереи найти не удалось",
   "checked": "2026-10-24"
+ },
+ "9092": {
+  "winners_url": "https://www.loterijas.lv/loterija/svini-fazer-jubileju-un-laime-celojumu-uz-lapzemi/",
+  "note": "Победители ежедневных розыгрышей публикуются на странице лотереи на loterijas.lv",
+  "checked": "2026-10-25"
+ },
+ "9094": {
+  "winners_url": "https://www.loterijas.lv/loterija/kaija-loterija-veikalos-rimi/",
+  "note": "Победители всех розыгрышей с 15.09 по 20.10 опубликованы на странице лотереи на loterijas.lv",
+  "checked": "2026-10-25"
+ },
+ "9103": {
+  "winners_url": "https://www.loterijas.lv/loterija/kukas-tortes-ruletes-loterija-maxima-veikalos-7/",
+  "note": "Победители всех розыгрышей с 01.09 по 20.10 опубликованы на странице лотереи на loterijas.lv",
+  "checked": "2026-10-25"
+ },
+ "9072": {
+  "winners_url": "https://www.loterijas.lv/loterija/trapi-desmitnieka/",
+  "note": "Победители всех розыгрышей с 12.08 по 14.10 опубликованы на странице лотереи на loterijas.lv",
+  "checked": "2026-10-25"
+ },
+ "9047": {
+  "winners_url": "https://www.loterijas.lv/loterija/snickers-creamy-loterija/",
+  "note": "На странице лотереи есть ссылка «Skatīt laimētājus» на сайт Snickers со списком победителей",
+  "checked": "2026-10-25"
+ },
+ "9058": {
+  "note": "Организатор пока не опубликовал список победителей на странице лотереи",
+  "checked": "2026-10-25"
+ },
+ "9111": {
+  "note": "Не удалось найти страницу с победителями",
+  "checked": "2026-10-25"
+ },
+ "9038": {
+  "note": "Не удалось найти страницу с победителями",
+  "checked": "2026-10-25"
+ },
+ "9081": {
+  "note": "Не удалось найти страницу с победителями",
+  "checked": "2026-10-25"
+ },
+ "8903": {
+  "note": "Не удалось найти страницу с победителями",
+  "checked": "2026-10-25"
  }
 }
