@@ -347,11 +347,11 @@
  "9181": {
   "page": "https://www.tele2.lv/superpiedavajums/",
   "rules": "https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf",
-  "found_by": "agent-search",
-  "rules_type": "pdf",
-  "rules_sha": "05d010ee47798575",
-  "rules_checked": "2026-10-21T11:43:21+03:00",
-  "error": "не удалось скачать правила: 403 Client Error: Forbidden for url: https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf"
+  "found_by": "agent-search; правила прислал владелец сайта",
+  "rules_type": "local",
+  "rules_sha": "b8c1412945947a89",
+  "rules_checked": "2026-10-25T10:04:44+02:00",
+  "rules_local": "data/manual_rules/9181.txt"
  },
  "9176": {
   "page": "https://www.makskeresanaskarte.lv/news/pienacis_laiks_e_makskeresanas_kartes_loterijai",

@@ -278,21 +278,7 @@
    "reason": "лотерея закончилась — найти результаты и страницу с победителями"
   }
  ],
- "broken": [
-  {
-   "permit": "9181",
-   "organizer": "SIA “Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "Tele2 vai Zelta Zivtiņa pēcapmaksas tarifu plāna vai datu plāna abonenta pakalpojumam",
-   "name": "Tele2 loterija",
-   "start": "2026-10-11",
-   "end": "2027-01-05",
-   "place": "Latvijas Republika",
-   "category": "service",
-   "error": "не удалось скачать правила: 403 Client Error: Forbidden for url: https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf",
-   "rules": "https://www.tele2.lv/file/a610194a0ce7b2f2407915ae020456d5/Q4_Loterijas_noteikumi_Tele2.pdf"
-  }
- ],
+ "broken": [],
  "waiting_since": {
   "9089": "2026-10-21",
   "9102": "2026-10-21",

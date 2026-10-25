@@ -79,7 +79,8 @@ Izlozes
 norises 
 laiks
 Periods, par kādu notiek 
-izloze Izlozētās Balvas un skaits Rezerves laimētāji
+izloze Izlozētās Balvas un skaits Rezerves 
+laimētāji
 2027. gada 
 5. janvārī 
 plkst. 12.00
