@@ -18,6 +18,7 @@ OLD_TITLES = {ISSUE_TITLE, "Laimex: нужна проверка"}   # прежн
 MAX_WAIT_DAYS = 2        # сколько дней лотерея может ждать выжимку
 MAX_QUIET_DAYS = 2       # сколько дней задача Claude может ничего не сохранять при непустой очереди
 MAX_NOSOURCE_DAYS = 5    # сколько дней идущая лотерея может быть без найденных правил
+MAX_REGISTRY_DAYS = 7    # раз в столько дней напоминать загрузить реестр VID (робота VID не пускает)
 
 REPO = "kosjak0ff/laimex5"
 SITE_URL = "https://laimex.pages.dev/"
@@ -77,20 +78,24 @@ def check(now: date | None = None, failed_run: str | None = None, repo: str = RE
             "«Izsniegtās preču un pakalpojumu loteriju atļaujas» со страницы "
             f"https://www.vid.gov.lv/lv/loterijas сюда: {upload}"))
     reg_age = _days_since(reg.get("fetched"), now)
-    if reg_age is None or reg_age > 1:
+    if reg_age is None or reg_age >= MAX_REGISTRY_DAYS:
         since = _ru_date(reg.get("fetched"))
+        # неделя в ключе: если файл так и не загрузили, через неделю будет новый комментарий (письмо)
+        week = (reg_age or 0) // MAX_REGISTRY_DAYS
         problems.append(_problem(
-            "registry", f"Список лотерей не обновляется с {since}: сайт VID не отвечает роботу",
-            f"Робот раз в день пробует скачать реестр разрешений с vid.gov.lv, но сайт не отвечает "
-            f"уже {reg_age if reg_age is not None else '?'} дн. На {SITE_URL} показан список от "
-            f"{since}: новые лотереи там не появятся, пока реестр не скачается.",
-            "Если хотите обновить список сейчас:\n"
-            "1. Откройте https://www.vid.gov.lv/lv/loterijas в браузере (если не открывается, "
-            "попробуйте с телефона через мобильный интернет).\n"
+            f"registry_w{week}", f"Пора загрузить реестр VID: список лотерей от {since}",
+            "Сайт VID пускает только мобильный интернет, поэтому робот не может скачать реестр "
+            f"разрешений сам, и список обновляете вы раз в неделю. На {SITE_URL} показан список "
+            f"от {since} ({reg_age if reg_age is not None else '?'} дн. назад): новые лотереи "
+            "там не появятся, пока вы не загрузите свежий файл.",
+            "Это займёт пару минут:\n"
+            "1. На телефоне выключите Wi-Fi и через мобильный интернет откройте "
+            "https://www.vid.gov.lv/lv/loterijas.\n"
             "2. Скачайте файл «Izsniegtās preču un pakalpojumu loteriju atļaujas».\n"
             f"3. Загрузите его сюда: {upload} и нажмите «Commit changes».\n\n"
-            "Робот сам возьмёт файл и обновит сайт. Если ничего не делать, робот продолжит "
-            "пробовать каждый день, а сайт будет показывать прежний список."))
+            "Робот сам возьмёт файл, обновит сайт и закроет это issue. Следующее напоминание "
+            f"придёт через {MAX_REGISTRY_DAYS} дн. Если сайт VID снова начнёт пускать робота, "
+            "он будет скачивать реестр сам и напоминать перестанет."))
     quiet = _days_since(last_summary, now)
     if need_summary and quiet is not None and quiet > MAX_QUIET_DAYS:
         problems.append(_problem(
@@ -170,7 +175,7 @@ def sync_issue(health: dict, repo: str, run_url: str | None = None) -> str:
     if old_body != body or mine["title"] != ISSUE_TITLE:
         _gh("api", "-X", "PATCH", f"repos/{repo}/issues/{mine['number']}",
             "-f", f"title={ISSUE_TITLE}", "-f", f"body={body}")
-    known = set(re.findall(r"laimex:([a-z_]+)", old_body))
+    known = set(re.findall(r"laimex:([a-z0-9_]+)", old_body))
     fresh = [p for p in health["problems"] if p["key"] not in known]
     if fresh:
         _gh("api", "-X", "POST", f"repos/{repo}/issues/{mine['number']}/comments", "-f",
