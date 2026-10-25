@@ -56,7 +56,7 @@ def registry_from_inbox(cached: dict | None, log=print) -> list[dict] | None:
             log(f"! Файл {f.name} в data/inbox не похож на реестр VID: {e}")
             continue
         rel = registry.relevant(rows, today(), KEEP_FINISHED_DAYS)
-        # source оставляем прежним: завтра робот сравнит с ним ссылку на сайте VID
+        # version не знаем: когда VID снова откроется, робот один раз скачает файл и сверит
         save(REGISTRY_JSON, {"source": (cached or {}).get("source"), "manual": f.name,
                              "fetched": now_iso(), "checked": now_iso(),
                              "total_in_file": len(rows), "lotteries": rel})
@@ -76,7 +76,7 @@ def step_registry(log=print) -> list[dict]:
         log(f"Реестр VID сегодня уже проверяли, берём копию от {cached.get('fetched')}")
         return registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
     try:
-        url, rows = registry.fetch(known_url=(cached or {}).get("source"))
+        url, version, rows = registry.fetch(known_version=(cached or {}).get("version"))
     except Exception as e:  # noqa: BLE001
         # сайт VID бывает недоступен по нескольку дней — работаем с прошлой копией реестра;
         # дата fetched не меняется, поэтому проверка здоровья заметит, если это затянется
@@ -86,13 +86,13 @@ def step_registry(log=print) -> list[dict]:
         log(f"! Реестр VID недоступен ({e}), берём копию от {cached.get('fetched')}")
         return registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
     if rows is None:
-        # ссылка на файл та же — реестр не обновлялся; отмечаем, что проверили сегодня
+        # файл на сайте VID тот же — реестр не обновлялся; отмечаем, что проверили сегодня
         rel = registry.relevant(cached["lotteries"], today(), KEEP_FINISHED_DAYS)
         save(REGISTRY_JSON, dict(cached, fetched=now_iso(), checked=now_iso(), lotteries=rel))
-        log(f"Реестр VID не изменился ({url}), актуальных: {len(rel)}")
+        log(f"Реестр VID не обновлялся ({version}), файл не скачиваем; актуальных: {len(rel)}")
         return rel
     rel = registry.relevant(rows, today(), KEEP_FINISHED_DAYS)
-    save(REGISTRY_JSON, {"source": url, "fetched": now_iso(), "checked": now_iso(),
+    save(REGISTRY_JSON, {"source": url, "version": version, "fetched": now_iso(), "checked": now_iso(),
                          "total_in_file": len(rows), "lotteries": rel})
     log(f"Реестр: {len(rows)} записей в файле, актуальных без журнальных: {len(rel)}")
     return rel

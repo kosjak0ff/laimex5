@@ -37,16 +37,29 @@ SERVICE_RE = re.compile(
 )
 
 
-def find_registry_url(html: str, base: str = VID_PAGE) -> str:
-    """На странице VID найти ссылку на xls-файл реестра (её адрес меняется)."""
+def find_registry_link(html: str, base: str = VID_PAGE) -> tuple[str, str]:
+    """На странице VID найти ссылку на xls-файл реестра и его «версию».
+    Ссылка у VID годами одна и та же (/lv/media/34040/download), а новый файл кладут под неё же.
+    Поэтому версию берём из того, что меняется вместе с файлом: имя файла (в нём дата), размер
+    и дата «Pievienots» рядом со ссылкой."""
     soup = BeautifulSoup(html, "html.parser")
-    for a in soup.find_all("a", href=True):
-        if VID_LINK_TEXT.lower() in a.get_text(" ", strip=True).lower():
-            return urljoin(base, a["href"])
-    for a in soup.find_all("a", href=True):  # запасной вариант
-        if "/media/" in a["href"] and "atļauj" in a.get_text(" ", strip=True).lower():
-            return urljoin(base, a["href"])
-    raise RuntimeError("На странице VID не найдена ссылка на реестр разрешений")
+    links = soup.find_all("a", href=True)
+    a = next((a for a in links if VID_LINK_TEXT.lower() in a.get_text(" ", strip=True).lower()), None)
+    if a is None:  # запасной вариант
+        a = next((a for a in links if "/media/" in a["href"]
+                  and "atļauj" in a.get_text(" ", strip=True).lower()), None)
+    if a is None:
+        raise RuntimeError("На странице VID не найдена ссылка на реестр разрешений")
+    size = re.search(r"length=(\d+)", a.get("type", ""))
+    box = a.find_parent(class_="file-link-wrap") or a.parent
+    added = re.search(r"Pievienots:\s*([\d.]+\d)", box.get_text(" ", strip=True))
+    version = " | ".join(x for x in (a.get("title", "").strip(), size and size.group(1),
+                                      added and added.group(1)) if x)
+    return urljoin(base, a["href"]), version
+
+
+def find_registry_url(html: str, base: str = VID_PAGE) -> str:
+    return find_registry_link(html, base)[0]
 
 
 _DATE_RE = re.compile(r"(\d{1,2})\.(\d{1,2})\.(\d{4})")
@@ -163,13 +176,13 @@ def relevant(rows: list[dict], today: date, keep_finished_days: int) -> list[dic
     return out
 
 
-def fetch(known_url: str | None = None) -> tuple[str, list[dict] | None]:
-    """Скачать реестр. Если ссылка на файл не изменилась (known_url), файл не скачиваем
-    и возвращаем rows=None: VID банит адреса, которые часто к нему обращаются, поэтому
-    запросов минимум и без повторов."""
+def fetch(known_version: str | None = None) -> tuple[str, str, list[dict] | None]:
+    """Скачать реестр. Если файл на сайте VID не обновлялся (версия та же, что known_version),
+    файл не скачиваем и возвращаем rows=None: VID банит адреса, которые часто к нему обращаются,
+    поэтому запросов минимум и без повторов. Если версию определить не удалось, скачиваем."""
     page = http.get(VID_PAGE, retries=0)
-    url = find_registry_url(page.text, page.url)
-    if url == known_url:
-        return url, None
+    url, version = find_registry_link(page.text, page.url)
+    if version and version == known_version:
+        return url, version, None
     xls = http.get(url, timeout=60, retries=0)
-    return url, parse_xls(xls.content)
+    return url, version, parse_xls(xls.content)
