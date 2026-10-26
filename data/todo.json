@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T11:20:28+02:00",
+ "generated": "2026-10-26T02:28:27+02:00",
  "need_summary": [],
  "need_sources": [
   {
@@ -10,6 +10,17 @@
    "name": "Laimē savu sapņu piedzīvojumu!",
    "start": "2026-10-01",
    "end": "2026-11-30",
+   "place": "Latvijas Republika",
+   "category": "shop"
+  },
+  {
+   "permit": "9187",
+   "organizer": "SIA ”SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "zīmola “Somat” produktu pirkumam",
+   "name": "Somat rudens loterija 2026",
+   "start": "2026-10-26",
+   "end": "2026-12-04",
    "place": "Latvijas Republika",
    "category": "shop"
   },
@@ -37,6 +48,90 @@
   }
  ],
  "need_results": [
+  {
+   "permit": "9096",
+   "organizer": "SIA “SMS SOLUTIONS”",
+   "organizer_reg": "40203006794",
+   "purchase": "divu preču pirkumam",
+   "name": "MEGO LIELĀ RUDENS LOTERIJA 2026!",
+   "start": "2026-08-17",
+   "end": "2026-10-27",
+   "place": "“Mego”, “Vesko” un “Mini Vesko” veikali visā Latvijas Republikā",
+   "category": "shop",
+   "reason": "в выжимке нет дат розыгрышей — найти даты и призы"
+  },
+  {
+   "permit": "9163",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "pirkumam vismaz 20,00 EUR vērtībā www.rimi.lv/e-veikals",
+   "name": "Rimi interneta veikala oktobra loterija 2026",
+   "start": "2026-09-29",
+   "end": "2026-10-30",
+   "place": "interneta veikals www.rimi.lv/e-veikals",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 3, последний 2026-10-20 — найти страницу с победителями"
+  },
+  {
+   "permit": "9183",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola Birute produktu pirkumam",
+   "name": "Birute loterija",
+   "start": "2026-10-13",
+   "end": "2026-11-03",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 1, последний 2026-10-20 — найти страницу с победителями"
+  },
+  {
+   "permit": "9112",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "“Kinder Bueno” zīmola produktu pirkumam",
+   "name": "Izbaudi mirkli ar bueno!",
+   "start": "2026-09-21",
+   "end": "2026-11-05",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 4, последний 2026-10-19 — найти страницу с победителями"
+  },
+  {
+   "permit": "9116",
+   "organizer": "SIA “Guilty”",
+   "organizer_reg": "50003254051",
+   "purchase": "Coca-Cola, Fanta vai Sprite produktu pirkumam",
+   "name": "Ar Coca-Cola tas garšo vēl labāk",
+   "start": "2026-09-07",
+   "end": "2026-11-06",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 6, последний 2026-10-20 — найти страницу с победителями"
+  },
+  {
+   "permit": "9060",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuru 2 (divu) M&M's, Maltesers vai Skittles iepakojumu pirkumam",
+   "name": "M&M's loterija",
+   "start": "2026-10-01",
+   "end": "2026-11-17",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 2, последний 2026-10-20 — найти страницу с победителями"
+  },
+  {
+   "permit": "9069",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkura SELGA produktu vai vismaz 100g SELGA sveramo produktu pirkumam",
+   "name": "Selga loterija",
+   "start": "2026-10-12",
+   "end": "2026-11-23",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 1, последний 2026-10-19 — найти страницу с победителями"
+  },
   {
    "permit": "9135",
    "organizer": "SIA “Autoskola EINŠTEINS”",
@@ -264,24 +359,13 @@
    "place": "Via Jurmala Outlet Village teritorija, Jaunā iela 12, k-18, Piņķi, Babītes pagasts, Mārupes novads, LV-2107",
    "category": "shop",
    "reason": "лотерея закончилась — найти результаты и страницу с победителями"
-  },
-  {
-   "permit": "9107",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "“Garnier” zīmola produktu pirkumam",
-   "name": "Garnier loterija 2026",
-   "start": "2026-08-25",
-   "end": "2026-09-25",
-   "place": "veikalos “Rimi” un interneta veikalā www.rimi.lv/e-veikals Latvijas Republikā",
-   "category": "shop",
-   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
   }
  ],
  "broken": [],
  "waiting_since": {
   "9089": "2026-10-21",
   "9102": "2026-10-21",
-  "9178": "2026-10-21"
+  "9178": "2026-10-21",
+  "9187": "2026-10-26"
  }
 }
