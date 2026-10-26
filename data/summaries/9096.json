@@ -14,15 +14,209 @@
  "lottery_end": "2026-10-27",
  "registration_start": "2026-08-17",
  "registration_end": "2026-10-25",
- "draws": [],
- "prizes": [],
+ "draws": [
+  {
+   "date": "2026-08-31",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Nintendo Switch 2 Black",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 3
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-09-07",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 2
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-09-14",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Nintendo Switch 2 Black",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 3
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-09-21",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 2
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-09-28",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Nintendo Switch 2 Black",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 3
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-05",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 2
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-12",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Nintendo Switch 2 Black",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 3
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-19",
+   "time": null,
+   "period_from": null,
+   "period_to": null,
+   "prizes": [
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 2
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "time": null,
+   "period_from": "2026-08-17",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "Автомобиль Škoda Octavia HB Essence",
+     "qty": 1
+    },
+    {
+     "name": "Nintendo Switch 2 Black",
+     "qty": 1
+    },
+    {
+     "name": "Подарочная карта Mēness Aptieka 100 €",
+     "qty": 3
+    },
+    {
+     "name": "Подарочная карта BoltFood 50 €",
+     "qty": 5
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Автомобиль Škoda Octavia HB Essence",
+   "qty": 1,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Nintendo Switch 2 Black",
+   "qty": 5,
+   "unit_value_eur": null,
+   "total_value_eur": null
+  },
+  {
+   "name": "Подарочная карта Mēness Aptieka 100 €",
+   "qty": 23,
+   "unit_value_eur": 100,
+   "total_value_eur": 2300
+  },
+  {
+   "name": "Подарочная карта BoltFood 50 €",
+   "qty": 45,
+   "unit_value_eur": 50,
+   "total_value_eur": 2250
+  }
+ ],
  "prize_fund_eur": null,
  "odds": null,
- "winners_published": null,
+ "winners_published": "На странице лотереи, раздел «UZVARĒTĀJI»",
  "claim_deadline": null,
  "age_min": null,
  "limits": "Один покупатель может зарегистрировать 1 чек в день",
- "notes": "Доступна только краткая версия правил: список призов, розыгрышей и брендов (Приложение № 2) в ней не приведён — смотрите полные правила на www.megoloterija.lv.",
+ "notes": "Доступна только краткая версия правил. Даты розыгрышей и призы взяты со страницы победителей на сайте лотереи (lottery.esteria.lv); количество призов в розыгрыше 19.10 и 26.10 указано по аналогии с прошлыми неделями и по анонсу, стоимость автомобиля и Nintendo Switch не указана.",
  "_rules_sha": "47f8a84504937c7c",
- "_extracted": "2026-10-20T06:20:22+03:00"
+ "_extracted": "2026-10-26T06:16:42+02:00"
 }
