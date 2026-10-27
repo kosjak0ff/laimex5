@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T06:19:47+02:00",
+ "updated": "2026-10-27T08:02:02+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-27T03:30:39+02:00",
  "lotteries": [
@@ -1913,8 +1913,9 @@
     "notes": "Приз отправляют курьером. Победитель должен в течение 10 дней после звонка прислать фото выигравшего чека на e-mail или WhatsApp организатора; если не выйти на связь за 3 рабочих дня после розыгрыша — приз уходит резервисту."
    },
    "results": {
-    "note": "Страницу с победителями найти не удалось.",
-    "checked": "2026-10-27"
+    "note": "Победители розыгрыша опубликованы на сайте лотереи.",
+    "checked": "2026-10-27",
+    "winners_url": "https://merrildloterija.lv/laimetaji/"
    },
    "checks": [
     {
@@ -2033,8 +2034,9 @@
     "notes": "Призы выдаются в офисе SIA «Multum» (Gustava Zemgala gatve 77, Rīga) до 31 октября 2026 года при предъявлении документа, удостоверяющего личность, и чека."
    },
    "results": {
-    "note": "Победителей розыгрыша 21.10 обещали опубликовать на multum.lv; на странице лотереи списка нет.",
-    "checked": "2026-10-27"
+    "note": "Победители розыгрыша 21.10 опубликованы на сайте лотереи.",
+    "checked": "2026-10-27",
+    "winners_url": "https://multum.lv/loterijas"
    },
    "checks": [
     {
@@ -5384,15 +5386,305 @@
    "place": "Latvijas Republika",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://magijaloterija.eu/lv/",
+    "rules": "https://magijaloterija.eu/lv/noteikumi/",
+    "registration": "https://magijaloterija.eu/lv/#form"
    },
    "banner": null,
-   "summary": null,
-   "results": null,
-   "checks": [],
-   "status": "no_summary"
+   "summary": {
+    "title": "Laimē savu sapņu piedzīvojumu!",
+    "organizer": "SIA «Sorbum LV»",
+    "sponsor": "AB «Žemaitijos pienas» (Magija)",
+    "permit": null,
+    "what_to_buy": "Не меньше 3 продуктов «Magija» из списка правил в одной покупке: творожные сырки Magija (45 г и 40 г, разные вкусы), сырки «Protein M», творожные десерты Magija",
+    "buy_short": "3 продукта Magija в одном чеке",
+    "min_purchase_eur": null,
+    "where": "Любые магазины Латвии, где продаётся продукция Magija",
+    "how_to_enter": "Зарегистрировать чек в анкете на сайте лотереи: имя, фамилия, номер чека, телефон и e-mail. Чек участвует в ближайшем еженедельном розыгрыше после регистрации",
+    "registration_url": "https://magijaloterija.eu/lv/",
+    "keep": "Чек до 30.12.2026",
+    "lottery_start": "2026-10-01",
+    "lottery_end": "2026-11-30",
+    "registration_start": "2026-10-01",
+    "registration_end": "2026-11-29",
+    "draws": [
+     {
+      "date": "2026-10-12",
+      "time": "12:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-10-11",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-10-19",
+      "time": "12:00",
+      "period_from": "2026-10-12",
+      "period_to": "2026-10-18",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-10-26",
+      "time": "12:00",
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-02",
+      "time": "12:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-09",
+      "time": "12:00",
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-16",
+      "time": "12:00",
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-23",
+      "time": "12:00",
+      "period_from": "2026-11-16",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-30",
+      "time": "12:00",
+      "period_from": "2026-11-23",
+      "period_to": "2026-11-29",
+      "prizes": [
+       {
+        "name": "LEGO комплект",
+        "qty": 2
+       },
+       {
+        "name": "Подарочная карта Team Space",
+        "qty": 3
+       },
+       {
+        "name": "Годовой абонемент MAGIJA",
+        "qty": 2
+       },
+       {
+        "name": "Подарочный набор MAGIJA",
+        "qty": 4
+       }
+      ]
+     },
+     {
+      "date": "2026-11-30",
+      "time": "12:00",
+      "period_from": "2026-10-01",
+      "period_to": "2026-11-29",
+      "prizes": [
+       {
+        "name": "Подарочная карта SIA «Air Guru» на поездку в Legoland (Дания)",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта SIA «Air Guru» на поездку в Legoland (Дания)",
+      "qty": 1,
+      "unit_value_eur": 4000,
+      "total_value_eur": 4000
+     },
+     {
+      "name": "LEGO комплект",
+      "qty": 16,
+      "unit_value_eur": 104.19,
+      "total_value_eur": 1667.04
+     },
+     {
+      "name": "Подарочная карта Team Space",
+      "qty": 24,
+      "unit_value_eur": 30,
+      "total_value_eur": 720
+     },
+     {
+      "name": "Годовой абонемент MAGIJA (20 сырков каждый месяц, 12 месяцев)",
+      "qty": 16,
+      "unit_value_eur": 156,
+      "total_value_eur": 2496
+     },
+     {
+      "name": "Подарочный набор MAGIJA (20 сырков, значок, носки, кружка)",
+      "qty": 32,
+      "unit_value_eur": 24.56,
+      "total_value_eur": 785.92
+     }
+    ],
+    "prize_fund_eur": 9668.96,
+    "odds": null,
+    "winners_published": "Победителей каждого розыгрыша публикуют на сайте лотереи до конца дня розыгрыша (или следующего рабочего дня); полный список — до конца 30.11.2026",
+    "claim_deadline": "2026-12-30",
+    "age_min": null,
+    "limits": "Можно регистрировать несколько чеков, но в одном розыгрыше можно выиграть только один приз",
+    "notes": "Для получения приза победитель присылает копию чека на loterijas@sorbum.eu. Абонемент выдают раз в месяц на складе Sorbum LV в Марупе (декабрь 2026 — ноябрь 2027), подарочный набор нужно забрать там же в течение 7 дней."
+   },
+   "results": {
+    "winners_url": "https://magijaloterija.eu/lv/#winners",
+    "note": "Победители розыгрышей 12.10, 19.10 и 26.10 опубликованы на сайте лотереи.",
+    "checked": "2026-10-27"
+   },
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (30.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 9668.96 € = призовой фонд 9668.96 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 89, в фонде 89"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9113",

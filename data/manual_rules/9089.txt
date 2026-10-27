@@ -1,24 +1,3 @@
-# Разрешение 9089
-
-Запись реестра VID:
-```json
-{
- "permit": "9089",
- "organizer": "AAS “BALTA”",
- "organizer_reg": "40003049409",
- "purchase": "BALTA abonētās polises apdrošināšanas līguma (polises) noslēgšanas",
- "name": "Drošība, kas nepārtrūkst!",
- "start": "2026-08-01",
- "end": "2027-01-28",
- "place": "Latvijas Republika",
- "category": "service"
-}
-```
-
-Источник правил: https://balta.lv/uploads/FAILI/Loterija/BALTA-Drosiba-kas-nepartrukst-loterija-noteikumi-LV.pdf
-
-## Текст правил
-
 --- lapa 1 ---
  
 BALTA abonētās polises loterijas “Drošība, kas nepārtrūkst!” 

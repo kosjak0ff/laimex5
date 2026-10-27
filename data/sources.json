@@ -420,8 +420,24 @@
  "9089": {
   "rules": "https://balta.lv/uploads/FAILI/Loterija/BALTA-Drosiba-kas-nepartrukst-loterija-noteikumi-LV.pdf",
   "found_by": "agent-search",
-  "rules_type": "pdf",
+  "rules_type": "local",
   "rules_sha": "8e26a780b1adfba8",
-  "rules_checked": "2026-10-27T06:12:00+02:00"
+  "rules_checked": "2026-10-27T08:01:59+02:00",
+  "rules_local": "data/manual_rules/9089.txt"
+ },
+ "9178": {
+  "page": "https://magijaloterija.eu/lv/",
+  "rules": "https://magijaloterija.eu/lv/noteikumi/",
+  "registration": "https://magijaloterija.eu/lv/#form",
+  "found_by": "agent-search",
+  "rules_type": "html",
+  "rules_sha": "b8078581cee1aa0d",
+  "rules_checked": "2026-10-27T08:01:59+02:00"
+ },
+ "9102": {
+  "not_found": {
+   "note": "Лотерея для тестировщиков приложения Luminor Bloom; публичных правил нет ни на luminor.lv (по карте сайта), ни на bloom.luminor.lv, ни в веб-поиске",
+   "checked": "2026-10-27"
+  }
  }
 }
