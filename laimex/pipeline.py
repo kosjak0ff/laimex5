@@ -7,9 +7,9 @@ import shutil
 from datetime import date, datetime
 from pathlib import Path
 
-from . import discover, http, images, registry, rules, validate
-from .config import (ROOT, DATA, IMAGES, KEEP_FINISHED_DAYS, PENDING, RULES_TEXT, SITE, SUMMARIES, TZ,
-                     WEB, WORK, ensure_dirs, today)
+from . import discover, http, images, registry, rules, validate, winners
+from .config import (ROOT, DATA, IMAGES, KEEP_FINISHED_DAYS, MANUAL_RULES, PENDING, RULES_TEXT, SITE,
+                     SUMMARIES, TZ, WEB, WORK, ensure_dirs, today)
 from .schema import validate_shape
 
 REGISTRY_JSON = DATA / "registry.json"
@@ -17,6 +17,7 @@ SOURCES_JSON = DATA / "sources.json"
 TODO_JSON = DATA / "todo.json"
 RESULTS_JSON = DATA / "results.json"   # результаты розыгрышей: ссылки на победителей
 RESULTS_RECHECK_DAYS = 3                # не искать результаты одной лотереи чаще
+SOURCES_RECHECK_DAYS = 7                # не искать правила, которые не нашлись, чаще
 INBOX = DATA / "inbox"                  # сюда владелец загружает файл реестра, если VID не пускает робота
 
 
@@ -100,6 +101,23 @@ def step_registry(log=print) -> list[dict]:
 
 # ------------------------------------------------------ шаг 2: ссылки и правила
 
+def manual_rules_file(permit: str, src: dict) -> Path | None:
+    """Правила, которые робот скачать не может (robots.txt, Google Диск), положенные в репозиторий
+    вручную: путь из поля rules_local или любой .txt/.pdf в папке data/manual_rules/<номер>/
+    (туда владелец загружает файл прямо на GitHub, имя файла не важно)."""
+    if src.get("rules_local"):
+        return ROOT / src["rules_local"]
+    folder = MANUAL_RULES / permit
+    found = sorted(f for f in folder.glob("*") if f.suffix.lower() in (".txt", ".pdf")) if folder.is_dir() else []
+    return found[-1] if found else None
+
+
+def read_manual_rules(path: Path) -> str:
+    if path.suffix.lower() == ".pdf":
+        return rules.pdf_to_text(path.read_bytes())
+    return path.read_text(encoding="utf-8")
+
+
 def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> dict:
     sources = load(SOURCES_JSON, {})
     wanted = {r["permit"] for r in rows}
@@ -112,6 +130,8 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
                         cur[k] = v
     for permit in sorted(wanted if only is None else only & wanted):
         src = sources.get(permit)
+        if not src and manual_rules_file(permit, {}):
+            src = sources[permit] = {}
         if not src:
             continue
         if src.get("page") and not src.get("rules"):
@@ -126,10 +146,11 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
                     log(f"  {permit}: правила встроены в страницу кампании")
             except Exception as e:  # noqa: BLE001
                 log(f"  ! {permit}: страница недоступна: {e}")
-        if src.get("rules_local"):
-            # правила, которые робот скачать не может (например, Google Диск) — их текст
-            # положен в репозиторий вручную, ссылка rules остаётся для кнопки «Правила» на сайте
-            text = (ROOT / src["rules_local"]).read_text(encoding="utf-8")
+        manual = manual_rules_file(permit, src)
+        if manual:
+            # правила, которые робот скачать не может, положены в репозиторий вручную;
+            # ссылка rules остаётся для кнопки «Правила» на сайте
+            text = read_manual_rules(manual)
             src.pop("error", None)
             src.update(rules_type="local", rules_sha=hashlib.sha256(text.encode()).hexdigest()[:16],
                        rules_checked=now_iso())
@@ -139,6 +160,7 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
                 got = rules.fetch_rules(src["rules"])
             except http.Blocked:
                 src["error"] = "robots.txt запрещает скачивать правила"
+                log(f"  ! {permit}: {src['error']}")
                 continue
             except Exception as e:  # noqa: BLE001
                 src["error"] = f"не удалось скачать правила: {e}"
@@ -173,8 +195,7 @@ def results_reason(row: dict, summ: dict | None, res: dict | None, now: str) -> 
     res = res or {}
     if res.get("winners_url"):
         return None
-    checked = res.get("checked")
-    if checked and (date.fromisoformat(now) - date.fromisoformat(checked)).days < RESULTS_RECHECK_DAYS:
+    if _recent(res.get("checked"), now, RESULTS_RECHECK_DAYS):
         return None
     draws = [d.get("date") for d in (summ or {}).get("draws") or []]
     if summ and not draws and row["end"] >= now:
@@ -186,6 +207,10 @@ def results_reason(row: dict, summ: dict | None, res: dict | None, now: str) -> 
     if row["end"] < now:
         return "лотерея закончилась — найти результаты и страницу с победителями"
     return None
+
+
+def _recent(checked: str | None, now: str, days: int) -> bool:
+    return bool(checked) and (date.fromisoformat(now) - date.fromisoformat(checked)).days < days
 
 
 def _neg(iso: str) -> int:
@@ -208,9 +233,15 @@ def step_todo(rows: list[dict], sources: dict, log=print) -> dict:
             continue  # правила и выжимки закончившихся не дорабатываем
         src = sources.get(p, {})
         text_file = RULES_TEXT / f"{p}.txt"
-        if not src.get("rules") or not text_file.exists():
-            # правила ищем только у идущих лотерей: у будущих информации обычно ещё нет
-            if row.get("start") and row["start"] <= now:
+        has_rules = src.get("rules") or src.get("rules_type") == "local"
+        if not has_rules or not text_file.exists():
+            if src.get("rules") and src.get("error"):
+                # ссылка на правила есть, но скачать их не вышло — искать заново незачем
+                broken.append({**row, "error": src["error"], "rules": src["rules"]})
+            # правила ищем только у идущих лотерей: у будущих информации обычно ещё нет;
+            # не нашлись — следующая попытка через SOURCES_RECHECK_DAYS дней
+            elif row.get("start") and row["start"] <= now and not _recent(
+                    (src.get("not_found") or {}).get("checked"), now, SOURCES_RECHECK_DAYS):
                 need_sources.append(row)
             continue
         if src.get("error"):
@@ -222,7 +253,8 @@ def step_todo(rows: list[dict], sources: dict, log=print) -> dict:
         (PENDING / f"{p}.md").write_text(
             f"# Разрешение {p}\n\nЗапись реестра VID:\n```json\n"
             f"{json.dumps(row, ensure_ascii=False, indent=1)}\n```\n\n"
-            f"Источник правил: {src['rules']}\n\n## Текст правил\n\n"
+            f"Источник правил: {src.get('rules') or 'загружены вручную в data/manual_rules'}\n\n"
+            "## Текст правил\n\n"
             f"{text_file.read_text(encoding='utf-8')}\n",
             encoding="utf-8",
         )
@@ -268,11 +300,22 @@ def add_source(permit: str, page: str | None, rules_url: str | None,
         if v:
             cur[k] = v
     cur["found_by"] = found_by
+    cur.pop("not_found", None)
     save(SOURCES_JSON, sources)
     if not fetch:  # правила скачает ближайший запуск GitHub Actions
         return sources
     rows = load(REGISTRY_JSON, {"lotteries": []})["lotteries"]
     return step_sources(rows, only={permit})
+
+
+def no_source(permit: str, note: str) -> dict:
+    """Правила не нашлись или найденные ссылки оказались не от этой лотереи: убрать ссылки и
+    не искать правила снова SOURCES_RECHECK_DAYS дней."""
+    sources = load(SOURCES_JSON, {})
+    sources[permit] = {"not_found": {"note": note, "checked": today().isoformat()}}
+    save(SOURCES_JSON, sources)
+    (RULES_TEXT / f"{permit}.txt").unlink(missing_ok=True)
+    return sources[permit]
 
 
 def add_result(permit: str, winners_url: str | None, note: str | None) -> dict:
@@ -351,6 +394,7 @@ def daily(mode: str, log=print):
     sources = step_sources(rows, log)
     images.fetch_banners(sources, {r["permit"] for r in rows}, log)
     todo = step_todo(rows, sources, log)
+    winners.write_hints(todo["need_results"], sources, PENDING / "results.md", log)
     if mode == "api":
         from .extract_api import extract
         for p in todo["need_summary"]:

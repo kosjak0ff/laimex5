@@ -4,6 +4,7 @@
   python -m laimex todo             — что осталось сделать (для агента)
   python -m laimex save 9158 f.json — сохранить выжимку и показать проверки
   python -m laimex add-source 9158 --page URL [--rules URL] [--registration URL] [--no-fetch]
+  python -m laimex no-source 9158 --note TEXT — правила не нашлись, не искать 7 дней
   python -m laimex add-result 9158 [--winners URL] [--note TEXT]
   python -m laimex build            — только пересобрать сайт
   python -m laimex health           — проверить, всё ли обновляется
@@ -34,6 +35,9 @@ def main(argv=None):
     a.add_argument("--registration")
     a.add_argument("--found-by", default="agent-search")
     a.add_argument("--no-fetch", action="store_true", help="только записать ссылки, правила скачает GitHub Actions")
+    n = sub.add_parser("no-source")
+    n.add_argument("permit")
+    n.add_argument("--note", required=True, help="по-русски: где искали и что не так")
     r = sub.add_parser("add-result")
     r.add_argument("permit")
     r.add_argument("--winners", help="страница или файл со списком победителей")
@@ -64,6 +68,8 @@ def main(argv=None):
         print(f"Нужны сведения о розыгрышах ({len(need_results)}):")
         for r in need_results:
             print(f"   {r['permit']} | {r['name']} | {r['organizer']} | {r['start']}..{r['end']} | {r['reason']}")
+        if need_results:
+            print("   Подсказки робота по известным страницам: data/pending/results.md")
         if todo["broken"]:
             print(f"Проблемы с правилами ({len(todo['broken'])}):")
             for r in todo["broken"]:
@@ -79,6 +85,8 @@ def main(argv=None):
         src = pipeline.add_source(args.permit, args.page, args.rules, args.registration,
                                   args.found_by, fetch=not args.no_fetch)
         print(json.dumps(src.get(args.permit, {}), ensure_ascii=False, indent=1))
+    elif args.cmd == "no-source":
+        print(json.dumps(pipeline.no_source(args.permit, args.note), ensure_ascii=False, indent=1))
     elif args.cmd == "add-result":
         res = pipeline.add_result(args.permit, args.winners, args.note)
         print(json.dumps(res, ensure_ascii=False, indent=1))

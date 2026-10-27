@@ -63,6 +63,7 @@ def sandbox(tmp_path, monkeypatch):
                       ("RESULTS_JSON", "data/results.json"), ("INBOX", "data/inbox")]:
         monkeypatch.setattr(pipeline, name, tmp_path / sub)
     monkeypatch.setattr(pipeline, "IMAGES", tmp_path / "data/images")
+    monkeypatch.setattr(pipeline, "MANUAL_RULES", tmp_path / "data/manual_rules")
     monkeypatch.setattr(images, "IMAGES", tmp_path / "data/images")
     (tmp_path / "data/rules_text").mkdir(parents=True)
     (tmp_path / "data/summaries").mkdir(parents=True)
@@ -326,3 +327,92 @@ def test_registry_file_downloaded_only_when_file_changes(sandbox, monkeypatch):
     assert [u for u, _ in calls] == [page, "https://www.vid.gov.lv/lv/media/1/download"]
     saved = json.loads((sandbox / "data/registry.json").read_text(encoding="utf-8"))
     assert saved["version"].endswith("| 30.10.2026")
+
+
+def test_no_source_waits_before_next_search(sandbox, monkeypatch):
+    rows = [{"permit": "1", "name": "Идёт", "start": "2026-10-01", "end": "2026-11-30"}]
+    pipeline.add_source("1", "https://x.lv/", "https://x.lv/r", None, fetch=False)
+    (sandbox / "data/rules_text/1.txt").write_text("не те правила")
+    pipeline.no_source("1", "Искали на сайте бренда, правил нет")
+    assert not (sandbox / "data/rules_text/1.txt").exists()
+    sources = pipeline.load(pipeline.SOURCES_JSON, {})
+    assert sources["1"] == {"not_found": {"note": "Искали на сайте бренда, правил нет", "checked": "2026-10-19"}}
+    assert pipeline.step_todo(rows, sources, log=lambda *a: None)["need_sources"] == []
+    # через неделю ищем снова
+    monkeypatch.setattr(pipeline, "today", lambda: date(2026, 10, 26))
+    assert [r["permit"] for r in pipeline.step_todo(rows, sources, log=lambda *a: None)["need_sources"]] == ["1"]
+    # нашлись — отметка «не найдено» больше не нужна
+    pipeline.add_source("1", "https://y.lv/", None, None, fetch=False)
+    assert "not_found" not in pipeline.load(pipeline.SOURCES_JSON, {})["1"]
+
+
+def test_blocked_rules_go_to_owner_and_manual_upload_fixes_them(sandbox, monkeypatch):
+    from laimex import health, rules
+    for name, sub in [("SUMMARIES", "data/summaries"), ("REGISTRY_JSON", "data/registry.json"),
+                      ("TODO_JSON", "data/todo.json"), ("HEALTH_JSON", "data/health.json")]:
+        monkeypatch.setattr(health, name, sandbox / sub)
+    pdf = "https://balta.lv/uploads/noteikumi.pdf"
+    real_get = http.get
+
+    def get(url, **kw):
+        if url == pdf:
+            raise http.Blocked(url)
+        return real_get(url, **kw)
+    monkeypatch.setattr(http, "get", get)
+    pipeline.daily("agent", log=lambda *a: None)
+    pipeline.add_source("9089", None, pdf, None, fetch=False)
+    todo = pipeline.daily("agent", log=lambda *a: None)
+    # ссылка есть, но robots.txt запрещает: не «искать правила», а «проблема с правилами»
+    assert todo["need_sources"] == []
+    assert [(r["permit"], r["error"]) for r in todo["broken"]] == [("9089", "robots.txt запрещает скачивать правила")]
+    prob = {p["key"]: p for p in health.check(date(2026, 10, 19), repo="o/r")["problems"]}["rules_blocked"]
+    assert pdf in prob["do"] and "https://github.com/o/r/upload/main/data/manual_rules/9089" in prob["do"]
+    # владелец загрузил файл в папку лотереи (имя любое) — робот читает его сам
+    folder = sandbox / "data/manual_rules/9089"
+    folder.mkdir(parents=True)
+    (folder / "BALTA noteikumi.pdf").write_bytes(b"%PDF-")
+    monkeypatch.setattr(rules, "pdf_to_text", lambda b: "BALTA loterijas noteikumi")
+    todo = pipeline.daily("agent", log=lambda *a: None)
+    assert todo["broken"] == [] and "9089" in todo["need_summary"]
+    assert "BALTA loterijas noteikumi" in (sandbox / "data/pending/9089.md").read_text()
+    assert pipeline.load(pipeline.SOURCES_JSON, {})["9089"]["rules_type"] == "local"
+    assert "rules_blocked" not in {p["key"] for p in health.check(date(2026, 10, 19), repo="o/r")["problems"]}
+
+
+def test_winners_hints(sandbox, monkeypatch):
+    from laimex import winners
+    pages = {
+        "https://m.lv/": '<a href="/laimetaji/">Laimētāji</a><a href="#winners">Uzvarētāji</a>'
+                         '<a href="/noteikumi/">Noteikumi</a>',
+        "https://m.lv/laimetaji/": "<h2>Laimētāji</h2><p>12.10.2026. izloze: Jānis B.</p>"
+                                   "<h2>Laimētāji 19.10.</h2><p>Anna K.</p><p>Laimētāji: sk. 11.01. punktu</p>",
+    }
+
+    def get(url, **kw):
+        if url not in pages:
+            raise RuntimeError(url)
+        return FakeResp(url, pages[url])
+    monkeypatch.setattr(http, "get", get)
+    rows = [{"permit": "1", "name": "Merrild", "reason": "прошло розыгрышей: 1",
+             "start": "2026-09-23", "end": "2026-10-20"},
+            {"permit": "2", "name": "Без страниц", "reason": "лотерея закончилась"}]
+    sources = {"1": {"page": "https://m.lv/", "rules": "https://m.lv/r.pdf"}}
+    out = sandbox / "results.md"
+    winners.write_hints(rows, sources, out, log=lambda *a: None)
+    text = out.read_text()
+    assert "## 1 | Merrild" in text and "ссылка «Laimētāji»: https://m.lv/laimetaji/" in text
+    assert "даты рядом: 12.10, 19.10" in text
+    assert "якорь на этой же странице" in text and "- правила: https://m.lv/r.pdf" in text
+    assert "11.01" not in text  # номер пункта правил вне срока лотереи — не дата
+    assert "## 2 | Без страниц" in text and "ищите через WebSearch" in text
+    assert "Jānis" not in text and "Anna" not in text  # имена победителей в репозиторий не копируем
+
+
+def test_robots_wildcards(monkeypatch):
+    import urllib.robotparser
+    rp = urllib.robotparser.RobotFileParser()
+    rp.parse(["User-agent: *", "Disallow: /*.pdf", "Disallow: /admin/"])
+    monkeypatch.setitem(http._robots, "https://balta.lv", rp)
+    # Python 3.12 шаблоны «*» не понимает и пропустил бы PDF — робот работает на 3.13+
+    assert not http.allowed("https://balta.lv/uploads/FAILI/noteikumi.pdf")
+    assert http.allowed("https://balta.lv/lv/jaunumi")
