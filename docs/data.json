@@ -1,92 +1,8 @@
 {
- "updated": "2026-10-26T06:27:26+02:00",
+ "updated": "2026-10-27T03:32:00+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "registry_fetched": "2026-10-21T11:42:05+03:00",
+ "registry_fetched": "2026-10-27T03:30:39+02:00",
  "lotteries": [
-  {
-   "permit": "9085",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "jebkuriem diviem KH-7 produktiem",
-   "name": "KH-7 loterija veikalos Maxima",
-   "start": "2026-08-30",
-   "end": "2026-09-22",
-   "place": "jebkurš veikals MAXIMA Latvijas Republikā un interneta veikals www.barbora.lv",
-   "category": "shop",
-   "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
-   },
-   "banner": null,
-   "summary": null,
-   "results": null,
-   "checks": [],
-   "status": "no_summary"
-  },
-  {
-   "permit": "9076",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "jebkuram Nabeghlavi produktam",
-   "name": "Nabeghlavi loterija",
-   "start": "2026-08-11",
-   "end": "2026-09-23",
-   "place": "jebkura tirdzniecības vieta (fiziska vai interneta veikals) Latvijas Republikas teritorijā",
-   "category": "shop",
-   "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
-   },
-   "banner": null,
-   "summary": null,
-   "results": null,
-   "checks": [],
-   "status": "no_summary"
-  },
-  {
-   "permit": "9083",
-   "organizer": "SIA „Visas Loterijas”",
-   "organizer_reg": "40103404235",
-   "purchase": "jebkuriem 2 zīmolu \"Magija\", \"Džiugas\" ,\"PIK NIK\" produktiem",
-   "name": "“”Magija”, “Džiugas” un “PIK NIK” produktu loterija top! veikalos”",
-   "start": "2026-08-26",
-   "end": "2026-09-23",
-   "place": "jebkurš veikals top!, mini top! Latvijā",
-   "category": "shop",
-   "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
-   },
-   "banner": null,
-   "summary": null,
-   "results": null,
-   "checks": [],
-   "status": "no_summary"
-  },
-  {
-   "permit": "9107",
-   "organizer": "SIA “SOMESE Baltic”",
-   "organizer_reg": "40103207278",
-   "purchase": "“Garnier” zīmola produktu pirkumam",
-   "name": "Garnier loterija 2026",
-   "start": "2026-08-25",
-   "end": "2026-09-25",
-   "place": "veikalos “Rimi” un interneta veikalā www.rimi.lv/e-veikals Latvijas Republikā",
-   "category": "shop",
-   "links": {
-    "page": "https://www.loterijatev.lv/grn-lv",
-    "rules": "https://www.loterijatev.lv/loterija/grn-lv/@rules/WEB_Noteikumi_Garnier_loterija_2026.pdf",
-    "registration": null
-   },
-   "banner": null,
-   "summary": null,
-   "results": null,
-   "checks": [],
-   "status": "no_summary"
-  },
   {
    "permit": "9056",
    "organizer": "SIA “ADgett”",
@@ -6355,8 +6271,8 @@
    "place": "Latvijas Republika",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
+    "page": "https://www.registerpromo.lv/lv/somat-lv",
+    "rules": "https://www.registerpromo.lv/lv/loterija/somat-lv/rules.html",
     "registration": null
    },
    "banner": null,
