@@ -7,7 +7,8 @@
 #    даже с опозданием робот обновит сайт к утру, если задача Claude не отработает;
 #  - задачей Claude (tools/run_robot.py): в начале её работы и после того, как она нашла новые правила;
 #  - вручную: вкладка Actions → laimex-daily → Run workflow;
-#  - когда владелец загрузил файл реестра VID в data/inbox/ (если VID не пускает робота).
+#  - когда владелец загрузил файл реестра VID в data/inbox/ (если VID не пускает робота)
+#    или файл правил в data/manual_rules/ (если сайт лотереи запрещает роботам их скачивать).
 # Готовый сайт (папку docs/) Cloudflare Pages публикует сам после каждого изменения main:
 # https://laimex.pages.dev/
 #
@@ -20,7 +21,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["data/inbox/**"]
+    paths: ["data/inbox/**", "data/manual_rules/**"]
 permissions:
   contents: write
   issues: write
@@ -35,7 +36,8 @@ jobs:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.12"
+          # robots.txt с шаблонами вида «Disallow: /*.pdf» Python 3.12 не понимает, нужен 3.13+
+          python-version: "3.14"
       - run: pip install -r requirements.txt
       - name: Обновить данные и сайт, сохранить
         env:

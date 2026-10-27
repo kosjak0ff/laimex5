@@ -125,6 +125,20 @@ def check(now: date | None = None, failed_run: str | None = None, repo: str = RE
             f"Если знаете страницу или правила такой лотереи (например, видели в магазине), {ASK_CLAUDE} "
             "и пришлите ссылку. Иначе делать ничего не нужно."))
 
+    blocked = [r for r in todo.get("broken", []) if "robots" in r["error"] or "Google" in r["error"]]
+    if blocked:
+        problems.append(_problem(
+            "rules_blocked", f"Правила нельзя скачать роботом: {len(blocked)} лотер.",
+            _lotteries([r["permit"] for r in blocked], names) + "\n\nСайты этих лотерей запрещают "
+            "роботам скачивать правила (robots.txt или Google Диск), поэтому на сайте у них нет "
+            "призов и дат розыгрышей.",
+            "Для каждой лотереи откройте ссылку на правила в браузере, скачайте файл (PDF) и "
+            "загрузите его на GitHub по второй ссылке, затем нажмите «Commit changes»:\n" +
+            "\n".join(f"- {r['permit']}: правила {r['rules']} → "
+                      f"https://github.com/{repo}/upload/main/data/manual_rules/{r['permit']}"
+                      for r in blocked) +
+            "\n\nРобот сам прочитает файл, а задача Claude сделает выжимку на следующее утро."))
+
     health = {"checked": now_iso(), "ok": not problems, "problems": problems,
               "registry_fetched": reg.get("fetched"), "last_summary": last_summary,
               "queue_summaries": len(need_summary), "queue_sources": len(todo.get("need_sources", []))}

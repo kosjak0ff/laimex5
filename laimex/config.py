@@ -10,6 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 SUMMARIES = DATA / "summaries"
 RULES_TEXT = DATA / "rules_text"        # извлечённый текст правил (кэш)
+MANUAL_RULES = DATA / "manual_rules"     # правила, которые робот скачать не может, положены вручную
 WORK = ROOT / "work"                     # временные файлы, не в git
 PENDING = DATA / "pending"               # задания на выжимку (в git: их читает рутина Claude)
 IMAGES = DATA / "images"                 # баннеры лотерей, уменьшенные для карточек
