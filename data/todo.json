@@ -1,7 +1,7 @@
 {
- "generated": "2026-10-27T06:09:57+02:00",
+ "generated": "2026-10-27T06:12:43+02:00",
  "need_summary": [
-  "9187"
+  "9089"
  ],
  "need_sources": [
   {
@@ -23,17 +23,6 @@
    "name": "Luminor Bloom testētāju loterija",
    "start": "2026-08-06",
    "end": "2027-01-04",
-   "place": "Latvijas Republika",
-   "category": "service"
-  },
-  {
-   "permit": "9089",
-   "organizer": "AAS “BALTA”",
-   "organizer_reg": "40003049409",
-   "purchase": "BALTA abonētās polises apdrošināšanas līguma (polises) noslēgšanas",
-   "name": "Drošība, kas nepārtrūkst!",
-   "start": "2026-08-01",
-   "end": "2027-01-28",
    "place": "Latvijas Republika",
    "category": "service"
   }
@@ -368,7 +357,6 @@
  "waiting_since": {
   "9089": "2026-10-21",
   "9102": "2026-10-21",
-  "9178": "2026-10-21",
-  "9187": "2026-10-26"
+  "9178": "2026-10-21"
  }
 }

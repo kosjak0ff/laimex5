@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T06:09:57+02:00",
+ "updated": "2026-10-27T06:12:43+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-27T03:30:39+02:00",
  "lotteries": [
@@ -6276,10 +6276,86 @@
     "registration": null
    },
    "banner": null,
-   "summary": null,
+   "summary": {
+    "title": "Somat rudens loterija 2026",
+    "organizer": "SIA «SOMESE Baltic»",
+    "sponsor": "SIA «HENKEL Latvia» (Somat)",
+    "permit": null,
+    "what_to_buy": "Любой продукт бренда «Somat» в любом магазине или интернет-магазине Латвии, кроме магазинов «Drogas» и www.drogas.lv",
+    "buy_short": "Любой продукт Somat (кроме магазинов Drogas)",
+    "min_purchase_eur": null,
+    "where": "Любые магазины и интернет-магазины по всей Латвии, кроме сети «Drogas» и www.drogas.lv",
+    "how_to_enter": "Бесплатная регистрация на www.registerpromo.lv: имя, фамилия, номер чека (или накладной) и телефон; фото чека — по желанию. Каждая новая покупка — новая регистрация с уникальным номером чека",
+    "registration_url": "https://www.registerpromo.lv",
+    "keep": "Оригинал чека или накладной до 29.12.2026",
+    "lottery_start": "2026-10-26",
+    "lottery_end": "2026-12-04",
+    "registration_start": "2026-10-26",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-12-01",
+      "time": "13:00",
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Карта «Premium Plus» на 1000 €",
+        "qty": 1
+       },
+       {
+        "name": "Комплект продуктов Somat",
+        "qty": 10
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Карта «Premium Plus» на 1000 € (действует до 05.04.2027)",
+      "qty": 1,
+      "unit_value_eur": 1000,
+      "total_value_eur": 1000
+     },
+     {
+      "name": "Комплект продуктов Somat (таблетки SOMAT Excellence 42 шт., ополаскиватель 750 мл, SOMAT Intensive 250 мл, очиститель 3WL, соль 1,5 кг)",
+      "qty": 10,
+      "unit_value_eur": null,
+      "total_value_eur": null
+     }
+    ],
+    "prize_fund_eur": 1589,
+    "odds": "11 к 1000",
+    "winners_published": "04.12.2026 на www.registerpromo.lv",
+    "claim_deadline": "2026-12-18",
+    "age_min": null,
+    "limits": "Регистрировать можно несколько раз, но каждый раз — новый уникальный номер чека; повторные номера в розыгрыше не участвуют",
+    "notes": "Приз можно забрать в офисе организатора (Ernestīnes iela 12, Рига) или до 17.12.2026 заказать доставку в пакомат Omniva на loterijatev.lv/balvas-sanemsana."
+   },
    "results": null,
-   "checks": [],
-   "status": "no_summary"
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (26.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (04.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 11, в фонде 11"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9129",
@@ -6887,7 +6963,7 @@
    "category": "service",
    "links": {
     "page": null,
-    "rules": null,
+    "rules": "https://balta.lv/uploads/FAILI/Loterija/BALTA-Drosiba-kas-nepartrukst-loterija-noteikumi-LV.pdf",
     "registration": null
    },
    "banner": null,
