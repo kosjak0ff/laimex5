@@ -416,5 +416,9 @@
   "rules_type": "html",
   "rules_sha": "47330b1c325f6c34",
   "rules_checked": "2026-10-27T06:09:57+02:00"
+ },
+ "9089": {
+  "rules": "https://balta.lv/uploads/FAILI/Loterija/BALTA-Drosiba-kas-nepartrukst-loterija-noteikumi-LV.pdf",
+  "found_by": "agent-search"
  }
 }
