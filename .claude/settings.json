@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest -q)",
+      "Bash(python3 -m pytest -q)",
+      "Bash(python -m laimex todo)",
+      "Bash(python tools/check_staged.py)"
+    ]
+  }
+}
