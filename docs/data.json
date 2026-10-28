@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T06:10:21+02:00",
+ "updated": "2026-10-28T06:12:21+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-28T03:26:43+02:00",
  "lotteries": [
@@ -257,7 +257,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -278,7 +281,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -299,7 +305,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -320,7 +329,10 @@
    },
    "banner": null,
    "summary": null,
-   "results": null,
+   "results": {
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
+   },
    "checks": [],
    "status": "no_summary"
   },
@@ -405,8 +417,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Не удалось найти страницу с победителями",
-    "checked": "2026-10-25"
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -429,8 +441,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал список победителей на странице лотереи",
-    "checked": "2026-10-25"
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -477,8 +489,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Не удалось найти страницу с победителями",
-    "checked": "2026-10-25"
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -501,8 +513,8 @@
    "banner": "img/9111.jpg",
    "summary": null,
    "results": {
-    "note": "Не удалось найти страницу с победителями",
-    "checked": "2026-10-25"
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -550,8 +562,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Не удалось найти страницу с победителями",
-    "checked": "2026-10-25"
+    "note": "Организатор пока не опубликовал победителей в открытом доступе",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -599,8 +611,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Страницу с результатами лотереи найти не удалось",
-    "checked": "2026-10-24"
+    "note": "Главный приз разыгран 20.10.2026; список победителей на странице акции lmt.lv/en/lottery пока не опубликован",
+    "checked": "2026-10-28"
    },
    "checks": [],
    "status": "no_summary"
@@ -3918,7 +3930,11 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ VIVO не участвуют",
     "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijatev.lv/vivo",
+    "note": "Победители розыгрыша 27.10 опубликованы на сайте лотереи",
+    "checked": "2026-10-28"
+   },
    "checks": [
     {
      "ok": true,
@@ -4067,7 +4083,11 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз. Сотрудники Rimi Latvia, Plesko Real Estate, SOMESE Baltic и точек ТЦ Ostmala не участвуют",
     "notes": "Дата розыгрыша iPhone в графике не указана (вероятно, 17.11.2026 вместе с последним розыгрышем); стоимость iPhone посчитана как фонд минус карты. Приз можно забрать в офисе SOMESE Baltic (Ernestīnes iela 12, Rīga, будни 13–17) или до 26.11.2026 заказать доставку в пакомат Omniva."
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.loterijatev.lv/ostmala",
+    "note": "Победители розыгрыша 27.10 опубликованы на сайте лотереи",
+    "checked": "2026-10-28"
+   },
    "checks": [
     {
      "ok": true,
@@ -4304,7 +4324,11 @@
     "limits": "Один участник может выиграть 1 приз одного вида в каждом розыгрыше; каждый чек регистрируется один раз, повторная регистрация — только с новой покупкой. Не участвуют сотрудники SOMESE Baltic, Rimi Latvia и Rimi Baltic",
     "notes": "Призы выдают в офисе организатора (Ernestīnes iela 12, Rīga) по паспорту/ID или, по заявке на loterijatev.lv до 03.12.2026, высылают в пакомат Omniva. Дата розыгрыша главного приза в правилах не указана; претензии — до 2026-12-11."
    },
-   "results": null,
+   "results": {
+    "winners_url": "https://www.rimiloterija.lv/rudens/#laimetaji",
+    "note": "Победители розыгрыша 27.10 публикуются на сайте лотереи в разделе «Laimētāji»",
+    "checked": "2026-10-28"
+   },
    "checks": [
     {
      "ok": true,
@@ -6249,15 +6273,15 @@
    "summary": {
     "title": "Roshen rudens loterija 2026",
     "organizer": "SIA «SOMESE Baltic»",
-    "sponsor": "UAB «Roshen Nord»",
-    "permit": null,
-    "what_to_buy": "Минимум 1 любой продукт Lacmi",
-    "buy_short": "1 продукт Lacmi",
+    "sponsor": "UAB «Roshen Nord» (дистрибьютор, продукция Lacmi)",
+    "permit": "9174",
+    "what_to_buy": "Любой продукт «Lacmi» (минимум 1 шт.) в период 19.10–29.11.2026; каждый новый чек можно зарегистрировать отдельно",
+    "buy_short": "1 любой продукт Lacmi",
     "min_purchase_eur": null,
-    "where": "Магазины и интернет-магазины по всей Латвии",
-    "how_to_enter": "Зарегистрироваться на roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека; фото чека — по желанию. Бесплатно",
-    "registration_url": "https://roshenloterija.lv/",
-    "keep": "Чек или накладную с покупкой Lacmi — до 29.12.2026",
+    "where": "Любые магазины и интернет-магазины по всей Латвии",
+    "how_to_enter": "Бесплатная регистрация на сайте roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека (по желанию — фото чека)",
+    "registration_url": "https://www.roshenloterija.lv",
+    "keep": "Оригинал чека или накладной до 29.12.2026",
     "lottery_start": "2026-10-19",
     "lottery_end": "2026-12-03",
     "registration_start": "2026-10-19",
@@ -6266,58 +6290,100 @@
      {
       "date": "2026-10-26",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-10-19",
+      "period_to": "2026-10-25",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
      },
      {
       "date": "2026-11-02",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-10-26",
+      "period_to": "2026-11-01",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
      },
      {
       "date": "2026-11-09",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-11-02",
+      "period_to": "2026-11-08",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
      },
      {
       "date": "2026-11-16",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-11-09",
+      "period_to": "2026-11-15",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
      },
      {
       "date": "2026-11-23",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-11-16",
+      "period_to": "2026-11-22",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
      },
      {
       "date": "2026-11-30",
       "time": "13:00",
-      "period_from": null,
-      "period_to": null,
-      "prizes": []
+      "period_from": "2026-11-23",
+      "period_to": "2026-11-29",
+      "prizes": [
+       {
+        "name": "ROSHEN produktu komplekts",
+        "qty": 10
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-10-19",
+      "period_to": "2026-11-29",
+      "prizes": [
+       {
+        "name": "Naudas balva 3000 EUR",
+        "qty": 1
+       }
+      ]
      }
     ],
     "prizes": [
      {
-      "name": "Денежный приз 3000 €",
+      "name": "Денежный приз 3000 EUR (Naudas balva)",
       "qty": 1,
       "unit_value_eur": 3000.0,
       "total_value_eur": 3000.0
      },
      {
-      "name": "Набор сладостей Lacmi, Yummi Gummi, Lovita (13 продуктов)",
+      "name": "Набор продуктов Lacmi/Yummi Gummi/Lovita/Crazy Bee (13 продуктов)",
       "qty": 60,
-      "unit_value_eur": null,
-      "total_value_eur": null
+      "unit_value_eur": 20.57,
+      "total_value_eur": 1234.2
      }
     ],
     "prize_fund_eur": 4234.2,
@@ -6325,8 +6391,8 @@
     "winners_published": "На roshenloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 3.12.2026",
     "claim_deadline": "2026-12-18",
     "age_min": 16,
-    "limits": "Один участник может выиграть один раз в каждом розыгрыше; каждый новый чек — новая регистрация",
-    "notes": "Распределение призов по розыгрышам указано в приложении к правилам"
+    "limits": "Один участник может выиграть 1 раз в каждом розыгрыше; один чек регистрируется один раз; не участвуют сотрудники SIA «SOMESE Baltic» и UAB «Roshen Nord»",
+    "notes": "Приз получают в офисе организатора (Ernestīnes iela 12, Рига) или онлайн-заявкой на loterijatev.lv до 17.12.2026 (наборы — в пакомат Omniva). Дата розыгрыша денежного приза в правилах отдельно не указана; стоимость набора рассчитана из фонда."
    },
    "results": {
     "winners_url": "https://roshenloterija.lv/#!/win",
@@ -6334,6 +6400,10 @@
     "checked": "2026-10-27"
    },
    "checks": [
+    {
+     "ok": true,
+     "text": "Номер разрешения в правилах (9174) совпадает с реестром VID"
+    },
     {
      "ok": true,
      "text": "Дата начала (19.10.2026) совпадает с реестром VID"
@@ -6345,6 +6415,14 @@
     {
      "ok": true,
      "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 4234.20 € = призовой фонд 4234.20 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 61, в фонде 61"
     },
     {
      "ok": true,
@@ -7058,10 +7136,194 @@
     "registration": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-elvi-veikalos/"
    },
    "banner": "img/9188.jpg",
-   "summary": null,
+   "summary": {
+    "title": "Latvijas Graudu maize loterija Elvi veikalos",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "AS «Latvijas Maiznieks»",
+    "permit": null,
+    "what_to_buy": "Минимум 1 продукт Latvijas Maiznieks «Graudu maize» из списка в приложении №1 (12 видов хлеба) в магазине Elvi",
+    "buy_short": "1 хлеб Latvijas Graudu maize в магазине Elvi",
+    "min_purchase_eur": null,
+    "where": "Любой магазин Elvi по всей Латвии",
+    "how_to_enter": "Бесплатная анкета на loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также возраст, город, e-mail",
+    "registration_url": "https://www.loterijas.lv",
+    "keep": "Чек с зарегистрированным номером до получения приза",
+    "lottery_start": "2026-10-28",
+    "lottery_end": "2027-01-06",
+    "registration_start": "2026-10-28",
+    "registration_end": "2027-01-05",
+    "draws": [
+     {
+      "date": "2026-11-04",
+      "time": "11:00",
+      "period_from": "2026-10-28",
+      "period_to": "2026-11-03",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-11",
+      "time": "11:00",
+      "period_from": "2026-11-04",
+      "period_to": "2026-11-10",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-19",
+      "time": "11:00",
+      "period_from": "2026-11-11",
+      "period_to": "2026-11-18",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-25",
+      "time": "11:00",
+      "period_from": "2026-11-19",
+      "period_to": "2026-11-24",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-02",
+      "time": "11:00",
+      "period_from": "2026-11-25",
+      "period_to": "2026-12-01",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-09",
+      "time": "11:00",
+      "period_from": "2026-12-02",
+      "period_to": "2026-12-08",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-16",
+      "time": "11:00",
+      "period_from": "2026-12-09",
+      "period_to": "2026-12-15",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-23",
+      "time": "11:00",
+      "period_from": "2026-12-16",
+      "period_to": "2026-12-22",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-30",
+      "time": "11:00",
+      "period_from": "2026-12-23",
+      "period_to": "2026-12-29",
+      "prizes": [
+       {
+        "name": "Veikala “Elvi” dāvanu karte 50.00 EUR",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2027-01-06",
+      "time": "11:00",
+      "period_from": "2026-10-28",
+      "period_to": "2027-01-05",
+      "prizes": [
+       {
+        "name": "“IMPRO CEĻOJUMI” dāvanu karte 1000.00 EUR",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Подарочная карта «IMPRO CEĻOJUMI» на 1000 EUR",
+      "qty": 1,
+      "unit_value_eur": 1000.0,
+      "total_value_eur": 1000.0
+     },
+     {
+      "name": "Подарочная карта магазина «Elvi» на 50 EUR",
+      "qty": 9,
+      "unit_value_eur": 50.0,
+      "total_value_eur": 450.0
+     }
+    ],
+    "prize_fund_eur": 1450.0,
+    "odds": "10 к 5000",
+    "winners_published": "Полный список победителей — на loterijas.lv 6.01.2027 до 23:59; победителям сообщают звонком или SMS",
+    "claim_deadline": "2027-01-20",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) выигрывает один раз за все розыгрыши; каждая покупка регистрируется отдельно. Не участвуют сотрудники AS «Latvijas Maiznieks», SIA «ELVI Latvija», SIA «Visas Loterijas»",
+    "notes": "Для получения приза нужен чек и паспорт/ID-карта; претензии — до 21.01.2027."
+   },
    "results": null,
-   "checks": [],
-   "status": "no_summary"
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (28.10.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (06.01.2027) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1450.00 € = призовой фонд 1450.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 10, в фонде 10"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9132",

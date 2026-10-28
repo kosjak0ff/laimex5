@@ -1,15 +1,15 @@
 {
  "title": "Roshen rudens loterija 2026",
  "organizer": "SIA «SOMESE Baltic»",
- "sponsor": "UAB «Roshen Nord»",
- "permit": null,
- "what_to_buy": "Минимум 1 любой продукт Lacmi",
- "buy_short": "1 продукт Lacmi",
+ "sponsor": "UAB «Roshen Nord» (дистрибьютор, продукция Lacmi)",
+ "permit": "9174",
+ "what_to_buy": "Любой продукт «Lacmi» (минимум 1 шт.) в период 19.10–29.11.2026; каждый новый чек можно зарегистрировать отдельно",
+ "buy_short": "1 любой продукт Lacmi",
  "min_purchase_eur": null,
- "where": "Магазины и интернет-магазины по всей Латвии",
- "how_to_enter": "Зарегистрироваться на roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека; фото чека — по желанию. Бесплатно",
- "registration_url": "https://roshenloterija.lv/",
- "keep": "Чек или накладную с покупкой Lacmi — до 29.12.2026",
+ "where": "Любые магазины и интернет-магазины по всей Латвии",
+ "how_to_enter": "Бесплатная регистрация на сайте roshenloterija.lv: имя, фамилия, e-mail, телефон, город и номер чека (по желанию — фото чека)",
+ "registration_url": "https://www.roshenloterija.lv",
+ "keep": "Оригинал чека или накладной до 29.12.2026",
  "lottery_start": "2026-10-19",
  "lottery_end": "2026-12-03",
  "registration_start": "2026-10-19",
@@ -18,58 +18,100 @@
   {
    "date": "2026-10-26",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-10-19",
+   "period_to": "2026-10-25",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
   },
   {
    "date": "2026-11-02",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-10-26",
+   "period_to": "2026-11-01",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
   },
   {
    "date": "2026-11-09",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-11-02",
+   "period_to": "2026-11-08",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
   },
   {
    "date": "2026-11-16",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-11-09",
+   "period_to": "2026-11-15",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
   },
   {
    "date": "2026-11-23",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-11-16",
+   "period_to": "2026-11-22",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
   },
   {
    "date": "2026-11-30",
    "time": "13:00",
-   "period_from": null,
-   "period_to": null,
-   "prizes": []
+   "period_from": "2026-11-23",
+   "period_to": "2026-11-29",
+   "prizes": [
+    {
+     "name": "ROSHEN produktu komplekts",
+     "qty": 10
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-10-19",
+   "period_to": "2026-11-29",
+   "prizes": [
+    {
+     "name": "Naudas balva 3000 EUR",
+     "qty": 1
+    }
+   ]
   }
  ],
  "prizes": [
   {
-   "name": "Денежный приз 3000 €",
+   "name": "Денежный приз 3000 EUR (Naudas balva)",
    "qty": 1,
    "unit_value_eur": 3000.0,
    "total_value_eur": 3000.0
   },
   {
-   "name": "Набор сладостей Lacmi, Yummi Gummi, Lovita (13 продуктов)",
+   "name": "Набор продуктов Lacmi/Yummi Gummi/Lovita/Crazy Bee (13 продуктов)",
    "qty": 60,
-   "unit_value_eur": null,
-   "total_value_eur": null
+   "unit_value_eur": 20.57,
+   "total_value_eur": 1234.2
   }
  ],
  "prize_fund_eur": 4234.2,
@@ -77,8 +119,8 @@
  "winners_published": "На roshenloterija.lv в течение 3 рабочих дней после каждого розыгрыша; полный список — 3.12.2026",
  "claim_deadline": "2026-12-18",
  "age_min": 16,
- "limits": "Один участник может выиграть один раз в каждом розыгрыше; каждый новый чек — новая регистрация",
- "notes": "Распределение призов по розыгрышам указано в приложении к правилам",
- "_rules_sha": "6d6419bc10e5ab5f",
- "_extracted": "2026-10-19T20:35:22+03:00"
+ "limits": "Один участник может выиграть 1 раз в каждом розыгрыше; один чек регистрируется один раз; не участвуют сотрудники SIA «SOMESE Baltic» и UAB «Roshen Nord»",
+ "notes": "Приз получают в офисе организатора (Ernestīnes iela 12, Рига) или онлайн-заявкой на loterijatev.lv до 17.12.2026 (наборы — в пакомат Omniva). Дата розыгрыша денежного приза в правилах отдельно не указана; стоимость набора рассчитана из фонда.",
+ "_rules_sha": "f8a46338924435bf",
+ "_extracted": "2026-10-28T06:11:22+02:00"
 }
