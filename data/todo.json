@@ -1,8 +1,48 @@
 {
- "generated": "2026-10-27T08:01:59+02:00",
- "need_summary": [],
+ "generated": "2026-10-28T03:28:14+02:00",
+ "need_summary": [
+  "9132",
+  "9174",
+  "9188"
+ ],
  "need_sources": [],
  "need_results": [
+  {
+   "permit": "9172",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
+   "name": "VIVO rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "centra “VIVO” veikali (izņemot veikalu “Rimi”), Jelgavā, Katoļu iela 18,",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями"
+  },
+  {
+   "permit": "9173",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "vismaz vienam pirkumam vismaz 10,00 EUR vērtībā",
+   "name": "OSTMALA rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "tirdzniecības centra “Ostmala” tirdzniecības vietas (izņemot veikalu “Rimi”), Liepāja, Kārļa Zāles laukums 8,",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями"
+  },
+  {
+   "permit": "9177",
+   "organizer": "SIA “SOMESE Baltic”",
+   "organizer_reg": "40103207278",
+   "purchase": "pirkumam ar reģistrētu \"Mans Rimi\" karti vismaz 20,00 EUR vērtībā",
+   "name": "Rimi rudens loterija 2026",
+   "start": "2026-10-20",
+   "end": "2026-11-20",
+   "place": "Latvijas Republika un interneta veikals \"rimi.lv/e-veikals\"",
+   "category": "shop",
+   "reason": "прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями"
+  },
   {
    "permit": "9071",
    "organizer": "SIA „Latvijas Mobilais Telefons”",
@@ -13,6 +53,66 @@
    "end": "2026-10-20",
    "place": "Latvijas Republika",
    "category": "service",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9038",
+   "organizer": "AS “Swedbank”",
+   "organizer_reg": "40003074764",
+   "purchase": "AS “Swedbank” pakalpojumam",
+   "name": "Pirmā karte bērnam",
+   "start": "2026-08-17",
+   "end": "2026-10-13",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9111",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola ZIGMAS Loms produktu pirkumam",
+   "name": "ZIGMAS produktu loterija",
+   "start": "2026-09-01",
+   "end": "2026-10-09",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9081",
+   "organizer": "SIA “ADgett”",
+   "organizer_reg": "40103715778",
+   "purchase": "jebkuriem diviem Colgate vai Palmolive (izņemot gabaliņziepes) produktiem",
+   "name": "Laimē EUR 1000!",
+   "start": "2026-09-02",
+   "end": "2026-10-07",
+   "place": "“Drogas” veikali Latvijas Republikā interneta veikals www.drogas.lv,",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "8903",
+   "organizer": "SIA \"'Guilty\"'",
+   "organizer_reg": "50003254051",
+   "purchase": "Fuzetea produktu pirkumam",
+   "name": "Fuzetea- piedzīvo katru dienu",
+   "start": "2026-06-01",
+   "end": "2026-10-05",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9058",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Lielmaize produktam",
+   "name": "Lielmaize Vislatvijas loterija",
+   "start": "2026-08-10",
+   "end": "2026-10-05",
+   "place": "jebkura tirdzniecības vieta (fiziska tirdzniecības vieta vai interneta veikals) Latvijas Republikas teritorijā",
+   "category": "shop",
    "reason": "лотерея закончилась — найти результаты и страницу с победителями"
   },
   {
@@ -208,6 +308,24 @@
    "reason": "лотерея закончилась — найти результаты и страницу с победителями"
   }
  ],
- "broken": [],
- "waiting_since": {}
+ "broken": [
+  {
+   "permit": "9132",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Tele2 pakalpojumam",
+   "name": "Zelta Zivtiņa Bonusu klubs",
+   "start": "2026-09-01",
+   "end": "2027-01-07",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "error": "текст правил не распознан (скан или не та страница)",
+   "rules": "https://www.zeltazivtina.lv/storage/app/media/ZZ_BK_2026_Q4.pdf"
+  }
+ ],
+ "waiting_since": {
+  "9132": "2026-10-28",
+  "9174": "2026-10-28",
+  "9188": "2026-10-28"
+ }
 }

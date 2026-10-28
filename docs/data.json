@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-27T08:02:02+02:00",
+ "updated": "2026-10-28T03:28:22+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "registry_fetched": "2026-10-27T03:30:39+02:00",
+ "registry_fetched": "2026-10-28T03:26:43+02:00",
  "lotteries": [
   {
    "permit": "9056",
@@ -7053,11 +7053,11 @@
    "place": "jebkurš veikals Elvi Latvijas Republikā",
    "category": "shop",
    "links": {
-    "page": null,
-    "rules": null,
-    "registration": null
+    "page": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-elvi-veikalos/",
+    "rules": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-elvi-veikalos/noteikumi/",
+    "registration": "https://www.loterijas.lv/loterija/latvijas-graudu-maize-loterija-elvi-veikalos/"
    },
-   "banner": null,
+   "banner": "img/9188.jpg",
    "summary": null,
    "results": null,
    "checks": [],
