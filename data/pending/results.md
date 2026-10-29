@@ -2,66 +2,56 @@
 
 Робот сам открыл известные страницы лотерей из списка «Нужны сведения о розыгрышах». Ссылки отсюда WebFetch не откроет: записывайте их командой add-result, если подсказка однозначна (ссылка «Laimētāji» или упоминания с датами розыгрышей).
 
-## 9172 | VIVO rudens loterija 2026
-Причина: прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями
-- правила: https://www.loterijatev.lv/loterija/vivo/@rules/WEB_Noteikumi_VIVO_rudens_loterija_2026.pdf
-- страница: https://www.loterijatev.lv/vivo — слово «laimētāji/uzvarētāji» встречается 10 раз; даты рядом: 20.10, 27.10, 29.10, 03.11, 05.11, 10.11, 12.11, 16.11, 17.11, 20.11
+## 9163 | Rimi interneta veikala oktobra loterija 2026
+Причина: прошло розыгрышей: 4, последний 2026-10-27 — найти страницу с победителями
+- правила: https://www.rimiloterija.lv/oktobris/assets26/WEB_Noteikumi_E-Rimi_oktobris_loterija_2026.pdf
+- страница: https://www.rimiloterija.lv/oktobris/ — про победителей ничего
 
-## 9173 | OSTMALA rudens loterija 2026
-Причина: прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями
-- правила: https://www.loterijatev.lv/loterija/ostmala/@rules/WEB_oteikumi_OSTMALA_rudens_loterija_2026.pdf
-- страница: https://www.loterijatev.lv/ostmala — слово «laimētāji/uzvarētāji» встречается 10 раз; даты рядом: 20.10, 27.10, 29.10, 03.11, 05.11, 10.11, 12.11, 16.11, 17.11, 20.11
+## 9183 | Birute loterija
+Причина: прошло розыгрышей: 2, последний 2026-10-27 — найти страницу с победителями
+- правила: https://www.loterijas.lv/loterija/birute-loterija/noteikumi/
+- страница: https://www.loterijas.lv/loterija/birute-loterija/ — слово «laimētāji/uzvarētāji» встречается 1 раз
 
-## 9177 | Rimi rudens loterija 2026
-Причина: прошло розыгрышей: 1, последний 2026-10-27 — найти страницу с победителями
-- правила: https://www.rimiloterija.lv/rudens/assets26/WEB_Noteikumi_Rimi_rudens_loterija_2026.pdf
-- страница: https://www.rimiloterija.lv/rudens/ — про победителей ничего
-  - ссылка «LaimÄtÄji»: https://www.rimiloterija.lv/rudens/#laimetaji — якорь на этой же странице
-  - ссылка «27.10.»: https://www.rimiloterija.lv/rudens/#laimetaji|27.10. — якорь на этой же странице
-  - ссылка «03.11.»: https://www.rimiloterija.lv/rudens/#laimetaji|03.11. — якорь на этой же странице
-  - ссылка «10.11.»: https://www.rimiloterija.lv/rudens/#laimetaji|10.11. — якорь на этой же странице
-  - ссылка «17.11.»: https://www.rimiloterija.lv/rudens/#laimetaji|17.11. — якорь на этой же странице
+## 9112 | Izbaudi mirkli ar bueno!
+Причина: прошло розыгрышей: 5, последний 2026-10-26 — найти страницу с победителями
+- правила: https://www.kinder.com/lv/lv/xp/bueno/assets26/Noteikumi_KinderBueno_loterija_2026.pdf
+- страница: https://www.kinder.com/lv/lv/xp/bueno/ — слово «laimētāji/uzvarētāji» встречается 11 раз; даты рядом: 01.10, 20.11
+  - ссылка «Laimētāji»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji — якорь на этой же странице
+  - ссылка «1»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|1 — якорь на этой же странице
+  - ссылка «2»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|2 — якорь на этой же странице
+  - ссылка «3»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|3 — якорь на этой же странице
+  - ссылка «4»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|4 — якорь на этой же странице
+  - ссылка «5»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|5 — якорь на этой же странице
+  - ссылка «Pieteikties laimētās balvas saņemšanai»: https://www.kinder.com/lv/lv/xp/bueno/#laimetaji|pieteikties — якорь на этой же странице
 
-## 9071 | LMT Kartes vasara 2026
+## 9116 | Ar Coca-Cola tas garšo vēl labāk
+Причина: прошло розыгрышей: 7, последний 2026-10-27 — найти страницу с победителями
+- правила: https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3/noteikumi
+- страница: https://www.coca-cola.com/lv/lv/offerings/coke-meals-q3 — про победителей ничего
+
+## 9060 | M&M's loterija
+Причина: прошло розыгрышей: 3, последний 2026-10-27 — найти страницу с победителями
+- правила: https://www.loterijas.lv/loterija/mms-loterija/noteikumi/
+- страница: https://www.loterijas.lv/loterija/mms-loterija/ — слово «laimētāji/uzvarētāji» встречается 1 раз
+
+## 9069 | Selga loterija
+Причина: прошло розыгрышей: 2, последний 2026-10-26 — найти страницу с победителями
+- правила: https://www.loterijas.lv/loterija/selga-loterija-7/noteikumi/
+- страница: https://www.loterijas.lv/loterija/selga-loterija-7/ — слово «laimētāji/uzvarētāji» встречается 1 раз
+
+## 9135 | Laimē katru nedēļu Apple iPhone 17 Pro
 Причина: лотерея закончилась — найти результаты и страницу с победителями
 - страницы лотереи нет: ищите через WebSearch
 
-## 9038 | Pirmā karte bērnam
+## 9049 | Tele2 loterija
 Причина: лотерея закончилась — найти результаты и страницу с победителями
 - страницы лотереи нет: ищите через WebSearch
 
-## 9111 | ZIGMAS produktu loterija
+## 9063 | Henkel un Schwarzkopf loterija 2026
 Причина: лотерея закончилась — найти результаты и страницу с победителями
-- правила: https://www.loterijas.lv/loterija/zigmas-produktu-loterija/noteikumi/
-- страница: https://www.loterijas.lv/loterija/zigmas-produktu-loterija/ — слово «laimētāji/uzvarētāji» встречается 1 раз
-
-## 9081 | Laimē EUR 1000!
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 8903 | Fuzetea- piedzīvo katru dienu
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 9058 | Lielmaize Vislatvijas loterija
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 9078 | Haleon dienas veikalos Drogas
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 9108 | Old Spice loterija veikalos Drogas
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 9109 | Gillette loterija veikalos Drogas
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
-
-## 9110 | Higiēnas dienu loterija veikalos Drogas
-Причина: лотерея закончилась — найти результаты и страницу с победителями
-- страницы лотереи нет: ищите через WebSearch
+- правила: https://www.registerpromo.lv/lv/loterija/henkel-sch-lv/rules.html
+- страница: https://www.registerpromo.lv/lv/henkel-sch-lv — слово «laimētāji/uzvarētāji» встречается 4 раз; даты рядом: 27.07, 30.09, 02.10
+  - ссылка «Laimētāji»: https://www.registerpromo.lv/lv/henkel-sch-lv#laimetaji — якорь на этой же странице
 
 ## 9117 | STENDERS. 25 gadi. Pārvēršot mirkļus zeltā
 Причина: лотерея закончилась — найти результаты и страницу с победителями
