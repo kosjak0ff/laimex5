@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T06:12:09+02:00",
+ "updated": "2026-10-30T13:40:10+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-30T03:59:31+02:00",
  "lotteries": [
@@ -6645,7 +6645,8 @@
    },
    "results": {
     "note": "Организатор опубликует полный список победителей на coca-cola.com/lv до 04.12.2026; победителей уведомляют по e-mail.",
-    "checked": "2026-10-30"
+    "checked": "2026-10-30",
+    "next_check": "2026-12-04"
    },
    "checks": [
     {
@@ -6922,7 +6923,8 @@
    },
    "results": {
     "note": "Полный список победителей организатор опубликует на coca-cola.com/lv до 07.12.2026; победителей уведомляют по e-mail.",
-    "checked": "2026-10-30"
+    "checked": "2026-10-30",
+    "next_check": "2026-12-07"
    },
    "checks": [
     {
