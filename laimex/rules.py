@@ -4,6 +4,7 @@ from __future__ import annotations
 import hashlib
 import io
 import re
+from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
 from pypdf import PdfReader
@@ -42,12 +43,16 @@ def looks_like_rules(text: str) -> bool:
 def fetch_rules(url: str) -> dict:
     r = http.get(url, timeout=60)
     ctype = r.headers.get("content-type", "").lower()
-    is_pdf = "pdf" in ctype or r.content[:5] == b"%PDF-"
+    # сайт может назвать веб-страницу PDF-файлом: верим только сигнатуре в начале файла
+    is_pdf = b"%PDF-" in r.content[:1024]
     text = pdf_to_text(r.content) if is_pdf else html_to_text(r.text)
+    # просили .pdf, а пришла веб-страница: сайт, вероятно, не пускает робота (например, IP GitHub)
+    want_pdf = any(urlparse(u).path.lower().endswith(".pdf") for u in (url, r.url)) or "pdf" in ctype
     return {
         "url": r.url,
         "type": "pdf" if is_pdf else "html",
         "sha": hashlib.sha256(text.encode()).hexdigest()[:16],
         "text": text,
         "ok": looks_like_rules(text),
+        "not_pdf": want_pdf and not is_pdf,
     }

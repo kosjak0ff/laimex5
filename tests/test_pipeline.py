@@ -416,3 +416,49 @@ def test_robots_wildcards(monkeypatch):
     # Python 3.12 шаблоны «*» не понимает и пропустил бы PDF — робот работает на 3.13+
     assert not http.allowed("https://balta.lv/uploads/FAILI/noteikumi.pdf")
     assert http.allowed("https://balta.lv/lv/jaunumi")
+
+
+def test_html_instead_of_pdf_is_reported_to_owner(sandbox, monkeypatch):
+    from laimex import health
+    for name, sub in [("SUMMARIES", "data/summaries"), ("REGISTRY_JSON", "data/registry.json"),
+                      ("TODO_JSON", "data/todo.json"), ("HEALTH_JSON", "data/health.json")]:
+        monkeypatch.setattr(health, name, sandbox / sub)
+    pdf = "https://balta.lv/uploads/noteikumi.pdf"
+    real_get = http.get
+    monkeypatch.setattr(http, "get", lambda url, **kw: FakeResp(url, "<html></html>") if url == pdf
+                        else real_get(url, **kw))
+    pipeline.daily("agent", log=lambda *a: None)
+    pipeline.add_source("9089", None, pdf, None, fetch=False)
+    todo = pipeline.daily("agent", log=lambda *a: None)
+    assert [r["permit"] for r in todo["broken"]] == ["9089"]
+    assert "не отдал" in todo["broken"][0]["error"]
+    assert "rules_blocked" in {p["key"] for p in health.check(date(2026, 10, 19), repo="o/r")["problems"]}
+
+
+def test_fetch_rules_not_pdf_flag(monkeypatch):
+    from laimex import rules
+    html = FakeResp("https://x.lv/r.pdf", "<html></html>")
+    monkeypatch.setattr(http, "get", lambda url, **kw: html)
+    assert rules.fetch_rules("https://x.lv/r.PDF?v=1")["not_pdf"] is True
+    assert rules.fetch_rules("https://x.lv/download/1")["not_pdf"] is True  # редирект на .pdf
+    page = FakeResp("https://x.lv/noteikumi", "<html></html>")
+    monkeypatch.setattr(http, "get", lambda url, **kw: page)
+    assert rules.fetch_rules("https://x.lv/noteikumi")["not_pdf"] is False
+    page.headers = {"content-type": "application/pdf"}  # страница, названная PDF-файлом
+    got = rules.fetch_rules("https://x.lv/noteikumi")
+    assert got["not_pdf"] is True and got["type"] == "html"
+    real = FakeResp("https://x.lv/r.pdf", b"%PDF-")
+    monkeypatch.setattr(http, "get", lambda url, **kw: real)
+    monkeypatch.setattr(rules, "pdf_to_text", lambda b: "")
+    assert rules.fetch_rules("https://x.lv/r.pdf")["not_pdf"] is False
+
+
+def test_next_check_suppresses_results_search(sandbox):
+    row = {"permit": "1", "start": "2026-09-01", "end": "2026-11-30"}
+    summ = {"draws": [{"date": "2026-10-01"}]}
+    res = {"checked": "2026-10-01", "next_check": "2026-12-04"}
+    assert pipeline.results_reason(row, summ, res, "2026-12-03") is None
+    assert pipeline.results_reason(row, summ, res, "2026-12-04")
+    pipeline.add_result("9158", None, None, next_check="2026-12-04")
+    assert pipeline.add_result("9158", None, "ещё нет")["next_check"] == "2026-12-04"
+    assert "next_check" not in pipeline.add_result("9158", "https://example.lv/w", None)

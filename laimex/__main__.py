@@ -5,7 +5,7 @@
   python -m laimex save 9158 f.json — сохранить выжимку и показать проверки
   python -m laimex add-source 9158 --page URL [--rules URL] [--registration URL] [--no-fetch]
   python -m laimex no-source 9158 --note TEXT — правила не нашлись, не искать 7 дней
-  python -m laimex add-result 9158 [--winners URL] [--note TEXT]
+  python -m laimex add-result 9158 [--winners URL] [--note TEXT] [--next ДАТА]
   python -m laimex build            — только пересобрать сайт
   python -m laimex health           — проверить, всё ли обновляется
 """
@@ -42,6 +42,8 @@ def main(argv=None):
     r.add_argument("permit")
     r.add_argument("--winners", help="страница или файл со списком победителей")
     r.add_argument("--note", help="по-русски для посетителей сайта: что известно о розыгрышах")
+    r.add_argument("--next", metavar="DATE", help="не искать снова до этой даты (ГГГГ-ММ-ДД), например "
+                   "когда организатор обещал опубликовать победителей")
     sub.add_parser("build")
     h = sub.add_parser("health")
     h.add_argument("--github-issue", metavar="OWNER/REPO", help="открыть/закрыть issue при проблемах")
@@ -88,7 +90,7 @@ def main(argv=None):
     elif args.cmd == "no-source":
         print(json.dumps(pipeline.no_source(args.permit, args.note), ensure_ascii=False, indent=1))
     elif args.cmd == "add-result":
-        res = pipeline.add_result(args.permit, args.winners, args.note)
+        res = pipeline.add_result(args.permit, args.winners, args.note, args.next)
         print(json.dumps(res, ensure_ascii=False, indent=1))
     elif args.cmd == "build":
         pipeline.build_site()

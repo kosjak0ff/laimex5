@@ -170,6 +170,8 @@ def step_sources(rows: list[dict], log=print, only: set[str] | None = None) -> d
             if not got["ok"]:
                 src["error"] = ("правила на Google Диске: роботам скачивать оттуда запрещено"
                                 if "drive.google.com" in src["rules"] else
+                                "сайт не отдал роботу PDF правил (вместо файла пришла веб-страница)"
+                                if got.get("not_pdf") else
                                 "текст правил не распознан (скан или не та страница)")
             src.update(rules_type=got["type"], rules_sha=got["sha"], rules_checked=now_iso())
             (RULES_TEXT / f"{permit}.txt").write_text(got["text"], encoding="utf-8")
@@ -188,7 +190,8 @@ def results_reason(row: dict, summ: dict | None, res: dict | None, now: str) -> 
 
     Только для идущих и прошедших лотерей. Когда найдена страница с победителями, искать
     больше нечего: организаторы дописывают туда новые розыгрыши. Одну и ту же лотерею не ищем
-    чаще раза в RESULTS_RECHECK_DAYS дней, чтобы рутина не тратила поиск впустую.
+    чаще раза в RESULTS_RECHECK_DAYS дней, чтобы рутина не тратила поиск впустую; до даты
+    next_check (организатор обещал опубликовать победителей) не ищем вовсе.
     """
     if not row.get("start") or row["start"] > now:
         return None
@@ -196,6 +199,8 @@ def results_reason(row: dict, summ: dict | None, res: dict | None, now: str) -> 
     if res.get("winners_url"):
         return None
     if _recent(res.get("checked"), now, RESULTS_RECHECK_DAYS):
+        return None
+    if res.get("next_check") and now < res["next_check"]:
         return None
     draws = [d.get("date") for d in (summ or {}).get("draws") or []]
     if summ and not draws and row["end"] >= now:
@@ -318,15 +323,21 @@ def no_source(permit: str, note: str) -> dict:
     return sources[permit]
 
 
-def add_result(permit: str, winners_url: str | None, note: str | None) -> dict:
+def add_result(permit: str, winners_url: str | None, note: str | None,
+               next_check: str | None = None) -> dict:
     """Записать, что удалось узнать о розыгрышах. Вызывается и когда ничего не нашлось:
-    дата проверки не даст искать то же самое каждый день."""
+    дата проверки не даст искать то же самое каждый день. next_check (ГГГГ-ММ-ДД) — не искать
+    до этой даты; без него прежнее значение остаётся, а со страницей победителей снимается."""
     results = load(RESULTS_JSON, {})
     cur = results.setdefault(permit, {})
     if winners_url:
         cur["winners_url"] = winners_url
     if note:
         cur["note"] = note
+    if next_check:
+        cur["next_check"] = date.fromisoformat(next_check).isoformat()
+    if winners_url:
+        cur.pop("next_check", None)
     cur["checked"] = today().isoformat()
     save(RESULTS_JSON, results)
     return cur
