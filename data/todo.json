@@ -1,12 +1,150 @@
 {
- "generated": "2026-10-30T13:40:10+02:00",
+ "generated": "2026-10-31T03:39:43+02:00",
  "need_summary": [
-  "9132"
+  "9132",
+  "9185",
+  "9186"
  ],
- "need_sources": [],
- "need_results": [],
+ "need_sources": [
+  {
+   "permit": "9193",
+   "organizer": "SIA “Rīgas Komercskola”",
+   "organizer_reg": "40103373522",
+   "purchase": "SIA “Rīgas Komercskola” pakalpojumam",
+   "name": "Laimē 1 semestra mācību maksu",
+   "start": "2026-10-29",
+   "end": "2027-03-26",
+   "place": "Rīga",
+   "category": "service"
+  }
+ ],
+ "need_results": [
+  {
+   "permit": "9071",
+   "organizer": "SIA „Latvijas Mobilais Telefons”",
+   "organizer_reg": "50003050931",
+   "purchase": "LMT Kartes “Sarunas nedēļai”, “Internets nedēļai” vai “Nedēļa visam” pakalpojumam",
+   "name": "LMT Kartes vasara 2026",
+   "start": "2026-07-14",
+   "end": "2026-10-20",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9038",
+   "organizer": "AS “Swedbank”",
+   "organizer_reg": "40003074764",
+   "purchase": "AS “Swedbank” pakalpojumam",
+   "name": "Pirmā karte bērnam",
+   "start": "2026-08-17",
+   "end": "2026-10-13",
+   "place": "Latvijas Republika",
+   "category": "service",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9111",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "zīmola ZIGMAS Loms produktu pirkumam",
+   "name": "ZIGMAS produktu loterija",
+   "start": "2026-09-01",
+   "end": "2026-10-09",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9081",
+   "organizer": "SIA “ADgett”",
+   "organizer_reg": "40103715778",
+   "purchase": "jebkuriem diviem Colgate vai Palmolive (izņemot gabaliņziepes) produktiem",
+   "name": "Laimē EUR 1000!",
+   "start": "2026-09-02",
+   "end": "2026-10-07",
+   "place": "“Drogas” veikali Latvijas Republikā interneta veikals www.drogas.lv,",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "8903",
+   "organizer": "SIA \"'Guilty\"'",
+   "organizer_reg": "50003254051",
+   "purchase": "Fuzetea produktu pirkumam",
+   "name": "Fuzetea- piedzīvo katru dienu",
+   "start": "2026-06-01",
+   "end": "2026-10-05",
+   "place": "Latvijas Republika",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9058",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Lielmaize produktam",
+   "name": "Lielmaize Vislatvijas loterija",
+   "start": "2026-08-10",
+   "end": "2026-10-05",
+   "place": "jebkura tirdzniecības vieta (fiziska tirdzniecības vieta vai interneta veikals) Latvijas Republikas teritorijā",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9078",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Haleon produktam Sensodyne, Parodontax, Aquafresh, Corega)",
+   "name": "Haleon dienas veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "tirdzniecības vietas Drogas Latvijas Republikas teritorijā vai interneta veikals www.drogas.lv.",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9108",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Old Spice produktu pirkumam",
+   "name": "Old Spice loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "Drogas visā Latvijas Republikā vai interneta veikals www.drogas.lv.",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9109",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Gillette, Gillette Venus vai King C Gillette produktu pirkumam",
+   "name": "Gillette loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "Drogas visā Latvijas Republikā vai interneta veikals www.drogas.lv",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  },
+  {
+   "permit": "9110",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Always, Naturella, Discreet vai Tampax produktu pirkumam",
+   "name": "Higiēnas dienu loterija veikalos Drogas",
+   "start": "2026-09-02",
+   "end": "2026-10-02",
+   "place": "veikalos Drogas visā Latvijas Republikā vai www.drogas.lv.",
+   "category": "shop",
+   "reason": "лотерея закончилась — найти результаты и страницу с победителями"
+  }
+ ],
  "broken": [],
  "waiting_since": {
-  "9132": "2026-10-28"
+  "9132": "2026-10-28",
+  "9185": "2026-10-31",
+  "9186": "2026-10-31",
+  "9193": "2026-10-31"
  }
 }

@@ -1,9 +1,9 @@
 {
  "source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
- "version": "loteriju_registrs_16.10.2026.xls | 921088",
- "fetched": "2026-10-30T03:59:31+02:00",
- "checked": "2026-10-30T03:59:31+02:00",
- "total_in_file": 2948,
+ "version": "copy_of_loteriju_registrs_30.10.2026.xls | 923136",
+ "fetched": "2026-10-31T03:38:05+02:00",
+ "checked": "2026-10-31T03:38:05+02:00",
+ "total_in_file": 2956,
  "lotteries": [
   {
    "permit": "8903",
@@ -83,17 +83,6 @@
    "category": "shop"
   },
   {
-   "permit": "9056",
-   "organizer": "SIA “ADgett”",
-   "organizer_reg": "40103715778",
-   "purchase": "Colgate, Palmolive, Lady Speed Stick vai Speed Stick produktu pirkumam",
-   "name": "Laimē EUR 1000!",
-   "start": "2026-07-09",
-   "end": "2026-09-30",
-   "place": "veikali „MAXIMA Latvija“ Latvijas Republikā un www.barbora.lv",
-   "category": "shop"
-  },
-  {
    "permit": "9058",
    "organizer": "SIA „Visas Loterijas”",
    "organizer_reg": "40103404235",
@@ -168,17 +157,6 @@
    "start": "2026-08-05",
    "end": "2026-10-14",
    "place": "“ELVI” veikalu tīkls visā Latvijas Republikā",
-   "category": "shop"
-  },
-  {
-   "permit": "9073",
-   "organizer": "SIA “OUTLETICO”",
-   "organizer_reg": "40103979709",
-   "purchase": "Via Jurmala Outlet Village veikalos vismaz 20,00 EUR vērtībā pirkumam",
-   "name": "Piedzīvojumu spēle",
-   "start": "2026-07-13",
-   "end": "2026-09-30",
-   "place": "Via Jurmala Outlet Village teritorija, Jaunā iela 12, k-18, Piņķi, Babītes pagasts, Mārupes novads, LV-2107",
    "category": "shop"
   },
   {
@@ -839,6 +817,61 @@
    "start": "2026-11-16",
    "end": "2026-12-29",
    "place": "Latvijas Republika",
+   "category": "shop"
+  },
+  {
+   "permit": "9192",
+   "organizer": "AS “Citadele banka”",
+   "organizer_reg": "40103303559",
+   "purchase": "Ar Citadele VISA maksājumu kartēm preču pirkumam",
+   "name": "Laimējiet ģimenes ceļojumu uz Disneyland® Paris, ko atbalsta VISA",
+   "start": "2026-11-02",
+   "end": "2027-02-12",
+   "place": "Latvijas Republika",
+   "category": "shop"
+  },
+  {
+   "permit": "9193",
+   "organizer": "SIA “Rīgas Komercskola”",
+   "organizer_reg": "40103373522",
+   "purchase": "SIA “Rīgas Komercskola” pakalpojumam",
+   "name": "Laimē 1 semestra mācību maksu",
+   "start": "2026-10-29",
+   "end": "2027-03-26",
+   "place": "Rīga",
+   "category": "service"
+  },
+  {
+   "permit": "9194",
+   "organizer": "SIA “Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "Orbit vai Hubba Bubba košļājamās gumijas pirkumam",
+   "name": "Ceļojums kopā ar “Orbit” uz mūzikas pasākumu pēc eksāmeniem",
+   "start": "2027-02-01",
+   "end": "2027-03-04",
+   "place": "Latvijas Republika",
+   "category": "shop"
+  },
+  {
+   "permit": "9198",
+   "organizer": "SIA „Visas Loterijas”",
+   "organizer_reg": "40103404235",
+   "purchase": "jebkuram Latvijas Maiznieks Latvijas Tost Maize un Gardmaize maizes produktam",
+   "name": "Latvijas Tost Maize un Gardmaize loterija top! un Labais veikalos",
+   "start": "2026-11-20",
+   "end": "2027-01-06",
+   "place": "jebkura tirdzniecības vieta top!, mini top! vai Labais (fiziska tirdzniecības vieta) Latvijas Republikā",
+   "category": "shop"
+  },
+  {
+   "permit": "9199",
+   "organizer": "SIA “Need more sound”",
+   "organizer_reg": "40203417607",
+   "purchase": "Hemp Seed Oil pirkumam",
+   "name": "ŽIGULIS PAR VIENU BUNDŽIŅU",
+   "start": "2026-11-04",
+   "end": "2027-01-16",
+   "place": "needmoresound.com Latvijas Republikā",
    "category": "shop"
   }
  ]
