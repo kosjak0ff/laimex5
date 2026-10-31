@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T06:10:14+02:00",
+ "updated": "2026-10-31T06:12:05+02:00",
  "registry_source": "https://www.vid.gov.lv/lv/media/34040/download?attachment",
  "registry_fetched": "2026-10-31T03:38:05+02:00",
  "lotteries": [
@@ -238,8 +238,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -262,8 +262,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -286,8 +286,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -310,8 +310,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -406,8 +406,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -430,8 +430,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -478,8 +478,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -502,8 +502,8 @@
    "banner": "img/9111.jpg",
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -551,8 +551,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Организатор пока не опубликовал победителей в открытом доступе",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -600,8 +600,8 @@
    "banner": null,
    "summary": null,
    "results": {
-    "note": "Главный приз разыгран 20.10.2026; список победителей на странице акции lmt.lv/en/lottery пока не опубликован",
-    "checked": "2026-10-28"
+    "note": "Страницу с победителями в интернете пока найти не удалось",
+    "checked": "2026-10-31"
    },
    "checks": [],
    "status": "no_summary"
@@ -6218,10 +6218,90 @@
     "registration": null
    },
    "banner": "img/9185.jpg",
-   "summary": null,
+   "summary": {
+    "title": "Filorga loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "UAB «Medicinos strategija» (дистрибьютор Filorga)",
+    "permit": null,
+    "what_to_buy": "Любые 2 продукта Filorga (кроме тканевых масок Filorga)",
+    "buy_short": "2 продукта Filorga в аптеке BENU или на benu.lv",
+    "min_purchase_eur": null,
+    "where": "Любая аптека BENU по всей Латвии или e-aptieka www.benu.lv",
+    "how_to_enter": "Заполнить анкету на www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также e-mail. Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек о покупке (номер как при регистрации, в чеке видны товары Filorga); при получении приза нужен паспорт/ID-карта",
+    "lottery_start": "2026-11-01",
+    "lottery_end": "2026-12-01",
+    "registration_start": "2026-11-01",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-12-01",
+      "time": "11:00",
+      "period_from": "2026-11-01",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Zīmola “Filorga” produkti 500 EUR vērtībā",
+        "qty": 1
+       },
+       {
+        "name": "Zīmola “Filorga” Pro Collagen Micro Growth Factor produktu komplekts",
+        "qty": 3
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Продукты Filorga на 500 EUR на выбор победителя",
+      "qty": 1,
+      "unit_value_eur": 500.0,
+      "total_value_eur": 500.0
+     },
+     {
+      "name": "Набор Filorga Pro Collagen Micro Growth Factor (крем, сыворотка, сыворотка для глаз)",
+      "qty": 3,
+      "unit_value_eur": 237.27,
+      "total_value_eur": 711.81
+     }
+    ],
+    "prize_fund_eur": 1211.81,
+    "odds": "4 к 5000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-12-01; победителям звонят или присылают SMS",
+    "claim_deadline": "2026-12-15",
+    "age_min": null,
+    "limits": "Нельзя участвовать сотрудникам UAB «Medicinos strategija», SIA «Visas Loterijas» и SIA «BENU Aptieka Latvija»",
+    "notes": "Каждое выполнение условий — отдельная регистрация. Несовершеннолетний может получить приз через законного представителя"
+   },
    "results": null,
-   "checks": [],
-   "status": "no_summary"
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (01.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 1211.81 € = призовой фонд 1211.81 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 4, в фонде 4"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9186",
@@ -6239,10 +6319,134 @@
     "registration": null
    },
    "banner": "img/9186.jpg",
-   "summary": null,
+   "summary": {
+    "title": "Pharmaceris loterija",
+    "organizer": "SIA «Visas Loterijas»",
+    "sponsor": "SIA «G. Miežis Ārsts» (дистрибьютор Pharmaceris)",
+    "permit": null,
+    "what_to_buy": "Минимум 2 продукта бренда Pharmaceris за одну покупку",
+    "buy_short": "2 продукта Pharmaceris в одном чеке, в любой аптеке",
+    "min_purchase_eur": null,
+    "where": "Любая аптека или интернет-аптека по всей Латвии",
+    "how_to_enter": "Заполнить анкету на www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также город, место покупки, возраст, e-mail. Регистрация бесплатная",
+    "registration_url": "www.loterijas.lv",
+    "keep": "Чек о покупке (номер как при регистрации, в чеке виден товар Pharmaceris); при получении приза нужен паспорт/ID-карта",
+    "lottery_start": "2026-11-01",
+    "lottery_end": "2026-12-01",
+    "registration_start": "2026-11-01",
+    "registration_end": "2026-11-30",
+    "draws": [
+     {
+      "date": "2026-11-10",
+      "time": "11:00",
+      "period_from": "2026-11-01",
+      "period_to": "2026-11-09",
+      "prizes": [
+       {
+        "name": "Pharmaceris produktu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-17",
+      "time": "11:00",
+      "period_from": "2026-11-10",
+      "period_to": "2026-11-16",
+      "prizes": [
+       {
+        "name": "Pharmaceris produktu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-11-24",
+      "time": "11:00",
+      "period_from": "2026-11-17",
+      "period_to": "2026-11-23",
+      "prizes": [
+       {
+        "name": "Pharmaceris produktu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": "2026-12-01",
+      "time": "11:00",
+      "period_from": "2026-11-24",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Pharmaceris produktu komplekts",
+        "qty": 1
+       }
+      ]
+     },
+     {
+      "date": null,
+      "time": null,
+      "period_from": "2026-11-01",
+      "period_to": "2026-11-30",
+      "prizes": [
+       {
+        "name": "Matu veidošanas suka Dyson HS08 AIRWRAP i.d. Prussian blue/Rich copper",
+        "qty": 1
+       }
+      ]
+     }
+    ],
+    "prizes": [
+     {
+      "name": "Фен-стайлер Dyson HS08 AIRWRAP i.d. Prussian blue/Rich copper",
+      "qty": 1,
+      "unit_value_eur": 549.0,
+      "total_value_eur": 549.0
+     },
+     {
+      "name": "Набор продуктов Pharmaceris (7 средств для лица и волос)",
+      "qty": 4,
+      "unit_value_eur": 100.0,
+      "total_value_eur": 400.0
+     }
+    ],
+    "prize_fund_eur": 949.0,
+    "odds": "5 к 2000",
+    "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-12-01; победителям звонят или присылают SMS",
+    "claim_deadline": "2026-12-15",
+    "age_min": null,
+    "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «G. Miežis Ārsts» и SIA «Visas Loterijas»",
+    "notes": "Дата розыгрыша главного приза (Dyson) в правилах не указана, вероятно вместе с последним розыгрышем 2026-12-01. Несовершеннолетний может получить приз через законного представителя"
+   },
    "results": null,
-   "checks": [],
-   "status": "no_summary"
+   "checks": [
+    {
+     "ok": true,
+     "text": "Дата начала (01.11.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Дата окончания (01.12.2026) совпадает с реестром VID"
+    },
+    {
+     "ok": true,
+     "text": "Период регистрации внутри периода лотереи"
+    },
+    {
+     "ok": true,
+     "text": "Сумма призов 949.00 € = призовой фонд 949.00 €"
+    },
+    {
+     "ok": true,
+     "text": "Призов в розыгрышах 5, в фонде 5"
+    },
+    {
+     "ok": true,
+     "text": "Даты розыгрышей в пределах лотереи"
+    }
+   ],
+   "status": "ok"
   },
   {
    "permit": "9174",
@@ -7357,15 +7561,15 @@
    "summary": {
     "title": "Zelta Zivtiņa Bonusu klubs",
     "organizer": "SIA «Visas Loterijas»",
-    "sponsor": "SIA «Tele2» (Zelta Zivtiņa)",
+    "sponsor": "SIA «Tele2» (бренд Zelta Zivtiņa)",
     "permit": null,
-    "what_to_buy": "Стать клиентом постоплаты Zelta Zivtiņa или Tele2 (в т.ч. перейти от другого оператора или с предоплаты Zelta Zivtiņa) либо оплатить счёт за тарифный план постоплаты. Абоненты только дата-планов не участвуют",
-    "buy_short": "Постоплатный тариф Tele2 или Zelta Zivtiņa",
+    "what_to_buy": "Стать абонентом постоплатного тарифа Zelta Zivtiņa или Tele2 (в т.ч. перейти от другого оператора или с предоплаты Zelta Zivtiņa) либо оплатить счёт за постоплатный тарифный план. Абоненты планов только для данных не участвуют",
+    "buy_short": "Постоплатный тариф Zelta Zivtiņa или Tele2: подключение или оплата счёта",
     "min_purchase_eur": null,
-    "where": "Услуги Tele2 / Zelta Zivtiņa, вся Латвия",
-    "how_to_enter": "Отправить бесплатное SMS с текстом Bonuss на номер 1620 или отметить участие в профиле самообслуживания Mana Zelta Zivtiņa / Mans Tele2. Участник определяется по номеру подключения и имени в договоре",
+    "where": "Вся Латвия, услуги Tele2 / Zelta Zivtiņa",
+    "how_to_enter": "Отправить бесплатное SMS с текстом Bonuss на номер 1620 или отметить участие в своём профиле на портале Mana Zelta Zivtiņa / Mans Tele2. Участника определяют по номеру и имени в договоре",
     "registration_url": null,
-    "keep": null,
+    "keep": "При получении приза нужен паспорт или ID-карта",
     "lottery_start": "2026-09-01",
     "lottery_end": "2027-01-07",
     "registration_start": "2026-09-01",
@@ -7398,19 +7602,19 @@
     ],
     "prizes": [
      {
-      "name": "Денежный приз 1000 EUR (налоги платит Tele2)",
+      "name": "Денежный приз 1000 EUR",
       "qty": 2,
-      "unit_value_eur": 1000,
-      "total_value_eur": 2000
+      "unit_value_eur": 1000.0,
+      "total_value_eur": 2000.0
      }
     ],
-    "prize_fund_eur": 2000,
-    "odds": "2:150 000",
-    "winners_published": "На www.zeltazivtina.lv и www.tele2.lv в день розыгрыша; полный список — 7 января 2027 года до 23:59. Tele2 звонит или пишет SMS победителю",
+    "prize_fund_eur": 2000.0,
+    "odds": "2 к 150000",
+    "winners_published": "На www.zeltazivtina.lv и www.tele2.lv в день розыгрыша; полный список — до 23:59 2027-01-07. Победителю звонят или присылают SMS",
     "claim_deadline": "2027-01-21",
     "age_min": null,
-    "limits": "Сотрудники Visas Loterijas и Tele2 и их близкие родственники не участвуют",
-    "notes": "Приз перечисляют на банковский счёт победителя (не третьего лица) в течение 3 рабочих дней после заявления; нужен паспорт/ID-карта. Телефон организатора 67686540. Выжимка по прежней версии правил: новый файл правил на zeltazivtina.lv (ZZ_BK_2026_Q4.pdf) — скан, его текст прочитать не удалось; условия могли измениться."
+    "limits": "Нельзя участвовать сотрудникам SIA «Visas Loterijas» и SIA «Tele2» и их близким родственникам. Деньги переводят только на счёт самого победителя",
+    "notes": "Налоги с приза платит Tele2. Приз оформляют у организатора (Dzirnavu iela 37-63, Rīga) и переводят на банковский счёт"
    },
    "results": null,
    "checks": [

@@ -1,0 +1,102 @@
+{
+ "title": "Pharmaceris loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "SIA «G. Miežis Ārsts» (дистрибьютор Pharmaceris)",
+ "permit": null,
+ "what_to_buy": "Минимум 2 продукта бренда Pharmaceris за одну покупку",
+ "buy_short": "2 продукта Pharmaceris в одном чеке, в любой аптеке",
+ "min_purchase_eur": null,
+ "where": "Любая аптека или интернет-аптека по всей Латвии",
+ "how_to_enter": "Заполнить анкету на www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также город, место покупки, возраст, e-mail. Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек о покупке (номер как при регистрации, в чеке виден товар Pharmaceris); при получении приза нужен паспорт/ID-карта",
+ "lottery_start": "2026-11-01",
+ "lottery_end": "2026-12-01",
+ "registration_start": "2026-11-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-11-10",
+   "time": "11:00",
+   "period_from": "2026-11-01",
+   "period_to": "2026-11-09",
+   "prizes": [
+    {
+     "name": "Pharmaceris produktu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:00",
+   "period_from": "2026-11-10",
+   "period_to": "2026-11-16",
+   "prizes": [
+    {
+     "name": "Pharmaceris produktu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:00",
+   "period_from": "2026-11-17",
+   "period_to": "2026-11-23",
+   "prizes": [
+    {
+     "name": "Pharmaceris produktu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": "2026-12-01",
+   "time": "11:00",
+   "period_from": "2026-11-24",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Pharmaceris produktu komplekts",
+     "qty": 1
+    }
+   ]
+  },
+  {
+   "date": null,
+   "time": null,
+   "period_from": "2026-11-01",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Matu veidošanas suka Dyson HS08 AIRWRAP i.d. Prussian blue/Rich copper",
+     "qty": 1
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Фен-стайлер Dyson HS08 AIRWRAP i.d. Prussian blue/Rich copper",
+   "qty": 1,
+   "unit_value_eur": 549.0,
+   "total_value_eur": 549.0
+  },
+  {
+   "name": "Набор продуктов Pharmaceris (7 средств для лица и волос)",
+   "qty": 4,
+   "unit_value_eur": 100.0,
+   "total_value_eur": 400.0
+  }
+ ],
+ "prize_fund_eur": 949.0,
+ "odds": "5 к 2000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-12-01; победителям звонят или присылают SMS",
+ "claim_deadline": "2026-12-15",
+ "age_min": null,
+ "limits": "Один чек — один приз; один человек (телефон, имя/фамилия) может выиграть только один раз за все розыгрыши. Нельзя участвовать сотрудникам SIA «G. Miežis Ārsts» и SIA «Visas Loterijas»",
+ "notes": "Дата розыгрыша главного приза (Dyson) в правилах не указана, вероятно вместе с последним розыгрышем 2026-12-01. Несовершеннолетний может получить приз через законного представителя",
+ "_rules_sha": "db6d3a5362a36d18",
+ "_extracted": "2026-10-31T06:11:13+02:00"
+}

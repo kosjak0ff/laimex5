@@ -1,0 +1,58 @@
+{
+ "title": "Filorga loterija",
+ "organizer": "SIA «Visas Loterijas»",
+ "sponsor": "UAB «Medicinos strategija» (дистрибьютор Filorga)",
+ "permit": null,
+ "what_to_buy": "Любые 2 продукта Filorga (кроме тканевых масок Filorga)",
+ "buy_short": "2 продукта Filorga в аптеке BENU или на benu.lv",
+ "min_purchase_eur": null,
+ "where": "Любая аптека BENU по всей Латвии или e-aptieka www.benu.lv",
+ "how_to_enter": "Заполнить анкету на www.loterijas.lv: имя, фамилия, номер чека, телефон (обязательно), а также e-mail. Регистрация бесплатная",
+ "registration_url": "www.loterijas.lv",
+ "keep": "Чек о покупке (номер как при регистрации, в чеке видны товары Filorga); при получении приза нужен паспорт/ID-карта",
+ "lottery_start": "2026-11-01",
+ "lottery_end": "2026-12-01",
+ "registration_start": "2026-11-01",
+ "registration_end": "2026-11-30",
+ "draws": [
+  {
+   "date": "2026-12-01",
+   "time": "11:00",
+   "period_from": "2026-11-01",
+   "period_to": "2026-11-30",
+   "prizes": [
+    {
+     "name": "Zīmola “Filorga” produkti 500 EUR vērtībā",
+     "qty": 1
+    },
+    {
+     "name": "Zīmola “Filorga” Pro Collagen Micro Growth Factor produktu komplekts",
+     "qty": 3
+    }
+   ]
+  }
+ ],
+ "prizes": [
+  {
+   "name": "Продукты Filorga на 500 EUR на выбор победителя",
+   "qty": 1,
+   "unit_value_eur": 500.0,
+   "total_value_eur": 500.0
+  },
+  {
+   "name": "Набор Filorga Pro Collagen Micro Growth Factor (крем, сыворотка, сыворотка для глаз)",
+   "qty": 3,
+   "unit_value_eur": 237.27,
+   "total_value_eur": 711.81
+  }
+ ],
+ "prize_fund_eur": 1211.81,
+ "odds": "4 к 5000",
+ "winners_published": "Полный список победителей — на www.loterijas.lv до 23:59 2026-12-01; победителям звонят или присылают SMS",
+ "claim_deadline": "2026-12-15",
+ "age_min": null,
+ "limits": "Нельзя участвовать сотрудникам UAB «Medicinos strategija», SIA «Visas Loterijas» и SIA «BENU Aptieka Latvija»",
+ "notes": "Каждое выполнение условий — отдельная регистрация. Несовершеннолетний может получить приз через законного представителя",
+ "_rules_sha": "713b83325f2ad05b",
+ "_extracted": "2026-10-31T06:11:13+02:00"
+}
